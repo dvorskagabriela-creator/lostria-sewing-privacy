@@ -62,6 +62,38 @@ You can:
 - Delete individual items (patterns, magazines, logs, photos) at any time within the app.
 - Uninstall the app to remove all local data — Android removes all app data on uninstall.
 
+## Data deletion {#data-deletion}
+
+Because Lostria Sewing stores all your data locally on your device and never on our servers, **you control deletion yourself at any time** — no request to us is needed.
+
+### How to delete your data
+
+1. **Delete individual items in the app:**
+   - Pattern / magazine / sewing log → open detail → tap the delete icon (red trash)
+   - Photo → open the photo → menu → Delete
+   - Hashtag / category / target group / location → "Ostatní" tab → list → trash icon
+
+2. **Delete all data at once:**
+   - Open Android **Settings** → **Apps** → **Lostria Sewing** → **Storage** → **Clear data**
+   - All patterns, magazines, sewing logs, photos, and settings will be deleted permanently
+   - The app remains installed (you can start fresh)
+
+3. **Uninstall the app:**
+   - Long-press the app icon → **Uninstall**
+   - Android removes the app and all its data
+
+### Data sent to AI providers (Gemini / Groq)
+
+When you use AI features, text and/or photos are sent to Google Gemini or Groq for processing. According to their standard paid API terms of service, this data is **not retained for model training** and is not stored long-term on their servers (only temporary processing logs for abuse prevention, typically a few days). There is no per-user account on our side to delete from.
+
+For data retention questions on their side, see:
+- https://policies.google.com/privacy
+- https://groq.com/privacy-policy/
+
+### Contact
+
+If you need help with data deletion that the above options don't cover, email us at **lostria.apps@gmail.com**.
+
 ## Children
 
 The app is intended for users 13 years of age and older. We do not knowingly process data from children under 13.
