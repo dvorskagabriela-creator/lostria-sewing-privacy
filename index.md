@@ -1,0 +1,171 @@
+# Privacy Policy — Lostria Sewing
+
+**Effective date:** 2026-05-25
+**Last updated:** 2026-05-25
+
+## Who we are
+
+Lostria Sewing is a mobile application for managing sewing patterns, developed by Gabriela Dvorská.
+Contact: lostria.apps@gmail.com
+
+## What data the app handles
+
+All your data — patterns, magazines, sewing logs, photos, hashtags, categories, locations, and notes — is stored **locally on your device only**. We do not operate any backend server, do not collect telemetry, and do not maintain user accounts.
+
+## When data leaves your device
+
+The app sends data to third-party services only in these specific cases, all initiated by your explicit action:
+
+### AI extraction and translation
+
+When you tap "AI Import" on a magazine page, "AI Fill from photo" on a pattern, share a URL into the app, or use the "Translate" button on a pattern detail, the relevant text and/or image is sent to one of the following services for processing:
+
+- **Google Gemini API** — default provider for AI extraction and translation.
+- **Groq API (Meta Llama)** — alternative provider, used only if you configure your own Groq API key in Settings.
+
+These third parties process the data temporarily to produce a response. Communication is encrypted (HTTPS). The data is not used to train their models when accessed via the standard paid API.
+
+- Google Gemini privacy: https://ai.google.dev/gemini-api/terms
+- Groq privacy: https://groq.com/privacy-policy/
+
+### Web page fetching (Share import)
+
+When you share a URL into the app, the app fetches the HTML content of that page over HTTPS so it can pass the text to the AI for extraction. The page owner's server may log this request (your IP address, user agent, etc.) as it would for any visit from a web browser.
+
+### Google Play in-app purchase
+
+When you purchase the premium unlock, Google Play Billing processes the transaction. We do not see or store payment details — only the resulting "premium" status (a boolean flag) is saved locally on your device.
+
+## What we DO NOT do
+
+- We do **not** collect analytics, crash reports, or usage statistics.
+- We do **not** show advertisements.
+- We do **not** require an account or sign-in.
+- We do **not** track your location.
+- We do **not** access your contacts, calendar, microphone, or other device data beyond what you explicitly grant for photo selection.
+- We do **not** automatically back up to any cloud.
+
+## Permissions
+
+The app requests these Android permissions:
+
+- **Photos / Storage** — to let you select existing photos from your phone for patterns, magazines, and sewing logs; and to save / open backup ZIP files you create.
+- **Camera** — to take new photos from within the app.
+- **Internet** — to call AI APIs and fetch web pages when you trigger an AI feature.
+
+## Backup and data control
+
+You can:
+
+- Export your data as a ZIP backup at any time (Settings → Backup → Export). You choose where to save or share it.
+- Import a previously saved ZIP backup.
+- Delete individual items (patterns, magazines, logs, photos) at any time within the app.
+- Uninstall the app to remove all local data — Android removes all app data on uninstall.
+
+## Children
+
+The app is intended for users 13 years of age and older. We do not knowingly process data from children under 13.
+
+## Your rights (GDPR, EU users)
+
+Because the app does not maintain any server-side user record, there is no data on our side to access, correct, or delete. You retain full control over your local data and can delete it at any time.
+
+For data sent to Google Gemini or Groq during AI processing, please refer to their respective privacy policies linked above.
+
+## Changes to this policy
+
+If we update this policy, we will update the "Last updated" date above. Continued use of the app constitutes acceptance of the updated policy.
+
+## Contact
+
+Questions, concerns, or requests:
+
+Gabriela Dvorská
+Email: lostria.apps@gmail.com
+
+---
+
+# Zásady ochrany osobních údajů — Lostria Sewing
+
+**Datum účinnosti:** 25. 5. 2026
+**Aktualizováno:** 25. 5. 2026
+
+## Kdo jsme
+
+Lostria Sewing je mobilní aplikace pro správu šicích střihů. Vývojářka: Gabriela Dvorská.
+Kontakt: lostria.apps@gmail.com
+
+## Jaká data aplikace zpracovává
+
+Všechna tvoje data — střihy, časopisy, záznamy o ušití, fotky, hashtagy, kategorie, umístění a poznámky — jsou uložena **pouze lokálně ve tvém zařízení**. Neprovozujeme žádný server, nesbíráme telemetrii a nemáme uživatelské účty.
+
+## Kdy data odcházejí ze zařízení
+
+Aplikace posílá data třetím stranám jen v těchto případech a vždy na základě tvé explicitní akce:
+
+### AI extrakce a překlad
+
+Když klikneš „AI Import" na stránce časopisu, „AI doplnit z fotky" u střihu, sdílíš URL do aplikace, nebo použiješ tlačítko „Přeložit" v detailu střihu, příslušný text a/nebo obrázek se odešle ke zpracování:
+
+- **Google Gemini API** — výchozí poskytovatel AI extrakce a překladu.
+- **Groq API (Meta Llama)** — alternativní poskytovatel, použije se jen pokud si v Nastavení nakonfiguruješ vlastní Groq API klíč.
+
+Tyto třetí strany data dočasně zpracují, aby vrátily odpověď. Komunikace je šifrovaná (HTTPS). Při přístupu přes placenou standardní API se data nepoužívají k trénování jejich modelů.
+
+- Privacy Google Gemini: https://ai.google.dev/gemini-api/terms
+- Privacy Groq: https://groq.com/privacy-policy/
+
+### Načítání webové stránky (Sdílet odkaz → Import)
+
+Když sdílíš URL do aplikace, aplikace přes HTTPS stáhne obsah stránky, aby ho mohla předat AI k extrakci. Provozovatel té stránky může requesty logovat (IP, user agent), stejně jako jakoukoli návštěvu prohlížečem.
+
+### Google Play nákup uvnitř aplikace
+
+Při zakoupení prémiové verze zpracovává transakci Google Play Billing. Nevidíme ani neukládáme platební údaje — uloží se jen výsledný stav „premium" (boolean) lokálně.
+
+## Co NEděláme
+
+- **Nesbíráme** analytics, crash reporty ani statistiky používání.
+- **Nezobrazujeme** reklamy.
+- **Nevyžadujeme** účet ani přihlášení.
+- **Nesledujeme** tvou polohu.
+- **Nečteme** kontakty, kalendář, mikrofon ani jiná data zařízení nad rámec toho, co explicitně povolíš při výběru fotky.
+- **Nezálohujeme** automaticky do cloudu.
+
+## Oprávnění
+
+Aplikace požaduje tato Android oprávnění:
+
+- **Fotky / úložiště** — abys mohla vybírat existující fotky pro střihy, časopisy a záznamy o ušití; a uložit / otevřít ZIP zálohu.
+- **Fotoaparát** — pořízení fotky přímo z aplikace.
+- **Internet** — volání AI API a stahování webových stránek při AI funkcích.
+
+## Zálohy a kontrola dat
+
+Můžeš:
+
+- Kdykoli si exportovat všechna data jako ZIP zálohu (Nastavení → Záloha → Exportovat).
+- Importovat dříve uloženou ZIP zálohu.
+- Smazat jednotlivé položky (střihy, časopisy, ušití, fotky) kdykoli.
+- Odinstalovat aplikaci — Android při odinstalaci smaže všechna data aplikace.
+
+## Děti
+
+Aplikace je určena pro uživatele od 13 let. Vědomě nezpracováváme data dětí mladších 13 let.
+
+## Tvá práva (GDPR, uživatelé v EU)
+
+Protože aplikace neprovozuje žádný server s uživatelskými daty, na naší straně nejsou žádná data k přístupu, opravě ani smazání. Kompletní kontrolu nad lokálními daty máš ty a můžeš je kdykoli smazat.
+
+Pro data odeslaná do Google Gemini nebo Groq během AI zpracování viz jejich privacy policy výše.
+
+## Změny zásad
+
+Pokud zásady aktualizujeme, upravíme datum „Aktualizováno" výše. Pokračováním v používání aplikace souhlasíš s aktualizovanými zásadami.
+
+## Kontakt
+
+Otázky, podněty, žádosti:
+
+Gabriela Dvorská
+E-mail: lostria.apps@gmail.com
