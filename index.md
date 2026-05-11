@@ -20,10 +20,10 @@ The app sends data to third-party services only in these specific cases, all ini
 
 When you tap "AI Import" on a magazine page, "AI Fill from photo" on a pattern, share a URL into the app, or use the "Translate" button on a pattern detail, the relevant text and/or image is sent to one of the following services for processing:
 
-- **Google Gemini API** — default provider for AI extraction and translation.
-- **Groq API (Meta Llama)** — alternative provider, used only if you configure your own Groq API key in Settings.
+- **Google Gemini API** — default provider for AI extraction and translation. The standard paid API (which Lostria uses by default) does **not** retain your data for model training.
+- **Groq API (Meta Llama)** — alternative provider, used only if you configure your own Groq API key in Settings. Per Groq's privacy policy, data sent via their free tier **may be used by Groq to improve their services**. If you prefer not to share data this way, use the default Gemini provider or skip AI features.
 
-These third parties process the data temporarily to produce a response. Communication is encrypted (HTTPS). The data is not used to train their models when accessed via the standard paid API.
+Communication is always encrypted (HTTPS). Lostria itself does not retain the data after the API call returns.
 
 - Google Gemini privacy: https://ai.google.dev/gemini-api/terms
 - Groq privacy: https://groq.com/privacy-policy/
