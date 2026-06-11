@@ -1,7 +1,7 @@
 # Privacy Policy — Lostria Sewing
 
 **Effective date:** 2026-05-25
-**Last updated:** 2026-05-25
+**Last updated:** 2026-06-11
 
 ## Who we are
 
@@ -36,9 +36,16 @@ When you share a URL into the app, the app fetches the HTML content of that page
 
 When you purchase the premium unlock, Google Play Billing processes the transaction. We do not see or store payment details — only the resulting "premium" status (a boolean flag) is saved locally on your device.
 
+## Crash reports (opt-in)
+
+To help us fix bugs, the app can send anonymous crash reports via **Firebase Crashlytics** (Google). **Automatic sending is off.** If the app crashes, on the next launch it asks whether you want to send the report — nothing is sent without your consent, and declining deletes the report from your device. Reports contain only technical data (stack trace, app version, device model, OS version) — **no patterns, photos, or personal data.** This data is processed by Google.
+
+- Firebase/Crashlytics privacy: https://firebase.google.com/support/privacy
+
 ## What we DO NOT do
 
-- We do **not** collect analytics, crash reports, or usage statistics.
+- We do **not** collect analytics or usage statistics.
+- We do **not** send crash reports without your explicit consent (see above).
 - We do **not** show advertisements.
 - We do **not** require an account or sign-in.
 - We do **not** track your location.
@@ -120,7 +127,7 @@ Email: lostria.apps@gmail.com
 # Zásady ochrany osobních údajů — Lostria Sewing
 
 **Datum účinnosti:** 25. 5. 2026
-**Aktualizováno:** 25. 5. 2026
+**Aktualizováno:** 11. 6. 2026
 
 ## Kdo jsme
 
@@ -129,18 +136,18 @@ Kontakt: lostria.apps@gmail.com
 
 ## Jaká data aplikace zpracovává
 
-Všechna tvoje data — střihy, časopisy, záznamy o ušití, fotky, hashtagy, kategorie, umístění a poznámky — jsou uložena **pouze lokálně ve tvém zařízení**. Neprovozujeme žádný server, nesbíráme telemetrii a nemáme uživatelské účty.
+Všechna vaše data — střihy, časopisy, záznamy o ušití, fotky, hashtagy, kategorie, umístění a poznámky — jsou uložena **pouze lokálně ve vašem zařízení**. Neprovozujeme žádný server, nesbíráme telemetrii a nemáme uživatelské účty.
 
 ## Kdy data odcházejí ze zařízení
 
-Aplikace posílá data třetím stranám jen v těchto případech a vždy na základě tvé explicitní akce:
+Aplikace posílá data třetím stranám jen v těchto případech a vždy na základě vaší explicitní akce:
 
 ### AI extrakce a překlad
 
-Když klikneš „AI Import" na stránce časopisu, „AI doplnit z fotky" u střihu, sdílíš URL do aplikace, nebo použiješ tlačítko „Přeložit" v detailu střihu, příslušný text a/nebo obrázek se odešle ke zpracování:
+Když kliknete „AI Import" na stránce časopisu, „AI doplnit z fotky" u střihu, sdílíte URL do aplikace, nebo použijete tlačítko „Přeložit" v detailu střihu, příslušný text a/nebo obrázek se odešle ke zpracování:
 
 - **Google Gemini API** — výchozí poskytovatel AI extrakce a překladu.
-- **Groq API (Meta Llama)** — alternativní poskytovatel, použije se jen pokud si v Nastavení nakonfiguruješ vlastní Groq API klíč.
+- **Groq API (Meta Llama)** — alternativní poskytovatel, použije se jen pokud si v Nastavení nakonfigurujete vlastní Groq API klíč.
 
 Tyto třetí strany data dočasně zpracují, aby vrátily odpověď. Komunikace je šifrovaná (HTTPS). Při přístupu přes placenou standardní API se data nepoužívají k trénování jejich modelů.
 
@@ -149,32 +156,39 @@ Tyto třetí strany data dočasně zpracují, aby vrátily odpověď. Komunikace
 
 ### Načítání webové stránky (Sdílet odkaz → Import)
 
-Když sdílíš URL do aplikace, aplikace přes HTTPS stáhne obsah stránky, aby ho mohla předat AI k extrakci. Provozovatel té stránky může requesty logovat (IP, user agent), stejně jako jakoukoli návštěvu prohlížečem.
+Když sdílíte URL do aplikace, aplikace přes HTTPS stáhne obsah stránky, aby ho mohla předat AI k extrakci. Provozovatel té stránky může requesty logovat (IP, user agent), stejně jako jakoukoli návštěvu prohlížečem.
 
 ### Google Play nákup uvnitř aplikace
 
 Při zakoupení prémiové verze zpracovává transakci Google Play Billing. Nevidíme ani neukládáme platební údaje — uloží se jen výsledný stav „premium" (boolean) lokálně.
 
+## Hlášení pádů (dobrovolné)
+
+Abychom mohli opravovat chyby, aplikace umí odeslat anonymní hlášení o pádu přes službu **Firebase Crashlytics** (Google). **Automatické odesílání je vypnuté.** Když aplikace spadne, při dalším spuštění se zeptá, jestli hlášení chcete odeslat — bez vašeho souhlasu se nic neodešle a při odmítnutí se hlášení z vašeho zařízení smaže. Hlášení obsahuje jen technická data (stack trace, verzi aplikace, model zařízení a verzi systému) — **žádné střihy, fotky ani osobní údaje.** Tato data zpracovává Google.
+
+- Privacy Firebase/Crashlytics: https://firebase.google.com/support/privacy
+
 ## Co NEděláme
 
-- **Nesbíráme** analytics, crash reporty ani statistiky používání.
+- **Nesbíráme** analytics ani statistiky používání.
+- **Neodesíláme** hlášení o pádech bez vašeho výslovného souhlasu (viz výše).
 - **Nezobrazujeme** reklamy.
 - **Nevyžadujeme** účet ani přihlášení.
-- **Nesledujeme** tvou polohu.
-- **Nečteme** kontakty, kalendář, mikrofon ani jiná data zařízení nad rámec toho, co explicitně povolíš při výběru fotky.
+- **Nesledujeme** vaši polohu.
+- **Nečteme** kontakty, kalendář, mikrofon ani jiná data zařízení nad rámec toho, co explicitně povolíte při výběru fotky.
 - **Nezálohujeme** automaticky do cloudu.
 
 ## Oprávnění
 
 Aplikace požaduje tato Android oprávnění:
 
-- **Fotky / úložiště** — abys mohla vybírat existující fotky pro střihy, časopisy a záznamy o ušití; a uložit / otevřít ZIP zálohu.
+- **Fotky / úložiště** — abyste mohli vybírat existující fotky pro střihy, časopisy a záznamy o ušití; a uložit / otevřít ZIP zálohu.
 - **Fotoaparát** — pořízení fotky přímo z aplikace.
 - **Internet** — volání AI API a stahování webových stránek při AI funkcích.
 
 ## Zálohy a kontrola dat
 
-Můžeš:
+Můžete:
 
 - Kdykoli si exportovat všechna data jako ZIP zálohu (Nastavení → Záloha → Exportovat).
 - Importovat dříve uloženou ZIP zálohu.
@@ -185,15 +199,15 @@ Můžeš:
 
 Aplikace je určena pro uživatele od 13 let. Vědomě nezpracováváme data dětí mladších 13 let.
 
-## Tvá práva (GDPR, uživatelé v EU)
+## Vaše práva (GDPR, uživatelé v EU)
 
-Protože aplikace neprovozuje žádný server s uživatelskými daty, na naší straně nejsou žádná data k přístupu, opravě ani smazání. Kompletní kontrolu nad lokálními daty máš ty a můžeš je kdykoli smazat.
+Protože aplikace neprovozuje žádný server s uživatelskými daty, na naší straně nejsou žádná data k přístupu, opravě ani smazání. Kompletní kontrolu nad lokálními daty máte vy a můžete je kdykoli smazat.
 
 Pro data odeslaná do Google Gemini nebo Groq během AI zpracování viz jejich privacy policy výše.
 
 ## Změny zásad
 
-Pokud zásady aktualizujeme, upravíme datum „Aktualizováno" výše. Pokračováním v používání aplikace souhlasíš s aktualizovanými zásadami.
+Pokud zásady aktualizujeme, upravíme datum „Aktualizováno" výše. Pokračováním v používání aplikace souhlasíte s aktualizovanými zásadami.
 
 ## Kontakt
 
