@@ -1,5 +1,7 @@
 # Privacy Policy — Lostria Sewing
 
+> 📖 **User guide / Uživatelský návod:** [Lostria Sewing — Help / Nápověda](guide/) (available in English, Čeština, Slovenčina, Deutsch, Polski, Italiano)
+
 **Effective date:** 2026-05-25
 **Last updated:** 2026-06-11
 

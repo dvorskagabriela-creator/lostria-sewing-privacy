@@ -1,0 +1,2087 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Uživatelský návod k aplikaci Lostria Sewing — jak evidovat střihy, látky, galanterii a vytvářet vizualizace.">
+<title>Lostria Sewing — Nápověda</title>
+<style>
+  :root{
+    --bg:#FAF7FC; --surface:#FFFFFF; --surface-2:#F5EFFB;
+    --ink:#2C2634; --muted:#6C6480; --accent:#6E4FA3; --accent-ink:#5A3E8C;
+    --accent-soft:#EDE4F8; --pink:#C96FA3; --border:#E7DCF3;
+    --gold:#C7962E;
+    --radius:16px; --maxw:900px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#161022; --surface:#201830; --surface-2:#271D3B;
+      --ink:#ECE6F6; --muted:#A99FBE; --accent:#BCA0EC; --accent-ink:#CDB6F5;
+      --accent-soft:#2C2142; --pink:#E39CC4; --border:#342A49; --gold:#DFB65A;
+    }
+  }
+  :root[data-theme="light"]{
+    --bg:#FAF7FC; --surface:#FFFFFF; --surface-2:#F5EFFB;
+    --ink:#2C2634; --muted:#6C6480; --accent:#6E4FA3; --accent-ink:#5A3E8C;
+    --accent-soft:#EDE4F8; --pink:#C96FA3; --border:#E7DCF3; --gold:#C7962E;
+  }
+  :root[data-theme="dark"]{
+    --bg:#161022; --surface:#201830; --surface-2:#271D3B;
+    --ink:#ECE6F6; --muted:#A99FBE; --accent:#BCA0EC; --accent-ink:#CDB6F5;
+    --accent-soft:#2C2142; --pink:#E39CC4; --border:#342A49; --gold:#DFB65A;
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;
+    line-height:1.65; font-size:17px; -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent-ink); text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  /* Header */
+  header.top{
+    position:sticky; top:0; z-index:20;
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:saturate(1.4) blur(10px);
+    border-bottom:1px solid var(--border);
+  }
+  .top-inner{
+    max-width:var(--maxw); margin:0 auto; padding:12px 20px;
+    display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+  }
+  .brand{display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.2px}
+  .brand .flower{font-size:22px}
+  .brand small{display:block; font-weight:500; color:var(--muted); font-size:12.5px; letter-spacing:.4px}
+  .langs{margin-left:auto; display:flex; gap:5px; flex-wrap:wrap}
+  .langs button{
+    font:inherit; font-size:13px; font-weight:600; cursor:pointer;
+    padding:5px 10px; border-radius:999px; border:1px solid var(--border);
+    background:var(--surface); color:var(--muted); transition:.15s;
+  }
+  .langs button:hover{border-color:var(--accent); color:var(--accent-ink)}
+  .langs button[aria-current="true"]{background:var(--accent); border-color:var(--accent); color:#fff}
+
+  main{max-width:var(--maxw); margin:0 auto; padding:0 20px 80px}
+
+  /* Hero */
+  .hero{padding:44px 0 26px; border-bottom:1px solid var(--border)}
+  .hero .eyebrow{text-transform:uppercase; letter-spacing:2px; font-size:12px; font-weight:700; color:var(--pink)}
+  .hero h1{font-size:clamp(30px,5vw,44px); line-height:1.1; margin:.3em 0 .3em; text-wrap:balance; letter-spacing:-.5px}
+  .hero p{font-size:19px; color:var(--muted); max-width:62ch; margin:0}
+
+  /* TOC */
+  .toc{margin:30px 0 10px}
+  .toc h2{font-size:13px; text-transform:uppercase; letter-spacing:1.5px; color:var(--muted); margin:0 0 12px}
+  .toc-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:10px}
+  .toc-grid a{
+    display:flex; align-items:center; gap:11px; padding:12px 14px; border-radius:12px;
+    background:var(--surface); border:1px solid var(--border); color:var(--ink); font-weight:600; font-size:15.5px;
+    transition:.15s;
+  }
+  .toc-grid a:hover{border-color:var(--accent); transform:translateY(-1px); text-decoration:none}
+  .toc-grid .ic{font-size:19px; width:26px; text-align:center}
+
+  /* Sections */
+  section.doc{padding:34px 0 8px; border-top:1px solid var(--border); scroll-margin-top:78px}
+  [data-go]{cursor:pointer}
+  section.doc:first-of-type{border-top:none}
+  .doc h2{font-size:clamp(22px,3.4vw,29px); letter-spacing:-.3px; margin:0 0 6px; display:flex; align-items:center; gap:12px; scroll-margin-top:80px}
+  .doc h2 .ic{font-size:26px}
+  .doc h3{font-size:18px; margin:22px 0 6px; color:var(--accent-ink)}
+  .doc p{margin:10px 0}
+  .doc ul{margin:10px 0; padding-left:0; list-style:none}
+  .doc li{position:relative; padding-left:26px; margin:7px 0}
+  .doc li::before{content:"›"; position:absolute; left:8px; top:-1px; color:var(--pink); font-weight:800}
+  .lead{color:var(--muted); font-size:17.5px}
+
+  .badge{
+    display:inline-flex; align-items:center; gap:5px; vertical-align:middle;
+    font-size:12px; font-weight:700; letter-spacing:.3px; padding:3px 9px; border-radius:999px;
+    background:color-mix(in srgb, var(--gold) 18%, transparent); color:var(--gold); border:1px solid color-mix(in srgb, var(--gold) 45%, transparent);
+  }
+  .tip{
+    margin:16px 0; padding:14px 16px 14px 18px; border-radius:12px;
+    background:var(--accent-soft); border-left:4px solid var(--accent);
+  }
+  .tip strong{color:var(--accent-ink)}
+  .warn{
+    margin:16px 0; padding:14px 16px 14px 18px; border-radius:12px;
+    background:color-mix(in srgb, var(--pink) 12%, transparent); border-left:4px solid var(--pink);
+  }
+  kbd{
+    font:inherit; font-size:13.5px; font-weight:600; background:var(--surface-2);
+    border:1px solid var(--border); border-radius:7px; padding:1px 7px; color:var(--ink); white-space:nowrap;
+  }
+  .placeholder{padding:60px 0; text-align:center; color:var(--muted)}
+  footer{max-width:var(--maxw); margin:40px auto 0; padding:26px 20px 50px; border-top:1px solid var(--border); color:var(--muted); font-size:14.5px}
+  footer a{color:var(--muted); text-decoration:underline}
+  .back{position:fixed; right:18px; bottom:18px; width:44px; height:44px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-size:20px; box-shadow:0 6px 18px rgba(0,0,0,.18); opacity:0; pointer-events:none; transition:.2s}
+  .back.show{opacity:1; pointer-events:auto}
+  @media (max-width:520px){ body{font-size:16px} .hero{padding:32px 0 22px} }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">
+      <span class="flower">🌸</span>
+      <span>Lostria Sewing<small>NÁPOVĚDA · GUIDE</small></span>
+    </div>
+    <nav class="langs" id="langs" aria-label="Jazyk / Language">
+      <button data-lang="cs" aria-current="true">Čeština</button>
+      <button data-lang="en">English</button>
+      <button data-lang="sk">Slovenčina</button>
+      <button data-lang="de">Deutsch</button>
+      <button data-lang="pl">Polski</button>
+      <button data-lang="it">Italiano</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ===================== ČEŠTINA ===================== -->
+  <div class="lang" data-lang="cs">
+    <div class="hero">
+      <div class="eyebrow">Offline appka pro švadlenky</div>
+      <h1>Vítej v Lostria Sewing</h1>
+      <p class="lead">Přehled o střizích, časopisech, látkách i galanterii — celé ve tvém telefonu, bez účtu a bez internetu. Tenhle návod tě provede vším, co appka umí.</p>
+    </div>
+
+    <nav class="toc" aria-label="Obsah">
+      <h2>Obsah</h2>
+      <div class="toc-grid">
+        <a href="#zaklad"><span class="ic">🧭</span>Základ &amp; menu</a>
+        <a href="#strihy"><span class="ic">✂️</span>Střihy</a>
+        <a href="#casopisy"><span class="ic">📖</span>Časopisy &amp; AI import</a>
+        <a href="#metraz"><span class="ic">🧵</span>Metráž (látky)</a>
+        <a href="#galanterie"><span class="ic">🔘</span>Galanterie</a>
+        <a href="#zaznamy"><span class="ic">🪡</span>Záznamy o ušití</a>
+        <a href="#seznamy"><span class="ic">🔖</span>Seznamy</a>
+        <a href="#sablony"><span class="ic">👗</span>Šablony</a>
+        <a href="#vizualizace"><span class="ic">🎨</span>Vizualizace</a>
+        <a href="#premium"><span class="ic">🏅</span>Premium</a>
+        <a href="#zaloha"><span class="ic">💾</span>Záloha &amp; obnova</a>
+        <a href="#nastaveni"><span class="ic">⚙️</span>Nastavení</a>
+        <a href="#tipy"><span class="ic">💡</span>Tipy na focení</a>
+      </div>
+    </nav>
+
+    <section class="doc" id="zaklad">
+      <h2><span class="ic">🧭</span>Základ &amp; menu</h2>
+      <p class="lead">Vše je uložené jen ve tvém zařízení. Nepotřebuješ účet ani připojení — appka funguje offline.</p>
+      <div class="tip"><strong>Fotky &amp; místo:</strong> obrázky se pro náhledy <strong>zmenšují a komprimují</strong>, aby na mobilu zabíraly co nejméně místa. V <a href="#nastaveni">Nastavení</a> můžeš zvolit <strong>vyšší rozlišení fotek</strong> — ale počítej s tím, že data aplikace pak porostou rychleji.</div>
+      <p>Mezi oblastmi přepínáš přes <strong>hlavní menu</strong>: vlevo nahoře ikonka <kbd>☰</kbd> nebo <strong>kytička</strong> 🌸. Najdeš tu Střihy, Metráž, Galanterii, Záznamy o ušití, Seznamy, Šablony, Vizualizace a Nastavení.</p>
+      <p>V každé oblasti je vpravo nahoře dvojice ovládání ve stejném pořadí: nejdřív <strong>filtr</strong>, pak <strong>řazení</strong>.</p>
+    </section>
+
+    <section class="doc" id="strihy">
+      <h2><span class="ic">✂️</span>Střihy</h2>
+      <p class="lead">Srdce appky — evidence tvých střihů s obrázky, kategoriemi a vším kolem.</p>
+      <h3>Přidání střihu</h3>
+      <ul>
+        <li><strong>Ručně</strong> — název, kategorie, cílovka, formát, velikosti, poznámky.</li>
+        <li><strong>Z webu / odkazu</strong> — appka z e-shopu vytáhne název a fotku, zbytek doplníš.</li>
+        <li><strong>Z časopisu přes AI</strong> — vyfotíš přehledovou stránku a appka z ní vytvoří střihy (viz Časopisy).</li>
+      </ul>
+      <h3>Detail &amp; organizace</h3>
+      <p>Ke střihu si přiřadíš:</p>
+      <ul>
+        <li><strong>Kategorie</strong> — šaty, sukně, kalhoty, halenka, kabát… (klidně i více naráz).</li>
+        <li><strong>Cílovky</strong> — dámské, pánské, dětské, unisex…</li>
+        <li><strong>Formáty</strong> — papír, PDF vrstvený / plochý, projektor…</li>
+        <li><strong>Umístění</strong> — kde střih fyzicky máš (šuplík, šanon, v počítači…).</li>
+        <li><strong>Hashtagy</strong> — volné štítky podle sebe (#jersey, #zip, #naléto…).</li>
+        <li><strong>Srdíčka</strong> = jak moc ho chceš ušít (wishlist), <strong>košík</strong> = mám koupit.</li>
+        <li><strong>Obrázky</strong> — přidáš z foťáku, galerie nebo z časopisu; každý se dá <strong>oříznout</strong> a otočit.</li>
+      </ul>
+      <div class="tip"><strong>Vše si přizpůsobíš:</strong> kategorie, cílovky, formáty, umístění i hashtagy jsou <strong>tvoje seznamy</strong> — můžeš si je <strong>přidat, přejmenovat i smazat</strong> přesně k obrazu svému, jak potřebuješ.</div>
+      <p><strong>Filtrování a řazení</strong> pak funguje podle kategorie, cílovky, srdíček, hashtagů a dalších.</p>
+      <div class="tip"><strong>Tip:</strong> u obrázku je vpravo dole rozlišení v px — hodí se vědět, kolik detailu fotka má.</div>
+
+      <h3>Hashtagy — chytré štítky</h3>
+      <p>Hashtagy jsou volné štítky pro rychlé hledání a filtrování (#jersey, #zip, #naléto…). Navíc umí dvě šikovné věci:</p>
+      <ul>
+        <li><strong>Automatické připojení z textu střihu:</strong> appka projede <strong>text střihu</strong> (název, popis, poznámky) a <strong>sama ke střihu připojí</strong> hashtagy, jejichž slovo v textu najde. Porovnává <strong>od začátku slova (kořen) a ignoruje koncovky</strong> — takže hashtag zadaný jako <strong>kořen</strong> chytne i jeho různé tvary.</li>
+        <li><strong>Aliasy (alternativní a cizí slova):</strong> ke každému hashtagu přidáš další slova (taky se berou jako <strong>kořeny</strong>), která na něj ukážou.<br>
+        <strong>Příklad:</strong> hashtag <strong>„džínovina"</strong> s aliasy <strong>„riflov"</strong>, <strong>„jeans"</strong>, <strong>„džín"</strong>. Když je pak v textu střihu „riflové", „džíny" nebo „jeans", appka připojí hashtag <strong>„džínovina"</strong>. Jeden alias může připojit i <strong>víc hashtagů</strong> naráz.</li>
+        <li><strong>Kouzelné tlačítko — zpětné doplnění:</strong> v <strong>Nastavení → Údržba</strong> najdeš tlačítko <strong>„Doplnit hashtagy u všech střihů"</strong>. Nechá appku <strong>projet texty všech střihů naráz</strong> a zpětně jim přiřadit hashtagy, které auto-detekce najde. <strong>Existující tagy zachová</strong> (nic nemaže). Ideální <strong>po přidání nového hashtagu nebo aliasu</strong> — rovnou se propíše i do starších střihů.</li>
+      </ul>
+    </section>
+
+    <section class="doc" id="casopisy">
+      <h2><span class="ic">📖</span>Časopisy &amp; AI import</h2>
+      <p class="lead">Eviduj střihové časopisy a nech si z fotek stránek rovnou vytvořit nebo doplnit střihy.</p>
+      <p>Ke každému časopisu přidáš <strong>obálku</strong> a stránky. Před AI analýzou <strong>řekneš, co je na fotce</strong> (přepínač <strong>Přehled / Detail</strong>), ať AI nehádá.</p>
+
+      <h3>1) Přehled — vytvoří střihy</h3>
+      <ul>
+        <li>Vyfotíš <strong>přehledovou stránku</strong> (šachovnici střihů) a AI z ní vytáhne <strong>jednotlivé střihy a založí je</strong> — navázané na časopis (číslo modelu, kategorie, velikosti…).</li>
+        <li>Přehledová fotka se <strong>ukládá k časopisu</strong> a slouží jako náhled u střihů, které z ní vznikly.</li>
+      </ul>
+
+      <h3>2) Detail — doplní údaje ke střihu</h3>
+      <ul>
+        <li>Vyfotíš <strong>detailní stránku jednoho střihu</strong> (s technickými údaji — velikosti, obtížnost, spotřeba látky, materiál, popis) a AI z ní <strong>doplní tyhle údaje</strong>.</li>
+        <li>Volba <strong>„Doplnit existující střihy"</strong> spáruje střih podle <strong>čísla modelu</strong> a doplní jen <strong>chybějící info</strong> — takže se ti stejný střih <strong>neduplikuje</strong>, jen se dozdobí.</li>
+      </ul>
+      <p>Po analýze uvidíš seznam navržených střihů (nové vs doplněné) a potvrdíš.</p>
+      <div class="tip"><strong>Jak funguje párování:</strong> AI přečte <strong>číslo modelu</strong> a hledá střih se stejným číslem <strong>ve stejném časopise</strong>. Porovnává „chytře" — nezáleží na tečkách, mezerách ani velikosti písmen (např. „č. 123" = „123"). Když najde shodu, <strong>doplní chybějící údaje</strong> k tomu střihu; když ne, <strong>založí nový</strong>. Doplnění existujícího se navíc <strong>nepočítá</strong> do limitu 100 střihů zdarma.<br><br><strong>Doporučený postup:</strong> nejdřív naimportuj <strong>přehled</strong> (vzniknou střihy s čísly modelů), pak dofoť <strong>detailní stránky</strong> se zapnutým „Doplnit existující" — údaje se přiřadí ke správným střihům.</div>
+
+      <div class="tip"><strong>Kvalita:</strong> na přehledy je spolehlivější <strong>Gemini</strong> (vidí i drobné nákresy); Groq jede u přehledu jen z textu (orientačně). Focení přehledu má vlastní tipy — viz sekce <a href="#tipy">Tipy na focení</a>.</div>
+    </section>
+
+    <section class="doc" id="metraz">
+      <h2><span class="ic">🧵</span>Metráž (látky &amp; panely)</h2>
+      <p class="lead">Sklad tvých látek a panelů — složení, barvy, kde koupené, kolik zbývá.</p>
+      <ul>
+        <li><strong>Karta látky:</strong> název, typ, složení, barva, země původu, obchod, umístění, cena, srdíčka a další vlastnosti.</li>
+        <li><strong>Panely</strong> vedeš zvlášť od metrových látek.</li>
+        <li><strong>Plný filtr</strong> — stav, typ, složení, země, obchod, umístění, srdíčka i vlastnosti.</li>
+        <li>Foto látky se hodí i do Vizualizace (viz níže).</li>
+      </ul>
+      <div class="tip"><strong>Vše si přizpůsobíš:</strong> typy, složení, země, obchody, umístění i vlastnosti jsou <strong>tvoje seznamy</strong> — přidáš, přejmenuješ i smažeš si je přesně tak, jak potřebuješ.</div>
+    </section>
+
+    <section class="doc" id="galanterie">
+      <h2><span class="ic">🔘</span>Galanterie</h2>
+      <p class="lead">Zipy, knoflíky, výztuhy, stuhy… — a hlavně <strong>plně přizpůsobitelná</strong>. Nejsi omezená pevnými poli; sama si nadefinuješ, co u které galanterie evidovat.</p>
+
+      <h3>Jak si to postavíš</h3>
+      <ul>
+        <li><strong>Vlastní kategorie</strong> — vytvoříš si jakoukoliv (Zip, Knoflík, Výztuha, Stuha, Kordon…).</li>
+        <li><strong>Vlastní vlastnosti (atributy)</strong> — ke každé kategorii přidáš svoje pole a u každého vybereš <strong>typ</strong>:
+          <ul style="margin:6px 0 0">
+            <li><strong>Číslo</strong> (+ jednotka — mm, cm, g/m²…) — třeba „Šířka zubů" v mm nebo „Průměr" v palcích.</li>
+            <li><strong>Výběr jedné možnosti</strong> — třeba „Typ zipu": kostěný / spirálový / kovový.</li>
+            <li><strong>Výběr více možností</strong> — třeba „Speciální": voděodolný, autolock…</li>
+            <li><strong>Text</strong> — volný zápis.</li>
+          </ul>
+        </li>
+        <li><strong>Vlastní možnosti</strong> — u výběrových typů si seznam možností sama přidáš, přejmenuješ i smažeš.</li>
+      </ul>
+      <p>Každá kategorie tak má <strong>svoji vlastní sadu polí</strong> — knoflík eviduješ úplně jinak než zip, přesně jak to dává smysl tobě.</p>
+
+      <div class="tip"><strong>Výchozí sada:</strong> na čisté instalaci je připravená ukázka (<strong>zip, výztuha, knoflík</strong>) s praktickými vlastnostmi a možnostmi — ber ji jako vzor a klidně ji uprav, rozšiř nebo smaž.</div>
+
+      <h3>Položky</h3>
+      <ul>
+        <li>Každý kus je <strong>karta</strong> s fotkou, počtem, poznámkami, <strong>srdíčky</strong>, <strong>košíkem</strong> (mám koupit) a odkazy — plus tvoje vlastní vlastnosti dané kategorií.</li>
+        <li>Jde je <strong>duplikovat, mazat</strong> i <strong>hromadně upravovat</strong> (výběrový režim).</li>
+      </ul>
+    </section>
+
+    <section class="doc" id="zaznamy">
+      <h2><span class="ic">🪡</span>Záznamy o ušití</h2>
+      <p class="lead">Deník toho, co jsi ušila — ke střihu, s datem, velikostí, spotřebou a poznámkami.</p>
+      <ul>
+        <li>Zapíšeš, komu a v jaké velikosti jsi šila, kolik látky padlo, i fotky výsledku.</li>
+        <li>Přiřadíš i <strong>použité látky a galanterii</strong> (přímo z tvé Metráže a Galanterie) — u každého ušitého kusu tak máš, <strong>z čeho a s čím</strong> vznikl.</li>
+        <li>Filtr a řazení stejně jako jinde.</li>
+      </ul>
+    </section>
+
+    <section class="doc" id="seznamy">
+      <h2><span class="ic">🔖</span>Seznamy</h2>
+      <p class="lead">Nejsou to jen kolekce střihů — Seznam ti poslouží jako <strong>kompletní plán na šití</strong>.</p>
+      <p>Do jednoho seznamu si dáš dohromady všechno, co k projektu patří:</p>
+      <ul>
+        <li><strong>Střihy</strong> — co chceš ušít.</li>
+        <li><strong>Látky a panely</strong> — z čeho.</li>
+        <li><strong>Galanterii</strong> — zipy, knoflíky, výztuhy…</li>
+        <li><strong>Vizualizace</strong> — náhled, jak to má vypadat.</li>
+      </ul>
+      <p>Jeden kus (střih, látka, galanterie i vizualizace) může být <strong>ve více seznamech</strong>. Seznamy si <strong>obarvíš a pojmenuješ</strong> podle sebe — třeba „Šaty pro dceru", „Na léto", „Rozdělané".</p>
+      <div class="tip"><strong>Co ještě koupit:</strong> u střihů, látek i galanterie máš <strong>košík</strong> (mám koupit) a <strong>srdíčka</strong> (chci) — takže přímo v plánu vidíš, co k němu ještě dokoupit.</div>
+    </section>
+
+    <section class="doc" id="sablony">
+      <h2><span class="ic">👗</span>Šablony <span class="badge">🏅 Premium</span></h2>
+      <p class="lead">Siluety oděvů, do kterých se pak ve Vizualizaci „nalévá" látka.</p>
+      <h3>Druhy šablon</h3>
+      <ul>
+        <li><strong>SVG šablona</strong> — čistý vektorový nákres (např. od autorů flat skic).</li>
+        <li><strong>Fotošablona</strong> — průhledné PNG (silueta oděvu s dírou), pod kterou se lije látka.</li>
+        <li><strong>Z fotky (vektorizace)</strong> — appka z fotky/skici vytvoří obrys siluety.</li>
+      </ul>
+      <h3>Vytvoření z fotky</h3>
+      <ul>
+        <li>Vyber obrázek → ořízni na jeden oděv → appka najde <strong>díly</strong> a v náhledu je očísluje.</li>
+        <li><strong>Zaškrtni všechny díly</strong>, které patří k oděvu (třeba levý i pravý díl kabátu). Sousední střih nech nezaškrtnutý.</li>
+        <li>Zadej název a přibližnou výšku a ulož.</li>
+      </ul>
+      <div class="tip"><strong>Dobrý zdroj:</strong> <strong>technický nákres</strong> — čistá <strong>černá linie střihu</strong> (flat sketch). Ideální je třeba <strong>přehledový list střihů v časopise</strong>, kde jsou u sebe nakreslené technické nákresy jednotlivých modelů.</div>
+      <div class="warn"><strong>Ostrost rozhoduje:</strong> nejlíp vyjde <strong>ostrá skica z blízka</strong>. Rozmazané měkké čáry nebo drobný výřez z husté přehledové stránky se nemusí povést — appka na to upozorní.</div>
+      <p>V sekci <strong>Šablony</strong> (a záložka <strong>Autoři</strong>) šablony spravuješ — karty, srdíčka, filtr, kredit autora s odkazem.</p>
+    </section>
+
+    <section class="doc" id="vizualizace">
+      <h2><span class="ic">🎨</span>Vizualizace <span class="badge">🏅 Premium</span></h2>
+      <p class="lead">Nalij svou látku do siluety střihu a hned vidíš, jak by to vypadalo.</p>
+      <h3>Průvodce</h3>
+      <ul>
+        <li>Vyber <strong>šablony</strong> → přepni na <strong>Metráž</strong> → vyber <strong>látky/panely</strong> (plný filtr) → <strong>Vizualizace</strong>.</li>
+        <li>Nahoře: <kbd>✕</kbd> zavřít · přepínač <strong>Vybrat vše / Zrušit vše</strong> · počet vybraných · filtr.</li>
+      </ul>
+      <h3>Obarvování</h3>
+      <ul>
+        <li><strong>Ťuk na oblast = obarví tu jednu oblast</strong> vybranou látkou (vpravo je pásek látek jako štětec).</li>
+        <li><strong>Vyplnit vše</strong> (ikona 🪣 v řádku Dlaždice/Celá fotka) obarví <strong>všechny oblasti naráz</strong> jednou látkou — hodí se u vícedílných šablon.</li>
+        <li><strong>Vzor na míru pro každou oblast:</strong> ťukni na oblast (stane se aktivní) a <strong>posuvníkem nebo prsty</strong> ji přiblížíš, posuneš i otočíš — <strong>každá oblast může mít vzor v jiné velikosti a natočení</strong>.</li>
+        <li><strong>Šířka látky (cm)</strong> nastaví reálné měřítko vzoru. Tlačítko <strong>Vycentrovat (↻)</strong> vrátí aktivní oblast na <strong>výchozí velikost podle zadané šířky látky</strong>.</li>
+        <li><strong>Dlaždice ↔ Celá fotka</strong> a orientační <strong>mřížka 10 cm</strong>.</li>
+      </ul>
+      <div class="tip"><strong>Dlaždice vs Celá fotka:</strong>
+        <ul style="margin:8px 0 0">
+          <li><strong>Dlaždice</strong> — vzor látky se <strong>opakuje</strong> přes celou oblast, jako skutečná <strong>metráž z role</strong>. Použij u látek s opakujícím se vzorem; vidíš, jak se vzor táhne po celém díle ve správném měřítku.</li>
+          <li><strong>Celá fotka</strong> — fotka se do oblasti vloží <strong>jen jednou</strong> (jako nálepka), nic se neopakuje. Hodí se na <strong>panel</strong> nebo konkrétní <strong>umístěný motiv</strong> (potisk, obrázek), který nechceš dláždit.</li>
+        </ul>
+      </div>
+      <h3>Uložené vizualizace</h3>
+      <ul>
+        <li>Hotovou vizualizaci <strong>uložíš</strong> (💾) — udělá náhled a zapamatuje si recept; kdykoliv ji zase otevřeš a upravíš.</li>
+        <li>Znovu otevřenou vizualizaci můžeš dál upravovat — přes <strong>„+"</strong> přidáš <strong>další existující šablony i látky</strong> (nejen ty, se kterými vznikla).</li>
+      </ul>
+    </section>
+
+    <section class="doc" id="premium">
+      <h2><span class="ic">🏅</span>Premium</h2>
+      <p class="lead">Většina appky je zdarma. Za Premium jsou <strong>Šablony</strong> a <strong>Vizualizace</strong>.</p>
+      <ul>
+        <li>Položky Šablony a Vizualizace zůstávají v menu vidět (se zlatým odznakem 🏅); bez Premium tě po ťuknutí navedou na koupi.</li>
+        <li><strong>Koupit / Obnovit Premium</strong> najdeš v <strong>Nastavení</strong>. „Obnovit" použij, když už jsi koupila (nový telefon apod.).</li>
+        <li>Verze zdarma má strop 100 střihů; Premium ho ruší.</li>
+      </ul>
+    </section>
+
+    <section class="doc" id="zaloha">
+      <h2><span class="ic">💾</span>Záloha &amp; obnova</h2>
+      <p class="lead">Tvá data jsou jen v telefonu — proto zálohuj.</p>
+      <ul>
+        <li>V Nastavení uděláš <strong>zálohu do ZIP</strong> (databáze + fotky). Ten si ulož třeba na disk nebo do e-mailu.</li>
+        <li><strong>Obnova</strong> ze ZIPu tě vrátí zpět (i na novém zařízení).</li>
+      </ul>
+      <div class="tip"><strong>Obnovuj z lokálního souboru:</strong> obnovu prováděj ideálně z <strong>lokálně stažené zálohy, kterou máš fyzicky v telefonu</strong> — ne přímo z cloudu (Google Disk apod.). Cloudové soubory bývají jen „ke stažení na vyžádání" a nemusí se do aplikace načíst správně. Jistější je ZIP <strong>nejdřív stáhnout do telefonu</strong> a teprve pak obnovit.</div>
+      <div class="warn"><strong>Důležité:</strong> automatická cloudová záloha Androidu je záměrně <strong>vypnutá</strong> (aby nepřepsala tvá data starou verzí). Spoléhej na <strong>vlastní ZIP zálohu</strong>.</div>
+    </section>
+
+    <section class="doc" id="nastaveni">
+      <h2><span class="ic">⚙️</span>Nastavení</h2>
+      <ul>
+        <li><strong>Jazyk</strong> aplikace.</li>
+        <li><strong>Kvalita fotek</strong> (zvlášť pro střihy / časopisy / záznamy) — nižší šetří místo, vyšší drží detail.</li>
+        <li><strong>AI klíče</strong> pro import (volitelné) a stav <strong>Premium</strong> licence (koupit/obnovit).</li>
+      </ul>
+
+      <h3>Překlad</h3>
+      <p>Střihy z <strong>cizojazyčných časopisů</strong> (třeba německá Burda) si necháš <strong>přeložit</strong>. U střihu v cizím jazyce se objeví tlačítko <strong>„Přeložit"</strong> — texty se přeloží do tvého jazyka; <strong>„Vrátit originály"</strong> je vrátí zpět. V kartě <strong>Překlad</strong> (záložka v Nastavení) si nastavíš:</p>
+      <ul>
+        <li><strong>Cílový jazyk překladu</strong> — do kterého jazyka se překládá (výchozí = jazyk aplikace).</li>
+        <li><strong>Knihovnu překladu</strong> — kterou službou se texty překládají (viz níže).</li>
+      </ul>
+      <div class="tip"><strong>AI vs offline — v čem je rozdíl:</strong>
+        <ul style="margin:8px 0 0">
+          <li><strong>AI (Gemini / Groq)</strong> — <strong>online</strong>. Lepší na <strong>odborné (šicí) termíny</strong>, ale potřebuje připojení a <strong>spotřebovává API kvótu</strong>.</li>
+          <li><strong>Google ML Kit (offline)</strong> — funguje <strong>offline</strong> (po jednorázovém stažení jazykového modelu), je <strong>rychlá</strong>, ale u technických termínů <strong>slabší</strong>.</li>
+        </ul>
+        <div style="margin-top:8px">Zjednodušeně: <strong>AI</strong> = přesnější překlad za cenu kvóty a připojení; <strong>ML Kit</strong> = rychlá a zdarma i bez internetu, ale hrubší.</div>
+      </div>
+
+      <h3>Údržba</h3>
+      <p>Praktické jednorázové akce:</p>
+      <ul>
+        <li><strong>Přidat ukázková data</strong> — pro nováčky: naplní appku ukázkovými střihy a látkami, ať hned vidíš, jak funguje.</li>
+        <li><strong>Doplnit hashtagy u všech střihů</strong> — zpětně přiřadí hashtagy z textu střihů (viz <a href="#strihy">Hashtagy</a>).</li>
+        <li><strong>Doplnit Zdroj-Web z odkazů</strong> — u střihů, které mají připojený odkaz, ale nemají vyplněný <strong>Zdroj</strong>, doplní Zdroj = Web a název webu. Existující (Časopis/Obchod/Web) nepřepíše.</li>
+        <li><strong>Odkrýt skryté šablony</strong> — vestavěné šablony nejdou mazat, jen <strong>skrýt</strong>; tímto se všechny skryté zase zobrazí.</li>
+      </ul>
+
+      <h3>Vlastní AI klíče (volitelné)</h3>
+      <p>AI import funguje i <strong>bez vlastního klíče</strong> (výchozí Gemini). Vlastní klíč nastav jen když chceš <strong>vlastní limity</strong> nebo použít <strong>Groq</strong>. Klíč vlož v Nastavení do pole pro AI klíč. Klíč je <strong>osobní — nikomu ho nedávej</strong>.</p>
+
+      <h3>Gemini (Google AI Studio)</h3>
+      <ul>
+        <li>Otevři <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">aistudio.google.com/app/apikey</a> a přihlas se <strong>Google účtem</strong>.</li>
+        <li>Klikni na <strong>„Get API key" / „Create API key"</strong> (Získat / Vytvořit klíč).</li>
+        <li>Vyber (nebo nech vytvořit) projekt a klíč se vygeneruje.</li>
+        <li><strong>Zkopíruj</strong> ho a vlož do Nastavení aplikace.</li>
+      </ul>
+      <p class="lead" style="font-size:15px">Gemini má štědrý bezplatný limit; ke klíči stačí Google účet.</p>
+
+      <h3>Groq</h3>
+      <ul>
+        <li>Otevři <a href="https://console.groq.com/keys" target="_blank" rel="noopener">console.groq.com/keys</a> a <strong>zaregistruj se / přihlas</strong>.</li>
+        <li>Klikni na <strong>„Create API Key"</strong>, pojmenuj ji a potvrď.</li>
+        <li>Klíč se ukáže <strong>jen jednou</strong> — hned ho <strong>zkopíruj</strong> a vlož do Nastavení aplikace.</li>
+      </ul>
+      <div class="warn"><strong>Pozor:</strong> Groq klíč po zavření okna už znovu neuvidíš. Kdyby ses k němu nedostala, prostě vytvoř nový.</div>
+    </section>
+
+    <section class="doc" id="tipy">
+      <h2><span class="ic">💡</span>Tipy na focení</h2>
+      <h3>Přehled časopisu (pro AI import)</h3>
+      <ul>
+        <li>Foť stránku rovně, za dobrého světla, ať jsou střihy čitelné.</li>
+      </ul>
+      <h3>Focení pro šablonu</h3>
+      <ul>
+        <li>Chceš-li z nějakého střihu <strong>čistou šablonu</strong>, vyfoť <strong>jen ten jeden střih z blízka</strong> (ať vyplní rámeček) — ne drobný výřez z husté přehledové stránky.</li>
+        <li>Čím ostřejší a větší je nákres na fotce, tím lepší vektorizace.</li>
+      </ul>
+      <h3>Focení látek (pro Vizualizaci)</h3>
+      <p>Cíl není hezká fotka, ale <strong>rovná, o známém rozměru a ve věrné barvě</strong> — ať se dobře „dláždí" a sedí odstín.</p>
+      <ul>
+        <li><strong>Vyžehli a napni</strong> látku — zvlnění dělá falešný vzor i špatné měřítko.</li>
+        <li><strong>Vymez si čtverec</strong> (třeba páskou 100 × 100 cm) — pak přesně víš, jakou šířku zadat v aplikaci.</li>
+        <li><strong>Telefon kolmo shora</strong> (ptačí pohled), zapni <strong>mřížku</strong>, hrany látky rovnoběžně s rámečkem. Šikmý záběr měřítko pokřiví.</li>
+        <li><strong>Rozptýlené světlo</strong> (u okna zataženo, nebo dvě světla ze stran), <strong>bez blesku</strong>, pozor na vlastní stín. Nemíchej okno + žárovku.</li>
+      </ul>
+      <div class="tip"><strong>Věrná barva (proč modrá „šedne"):</strong> automatika u velké tmavé/modré plochy přidá žlutou a přesvětlí → z navy je šedá. V <strong>režimu PRO</strong> (u Samsungu appka <em>Expert RAW</em>) nastav <strong>ručně vyvážení bílé</strong> (~5300 K, denní světlo) a lehce <strong>podexponuj</strong> (−0,5 EV); ideálně foť <strong>RAW</strong>.</div>
+      <div class="tip"><strong>Bílý papír = pojistka na barvu (i bez nastavování foťáku):</strong> neumíš ve fotoaparátu nastavit vyvážení bílé? Nevadí — jen <strong>polož vedle látky kousek čistého bílého papíru</strong> a vyfoť. Potom v <strong>libovolném editoru fotek</strong> (Google Fotky, Snapseed, Lightroom…) ťukni na funkci <strong>vyvážení bílé / kapátko</strong> a klepni na ten bílý papír — barva látky se sama srovná. Papír pak z ořezu vynecháš.</div>
+      <div class="tip"><strong>Měřítko:</strong> po nahrání látky <strong>poklepej na číslo</strong> u posuvníku měřítka a zadej <strong>šířku látky v cm</strong> (u čtverce 100). Látka se pak na šablonu lije ve správné velikosti.</div>
+      <p style="font-weight:700; color:var(--accent-ink); margin-top:20px">Podle typu látky:</p>
+      <ul>
+        <li><strong>Lesklé</strong> (satén, hedvábí) — hlídej odlesky; rozptýlené světlo, případně polarizační klip na objektiv.</li>
+        <li><strong>Tmavé</strong> (černá, navy, denim) — vyvážení bílé ručně + podexponovat (−0,5 až −1 EV); boční světlo vytáhne strukturu.</li>
+        <li><strong>Světlé</strong> (bílá, pastely) — snadno se přepálí; podexponuj (−0,7 až −1 EV) a nefoť na bílý podklad (dej pod ni šedou).</li>
+        <li><strong>Průsvitné</strong> (šifon, tyl, síťovina) — polož na neutrální bílý/šedý papír; klidně na tolik vrstev, na kolik se reálně nosí.</li>
+        <li><strong>Vzorované</strong> (potisky, květiny) — zachyť celý <strong>repeat vzoru</strong>, ostře a rovně; sytost v úpravách nepřeháněj.</li>
+        <li><strong>Kostky, pruhy, geometrie</strong> — hlavně přesně <strong>kolmo</strong>; linky vzoru srovnej podle mřížky.</li>
+        <li><strong>Úplety, žebrování</strong> — <strong>nenapínej</strong>, foť v uvolněném stavu (tahem zkreslíš oka i měřítko).</li>
+        <li><strong>Vlasové</strong> (samet, manšestr, plyš) — vlas mění odstín podle směru; foť z jednoho směru a boční světlo na strukturu.</li>
+        <li><strong>Metalické</strong> (lurex, flitry, brokát) — bodové odlesky → jen rozptýlené světlo, polarizátor, žádný blesk; počítej s víc pokusy.</li>
+      </ul>
+    </section>
+
+    <footer>
+      Lostria Sewing · Nápověda. Vytvořeno s láskou pro švadlenky. 🌸<br>
+      <a href="https://dvorskagabriela-creator.github.io/lostria-sewing-privacy/">Zásady ochrany soukromí</a>
+    </footer>
+  </div>
+
+  <!-- ===================== OSTATNÍ JAZYKY (doplní se po schválení) ===================== -->
+  <!-- ===================== ENGLISH ===================== -->
+  <div class="lang" data-lang="en" hidden>
+    <div class="hero">
+      <div class="eyebrow">Offline app for sewists</div>
+      <h1>Welcome to Lostria Sewing</h1>
+      <p class="lead">Keep track of your patterns, magazines, fabrics and notions — all right on your phone, with no account and no internet. This guide walks you through everything the app can do.</p>
+    </div>
+
+    <nav class="toc" aria-label="Contents">
+      <h2>Contents</h2>
+      <div class="toc-grid">
+        <a href="#" data-go="zaklad"><span class="ic">🧭</span>Basics &amp; menu</a>
+        <a href="#" data-go="strihy"><span class="ic">✂️</span>Patterns</a>
+        <a href="#" data-go="casopisy"><span class="ic">📖</span>Magazines &amp; AI import</a>
+        <a href="#" data-go="metraz"><span class="ic">🧵</span>Fabric (yardage)</a>
+        <a href="#" data-go="galanterie"><span class="ic">🔘</span>Notions</a>
+        <a href="#" data-go="zaznamy"><span class="ic">🪡</span>Sewing records</a>
+        <a href="#" data-go="seznamy"><span class="ic">🔖</span>Lists</a>
+        <a href="#" data-go="sablony"><span class="ic">👗</span>Templates</a>
+        <a href="#" data-go="vizualizace"><span class="ic">🎨</span>Visualization</a>
+        <a href="#" data-go="premium"><span class="ic">🏅</span>Premium</a>
+        <a href="#" data-go="zaloha"><span class="ic">💾</span>Backup &amp; restore</a>
+        <a href="#" data-go="nastaveni"><span class="ic">⚙️</span>Settings</a>
+        <a href="#" data-go="tipy"><span class="ic">💡</span>Photo tips</a>
+      </div>
+    </nav>
+
+    <section class="doc" data-sec="zaklad">
+      <h2><span class="ic">🧭</span>Basics &amp; menu</h2>
+      <p class="lead">Everything is stored only on your device. You don't need an account or a connection — the app works offline.</p>
+      <div class="tip"><strong>Photos &amp; storage:</strong> for previews, images are <strong>scaled down and compressed</strong> so they take up as little space as possible on your phone. In <a href="#" data-go="nastaveni">Settings</a> you can choose a <strong>higher photo resolution</strong> — but be aware that the app's data will then grow faster.</div>
+      <p>You switch between areas from the <strong>main menu</strong>: the <kbd>☰</kbd> icon in the top left, or the <strong>flower</strong> 🌸. There you'll find Patterns, Fabric, Notions, Sewing records, Lists, Templates, Visualization and Settings.</p>
+      <p>In every area there's a pair of controls in the top right, always in the same order: first <strong>filter</strong>, then <strong>sort</strong>.</p>
+    </section>
+
+    <section class="doc" data-sec="strihy">
+      <h2><span class="ic">✂️</span>Patterns</h2>
+      <p class="lead">The heart of the app — a catalogue of your patterns with images, categories and everything around them.</p>
+      <h3>Adding a pattern</h3>
+      <ul>
+        <li><strong>Manually</strong> — name, category, target group, format, sizes, notes.</li>
+        <li><strong>From the web / a link</strong> — the app pulls the name and photo from the shop, and you fill in the rest.</li>
+        <li><strong>From a magazine via AI</strong> — photograph the overview page and the app creates patterns from it (see Magazines).</li>
+      </ul>
+      <h3>Detail &amp; organization</h3>
+      <p>To each pattern you assign:</p>
+      <ul>
+        <li><strong>Categories</strong> — dress, skirt, trousers, blouse, coat… (several at once is fine too).</li>
+        <li><strong>Target groups</strong> — women's, men's, children's, unisex…</li>
+        <li><strong>Formats</strong> — paper, layered / flat PDF, projector…</li>
+        <li><strong>Location</strong> — where you physically keep the pattern (drawer, binder, on the computer…).</li>
+        <li><strong>Hashtags</strong> — free-form labels of your own (#jersey, #zip, #forsummer…).</li>
+        <li><strong>Hearts</strong> = how much you want to sew it (wishlist), <strong>cart</strong> = need to buy.</li>
+        <li><strong>Images</strong> — add from the camera, gallery or a magazine; each one can be <strong>cropped</strong> and rotated.</li>
+      </ul>
+      <div class="tip"><strong>Make it your own:</strong> categories, target groups, formats, locations and hashtags are <strong>your lists</strong> — you can <strong>add, rename and delete</strong> them exactly to suit you, however you need.</div>
+      <p><strong>Filtering and sorting</strong> then work by category, target group, hearts, hashtags and more.</p>
+      <div class="tip"><strong>Tip:</strong> the resolution in px is shown at the bottom right of each image — handy for knowing how much detail the photo has.</div>
+
+      <h3>Hashtags — smart labels</h3>
+      <p>Hashtags are free-form labels for quick searching and filtering (#jersey, #zip, #forsummer…). On top of that they can do two clever things:</p>
+      <ul>
+        <li><strong>Automatic attachment from the pattern's text:</strong> the app scans the <strong>pattern's text</strong> (name, description, notes) and <strong>attaches to the pattern by itself</strong> any hashtags whose word it finds in the text. It matches <strong>from the start of the word (the root) and ignores endings</strong> — so a hashtag entered as a <strong>root</strong> also catches its various forms.</li>
+        <li><strong>Aliases (alternative and foreign words):</strong> to each hashtag you can add extra words (also treated as <strong>roots</strong>) that point to it.<br>
+        <strong>Example:</strong> the hashtag <strong>„denim"</strong> with aliases <strong>„jean"</strong>, <strong>„jeans"</strong>, <strong>„twill"</strong>. Then when the pattern's text contains "jeans" or "denim", the app attaches the hashtag <strong>„denim"</strong>. A single alias can even attach <strong>several hashtags</strong> at once.</li>
+        <li><strong>Magic button — retroactive fill-in:</strong> in <strong>Settings → Maintenance</strong> you'll find the button <strong>„Fill in hashtags for all patterns"</strong>. It lets the app <strong>scan the texts of all patterns at once</strong> and retroactively assign the hashtags that auto-detection finds. <strong>It keeps existing tags</strong> (deletes nothing). Ideal <strong>after adding a new hashtag or alias</strong> — it flows straight into older patterns too.</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="casopisy">
+      <h2><span class="ic">📖</span>Magazines &amp; AI import</h2>
+      <p class="lead">Keep a catalogue of pattern magazines and have patterns created or filled in straight from photos of the pages.</p>
+      <p>To each magazine you add a <strong>cover</strong> and pages. Before the AI analysis you <strong>tell it what's in the photo</strong> (the <strong>Overview / Detail</strong> switch), so the AI doesn't have to guess.</p>
+
+      <h3>1) Overview — creates patterns</h3>
+      <ul>
+        <li>You photograph the <strong>overview page</strong> (the grid of patterns) and the AI pulls out the <strong>individual patterns and creates them</strong> — linked to the magazine (model number, category, sizes…).</li>
+        <li>The overview photo is <strong>saved with the magazine</strong> and serves as the preview for the patterns created from it.</li>
+      </ul>
+
+      <h3>2) Detail — fills in a pattern's data</h3>
+      <ul>
+        <li>You photograph the <strong>detail page of a single pattern</strong> (with technical data — sizes, difficulty, fabric requirement, materials, description) and the AI <strong>fills in that data</strong>.</li>
+        <li>The <strong>„Fill in existing patterns"</strong> option matches the pattern by <strong>model number</strong> and fills in only the <strong>missing info</strong> — so the same pattern <strong>isn't duplicated</strong>, just enriched.</li>
+      </ul>
+      <p>After the analysis you'll see a list of proposed patterns (new vs. filled-in) and confirm.</p>
+      <div class="tip"><strong>How matching works:</strong> the AI reads the <strong>model number</strong> and looks for a pattern with the same number <strong>in the same magazine</strong>. It compares "smartly" — dots, spaces and letter case don't matter (e.g. "no. 123" = "123"). When it finds a match, it <strong>fills in the missing data</strong> on that pattern; if not, it <strong>creates a new one</strong>. Filling in an existing pattern also <strong>doesn't count</strong> toward the free limit of 100 patterns.<br><br><strong>Recommended workflow:</strong> first import the <strong>overview</strong> (patterns with model numbers are created), then photograph the <strong>detail pages</strong> with „Fill in existing" turned on — the data gets attached to the right patterns.</div>
+
+      <div class="tip"><strong>Quality:</strong> for overviews, <strong>Gemini</strong> is more reliable (it also sees the small sketches); Groq works from text only on overviews (roughly). Photographing an overview has its own tips — see the <a href="#" data-go="tipy">Photo tips</a> section.</div>
+    </section>
+
+    <section class="doc" data-sec="metraz">
+      <h2><span class="ic">🧵</span>Fabric (fabric &amp; panels)</h2>
+      <p class="lead">The store of your fabrics and panels — composition, colours, where bought, how much is left.</p>
+      <ul>
+        <li><strong>Fabric card:</strong> name, type, composition, colour, country of origin, shop, location, price, hearts and other properties.</li>
+        <li>You keep <strong>panels</strong> separate from yardage fabric.</li>
+        <li><strong>Full filter</strong> — status, type, composition, country, shop, location, hearts and properties.</li>
+        <li>A fabric photo also comes in handy for Visualization (see below).</li>
+      </ul>
+      <div class="tip"><strong>Make it your own:</strong> types, compositions, countries, shops, locations and properties are <strong>your lists</strong> — you add, rename and delete them exactly as you need.</div>
+    </section>
+
+    <section class="doc" data-sec="galanterie">
+      <h2><span class="ic">🔘</span>Notions</h2>
+      <p class="lead">Zippers, buttons, interfacing, ribbons… — and above all <strong>fully customizable</strong>. You're not limited to fixed fields; you define for yourself what to track for each kind of notion.</p>
+
+      <h3>How you build it</h3>
+      <ul>
+        <li><strong>Your own categories</strong> — create any you like (Zipper, Button, Interfacing, Ribbon, Cord…).</li>
+        <li><strong>Your own properties (attributes)</strong> — to each category you add your own fields, and for each you pick a <strong>type</strong>:
+          <ul style="margin:6px 0 0">
+            <li><strong>Number</strong> (+ a unit — mm, cm, g/m²…) — e.g. "Teeth width" in mm or "Diameter" in inches.</li>
+            <li><strong>Single choice</strong> — e.g. "Zipper type": moulded / coil / metal.</li>
+            <li><strong>Multiple choice</strong> — e.g. "Special": waterproof, autolock…</li>
+            <li><strong>Text</strong> — free-form entry.</li>
+          </ul>
+        </li>
+        <li><strong>Your own options</strong> — for the choice types you add, rename and delete the list of options yourself.</li>
+      </ul>
+      <p>So each category has <strong>its own set of fields</strong> — you track a button completely differently from a zipper, exactly as it makes sense to you.</p>
+
+      <div class="tip"><strong>Default set:</strong> on a fresh install there's a ready-made sample (<strong>zipper, interfacing, button</strong>) with practical properties and options — treat it as a template and feel free to edit, extend or delete it.</div>
+
+      <h3>Items</h3>
+      <ul>
+        <li>Each piece is a <strong>card</strong> with a photo, quantity, notes, <strong>hearts</strong>, <strong>cart</strong> (need to buy) and links — plus your own properties from the category.</li>
+        <li>They can be <strong>duplicated, deleted</strong> and <strong>bulk-edited</strong> (selection mode).</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="zaznamy">
+      <h2><span class="ic">🪡</span>Sewing records</h2>
+      <p class="lead">A diary of what you've sewn — tied to a pattern, with the date, size, fabric used and notes.</p>
+      <ul>
+        <li>You note who you sewed for and in what size, how much fabric it took, plus photos of the result.</li>
+        <li>You also assign the <strong>fabrics and notions used</strong> (straight from your Fabric and Notions) — so for each finished piece you have a record of <strong>what it was made from and with</strong>.</li>
+        <li>Filtering and sorting just like everywhere else.</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="seznamy">
+      <h2><span class="ic">🔖</span>Lists</h2>
+      <p class="lead">They're not just collections of patterns — a List works as a <strong>complete sewing plan</strong>.</p>
+      <p>Into a single list you gather everything that belongs to a project:</p>
+      <ul>
+        <li><strong>Patterns</strong> — what you want to sew.</li>
+        <li><strong>Fabrics and panels</strong> — what from.</li>
+        <li><strong>Notions</strong> — zippers, buttons, interfacing…</li>
+        <li><strong>Visualizations</strong> — a preview of how it should look.</li>
+      </ul>
+      <p>One piece (pattern, fabric, notion or visualization) can be in <strong>several lists</strong>. You <strong>colour and name</strong> lists your own way — such as "Dress for my daughter", "For summer", "In progress".</p>
+      <div class="tip"><strong>What's still to buy:</strong> patterns, fabrics and notions all have a <strong>cart</strong> (need to buy) and <strong>hearts</strong> (want) — so right in the plan you can see what still needs to be bought for it.</div>
+    </section>
+
+    <section class="doc" data-sec="sablony">
+      <h2><span class="ic">👗</span>Templates <span class="badge">🏅 Premium</span></h2>
+      <p class="lead">Garment silhouettes into which fabric is then "poured" in Visualization.</p>
+      <h3>Kinds of templates</h3>
+      <ul>
+        <li><strong>SVG template</strong> — a clean vector drawing (e.g. by flat-sketch authors).</li>
+        <li><strong>Photo template</strong> — a transparent PNG (a garment silhouette with a hole) under which fabric is poured.</li>
+        <li><strong>From a photo (vectorization)</strong> — the app creates a silhouette outline from a photo/sketch.</li>
+      </ul>
+      <h3>Creating from a photo</h3>
+      <ul>
+        <li>Pick an image → crop to a single garment → the app finds the <strong>parts</strong> and numbers them in the preview.</li>
+        <li><strong>Check all the parts</strong> that belong to the garment (e.g. both the left and right front of a coat). Leave a neighbouring pattern unchecked.</li>
+        <li>Enter a name and an approximate height and save.</li>
+      </ul>
+      <div class="tip"><strong>A good source:</strong> a <strong>technical drawing</strong> — a clean <strong>black pattern line</strong> (flat sketch). An <strong>overview sheet of patterns in a magazine</strong>, where the technical drawings of the individual models are drawn together, is ideal.</div>
+      <div class="warn"><strong>Sharpness is decisive:</strong> a <strong>sharp close-up sketch</strong> comes out best. Blurry soft lines or a tiny crop from a dense overview page may not work — the app will warn you.</div>
+      <p>In the <strong>Templates</strong> section (and the <strong>Authors</strong> tab) you manage templates — cards, hearts, filter, author credit with a link.</p>
+    </section>
+
+    <section class="doc" data-sec="vizualizace">
+      <h2><span class="ic">🎨</span>Visualization <span class="badge">🏅 Premium</span></h2>
+      <p class="lead">Pour your fabric into a pattern silhouette and instantly see how it would look.</p>
+      <h3>Wizard</h3>
+      <ul>
+        <li>Pick <strong>templates</strong> → switch to <strong>Fabric</strong> → pick <strong>fabrics/panels</strong> (full filter) → <strong>Visualization</strong>.</li>
+        <li>At the top: <kbd>✕</kbd> close · the <strong>Select all / Deselect all</strong> switch · the number selected · filter.</li>
+      </ul>
+      <h3>Colouring</h3>
+      <ul>
+        <li><strong>Tap an area = colours that one area</strong> with the selected fabric (the fabric strip on the right is your brush).</li>
+        <li><strong>Fill all</strong> (the 🪣 icon in the Tile/Whole photo row) colours <strong>all areas at once</strong> with one fabric — handy for multi-part templates.</li>
+        <li><strong>A custom pattern for each area:</strong> tap an area (it becomes active) and with the <strong>slider or your fingers</strong> zoom, move and rotate it — <strong>each area can have the pattern at a different size and angle</strong>.</li>
+        <li><strong>Fabric width (cm)</strong> sets the pattern's real-world scale. The <strong>Recenter (↻)</strong> button returns the active area to its <strong>default size based on the entered fabric width</strong>.</li>
+        <li><strong>Tile ↔ Whole photo</strong> and a reference <strong>10 cm grid</strong>.</li>
+      </ul>
+      <div class="tip"><strong>Tile vs. Whole photo:</strong>
+        <ul style="margin:8px 0 0">
+          <li><strong>Tile</strong> — the fabric's pattern <strong>repeats</strong> across the whole area, like real <strong>yardage off the roll</strong>. Use it for fabrics with a repeating pattern; you can see how the pattern runs across the whole piece at the correct scale.</li>
+          <li><strong>Whole photo</strong> — the photo is placed into the area <strong>only once</strong> (like a sticker), nothing repeats. Good for a <strong>panel</strong> or a specific <strong>placed motif</strong> (a print, an image) you don't want to tile.</li>
+        </ul>
+      </div>
+      <h3>Saved visualizations</h3>
+      <ul>
+        <li>You <strong>save</strong> a finished visualization (💾) — it makes a preview and remembers the recipe; you can reopen and edit it any time.</li>
+        <li>A reopened visualization can be edited further — via <strong>„+"</strong> you add <strong>more existing templates and fabrics</strong> (not just the ones it was created with).</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="premium">
+      <h2><span class="ic">🏅</span>Premium</h2>
+      <p class="lead">Most of the app is free. <strong>Templates</strong> and <strong>Visualization</strong> are Premium.</p>
+      <ul>
+        <li>The Templates and Visualization items stay visible in the menu (with a gold badge 🏅); without Premium, tapping them takes you to the purchase screen.</li>
+        <li>You'll find <strong>Buy / Restore Premium</strong> in <strong>Settings</strong>. Use "Restore" when you've already bought it (new phone, etc.).</li>
+        <li>The free version has a cap of 100 patterns; Premium removes it.</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="zaloha">
+      <h2><span class="ic">💾</span>Backup &amp; restore</h2>
+      <p class="lead">Your data is only on your phone — so back it up.</p>
+      <ul>
+        <li>In Settings you make a <strong>backup to a ZIP</strong> (database + photos). Save it somewhere like a drive or your email.</li>
+        <li>A <strong>restore</strong> from the ZIP brings you back (even on a new device).</li>
+      </ul>
+      <div class="tip"><strong>Restore from a local file:</strong> ideally restore from a <strong>locally downloaded backup that you physically have on your phone</strong> — not directly from the cloud (Google Drive, etc.). Cloud files are often only "available to download on demand" and may not load into the app correctly. It's safer to <strong>download the ZIP to your phone first</strong> and only then restore.</div>
+      <div class="warn"><strong>Important:</strong> Android's automatic cloud backup is deliberately <strong>turned off</strong> (so it doesn't overwrite your data with an old version). Rely on <strong>your own ZIP backup</strong>.</div>
+    </section>
+
+    <section class="doc" data-sec="nastaveni">
+      <h2><span class="ic">⚙️</span>Settings</h2>
+      <ul>
+        <li>App <strong>language</strong>.</li>
+        <li><strong>Photo quality</strong> (separately for patterns / magazines / records) — lower saves space, higher keeps detail.</li>
+        <li><strong>AI keys</strong> for import (optional) and the status of your <strong>Premium</strong> licence (buy/restore).</li>
+      </ul>
+
+      <h3>Translation</h3>
+      <p>You can have patterns from <strong>foreign-language magazines</strong> (such as the German Burda) <strong>translated</strong>. On a pattern in a foreign language a <strong>„Translate"</strong> button appears — the texts are translated into your language; <strong>„Restore originals"</strong> brings them back. In the <strong>Translation</strong> card (a tab in Settings) you set:</p>
+      <ul>
+        <li><strong>Target translation language</strong> — which language it translates into (default = the app language).</li>
+        <li><strong>Translation library</strong> — which service translates the texts (see below).</li>
+      </ul>
+      <div class="tip"><strong>AI vs. offline — what's the difference:</strong>
+        <ul style="margin:8px 0 0">
+          <li><strong>AI (Gemini / Groq)</strong> — <strong>online</strong>. Better at <strong>specialist (sewing) terms</strong>, but it needs a connection and <strong>uses up API quota</strong>.</li>
+          <li><strong>Google ML Kit (offline)</strong> — works <strong>offline</strong> (after a one-time language-model download), is <strong>fast</strong>, but <strong>weaker</strong> on technical terms.</li>
+        </ul>
+        <div style="margin-top:8px">In short: <strong>AI</strong> = more accurate translation at the cost of quota and a connection; <strong>ML Kit</strong> = fast and free even without internet, but rougher.</div>
+      </div>
+
+      <h3>Maintenance</h3>
+      <p>Handy one-off actions:</p>
+      <ul>
+        <li><strong>Add sample data</strong> — for beginners: fills the app with sample patterns and fabrics so you can see right away how it works.</li>
+        <li><strong>Fill in hashtags for all patterns</strong> — retroactively assigns hashtags from the patterns' text (see <a href="#" data-go="strihy">Hashtags</a>).</li>
+        <li><strong>Fill in Source-Web from links</strong> — for patterns that have a link attached but no <strong>Source</strong> filled in, it sets Source = Web and the website name. It won't overwrite existing ones (Magazine/Shop/Web).</li>
+        <li><strong>Unhide hidden templates</strong> — built-in templates can't be deleted, only <strong>hidden</strong>; this makes all hidden ones show again.</li>
+      </ul>
+
+      <h3>Your own AI keys (optional)</h3>
+      <p>AI import works even <strong>without your own key</strong> (default Gemini). Set your own key only when you want <strong>your own limits</strong> or to use <strong>Groq</strong>. Paste the key into the AI key field in Settings. The key is <strong>personal — don't give it to anyone</strong>.</p>
+
+      <h3>Gemini (Google AI Studio)</h3>
+      <ul>
+        <li>Open <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">aistudio.google.com/app/apikey</a> and sign in with a <strong>Google account</strong>.</li>
+        <li>Click <strong>„Get API key" / „Create API key"</strong>.</li>
+        <li>Pick (or let it create) a project and the key is generated.</li>
+        <li><strong>Copy</strong> it and paste it into the app's Settings.</li>
+      </ul>
+      <p class="lead" style="font-size:15px">Gemini has a generous free limit; all you need for a key is a Google account.</p>
+
+      <h3>Groq</h3>
+      <ul>
+        <li>Open <a href="https://console.groq.com/keys" target="_blank" rel="noopener">console.groq.com/keys</a> and <strong>sign up / sign in</strong>.</li>
+        <li>Click <strong>„Create API Key"</strong>, name it and confirm.</li>
+        <li>The key is shown <strong>only once</strong> — <strong>copy</strong> it right away and paste it into the app's Settings.</li>
+      </ul>
+      <div class="warn"><strong>Careful:</strong> you won't see the Groq key again after you close the window. If you can't get to it, just create a new one.</div>
+    </section>
+
+    <section class="doc" data-sec="tipy">
+      <h2><span class="ic">💡</span>Photo tips</h2>
+      <h3>Magazine overview (for AI import)</h3>
+      <ul>
+        <li>Photograph the page straight, in good light, so the patterns are legible.</li>
+      </ul>
+      <h3>Photographing for a template</h3>
+      <ul>
+        <li>If you want a <strong>clean template</strong> from a particular pattern, photograph <strong>just that one pattern up close</strong> (so it fills the frame) — not a tiny crop from a dense overview page.</li>
+        <li>The sharper and larger the drawing is in the photo, the better the vectorization.</li>
+      </ul>
+      <h3>Photographing fabrics (for Visualization)</h3>
+      <p>The goal isn't a pretty photo, but one that's <strong>flat, of a known dimension and in a true colour</strong> — so it "tiles" well and the shade fits.</p>
+      <ul>
+        <li><strong>Iron and stretch</strong> the fabric — ripples create a false pattern and a wrong scale.</li>
+        <li><strong>Mark off a square</strong> (e.g. 100 × 100 cm with tape) — then you know exactly what width to enter in the app.</li>
+        <li><strong>Phone perpendicular from above</strong> (bird's-eye view), turn on the <strong>grid</strong>, fabric edges parallel to the frame. A slanted shot distorts the scale.</li>
+        <li><strong>Diffuse light</strong> (a window with the curtains drawn, or two lights from the sides), <strong>no flash</strong>, watch out for your own shadow. Don't mix a window + a light bulb.</li>
+      </ul>
+      <div class="tip"><strong>True colour (why blue "goes grey"):</strong> automatic mode adds yellow to a large dark/blue area and overbrightens it → navy turns grey. In <strong>PRO mode</strong> (on Samsung the <em>Expert RAW</em> app) set the <strong>white balance manually</strong> (~5300 K, daylight) and slightly <strong>underexpose</strong> (−0.5 EV); ideally shoot <strong>RAW</strong>.</div>
+      <div class="tip"><strong>White paper = a colour safety net (even without adjusting the camera):</strong> can't set the white balance on your camera? No problem — just <strong>lay a piece of clean white paper next to the fabric</strong> and take the photo. Then in <strong>any photo editor</strong> (Google Photos, Snapseed, Lightroom…) tap the <strong>white-balance / eyedropper</strong> tool and tap that white paper — the fabric's colour sorts itself out. Then leave the paper out of the crop.</div>
+      <div class="tip"><strong>Scale:</strong> after uploading the fabric, <strong>double-tap the number</strong> by the scale slider and enter the <strong>fabric width in cm</strong> (100 for a square). The fabric is then poured onto the template at the correct size.</div>
+      <p style="font-weight:700; color:var(--accent-ink); margin-top:20px">By fabric type:</p>
+      <ul>
+        <li><strong>Shiny</strong> (satin, silk) — watch for glare; diffuse light, or a polarizing clip on the lens.</li>
+        <li><strong>Dark</strong> (black, navy, denim) — white balance manually + underexpose (−0.5 to −1 EV); side light brings out the texture.</li>
+        <li><strong>Light</strong> (white, pastels) — easily blown out; underexpose (−0.7 to −1 EV) and don't shoot against a white background (put grey underneath).</li>
+        <li><strong>Sheer</strong> (chiffon, tulle, mesh) — lay it on neutral white/grey paper; use as many layers as it's actually worn in.</li>
+        <li><strong>Patterned</strong> (prints, florals) — capture the whole <strong>pattern repeat</strong>, sharp and straight; don't overdo the saturation in editing.</li>
+        <li><strong>Checks, stripes, geometry</strong> — above all exactly <strong>perpendicular</strong>; line the pattern up to the grid.</li>
+        <li><strong>Knits, ribbing</strong> — <strong>don't stretch</strong>, shoot it relaxed (pulling distorts the stitches and the scale).</li>
+        <li><strong>Pile</strong> (velvet, corduroy, plush) — the pile changes shade with direction; shoot from one direction with side light on the texture.</li>
+        <li><strong>Metallic</strong> (lurex, sequins, brocade) — pinpoint glare → diffuse light only, a polarizer, no flash; expect several tries.</li>
+      </ul>
+    </section>
+
+    <footer>
+      Lostria Sewing · Help. Made with love for sewists. 🌸<br>
+      <a href="https://dvorskagabriela-creator.github.io/lostria-sewing-privacy/">Privacy Policy</a>
+    </footer>
+  </div>
+
+  <!-- ===================== SLOVENČINA ===================== -->
+  <div class="lang" data-lang="sk" hidden>
+    <div class="hero">
+      <div class="eyebrow">Offline aplikácia pre šičky</div>
+      <h1>Vitaj v Lostria Sewing</h1>
+      <p class="lead">Prehľad o strihoch, časopisoch, látkach aj galantérii — celé v tvojom telefóne, bez účtu a bez internetu. Tento návod ťa prevedie všetkým, čo aplikácia dokáže.</p>
+    </div>
+
+    <nav class="toc" aria-label="Obsah">
+      <h2>Obsah</h2>
+      <div class="toc-grid">
+        <a href="#" data-go="zaklad"><span class="ic">🧭</span>Základ &amp; menu</a>
+        <a href="#" data-go="strihy"><span class="ic">✂️</span>Strihy</a>
+        <a href="#" data-go="casopisy"><span class="ic">📖</span>Časopisy &amp; AI import</a>
+        <a href="#" data-go="metraz"><span class="ic">🧵</span>Metráž (látky)</a>
+        <a href="#" data-go="galanterie"><span class="ic">🔘</span>Galantéria</a>
+        <a href="#" data-go="zaznamy"><span class="ic">🪡</span>Záznamy o ušití</a>
+        <a href="#" data-go="seznamy"><span class="ic">🔖</span>Zoznamy</a>
+        <a href="#" data-go="sablony"><span class="ic">👗</span>Šablóny</a>
+        <a href="#" data-go="vizualizace"><span class="ic">🎨</span>Vizualizácia</a>
+        <a href="#" data-go="premium"><span class="ic">🏅</span>Premium</a>
+        <a href="#" data-go="zaloha"><span class="ic">💾</span>Záloha &amp; obnova</a>
+        <a href="#" data-go="nastaveni"><span class="ic">⚙️</span>Nastavenia</a>
+        <a href="#" data-go="tipy"><span class="ic">💡</span>Tipy na fotenie</a>
+      </div>
+    </nav>
+
+    <section class="doc" data-sec="zaklad">
+      <h2><span class="ic">🧭</span>Základ &amp; menu</h2>
+      <p class="lead">Všetko je uložené len v tvojom zariadení. Nepotrebuješ účet ani pripojenie — aplikácia funguje offline.</p>
+      <div class="tip"><strong>Fotky &amp; miesto:</strong> obrázky sa pre náhľady <strong>zmenšujú a komprimujú</strong>, aby na mobile zaberali čo najmenej miesta. V <a href="#" data-go="nastaveni">Nastaveniach</a> môžeš zvoliť <strong>vyššie rozlíšenie fotiek</strong> — ale počítaj s tým, že dáta aplikácie potom porastú rýchlejšie.</div>
+      <p>Medzi oblasťami prepínaš cez <strong>hlavné menu</strong>: vľavo hore ikonka <kbd>☰</kbd> alebo <strong>kvietok</strong> 🌸. Nájdeš tu Strihy, Metráž, Galantériu, Záznamy o ušití, Zoznamy, Šablóny, Vizualizáciu a Nastavenia.</p>
+      <p>V každej oblasti je vpravo hore dvojica ovládania v rovnakom poradí: najprv <strong>filter</strong>, potom <strong>zoradenie</strong>.</p>
+    </section>
+
+    <section class="doc" data-sec="strihy">
+      <h2><span class="ic">✂️</span>Strihy</h2>
+      <p class="lead">Srdce aplikácie — evidencia tvojich strihov s obrázkami, kategóriami a všetkým naokolo.</p>
+      <h3>Pridanie strihu</h3>
+      <ul>
+        <li><strong>Ručne</strong> — názov, kategória, cieľová skupina, formát, veľkosti, poznámky.</li>
+        <li><strong>Z webu / odkazu</strong> — aplikácia z e-shopu vytiahne názov a fotku, zvyšok doplníš.</li>
+        <li><strong>Z časopisu cez AI</strong> — odfotíš prehľadovú stránku a aplikácia z nej vytvorí strihy (pozri Časopisy).</li>
+      </ul>
+      <h3>Detail &amp; organizácia</h3>
+      <p>K strihu si priradíš:</p>
+      <ul>
+        <li><strong>Kategórie</strong> — šaty, sukňa, nohavice, blúzka, kabát… (pokojne aj viac naraz).</li>
+        <li><strong>Cieľové skupiny</strong> — dámske, pánske, detské, unisex…</li>
+        <li><strong>Formáty</strong> — papier, PDF vrstvený / plochý, projektor…</li>
+        <li><strong>Umiestnenie</strong> — kde strih fyzicky máš (šuplík, šanón, v počítači…).</li>
+        <li><strong>Hashtagy</strong> — voľné štítky podľa seba (#jersey, #zips, #naleto…).</li>
+        <li><strong>Srdiečka</strong> = ako veľmi ho chceš ušiť (wishlist), <strong>košík</strong> = mám kúpiť.</li>
+        <li><strong>Obrázky</strong> — pridáš z foťáku, galérie alebo z časopisu; každý sa dá <strong>orezať</strong> a otočiť.</li>
+      </ul>
+      <div class="tip"><strong>Všetko si prispôsobíš:</strong> kategórie, cieľové skupiny, formáty, umiestnenie aj hashtagy sú <strong>tvoje zoznamy</strong> — môžeš si ich <strong>pridať, premenovať aj zmazať</strong> presne na svoj obraz, ako potrebuješ.</div>
+      <p><strong>Filtrovanie a zoraďovanie</strong> potom funguje podľa kategórie, cieľovej skupiny, srdiečok, hashtagov a ďalších.</p>
+      <div class="tip"><strong>Tip:</strong> pri obrázku je vpravo dole rozlíšenie v px — hodí sa vedieť, koľko detailu fotka má.</div>
+
+      <h3>Hashtagy — chytré štítky</h3>
+      <p>Hashtagy sú voľné štítky pre rýchle hľadanie a filtrovanie (#jersey, #zips, #naleto…). Navyše dokážu dve šikovné veci:</p>
+      <ul>
+        <li><strong>Automatické pripojenie z textu strihu:</strong> aplikácia prejde <strong>text strihu</strong> (názov, popis, poznámky) a <strong>sama k strihu pripojí</strong> hashtagy, ktorých slovo v texte nájde. Porovnáva <strong>od začiatku slova (koreň) a ignoruje koncovky</strong> — takže hashtag zadaný ako <strong>koreň</strong> chytí aj jeho rôzne tvary.</li>
+        <li><strong>Aliasy (alternatívne a cudzie slová):</strong> ku každému hashtagu pridáš ďalšie slová (tiež sa berú ako <strong>korene</strong>), ktoré naň ukážu.<br>
+        <strong>Príklad:</strong> hashtag <strong>„riflovina"</strong> s aliasmi <strong>„riflov"</strong>, <strong>„jeans"</strong>, <strong>„džín"</strong>. Keď je potom v texte strihu „riflové", „džínsy" alebo „jeans", aplikácia pripojí hashtag <strong>„riflovina"</strong>. Jeden alias môže pripojiť aj <strong>viac hashtagov</strong> naraz.</li>
+        <li><strong>Kúzelné tlačidlo — spätné doplnenie:</strong> v <strong>Nastavenia → Údržba</strong> nájdeš tlačidlo <strong>„Doplniť hashtagy pri všetkých strihoch"</strong>. Nechá aplikáciu <strong>prejsť texty všetkých strihov naraz</strong> a spätne im priradiť hashtagy, ktoré auto-detekcia nájde. <strong>Existujúce tagy zachová</strong> (nič nemaže). Ideálne <strong>po pridaní nového hashtagu alebo aliasu</strong> — rovno sa prepíše aj do starších strihov.</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="casopisy">
+      <h2><span class="ic">📖</span>Časopisy &amp; AI import</h2>
+      <p class="lead">Eviduj strihové časopisy a nechaj si z fotiek stránok rovno vytvoriť alebo doplniť strihy.</p>
+      <p>Ku každému časopisu pridáš <strong>obálku</strong> a stránky. Pred AI analýzou <strong>povieš, čo je na fotke</strong> (prepínač <strong>Prehľad / Detail</strong>), nech AI nehádže.</p>
+
+      <h3>1) Prehľad — vytvorí strihy</h3>
+      <ul>
+        <li>Odfotíš <strong>prehľadovú stránku</strong> (šachovnicu strihov) a AI z nej vytiahne <strong>jednotlivé strihy a založí ich</strong> — naviazané na časopis (číslo modelu, kategórie, veľkosti…).</li>
+        <li>Prehľadová fotka sa <strong>ukladá k časopisu</strong> a slúži ako náhľad pri strihoch, ktoré z nej vznikli.</li>
+      </ul>
+
+      <h3>2) Detail — doplní údaje k strihu</h3>
+      <ul>
+        <li>Odfotíš <strong>detailnú stránku jedného strihu</strong> (s technickými údajmi — veľkosti, obtiažnosť, spotreba látky, materiál, popis) a AI z nej <strong>doplní tieto údaje</strong>.</li>
+        <li>Voľba <strong>„Doplniť existujúce strihy"</strong> spáruje strih podľa <strong>čísla modelu</strong> a doplní len <strong>chýbajúce info</strong> — takže sa ti rovnaký strih <strong>neduplikuje</strong>, len sa dozdobí.</li>
+      </ul>
+      <p>Po analýze uvidíš zoznam navrhnutých strihov (nové vs doplnené) a potvrdíš.</p>
+      <div class="tip"><strong>Ako funguje párovanie:</strong> AI prečíta <strong>číslo modelu</strong> a hľadá strih s rovnakým číslom <strong>v rovnakom časopise</strong>. Porovnáva „chytro" — nezáleží na bodkách, medzerách ani veľkosti písmen (napr. „č. 123" = „123"). Keď nájde zhodu, <strong>doplní chýbajúce údaje</strong> k tomu strihu; keď nie, <strong>založí nový</strong>. Doplnenie existujúceho sa navyše <strong>nepočíta</strong> do limitu 100 strihov zadarmo.<br><br><strong>Odporúčaný postup:</strong> najprv naimportuj <strong>prehľad</strong> (vzniknú strihy s číslami modelov), potom dofoť <strong>detailné stránky</strong> so zapnutým „Doplniť existujúce" — údaje sa priradia k správnym strihom.</div>
+
+      <div class="tip"><strong>Kvalita:</strong> na prehľady je spoľahlivejší <strong>Gemini</strong> (vidí aj drobné nákresy); Groq ide pri prehľade len z textu (orientačne). Fotenie prehľadu má vlastné tipy — pozri sekciu <a href="#" data-go="tipy">Tipy na fotenie</a>.</div>
+    </section>
+
+    <section class="doc" data-sec="metraz">
+      <h2><span class="ic">🧵</span>Metráž (látky &amp; panely)</h2>
+      <p class="lead">Sklad tvojich látok a panelov — zloženie, farby, kde kúpené, koľko zostáva.</p>
+      <ul>
+        <li><strong>Karta látky:</strong> názov, typ, zloženie, farba, krajina pôvodu, obchod, umiestnenie, cena, srdiečka a ďalšie vlastnosti.</li>
+        <li><strong>Panely</strong> vedieš zvlášť od metrových látok.</li>
+        <li><strong>Plný filter</strong> — stav, typ, zloženie, krajina, obchod, umiestnenie, srdiečka aj vlastnosti.</li>
+        <li>Foto látky sa hodí aj do Vizualizácie (pozri nižšie).</li>
+      </ul>
+      <div class="tip"><strong>Všetko si prispôsobíš:</strong> typy, zloženia, krajiny, obchody, umiestnenia aj vlastnosti sú <strong>tvoje zoznamy</strong> — pridáš, premenuješ aj zmažeš si ich presne tak, ako potrebuješ.</div>
+    </section>
+
+    <section class="doc" data-sec="galanterie">
+      <h2><span class="ic">🔘</span>Galantéria</h2>
+      <p class="lead">Zipsy, gombíky, výstuhy, stuhy… — a hlavne <strong>plne prispôsobiteľná</strong>. Nie si obmedzená pevnými poľami; sama si nadefinuješ, čo pri ktorej galantérii evidovať.</p>
+
+      <h3>Ako si to postavíš</h3>
+      <ul>
+        <li><strong>Vlastné kategórie</strong> — vytvoríš si akúkoľvek (Zips, Gombík, Výstuha, Stuha, Šnúra…).</li>
+        <li><strong>Vlastné vlastnosti (atribúty)</strong> — ku každej kategórii pridáš svoje pole a pri každom vyberieš <strong>typ</strong>:
+          <ul style="margin:6px 0 0">
+            <li><strong>Číslo</strong> (+ jednotka — mm, cm, g/m²…) — napríklad „Šírka zubov" v mm alebo „Priemer" v palcoch.</li>
+            <li><strong>Výber jednej možnosti</strong> — napríklad „Typ zipsu": kostený / špirálový / kovový.</li>
+            <li><strong>Výber viacerých možností</strong> — napríklad „Špeciálny": vodoodolný, autolock…</li>
+            <li><strong>Text</strong> — voľný zápis.</li>
+          </ul>
+        </li>
+        <li><strong>Vlastné možnosti</strong> — pri výberových typoch si zoznam možností sama pridáš, premenuješ aj zmažeš.</li>
+      </ul>
+      <p>Každá kategória tak má <strong>svoju vlastnú sadu polí</strong> — gombík evidoval úplne inak než zips, presne ako to dáva zmysel tebe.</p>
+
+      <div class="tip"><strong>Východisková sada:</strong> na čistej inštalácii je pripravená ukážka (<strong>zips, výstuha, gombík</strong>) s praktickými vlastnosťami a možnosťami — ber ju ako vzor a pokojne ju uprav, rozšír alebo zmaž.</div>
+
+      <h3>Položky</h3>
+      <ul>
+        <li>Každý kus je <strong>karta</strong> s fotkou, počtom, poznámkami, <strong>srdiečkami</strong>, <strong>košíkom</strong> (mám kúpiť) a odkazmi — plus tvoje vlastné vlastnosti dané kategóriou.</li>
+        <li>Dajú sa <strong>duplikovať, mazať</strong> aj <strong>hromadne upravovať</strong> (výberový režim).</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="zaznamy">
+      <h2><span class="ic">🪡</span>Záznamy o ušití</h2>
+      <p class="lead">Denník toho, čo si ušila — k strihu, s dátumom, veľkosťou, spotrebou a poznámkami.</p>
+      <ul>
+        <li>Zapíšeš, komu a v akej veľkosti si šila, koľko látky padlo, aj fotky výsledku.</li>
+        <li>Priradíš aj <strong>použité látky a galantériu</strong> (priamo z tvojej Metráže a Galantérie) — pri každom ušitom kuse tak máš, <strong>z čoho a s čím</strong> vznikol.</li>
+        <li>Filter a zoradenie rovnako ako inde.</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="seznamy">
+      <h2><span class="ic">🔖</span>Zoznamy</h2>
+      <p class="lead">Nie sú to len kolekcie strihov — Zoznam ti poslúži ako <strong>kompletný plán na šitie</strong>.</p>
+      <p>Do jedného zoznamu si dáš dokopy všetko, čo k projektu patrí:</p>
+      <ul>
+        <li><strong>Strihy</strong> — čo chceš ušiť.</li>
+        <li><strong>Látky a panely</strong> — z čoho.</li>
+        <li><strong>Galantériu</strong> — zipsy, gombíky, výstuhy…</li>
+        <li><strong>Vizualizácie</strong> — náhľad, ako to má vyzerať.</li>
+      </ul>
+      <p>Jeden kus (strih, látka, galantéria aj vizualizácia) môže byť <strong>vo viacerých zoznamoch</strong>. Zoznamy si <strong>ofarbíš a pomenuješ</strong> podľa seba — napríklad „Šaty pre dcéru", „Na leto", „Rozrobené".</p>
+      <div class="tip"><strong>Čo ešte kúpiť:</strong> pri strihoch, látkach aj galantérii máš <strong>košík</strong> (mám kúpiť) a <strong>srdiečka</strong> (chcem) — takže priamo v pláne vidíš, čo k nemu ešte dokúpiť.</div>
+    </section>
+
+    <section class="doc" data-sec="sablony">
+      <h2><span class="ic">👗</span>Šablóny <span class="badge">🏅 Premium</span></h2>
+      <p class="lead">Siluety odevov, do ktorých sa potom vo Vizualizácii „nalieva" látka.</p>
+      <h3>Druhy šablón</h3>
+      <ul>
+        <li><strong>SVG šablóna</strong> — čistý vektorový nákres (napr. od autorov flat skíc).</li>
+        <li><strong>Fotošablóna</strong> — priehľadné PNG (silueta odevu s dierou), pod ktorú sa lieva látka.</li>
+        <li><strong>Z fotky (vektorizácia)</strong> — aplikácia z fotky/skice vytvorí obrys siluety.</li>
+      </ul>
+      <h3>Vytvorenie z fotky</h3>
+      <ul>
+        <li>Vyber obrázok → orež na jeden odev → aplikácia nájde <strong>diely</strong> a v náhľade ich očísluje.</li>
+        <li><strong>Zaškrtni všetky diely</strong>, ktoré patria k odevu (napríklad ľavý aj pravý diel kabáta). Susedný strih nechaj nezaškrtnutý.</li>
+        <li>Zadaj názov a približnú výšku a ulož.</li>
+      </ul>
+      <div class="tip"><strong>Dobrý zdroj:</strong> <strong>technický nákres</strong> — čistá <strong>čierna línia strihu</strong> (flat sketch). Ideálny je napríklad <strong>prehľadový list strihov v časopise</strong>, kde sú vedľa seba nakreslené technické nákresy jednotlivých modelov.</div>
+      <div class="warn"><strong>Ostrosť rozhoduje:</strong> najlepšie vyjde <strong>ostrá skica zblízka</strong>. Rozmazané mäkké čiary alebo drobný výrez z hustej prehľadovej stránky sa nemusia podariť — aplikácia na to upozorní.</div>
+      <p>V sekcii <strong>Šablóny</strong> (a záložka <strong>Autori</strong>) šablóny spravuješ — karty, srdiečka, filter, kredit autora s odkazom.</p>
+    </section>
+
+    <section class="doc" data-sec="vizualizace">
+      <h2><span class="ic">🎨</span>Vizualizácia <span class="badge">🏅 Premium</span></h2>
+      <p class="lead">Nalej svoju látku do siluety strihu a hneď vidíš, ako by to vyzeralo.</p>
+      <h3>Sprievodca</h3>
+      <ul>
+        <li>Vyber <strong>šablóny</strong> → prepni na <strong>Metráž</strong> → vyber <strong>látky/panely</strong> (plný filter) → <strong>Vizualizácia</strong>.</li>
+        <li>Hore: <kbd>✕</kbd> zavrieť · prepínač <strong>Vybrať všetko / Zrušiť všetko</strong> · počet vybraných · filter.</li>
+      </ul>
+      <h3>Ofarbovanie</h3>
+      <ul>
+        <li><strong>Ťuk na oblasť = ofarbí tú jednu oblasť</strong> vybranou látkou (vpravo je pás látok ako štetec).</li>
+        <li><strong>Vyplniť všetko</strong> (ikona 🪣 v riadku Dlaždice/Celá fotka) ofarbí <strong>všetky oblasti naraz</strong> jednou látkou — hodí sa pri viacdielnych šablónach.</li>
+        <li><strong>Vzor na mieru pre každú oblasť:</strong> ťukni na oblasť (stane sa aktívnou) a <strong>posuvníkom alebo prstami</strong> ju priblížiš, posunieš aj otočíš — <strong>každá oblasť môže mať vzor v inej veľkosti a natočení</strong>.</li>
+        <li><strong>Šírka látky (cm)</strong> nastaví reálne merítko vzoru. Tlačidlo <strong>Vycentrovať (↻)</strong> vráti aktívnu oblasť na <strong>východiskovú veľkosť podľa zadanej šírky látky</strong>.</li>
+        <li><strong>Dlaždice ↔ Celá fotka</strong> a orientačná <strong>mriežka 10 cm</strong>.</li>
+      </ul>
+      <div class="tip"><strong>Dlaždice vs Celá fotka:</strong>
+        <ul style="margin:8px 0 0">
+          <li><strong>Dlaždice</strong> — vzor látky sa <strong>opakuje</strong> cez celú oblasť, ako skutočná <strong>metráž z rolky</strong>. Použi pri látkach s opakujúcim sa vzorom; vidíš, ako sa vzor ťahá po celom diele v správnom merítku.</li>
+          <li><strong>Celá fotka</strong> — fotka sa do oblasti vloží <strong>len raz</strong> (ako nálepka), nič sa neopakuje. Hodí sa na <strong>panel</strong> alebo konkrétny <strong>umiestnený motív</strong> (potlač, obrázok), ktorý nechceš dláždiť.</li>
+        </ul>
+      </div>
+      <h3>Uložené vizualizácie</h3>
+      <ul>
+        <li>Hotovú vizualizáciu <strong>uložíš</strong> (💾) — urobí náhľad a zapamätá si recept; kedykoľvek ju zase otvoríš a upravíš.</li>
+        <li>Znovu otvorenú vizualizáciu môžeš ďalej upravovať — cez <strong>„+"</strong> pridáš <strong>ďalšie existujúce šablóny aj látky</strong> (nielen tie, s ktorými vznikla).</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="premium">
+      <h2><span class="ic">🏅</span>Premium</h2>
+      <p class="lead">Väčšina aplikácie je zadarmo. Za Premium sú <strong>Šablóny</strong> a <strong>Vizualizácia</strong>.</p>
+      <ul>
+        <li>Položky Šablóny a Vizualizácia zostávajú v menu viditeľné (so zlatým odznakom 🏅); bez Premium ťa po ťuknutí navedú na kúpu.</li>
+        <li><strong>Kúpiť / Obnoviť Premium</strong> nájdeš v <strong>Nastaveniach</strong>. „Obnoviť" použi, keď si už kúpila (nový telefón a pod.).</li>
+        <li>Verzia zadarmo má strop 100 strihov; Premium ho ruší.</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="zaloha">
+      <h2><span class="ic">💾</span>Záloha &amp; obnova</h2>
+      <p class="lead">Tvoje dáta sú len v telefóne — preto zálohuj.</p>
+      <ul>
+        <li>V Nastaveniach urobíš <strong>zálohu do ZIP</strong> (databáza + fotky). Ten si ulož napríklad na disk alebo do e-mailu.</li>
+        <li><strong>Obnova</strong> zo ZIPu ťa vráti späť (aj na novom zariadení).</li>
+      </ul>
+      <div class="tip"><strong>Obnovuj z lokálneho súboru:</strong> obnovu rob ideálne z <strong>lokálne stiahnutej zálohy, ktorú máš fyzicky v telefóne</strong> — nie priamo z cloudu (Google Disk a pod.). Cloudové súbory bývajú len „na stiahnutie na vyžiadanie" a nemusia sa do aplikácie načítať správne. Istejšie je ZIP <strong>najprv stiahnuť do telefónu</strong> a až potom obnoviť.</div>
+      <div class="warn"><strong>Dôležité:</strong> automatická cloudová záloha Androidu je zámerne <strong>vypnutá</strong> (aby neprepísala tvoje dáta starou verziou). Spoľahni sa na <strong>vlastnú ZIP zálohu</strong>.</div>
+    </section>
+
+    <section class="doc" data-sec="nastaveni">
+      <h2><span class="ic">⚙️</span>Nastavenia</h2>
+      <ul>
+        <li><strong>Jazyk</strong> aplikácie.</li>
+        <li><strong>Kvalita fotiek</strong> (zvlášť pre strihy / časopisy / záznamy) — nižšia šetrí miesto, vyššia drží detail.</li>
+        <li><strong>AI kľúče</strong> pre import (voliteľné) a stav <strong>Premium</strong> licencie (kúpiť/obnoviť).</li>
+      </ul>
+
+      <h3>Preklad</h3>
+      <p>Strihy z <strong>cudzojazyčných časopisov</strong> (napríklad nemecká Burda) si necháš <strong>preložiť</strong>. Pri strihu v cudzom jazyku sa objaví tlačidlo <strong>„Preložiť"</strong> — texty sa preložia do tvojho jazyka; <strong>„Vrátiť originály"</strong> ich vráti späť. V karte <strong>Preklad</strong> (záložka v Nastaveniach) si nastavíš:</p>
+      <ul>
+        <li><strong>Cieľový jazyk prekladu</strong> — do ktorého jazyka sa prekladá (východiskovo = jazyk aplikácie).</li>
+        <li><strong>Knižnicu prekladu</strong> — ktorou službou sa texty prekladajú (pozri nižšie).</li>
+      </ul>
+      <div class="tip"><strong>AI vs offline — v čom je rozdiel:</strong>
+        <ul style="margin:8px 0 0">
+          <li><strong>AI (Gemini / Groq)</strong> — <strong>online</strong>. Lepšia na <strong>odborné (šicie) termíny</strong>, ale potrebuje pripojenie a <strong>spotrebúva API kvótu</strong>.</li>
+          <li><strong>Google ML Kit (offline)</strong> — funguje <strong>offline</strong> (po jednorazovom stiahnutí jazykového modelu), je <strong>rýchla</strong>, ale pri technických termínoch <strong>slabšia</strong>.</li>
+        </ul>
+        <div style="margin-top:8px">Zjednodušene: <strong>AI</strong> = presnejší preklad za cenu kvóty a pripojenia; <strong>ML Kit</strong> = rýchla a zadarmo aj bez internetu, ale hrubšia.</div>
+      </div>
+
+      <h3>Údržba</h3>
+      <p>Praktické jednorazové akcie:</p>
+      <ul>
+        <li><strong>Pridať ukážkové dáta</strong> — pre nováčikov: naplní aplikáciu ukážkovými strihmi a látkami, nech hneď vidíš, ako funguje.</li>
+        <li><strong>Doplniť hashtagy pri všetkých strihoch</strong> — spätne priradí hashtagy z textu strihov (pozri <a href="#" data-go="strihy">Hashtagy</a>).</li>
+        <li><strong>Doplniť Zdroj-Web z odkazov</strong> — pri strihoch, ktoré majú pripojený odkaz, ale nemajú vyplnený <strong>Zdroj</strong>, doplní Zdroj = Web a názov webu. Existujúci (Časopis/Obchod/Web) neprepíše.</li>
+        <li><strong>Odkryť skryté šablóny</strong> — vstavané šablóny sa nedajú mazať, len <strong>skryť</strong>; týmto sa všetky skryté zase zobrazia.</li>
+      </ul>
+
+      <h3>Vlastné AI kľúče (voliteľné)</h3>
+      <p>AI import funguje aj <strong>bez vlastného kľúča</strong> (východiskový Gemini). Vlastný kľúč nastav len keď chceš <strong>vlastné limity</strong> alebo použiť <strong>Groq</strong>. Kľúč vlož v Nastaveniach do poľa pre AI kľúč. Kľúč je <strong>osobný — nikomu ho nedávaj</strong>.</p>
+
+      <h3>Gemini (Google AI Studio)</h3>
+      <ul>
+        <li>Otvor <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">aistudio.google.com/app/apikey</a> a prihlás sa <strong>Google účtom</strong>.</li>
+        <li>Klikni na <strong>„Get API key" / „Create API key"</strong> (Získať / Vytvoriť kľúč).</li>
+        <li>Vyber (alebo nechaj vytvoriť) projekt a kľúč sa vygeneruje.</li>
+        <li><strong>Skopíruj</strong> ho a vlož do Nastavení aplikácie.</li>
+      </ul>
+      <p class="lead" style="font-size:15px">Gemini má štedrý bezplatný limit; na kľúč stačí Google účet.</p>
+
+      <h3>Groq</h3>
+      <ul>
+        <li>Otvor <a href="https://console.groq.com/keys" target="_blank" rel="noopener">console.groq.com/keys</a> a <strong>zaregistruj sa / prihlás</strong>.</li>
+        <li>Klikni na <strong>„Create API Key"</strong>, pomenuj ju a potvrď.</li>
+        <li>Kľúč sa ukáže <strong>len raz</strong> — hneď ho <strong>skopíruj</strong> a vlož do Nastavení aplikácie.</li>
+      </ul>
+      <div class="warn"><strong>Pozor:</strong> Groq kľúč po zavretí okna už znovu neuvidíš. Keby si sa k nemu nedostala, jednoducho vytvor nový.</div>
+    </section>
+
+    <section class="doc" data-sec="tipy">
+      <h2><span class="ic">💡</span>Tipy na fotenie</h2>
+      <h3>Prehľad časopisu (pre AI import)</h3>
+      <ul>
+        <li>Foť stránku rovno, za dobrého svetla, nech sú strihy čitateľné.</li>
+      </ul>
+      <h3>Fotenie pre šablónu</h3>
+      <ul>
+        <li>Ak chceš z nejakého strihu <strong>čistú šablónu</strong>, odfoť <strong>len ten jeden strih zblízka</strong> (nech vyplní rámček) — nie drobný výrez z hustej prehľadovej stránky.</li>
+        <li>Čím ostrejší a väčší je nákres na fotke, tým lepšia vektorizácia.</li>
+      </ul>
+      <h3>Fotenie látok (pre Vizualizáciu)</h3>
+      <p>Cieľom nie je pekná fotka, ale <strong>rovná, so známym rozmerom a vo vernej farbe</strong> — nech sa dobre „dláždi" a sedí odtieň.</p>
+      <ul>
+        <li><strong>Vyžehli a napni</strong> látku — zvlnenie robí falošný vzor aj zlé merítko.</li>
+        <li><strong>Vymedz si štvorec</strong> (napríklad páskou 100 × 100 cm) — potom presne vieš, akú šírku zadať v aplikácii.</li>
+        <li><strong>Telefón kolmo zhora</strong> (vtáčí pohľad), zapni <strong>mriežku</strong>, hrany látky rovnobežne s rámčekom. Šikmý záber merítko pokriví.</li>
+        <li><strong>Rozptýlené svetlo</strong> (pri okne zatiahnuté, alebo dve svetlá zo strán), <strong>bez blesku</strong>, pozor na vlastný tieň. Nemiešaj okno + žiarovku.</li>
+      </ul>
+      <div class="tip"><strong>Verná farba (prečo modrá „šedne"):</strong> automatika pri veľkej tmavej/modrej ploche pridá žltú a presvetlí → z navy je sivá. V <strong>režime PRO</strong> (pri Samsungu aplikácia <em>Expert RAW</em>) nastav <strong>ručne vyváženie bielej</strong> (~5300 K, denné svetlo) a zľahka <strong>podexponuj</strong> (−0,5 EV); ideálne foť <strong>RAW</strong>.</div>
+      <div class="tip"><strong>Biely papier = poistka na farbu (aj bez nastavovania foťáku):</strong> nevieš vo fotoaparáte nastaviť vyváženie bielej? Nevadí — len <strong>polož vedľa látky kúsok čistého bieleho papiera</strong> a odfoť. Potom v <strong>ľubovoľnom editore fotiek</strong> (Google Fotky, Snapseed, Lightroom…) ťukni na funkciu <strong>vyváženie bielej / kvapkadlo</strong> a klepni na ten biely papier — farba látky sa sama zrovná. Papier potom z orezu vynecháš.</div>
+      <div class="tip"><strong>Merítko:</strong> po nahraní látky <strong>poklepkaj na číslo</strong> pri posuvníku merítka a zadaj <strong>šírku látky v cm</strong> (pri štvorci 100). Látka sa potom na šablónu lieva v správnej veľkosti.</div>
+      <p style="font-weight:700; color:var(--accent-ink); margin-top:20px">Podľa typu látky:</p>
+      <ul>
+        <li><strong>Lesklé</strong> (satén, hodváb) — stráž odlesky; rozptýlené svetlo, prípadne polarizačný klip na objektív.</li>
+        <li><strong>Tmavé</strong> (čierna, navy, denim) — vyváženie bielej ručne + podexponovať (−0,5 až −1 EV); bočné svetlo vytiahne štruktúru.</li>
+        <li><strong>Svetlé</strong> (biela, pastely) — ľahko sa prepália; podexponuj (−0,7 až −1 EV) a nefoť na biely podklad (daj pod ňu sivú).</li>
+        <li><strong>Priesvitné</strong> (šifón, tyl, sieťovina) — polož na neutrálny biely/sivý papier; pokojne na toľko vrstiev, na koľko sa reálne nosí.</li>
+        <li><strong>Vzorované</strong> (potlače, kvety) — zachyť celý <strong>repeat vzoru</strong>, ostro a rovno; sýtosť v úpravách nepreháňaj.</li>
+        <li><strong>Kocky, pruhy, geometria</strong> — hlavne presne <strong>kolmo</strong>; línie vzoru zrovnaj podľa mriežky.</li>
+        <li><strong>Úplety, rebrovanie</strong> — <strong>nenapínaj</strong>, foť v uvoľnenom stave (ťahom skreslíš oká aj merítko).</li>
+        <li><strong>Vlasové</strong> (zamat, menčester, plyš) — vlas mení odtieň podľa smeru; foť z jedného smeru a bočné svetlo na štruktúru.</li>
+        <li><strong>Metalické</strong> (lurex, flitre, brokát) — bodové odlesky → len rozptýlené svetlo, polarizátor, žiadny blesk; počítaj s viacerými pokusmi.</li>
+      </ul>
+    </section>
+
+    <footer>
+      Lostria Sewing · Nápoveda. Vytvorené s láskou pre šičky. 🌸<br>
+      <a href="https://dvorskagabriela-creator.github.io/lostria-sewing-privacy/">Zásady ochrany súkromia</a>
+    </footer>
+  </div>
+
+  <!-- ===================== DEUTSCH ===================== -->
+  <div class="lang" data-lang="de" hidden>
+    <div class="hero">
+      <div class="eyebrow">Offline-App für Näherinnen</div>
+      <h1>Willkommen bei Lostria Sewing</h1>
+      <p class="lead">Den Überblick über Schnittmuster, Zeitschriften, Stoffe und Kurzwaren — alles auf deinem Handy, ohne Konto und ohne Internet. Diese Anleitung führt dich durch alles, was die App kann.</p>
+    </div>
+
+    <nav class="toc" aria-label="Inhalt">
+      <h2>Inhalt</h2>
+      <div class="toc-grid">
+        <a href="#" data-go="zaklad"><span class="ic">🧭</span>Grundlagen &amp; Menü</a>
+        <a href="#" data-go="strihy"><span class="ic">✂️</span>Schnittmuster</a>
+        <a href="#" data-go="casopisy"><span class="ic">📖</span>Zeitschriften &amp; KI-Import</a>
+        <a href="#" data-go="metraz"><span class="ic">🧵</span>Meterware (Stoffe)</a>
+        <a href="#" data-go="galanterie"><span class="ic">🔘</span>Kurzwaren</a>
+        <a href="#" data-go="zaznamy"><span class="ic">🪡</span>Näh-Notizen</a>
+        <a href="#" data-go="seznamy"><span class="ic">🔖</span>Listen</a>
+        <a href="#" data-go="sablony"><span class="ic">👗</span>Vorlagen</a>
+        <a href="#" data-go="vizualizace"><span class="ic">🎨</span>Visualisierung</a>
+        <a href="#" data-go="premium"><span class="ic">🏅</span>Premium</a>
+        <a href="#" data-go="zaloha"><span class="ic">💾</span>Sicherung &amp; Wiederherstellung</a>
+        <a href="#" data-go="nastaveni"><span class="ic">⚙️</span>Einstellungen</a>
+        <a href="#" data-go="tipy"><span class="ic">💡</span>Foto-Tipps</a>
+      </div>
+    </nav>
+
+    <section class="doc" data-sec="zaklad">
+      <h2><span class="ic">🧭</span>Grundlagen &amp; Menü</h2>
+      <p class="lead">Alles ist nur auf deinem Gerät gespeichert. Du brauchst weder ein Konto noch eine Verbindung — die App funktioniert offline.</p>
+      <div class="tip"><strong>Fotos &amp; Speicherplatz:</strong> Bilder werden für die Vorschauen <strong>verkleinert und komprimiert</strong>, damit sie auf dem Handy so wenig Platz wie möglich einnehmen. In den <a href="#" data-go="nastaveni">Einstellungen</a> kannst du eine <strong>höhere Fotoauflösung</strong> wählen — rechne dann aber damit, dass die App-Daten schneller wachsen.</div>
+      <p>Zwischen den Bereichen wechselst du über das <strong>Hauptmenü</strong>: oben links das Symbol <kbd>☰</kbd> oder das <strong>Blümchen</strong> 🌸. Hier findest du Schnittmuster, Meterware, Kurzwaren, Näh-Notizen, Listen, Vorlagen, Visualisierung und Einstellungen.</p>
+      <p>In jedem Bereich befindet sich oben rechts ein Paar Bedienelemente in derselben Reihenfolge: zuerst der <strong>Filter</strong>, dann die <strong>Sortierung</strong>.</p>
+    </section>
+
+    <section class="doc" data-sec="strihy">
+      <h2><span class="ic">✂️</span>Schnittmuster</h2>
+      <p class="lead">Das Herz der App — die Verwaltung deiner Schnittmuster mit Bildern, Kategorien und allem drum herum.</p>
+      <h3>Schnittmuster hinzufügen</h3>
+      <ul>
+        <li><strong>Manuell</strong> — Name, Kategorie, Zielgruppe, Format, Größen, Notizen.</li>
+        <li><strong>Aus dem Web / per Link</strong> — die App holt aus dem Online-Shop Name und Foto, den Rest ergänzt du.</li>
+        <li><strong>Aus einer Zeitschrift per KI</strong> — du fotografierst die Übersichtsseite und die App erstellt daraus Schnittmuster (siehe Zeitschriften).</li>
+      </ul>
+      <h3>Detail &amp; Organisation</h3>
+      <p>Einem Schnittmuster ordnest du zu:</p>
+      <ul>
+        <li><strong>Kategorien</strong> — Kleid, Rock, Hose, Bluse, Mantel… (ruhig auch mehrere auf einmal).</li>
+        <li><strong>Zielgruppen</strong> — Damen, Herren, Kinder, Unisex…</li>
+        <li><strong>Formate</strong> — Papier, PDF geschichtet / flach, Beamer…</li>
+        <li><strong>Aufbewahrungsort</strong> — wo du das Schnittmuster physisch hast (Schublade, Ordner, im Computer…).</li>
+        <li><strong>Hashtags</strong> — freie Etiketten nach deinem Geschmack (#Jersey, #Reißverschluss, #fürSommer…).</li>
+        <li><strong>Herzen</strong> = wie sehr du es nähen möchtest (Wunschliste), <strong>Warenkorb</strong> = muss ich kaufen.</li>
+        <li><strong>Bilder</strong> — hinzufügen aus der Kamera, Galerie oder Zeitschrift; jedes lässt sich <strong>zuschneiden</strong> und drehen.</li>
+      </ul>
+      <div class="tip"><strong>Alles passt du dir an:</strong> Kategorien, Zielgruppen, Formate, Aufbewahrungsorte und Hashtags sind <strong>deine Listen</strong> — du kannst sie <strong>hinzufügen, umbenennen und löschen</strong>, ganz nach deinen Vorstellungen, wie du es brauchst.</div>
+      <p><strong>Filtern und Sortieren</strong> funktioniert dann nach Kategorie, Zielgruppe, Herzen, Hashtags und weiteren.</p>
+      <div class="tip"><strong>Tipp:</strong> Beim Bild steht unten rechts die Auflösung in px — praktisch zu wissen, wie viele Details das Foto hat.</div>
+
+      <h3>Hashtags — clevere Etiketten</h3>
+      <p>Hashtags sind freie Etiketten für schnelles Suchen und Filtern (#Jersey, #Reißverschluss, #fürSommer…). Außerdem können sie zwei praktische Dinge:</p>
+      <ul>
+        <li><strong>Automatisches Anhängen aus dem Schnittmuster-Text:</strong> Die App durchsucht den <strong>Text des Schnittmusters</strong> (Name, Beschreibung, Notizen) und <strong>hängt dem Schnittmuster selbst</strong> die Hashtags an, deren Wort sie im Text findet. Sie vergleicht <strong>ab dem Wortanfang (Wortstamm) und ignoriert die Endungen</strong> — ein als <strong>Wortstamm</strong> eingegebener Hashtag erfasst also auch seine verschiedenen Formen.</li>
+        <li><strong>Aliasse (alternative und fremdsprachige Wörter):</strong> Zu jedem Hashtag fügst du weitere Wörter hinzu (auch sie werden als <strong>Wortstämme</strong> behandelt), die darauf verweisen.<br>
+        <strong>Beispiel:</strong> der Hashtag <strong>„Jeansstoff"</strong> mit den Aliassen <strong>„Denim"</strong>, <strong>„jeans"</strong>, <strong>„Jean"</strong>. Wenn dann im Text des Schnittmusters „Jeanshose", „Jeans" oder „Denim" steht, hängt die App den Hashtag <strong>„Jeansstoff"</strong> an. Ein Alias kann auch <strong>mehrere Hashtags</strong> gleichzeitig anhängen.</li>
+        <li><strong>Zauberknopf — nachträgliches Ergänzen:</strong> In <strong>Einstellungen → Wartung</strong> findest du die Schaltfläche <strong>„Hashtags bei allen Schnittmustern ergänzen"</strong>. Sie lässt die App <strong>die Texte aller Schnittmuster auf einmal durchgehen</strong> und ihnen nachträglich die Hashtags zuordnen, die die Auto-Erkennung findet. <strong>Bestehende Tags bleiben erhalten</strong> (nichts wird gelöscht). Ideal <strong>nach dem Hinzufügen eines neuen Hashtags oder Alias</strong> — es wird gleich auch in ältere Schnittmuster übernommen.</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="casopisy">
+      <h2><span class="ic">📖</span>Zeitschriften &amp; KI-Import</h2>
+      <p class="lead">Verwalte Schnittmuster-Zeitschriften und lass dir aus Fotos der Seiten direkt Schnittmuster erstellen oder ergänzen.</p>
+      <p>Zu jeder Zeitschrift fügst du ein <strong>Titelbild</strong> und Seiten hinzu. Vor der KI-Analyse <strong>sagst du, was auf dem Foto ist</strong> (Schalter <strong>Übersicht / Detail</strong>), damit die KI nicht raten muss.</p>
+
+      <h3>1) Übersicht — erstellt Schnittmuster</h3>
+      <ul>
+        <li>Du fotografierst die <strong>Übersichtsseite</strong> (das Schachbrett der Schnittmuster) und die KI zieht daraus <strong>die einzelnen Schnittmuster heraus und legt sie an</strong> — verknüpft mit der Zeitschrift (Modellnummer, Kategorie, Größen…).</li>
+        <li>Das Übersichtsfoto wird <strong>bei der Zeitschrift gespeichert</strong> und dient als Vorschau bei den Schnittmustern, die daraus entstanden sind.</li>
+      </ul>
+
+      <h3>2) Detail — ergänzt Angaben zum Schnittmuster</h3>
+      <ul>
+        <li>Du fotografierst die <strong>Detailseite eines einzelnen Schnittmusters</strong> (mit den technischen Angaben — Größen, Schwierigkeit, Stoffverbrauch, Material, Beschreibung) und die KI <strong>ergänzt diese Angaben</strong>.</li>
+        <li>Die Option <strong>„Bestehende Schnittmuster ergänzen"</strong> ordnet das Schnittmuster über die <strong>Modellnummer</strong> zu und ergänzt nur die <strong>fehlenden Infos</strong> — so wird dasselbe Schnittmuster <strong>nicht dupliziert</strong>, sondern nur vervollständigt.</li>
+      </ul>
+      <p>Nach der Analyse siehst du eine Liste der vorgeschlagenen Schnittmuster (neu vs. ergänzt) und bestätigst.</p>
+      <div class="tip"><strong>So funktioniert die Zuordnung:</strong> Die KI liest die <strong>Modellnummer</strong> und sucht ein Schnittmuster mit derselben Nummer <strong>in derselben Zeitschrift</strong>. Sie vergleicht „clever" — Punkte, Leerzeichen und Groß-/Kleinschreibung spielen keine Rolle (z. B. „Nr. 123" = „123"). Findet sie eine Übereinstimmung, <strong>ergänzt sie die fehlenden Angaben</strong> zu diesem Schnittmuster; wenn nicht, <strong>legt sie ein neues an</strong>. Das Ergänzen eines bestehenden zählt außerdem <strong>nicht</strong> zum Limit von 100 kostenlosen Schnittmustern.<br><br><strong>Empfohlener Ablauf:</strong> Importiere zuerst die <strong>Übersicht</strong> (es entstehen Schnittmuster mit Modellnummern), fotografiere dann die <strong>Detailseiten</strong> mit eingeschaltetem „Bestehende ergänzen" nach — die Angaben werden den richtigen Schnittmustern zugeordnet.</div>
+
+      <div class="tip"><strong>Qualität:</strong> Bei Übersichten ist <strong>Gemini</strong> zuverlässiger (es erkennt auch kleine Zeichnungen); Groq arbeitet bei der Übersicht nur aus dem Text (näherungsweise). Das Fotografieren der Übersicht hat eigene Tipps — siehe den Abschnitt <a href="#" data-go="tipy">Foto-Tipps</a>.</div>
+    </section>
+
+    <section class="doc" data-sec="metraz">
+      <h2><span class="ic">🧵</span>Meterware (Stoffe &amp; Panels)</h2>
+      <p class="lead">Das Lager deiner Stoffe und Panels — Zusammensetzung, Farben, wo gekauft, wie viel übrig ist.</p>
+      <ul>
+        <li><strong>Stoffkarte:</strong> Name, Typ, Zusammensetzung, Farbe, Herkunftsland, Geschäft, Aufbewahrungsort, Preis, Herzen und weitere Eigenschaften.</li>
+        <li><strong>Panels</strong> führst du getrennt von Meterware.</li>
+        <li><strong>Voller Filter</strong> — Zustand, Typ, Zusammensetzung, Land, Geschäft, Aufbewahrungsort, Herzen und Eigenschaften.</li>
+        <li>Das Foto des Stoffes ist auch für die Visualisierung praktisch (siehe unten).</li>
+      </ul>
+      <div class="tip"><strong>Alles passt du dir an:</strong> Typen, Zusammensetzungen, Länder, Geschäfte, Aufbewahrungsorte und Eigenschaften sind <strong>deine Listen</strong> — du fügst sie hinzu, benennst sie um und löschst sie genau so, wie du es brauchst.</div>
+    </section>
+
+    <section class="doc" data-sec="galanterie">
+      <h2><span class="ic">🔘</span>Kurzwaren</h2>
+      <p class="lead">Reißverschlüsse, Knöpfe, Einlagen, Bänder… — und vor allem <strong>voll anpassbar</strong>. Du bist nicht auf feste Felder beschränkt; du legst selbst fest, was du bei welcher Kurzware erfasst.</p>
+
+      <h3>So baust du es dir auf</h3>
+      <ul>
+        <li><strong>Eigene Kategorien</strong> — du erstellst beliebige (Reißverschluss, Knopf, Einlage, Band, Kordel…).</li>
+        <li><strong>Eigene Eigenschaften (Attribute)</strong> — zu jeder Kategorie fügst du deine Felder hinzu und wählst bei jedem den <strong>Typ</strong>:
+          <ul style="margin:6px 0 0">
+            <li><strong>Zahl</strong> (+ Einheit — mm, cm, g/m²…) — etwa „Zahnbreite" in mm oder „Durchmesser" in Zoll.</li>
+            <li><strong>Auswahl einer Option</strong> — etwa „Reißverschluss-Typ": Zahn / Spirale / Metall.</li>
+            <li><strong>Auswahl mehrerer Optionen</strong> — etwa „Spezial": wasserdicht, Autolock…</li>
+            <li><strong>Text</strong> — freie Eingabe.</li>
+          </ul>
+        </li>
+        <li><strong>Eigene Optionen</strong> — bei Auswahltypen fügst du die Liste der Optionen selbst hinzu, benennst sie um und löschst sie.</li>
+      </ul>
+      <p>Jede Kategorie hat so ihren <strong>eigenen Satz an Feldern</strong> — einen Knopf erfasst du ganz anders als einen Reißverschluss, genau wie es für dich Sinn ergibt.</p>
+
+      <div class="tip"><strong>Voreingestellter Satz:</strong> Bei einer frischen Installation ist ein Beispiel vorbereitet (<strong>Reißverschluss, Einlage, Knopf</strong>) mit praktischen Eigenschaften und Optionen — nimm es als Vorlage und pass es ruhig an, erweitere oder lösche es.</div>
+
+      <h3>Artikel</h3>
+      <ul>
+        <li>Jedes Stück ist eine <strong>Karte</strong> mit Foto, Anzahl, Notizen, <strong>Herzen</strong>, <strong>Warenkorb</strong> (muss ich kaufen) und Links — plus deinen eigenen Eigenschaften der jeweiligen Kategorie.</li>
+        <li>Sie lassen sich <strong>duplizieren, löschen</strong> und <strong>gesammelt bearbeiten</strong> (Auswahlmodus).</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="zaznamy">
+      <h2><span class="ic">🪡</span>Näh-Notizen</h2>
+      <p class="lead">Ein Tagebuch dessen, was du genäht hast — zum Schnittmuster, mit Datum, Größe, Verbrauch und Notizen.</p>
+      <ul>
+        <li>Du hältst fest, für wen und in welcher Größe du genäht hast, wie viel Stoff draufging, und Fotos vom Ergebnis.</li>
+        <li>Du ordnest auch die <strong>verwendeten Stoffe und Kurzwaren</strong> zu (direkt aus deiner Meterware und deinen Kurzwaren) — so hast du bei jedem genähten Stück, <strong>woraus und womit</strong> es entstanden ist.</li>
+        <li>Filter und Sortierung wie überall.</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="seznamy">
+      <h2><span class="ic">🔖</span>Listen</h2>
+      <p class="lead">Das sind nicht bloß Sammlungen von Schnittmustern — eine Liste dient dir als <strong>kompletter Nähplan</strong>.</p>
+      <p>In eine einzige Liste packst du alles zusammen, was zum Projekt gehört:</p>
+      <ul>
+        <li><strong>Schnittmuster</strong> — was du nähen willst.</li>
+        <li><strong>Stoffe und Panels</strong> — woraus.</li>
+        <li><strong>Kurzwaren</strong> — Reißverschlüsse, Knöpfe, Einlagen…</li>
+        <li><strong>Visualisierungen</strong> — die Vorschau, wie es aussehen soll.</li>
+      </ul>
+      <p>Ein Stück (Schnittmuster, Stoff, Kurzware oder Visualisierung) kann in <strong>mehreren Listen</strong> sein. Listen <strong>färbst und benennst</strong> du nach deinem Geschmack — etwa „Kleid für die Tochter", „Für den Sommer", „Angefangen".</p>
+      <div class="tip"><strong>Was noch zu kaufen ist:</strong> Bei Schnittmustern, Stoffen und Kurzwaren hast du einen <strong>Warenkorb</strong> (muss ich kaufen) und <strong>Herzen</strong> (will ich) — so siehst du direkt im Plan, was du noch dazukaufen musst.</div>
+    </section>
+
+    <section class="doc" data-sec="sablony">
+      <h2><span class="ic">👗</span>Vorlagen <span class="badge">🏅 Premium</span></h2>
+      <p class="lead">Silhouetten von Kleidungsstücken, in die dann in der Visualisierung Stoff „eingegossen" wird.</p>
+      <h3>Arten von Vorlagen</h3>
+      <ul>
+        <li><strong>SVG-Vorlage</strong> — eine saubere Vektorzeichnung (z. B. von Autoren technischer Zeichnungen).</li>
+        <li><strong>Foto-Vorlage</strong> — ein transparentes PNG (Silhouette eines Kleidungsstücks mit Loch), unter das der Stoff gegossen wird.</li>
+        <li><strong>Aus einem Foto (Vektorisierung)</strong> — die App erstellt aus einem Foto/einer Skizze die Umrisslinie der Silhouette.</li>
+      </ul>
+      <h3>Erstellen aus einem Foto</h3>
+      <ul>
+        <li>Bild auswählen → auf ein Kleidungsstück zuschneiden → die App findet die <strong>Teile</strong> und nummeriert sie in der Vorschau.</li>
+        <li><strong>Hake alle Teile an</strong>, die zum Kleidungsstück gehören (etwa das linke und rechte Vorderteil eines Mantels). Ein benachbartes Schnittmuster lässt du unangehakt.</li>
+        <li>Gib Name und ungefähre Höhe ein und speichere.</li>
+      </ul>
+      <div class="tip"><strong>Gute Quelle:</strong> eine <strong>technische Zeichnung</strong> — eine saubere <strong>schwarze Schnittlinie</strong> (Flat Sketch). Ideal ist etwa das <strong>Übersichtsblatt der Schnittmuster in einer Zeitschrift</strong>, auf dem die technischen Zeichnungen der einzelnen Modelle beieinander stehen.</div>
+      <div class="warn"><strong>Die Schärfe entscheidet:</strong> Am besten gelingt eine <strong>scharfe Skizze aus der Nähe</strong>. Verschwommene, weiche Linien oder ein winziger Ausschnitt aus einer dicht bedruckten Übersichtsseite gelingen unter Umständen nicht — die App weist darauf hin.</div>
+      <p>Im Bereich <strong>Vorlagen</strong> (und im Reiter <strong>Autoren</strong>) verwaltest du die Vorlagen — Karten, Herzen, Filter, Autorennennung mit Link.</p>
+    </section>
+
+    <section class="doc" data-sec="vizualizace">
+      <h2><span class="ic">🎨</span>Visualisierung <span class="badge">🏅 Premium</span></h2>
+      <p class="lead">Gieße deinen Stoff in die Silhouette eines Schnittmusters und siehst sofort, wie es aussehen würde.</p>
+      <h3>Assistent</h3>
+      <ul>
+        <li>Wähle <strong>Vorlagen</strong> → wechsle zur <strong>Meterware</strong> → wähle <strong>Stoffe/Panels</strong> (voller Filter) → <strong>Visualisierung</strong>.</li>
+        <li>Oben: <kbd>✕</kbd> schließen · Schalter <strong>Alle auswählen / Alle abwählen</strong> · Anzahl der Ausgewählten · Filter.</li>
+      </ul>
+      <h3>Einfärben</h3>
+      <ul>
+        <li><strong>Tipp auf einen Bereich = färbt diesen einen Bereich</strong> mit dem ausgewählten Stoff ein (rechts ist ein Stoffstreifen als Pinsel).</li>
+        <li><strong>Alles füllen</strong> (Symbol 🪣 in der Zeile Kacheln/Ganzes Foto) färbt <strong>alle Bereiche auf einmal</strong> mit einem Stoff ein — praktisch bei mehrteiligen Vorlagen.</li>
+        <li><strong>Maßgeschneidertes Muster für jeden Bereich:</strong> Tippe auf einen Bereich (er wird aktiv) und vergrößerst, verschiebst und drehst ihn <strong>mit dem Schieberegler oder den Fingern</strong> — <strong>jeder Bereich kann das Muster in einer anderen Größe und Drehung haben</strong>.</li>
+        <li><strong>Stoffbreite (cm)</strong> stellt den realen Maßstab des Musters ein. Die Schaltfläche <strong>Zentrieren (↻)</strong> setzt den aktiven Bereich auf die <strong>Ausgangsgröße gemäß der eingegebenen Stoffbreite</strong> zurück.</li>
+        <li><strong>Kacheln ↔ Ganzes Foto</strong> und ein orientierendes <strong>10-cm-Raster</strong>.</li>
+      </ul>
+      <div class="tip"><strong>Kacheln vs. Ganzes Foto:</strong>
+        <ul style="margin:8px 0 0">
+          <li><strong>Kacheln</strong> — das Stoffmuster <strong>wiederholt sich</strong> über den ganzen Bereich, wie echte <strong>Meterware von der Rolle</strong>. Nutze es bei Stoffen mit sich wiederholendem Muster; du siehst, wie sich das Muster im richtigen Maßstab über das ganze Teil zieht.</li>
+          <li><strong>Ganzes Foto</strong> — das Foto wird <strong>nur einmal</strong> in den Bereich eingesetzt (wie ein Aufkleber), nichts wiederholt sich. Praktisch für ein <strong>Panel</strong> oder ein bestimmtes <strong>platziertes Motiv</strong> (Print, Bild), das du nicht kacheln willst.</li>
+        </ul>
+      </div>
+      <h3>Gespeicherte Visualisierungen</h3>
+      <ul>
+        <li>Eine fertige Visualisierung <strong>speicherst du</strong> (💾) — sie erstellt eine Vorschau und merkt sich das Rezept; du öffnest sie jederzeit wieder und bearbeitest sie.</li>
+        <li>Eine wieder geöffnete Visualisierung kannst du weiter bearbeiten — über <strong>„+"</strong> fügst du <strong>weitere bestehende Vorlagen und Stoffe</strong> hinzu (nicht nur jene, mit denen sie entstanden ist).</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="premium">
+      <h2><span class="ic">🏅</span>Premium</h2>
+      <p class="lead">Der Großteil der App ist kostenlos. Für Premium gibt es <strong>Vorlagen</strong> und <strong>Visualisierung</strong>.</p>
+      <ul>
+        <li>Die Menüpunkte Vorlagen und Visualisierung bleiben im Menü sichtbar (mit goldenem Abzeichen 🏅); ohne Premium leiten sie dich nach dem Antippen zum Kauf.</li>
+        <li><strong>Premium kaufen / wiederherstellen</strong> findest du in den <strong>Einstellungen</strong>. „Wiederherstellen" nutzt du, wenn du bereits gekauft hast (neues Handy o. Ä.).</li>
+        <li>Die kostenlose Version hat eine Obergrenze von 100 Schnittmustern; Premium hebt sie auf.</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="zaloha">
+      <h2><span class="ic">💾</span>Sicherung &amp; Wiederherstellung</h2>
+      <p class="lead">Deine Daten sind nur auf dem Handy — deshalb sichere sie.</p>
+      <ul>
+        <li>In den Einstellungen erstellst du eine <strong>Sicherung als ZIP</strong> (Datenbank + Fotos). Speichere sie etwa auf einer Festplatte oder per E-Mail.</li>
+        <li>Die <strong>Wiederherstellung</strong> aus dem ZIP bringt dich zurück (auch auf einem neuen Gerät).</li>
+      </ul>
+      <div class="tip"><strong>Aus einer lokalen Datei wiederherstellen:</strong> Führe die Wiederherstellung idealerweise aus einer <strong>lokal heruntergeladenen Sicherung durch, die du physisch auf dem Handy hast</strong> — nicht direkt aus der Cloud (Google Drive o. Ä.). Cloud-Dateien sind oft nur „auf Anfrage herunterladbar" und werden von der App möglicherweise nicht korrekt geladen. Sicherer ist, das ZIP <strong>zuerst auf das Handy herunterzuladen</strong> und erst dann wiederherzustellen.</div>
+      <div class="warn"><strong>Wichtig:</strong> Die automatische Cloud-Sicherung von Android ist absichtlich <strong>deaktiviert</strong> (damit sie deine Daten nicht mit einer alten Version überschreibt). Verlass dich auf deine <strong>eigene ZIP-Sicherung</strong>.</div>
+    </section>
+
+    <section class="doc" data-sec="nastaveni">
+      <h2><span class="ic">⚙️</span>Einstellungen</h2>
+      <ul>
+        <li><strong>Sprache</strong> der App.</li>
+        <li><strong>Fotoqualität</strong> (getrennt für Schnittmuster / Zeitschriften / Notizen) — niedriger spart Platz, höher hält Details.</li>
+        <li><strong>KI-Schlüssel</strong> für den Import (optional) und der Status der <strong>Premium</strong>-Lizenz (kaufen/wiederherstellen).</li>
+      </ul>
+
+      <h3>Übersetzung</h3>
+      <p>Schnittmuster aus <strong>fremdsprachigen Zeitschriften</strong> (etwa der deutschen Burda) lässt du dir <strong>übersetzen</strong>. Bei einem Schnittmuster in einer Fremdsprache erscheint die Schaltfläche <strong>„Übersetzen"</strong> — die Texte werden in deine Sprache übersetzt; <strong>„Originale wiederherstellen"</strong> bringt sie zurück. In der Karte <strong>Übersetzung</strong> (Reiter in den Einstellungen) stellst du ein:</p>
+      <ul>
+        <li><strong>Zielsprache der Übersetzung</strong> — in welche Sprache übersetzt wird (Standard = Sprache der App).</li>
+        <li><strong>Übersetzungsbibliothek</strong> — mit welchem Dienst die Texte übersetzt werden (siehe unten).</li>
+      </ul>
+      <div class="tip"><strong>KI vs. offline — worin der Unterschied liegt:</strong>
+        <ul style="margin:8px 0 0">
+          <li><strong>KI (Gemini / Groq)</strong> — <strong>online</strong>. Besser bei <strong>Fachbegriffen (Näh-Termini)</strong>, braucht aber eine Verbindung und <strong>verbraucht API-Kontingent</strong>.</li>
+          <li><strong>Google ML Kit (offline)</strong> — funktioniert <strong>offline</strong> (nach einmaligem Herunterladen des Sprachmodells), ist <strong>schnell</strong>, aber bei technischen Begriffen <strong>schwächer</strong>.</li>
+        </ul>
+        <div style="margin-top:8px">Vereinfacht: <strong>KI</strong> = genauere Übersetzung um den Preis von Kontingent und Verbindung; <strong>ML Kit</strong> = schnell und gratis auch ohne Internet, aber grober.</div>
+      </div>
+
+      <h3>Wartung</h3>
+      <p>Praktische einmalige Aktionen:</p>
+      <ul>
+        <li><strong>Beispieldaten hinzufügen</strong> — für Einsteigerinnen: füllt die App mit Beispiel-Schnittmustern und -Stoffen, damit du sofort siehst, wie sie funktioniert.</li>
+        <li><strong>Hashtags bei allen Schnittmustern ergänzen</strong> — ordnet nachträglich die Hashtags aus den Texten der Schnittmuster zu (siehe <a href="#" data-go="strihy">Hashtags</a>).</li>
+        <li><strong>Quelle-Web aus Links ergänzen</strong> — bei Schnittmustern, die einen Link angehängt haben, aber keine ausgefüllte <strong>Quelle</strong>, ergänzt es Quelle = Web und den Namen der Website. Bestehende (Zeitschrift/Geschäft/Web) werden nicht überschrieben.</li>
+        <li><strong>Ausgeblendete Vorlagen einblenden</strong> — eingebaute Vorlagen lassen sich nicht löschen, nur <strong>ausblenden</strong>; hiermit werden alle ausgeblendeten wieder angezeigt.</li>
+      </ul>
+
+      <h3>Eigene KI-Schlüssel (optional)</h3>
+      <p>Der KI-Import funktioniert auch <strong>ohne eigenen Schlüssel</strong> (Standard-Gemini). Setze einen eigenen Schlüssel nur, wenn du <strong>eigene Limits</strong> willst oder <strong>Groq</strong> nutzen möchtest. Füge den Schlüssel in den Einstellungen in das Feld für den KI-Schlüssel ein. Der Schlüssel ist <strong>persönlich — gib ihn niemandem</strong>.</p>
+
+      <h3>Gemini (Google AI Studio)</h3>
+      <ul>
+        <li>Öffne <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">aistudio.google.com/app/apikey</a> und melde dich mit deinem <strong>Google-Konto</strong> an.</li>
+        <li>Klicke auf <strong>„Get API key" / „Create API key"</strong> (Schlüssel abrufen / erstellen).</li>
+        <li>Wähle ein Projekt (oder lass eines erstellen) und der Schlüssel wird generiert.</li>
+        <li><strong>Kopiere</strong> ihn und füge ihn in die Einstellungen der App ein.</li>
+      </ul>
+      <p class="lead" style="font-size:15px">Gemini hat ein großzügiges kostenloses Limit; für den Schlüssel genügt ein Google-Konto.</p>
+
+      <h3>Groq</h3>
+      <ul>
+        <li>Öffne <a href="https://console.groq.com/keys" target="_blank" rel="noopener">console.groq.com/keys</a> und <strong>registriere dich / melde dich an</strong>.</li>
+        <li>Klicke auf <strong>„Create API Key"</strong>, benenne ihn und bestätige.</li>
+        <li>Der Schlüssel wird <strong>nur einmal</strong> angezeigt — <strong>kopiere</strong> ihn sofort und füge ihn in die Einstellungen der App ein.</li>
+      </ul>
+      <div class="warn"><strong>Achtung:</strong> Den Groq-Schlüssel siehst du nach dem Schließen des Fensters nicht mehr wieder. Solltest du nicht mehr an ihn kommen, erstelle einfach einen neuen.</div>
+    </section>
+
+    <section class="doc" data-sec="tipy">
+      <h2><span class="ic">💡</span>Foto-Tipps</h2>
+      <h3>Zeitschriften-Übersicht (für den KI-Import)</h3>
+      <ul>
+        <li>Fotografiere die Seite gerade, bei gutem Licht, damit die Schnittmuster lesbar sind.</li>
+      </ul>
+      <h3>Fotografieren für eine Vorlage</h3>
+      <ul>
+        <li>Möchtest du aus einem Schnittmuster eine <strong>saubere Vorlage</strong>, fotografiere <strong>nur dieses eine Schnittmuster aus der Nähe</strong> (damit es den Rahmen ausfüllt) — nicht einen winzigen Ausschnitt aus einer dicht bedruckten Übersichtsseite.</li>
+        <li>Je schärfer und größer die Zeichnung auf dem Foto ist, desto besser die Vektorisierung.</li>
+      </ul>
+      <h3>Stoffe fotografieren (für die Visualisierung)</h3>
+      <p>Das Ziel ist kein schönes Foto, sondern <strong>gerade, mit bekanntem Maß und in echter Farbe</strong> — damit es sich gut „kacheln" lässt und der Farbton stimmt.</p>
+      <ul>
+        <li><strong>Bügle und spanne</strong> den Stoff — Wellen erzeugen ein falsches Muster und einen falschen Maßstab.</li>
+        <li><strong>Grenze ein Quadrat ab</strong> (etwa mit Klebeband 100 × 100 cm) — dann weißt du genau, welche Breite du in der App eingeben musst.</li>
+        <li><strong>Handy senkrecht von oben</strong> (Vogelperspektive), schalte das <strong>Raster</strong> ein, die Stoffkanten parallel zum Rahmen. Eine schräge Aufnahme verzerrt den Maßstab.</li>
+        <li><strong>Diffuses Licht</strong> (am Fenster mit zugezogenem Vorhang, oder zwei Lampen von den Seiten), <strong>ohne Blitz</strong>, achte auf den eigenen Schatten. Mische nicht Fenster + Glühbirne.</li>
+      </ul>
+      <div class="tip"><strong>Echte Farbe (warum Blau „grau wird"):</strong> Die Automatik fügt bei einer großen dunklen/blauen Fläche Gelb hinzu und überstrahlt sie → aus Navy wird Grau. Stelle im <strong>PRO-Modus</strong> (bei Samsung die App <em>Expert RAW</em>) den <strong>Weißabgleich manuell</strong> ein (~5300 K, Tageslicht) und <strong>unterbelichte</strong> leicht (−0,5 EV); fotografiere idealerweise <strong>RAW</strong>.</div>
+      <div class="tip"><strong>Weißes Papier = Absicherung für die Farbe (auch ohne Kameraeinstellungen):</strong> Du kannst in der Kamera den Weißabgleich nicht einstellen? Kein Problem — <strong>lege einfach ein Stück reinweißes Papier neben den Stoff</strong> und fotografiere. Tippe danach in einem <strong>beliebigen Fotoeditor</strong> (Google Fotos, Snapseed, Lightroom…) auf die Funktion <strong>Weißabgleich / Pipette</strong> und klicke auf das weiße Papier — die Stofffarbe richtet sich von selbst aus. Das Papier lässt du dann beim Zuschneiden weg.</div>
+      <div class="tip"><strong>Maßstab:</strong> Nach dem Hochladen des Stoffes <strong>tippe auf die Zahl</strong> beim Maßstab-Schieberegler und gib die <strong>Stoffbreite in cm</strong> ein (beim Quadrat 100). Der Stoff wird dann in der richtigen Größe auf die Vorlage gegossen.</div>
+      <p style="font-weight:700; color:var(--accent-ink); margin-top:20px">Je nach Stoffart:</p>
+      <ul>
+        <li><strong>Glänzend</strong> (Satin, Seide) — achte auf Reflexe; diffuses Licht, ggf. ein Polarisationsclip auf dem Objektiv.</li>
+        <li><strong>Dunkel</strong> (Schwarz, Navy, Denim) — Weißabgleich manuell + unterbelichten (−0,5 bis −1 EV); Seitenlicht bringt die Struktur heraus.</li>
+        <li><strong>Hell</strong> (Weiß, Pastelltöne) — überstrahlt leicht; unterbelichte (−0,7 bis −1 EV) und fotografiere nicht auf weißem Untergrund (lege Grau darunter).</li>
+        <li><strong>Durchscheinend</strong> (Chiffon, Tüll, Netz) — auf neutrales weißes/graues Papier legen; ruhig auf so viele Lagen, wie es real getragen wird.</li>
+        <li><strong>Gemustert</strong> (Prints, Blumen) — erfasse den ganzen <strong>Rapport</strong>, scharf und gerade; übertreibe die Sättigung bei der Bearbeitung nicht.</li>
+        <li><strong>Karos, Streifen, Geometrie</strong> — vor allem exakt <strong>senkrecht</strong>; richte die Musterlinien am Raster aus.</li>
+        <li><strong>Maschenware, Rippen</strong> — <strong>nicht spannen</strong>, im entspannten Zustand fotografieren (durch Zug verzerrst du Maschen und Maßstab).</li>
+        <li><strong>Florig</strong> (Samt, Cord, Plüsch) — der Flor ändert den Farbton je nach Richtung; fotografiere aus einer Richtung und mit Seitenlicht auf die Struktur.</li>
+        <li><strong>Metallisch</strong> (Lurex, Pailletten, Brokat) — punktuelle Reflexe → nur diffuses Licht, Polarisator, kein Blitz; rechne mit mehreren Versuchen.</li>
+      </ul>
+    </section>
+
+    <footer>
+      Lostria Sewing · Hilfe. Mit Liebe für Näherinnen erstellt. 🌸<br>
+      <a href="https://dvorskagabriela-creator.github.io/lostria-sewing-privacy/">Datenschutzerklärung</a>
+    </footer>
+  </div>
+
+  <!-- ===================== POLSKI ===================== -->
+  <div class="lang" data-lang="pl" hidden>
+    <div class="hero">
+      <div class="eyebrow">Aplikacja offline dla krawcowych</div>
+      <h1>Witaj w Lostria Sewing</h1>
+      <p class="lead">Pełen przegląd wykrojów, czasopism, tkanin i dodatków krawieckich — wszystko w Twoim telefonie, bez konta i bez internetu. Ten poradnik przeprowadzi Cię przez wszystko, co aplikacja potrafi.</p>
+    </div>
+
+    <nav class="toc" aria-label="Spis treści">
+      <h2>Spis treści</h2>
+      <div class="toc-grid">
+        <a href="#" data-go="zaklad"><span class="ic">🧭</span>Podstawy &amp; menu</a>
+        <a href="#" data-go="strihy"><span class="ic">✂️</span>Wykroje</a>
+        <a href="#" data-go="casopisy"><span class="ic">📖</span>Czasopisma &amp; import AI</a>
+        <a href="#" data-go="metraz"><span class="ic">🧵</span>Tkaniny na metry</a>
+        <a href="#" data-go="galanterie"><span class="ic">🔘</span>Dodatki krawieckie</a>
+        <a href="#" data-go="zaznamy"><span class="ic">🪡</span>Zapisy uszyć</a>
+        <a href="#" data-go="seznamy"><span class="ic">🔖</span>Listy</a>
+        <a href="#" data-go="sablony"><span class="ic">👗</span>Szablony</a>
+        <a href="#" data-go="vizualizace"><span class="ic">🎨</span>Wizualizacja</a>
+        <a href="#" data-go="premium"><span class="ic">🏅</span>Premium</a>
+        <a href="#" data-go="zaloha"><span class="ic">💾</span>Kopia &amp; przywracanie</a>
+        <a href="#" data-go="nastaveni"><span class="ic">⚙️</span>Ustawienia</a>
+        <a href="#" data-go="tipy"><span class="ic">💡</span>Wskazówki do zdjęć</a>
+      </div>
+    </nav>
+
+    <section class="doc" data-sec="zaklad">
+      <h2><span class="ic">🧭</span>Podstawy &amp; menu</h2>
+      <p class="lead">Wszystko jest zapisane wyłącznie na Twoim urządzeniu. Nie potrzebujesz konta ani połączenia — aplikacja działa offline.</p>
+      <div class="tip"><strong>Zdjęcia &amp; miejsce:</strong> obrazy są do podglądów <strong>pomniejszane i kompresowane</strong>, aby zajmowały jak najmniej miejsca w telefonie. W <a href="#" data-go="nastaveni">Ustawieniach</a> możesz wybrać <strong>wyższą rozdzielczość zdjęć</strong> — ale licz się z tym, że dane aplikacji będą wtedy rosnąć szybciej.</div>
+      <p>Między obszarami przełączasz się przez <strong>menu główne</strong>: w lewym górnym rogu ikonka <kbd>☰</kbd> albo <strong>kwiatek</strong> 🌸. Znajdziesz tu Wykroje, Tkaniny na metry, Dodatki krawieckie, Zapisy uszyć, Listy, Szablony, Wizualizację i Ustawienia.</p>
+      <p>W każdym obszarze w prawym górnym rogu jest para przycisków w tej samej kolejności: najpierw <strong>filtr</strong>, potem <strong>sortowanie</strong>.</p>
+    </section>
+
+    <section class="doc" data-sec="strihy">
+      <h2><span class="ic">✂️</span>Wykroje</h2>
+      <p class="lead">Serce aplikacji — ewidencja Twoich wykrojów wraz z obrazami, kategoriami i wszystkim dookoła.</p>
+      <h3>Dodawanie wykroju</h3>
+      <ul>
+        <li><strong>Ręcznie</strong> — nazwa, kategoria, grupa docelowa, format, rozmiary, notatki.</li>
+        <li><strong>Z sieci / linku</strong> — aplikacja pobierze ze sklepu internetowego nazwę i zdjęcie, resztę uzupełnisz.</li>
+        <li><strong>Z czasopisma przez AI</strong> — fotografujesz stronę przeglądową, a aplikacja tworzy z niej wykroje (patrz Czasopisma).</li>
+      </ul>
+      <h3>Szczegóły &amp; organizacja</h3>
+      <p>Do wykroju przypiszesz:</p>
+      <ul>
+        <li><strong>Kategorie</strong> — sukienki, spódnice, spodnie, bluzka, płaszcz… (spokojnie i kilka naraz).</li>
+        <li><strong>Grupy docelowe</strong> — damskie, męskie, dziecięce, unisex…</li>
+        <li><strong>Formaty</strong> — papier, PDF warstwowy / płaski, projektor…</li>
+        <li><strong>Umiejscowienie</strong> — gdzie fizycznie masz wykrój (szuflada, segregator, w komputerze…).</li>
+        <li><strong>Hashtagi</strong> — dowolne etykiety według uznania (#jersey, #zamek, #naLato…).</li>
+        <li><strong>Serduszka</strong> = jak bardzo chcesz go uszyć (lista życzeń), <strong>koszyk</strong> = mam kupić.</li>
+        <li><strong>Obrazy</strong> — dodasz z aparatu, galerii lub z czasopisma; każdy można <strong>przyciąć</strong> i obrócić.</li>
+      </ul>
+      <div class="tip"><strong>Wszystko dostosujesz do siebie:</strong> kategorie, grupy docelowe, formaty, umiejscowienie i hashtagi to <strong>Twoje listy</strong> — możesz je <strong>dodawać, zmieniać nazwy i usuwać</strong> dokładnie tak, jak potrzebujesz.</div>
+      <p><strong>Filtrowanie i sortowanie</strong> działa potem według kategorii, grupy docelowej, serduszek, hashtagów i innych.</p>
+      <div class="tip"><strong>Wskazówka:</strong> przy obrazie na dole po prawej jest rozdzielczość w px — warto wiedzieć, ile szczegółów ma zdjęcie.</div>
+
+      <h3>Hashtagi — inteligentne etykiety</h3>
+      <p>Hashtagi to dowolne etykiety do szybkiego wyszukiwania i filtrowania (#jersey, #zamek, #naLato…). Dodatkowo potrafią dwie przydatne rzeczy:</p>
+      <ul>
+        <li><strong>Automatyczne dopięcie z tekstu wykroju:</strong> aplikacja przegląda <strong>tekst wykroju</strong> (nazwę, opis, notatki) i <strong>sama dopina do wykroju</strong> hashtagi, których słowo znajdzie w tekście. Porównuje <strong>od początku słowa (rdzeń) i ignoruje końcówki</strong> — więc hashtag zadany jako <strong>rdzeń</strong> złapie też jego różne formy.</li>
+        <li><strong>Aliasy (słowa alternatywne i obcojęzyczne):</strong> do każdego hashtagu dodasz kolejne słowa (też traktowane jako <strong>rdzenie</strong>), które będą na niego wskazywać.<br>
+        <strong>Przykład:</strong> hashtag <strong>„denim"</strong> z aliasami <strong>„jeans"</strong>, <strong>„dżins"</strong>, <strong>„dżin"</strong>. Gdy potem w tekście wykroju pojawi się „jeansowe", „dżinsy" lub „jeans", aplikacja dopnie hashtag <strong>„denim"</strong>. Jeden alias może dopiąć nawet <strong>kilka hashtagów</strong> naraz.</li>
+        <li><strong>Magiczny przycisk — uzupełnienie wstecz:</strong> w <strong>Ustawieniach → Konserwacja</strong> znajdziesz przycisk <strong>„Uzupełnij hashtagi we wszystkich wykrojach"</strong>. Pozwoli aplikacji <strong>przejrzeć teksty wszystkich wykrojów naraz</strong> i wstecznie przypisać im hashtagi, które wykryje auto-detekcja. <strong>Istniejące tagi zachowa</strong> (niczego nie usuwa). Idealne <strong>po dodaniu nowego hashtagu lub aliasu</strong> — od razu przepisze się też do starszych wykrojów.</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="casopisy">
+      <h2><span class="ic">📖</span>Czasopisma &amp; import AI</h2>
+      <p class="lead">Prowadź ewidencję czasopism z wykrojami i pozwól, aby ze zdjęć stron od razu powstały lub uzupełniły się wykroje.</p>
+      <p>Do każdego czasopisma dodasz <strong>okładkę</strong> i strony. Przed analizą AI <strong>powiesz, co jest na zdjęciu</strong> (przełącznik <strong>Przegląd / Szczegół</strong>), żeby AI nie zgadywała.</p>
+
+      <h3>1) Przegląd — tworzy wykroje</h3>
+      <ul>
+        <li>Fotografujesz <strong>stronę przeglądową</strong> (szachownicę wykrojów), a AI wyciąga z niej <strong>poszczególne wykroje i zakłada je</strong> — powiązane z czasopismem (numer modelu, kategoria, rozmiary…).</li>
+        <li>Zdjęcie przeglądowe <strong>zapisuje się przy czasopiśmie</strong> i służy jako podgląd przy wykrojach, które z niego powstały.</li>
+      </ul>
+
+      <h3>2) Szczegół — uzupełnia dane wykroju</h3>
+      <ul>
+        <li>Fotografujesz <strong>stronę szczegółową jednego wykroju</strong> (z danymi technicznymi — rozmiary, trudność, zużycie tkaniny, materiał, opis), a AI <strong>uzupełnia te dane</strong>.</li>
+        <li>Opcja <strong>„Uzupełnij istniejące wykroje"</strong> sparuje wykrój według <strong>numeru modelu</strong> i uzupełni tylko <strong>brakujące informacje</strong> — dzięki temu ten sam wykrój <strong>się nie duplikuje</strong>, tylko zostaje wzbogacony.</li>
+      </ul>
+      <p>Po analizie zobaczysz listę zaproponowanych wykrojów (nowe vs uzupełnione) i potwierdzisz.</p>
+      <div class="tip"><strong>Jak działa parowanie:</strong> AI odczytuje <strong>numer modelu</strong> i szuka wykroju z tym samym numerem <strong>w tym samym czasopiśmie</strong>. Porównuje „inteligentnie" — nie zależy to od kropek, spacji ani wielkości liter (np. „nr 123" = „123"). Gdy znajdzie dopasowanie, <strong>uzupełnia brakujące dane</strong> do tego wykroju; gdy nie — <strong>zakłada nowy</strong>. Uzupełnienie istniejącego dodatkowo <strong>nie liczy się</strong> do limitu 100 darmowych wykrojów.<br><br><strong>Zalecany sposób postępowania:</strong> najpierw zaimportuj <strong>przegląd</strong> (powstaną wykroje z numerami modeli), potem dofotografuj <strong>strony szczegółowe</strong> z włączoną opcją „Uzupełnij istniejące" — dane przypiszą się do właściwych wykrojów.</div>
+
+      <div class="tip"><strong>Jakość:</strong> do przeglądów bardziej niezawodne jest <strong>Gemini</strong> (widzi też drobne rysunki); Groq przy przeglądzie działa tylko na podstawie tekstu (orientacyjnie). Fotografowanie przeglądu ma własne wskazówki — patrz sekcja <a href="#" data-go="tipy">Wskazówki do zdjęć</a>.</div>
+    </section>
+
+    <section class="doc" data-sec="metraz">
+      <h2><span class="ic">🧵</span>Tkaniny na metry &amp; panele</h2>
+      <p class="lead">Magazyn Twoich tkanin i paneli — skład, kolory, gdzie kupione, ile zostało.</p>
+      <ul>
+        <li><strong>Karta tkaniny:</strong> nazwa, typ, skład, kolor, kraj pochodzenia, sklep, umiejscowienie, cena, serduszka i inne właściwości.</li>
+        <li><strong>Panele</strong> prowadzisz osobno od tkanin na metry.</li>
+        <li><strong>Pełny filtr</strong> — stan, typ, skład, kraj, sklep, umiejscowienie, serduszka i właściwości.</li>
+        <li>Zdjęcie tkaniny przyda się też do Wizualizacji (patrz niżej).</li>
+      </ul>
+      <div class="tip"><strong>Wszystko dostosujesz do siebie:</strong> typy, składy, kraje, sklepy, umiejscowienie i właściwości to <strong>Twoje listy</strong> — dodasz, zmienisz nazwy i usuniesz je dokładnie tak, jak potrzebujesz.</div>
+    </section>
+
+    <section class="doc" data-sec="galanterie">
+      <h2><span class="ic">🔘</span>Dodatki krawieckie</h2>
+      <p class="lead">Zamki, guziki, wzmocnienia, wstążki… — a przede wszystkim <strong>w pełni konfigurowalne</strong>. Nie ograniczają Cię stałe pola; sama definiujesz, co przy danym dodatku ewidencjonować.</p>
+
+      <h3>Jak to sobie zbudujesz</h3>
+      <ul>
+        <li><strong>Własne kategorie</strong> — utworzysz dowolną (Zamek, Guzik, Wzmocnienie, Wstążka, Sznurek…).</li>
+        <li><strong>Własne właściwości (atrybuty)</strong> — do każdej kategorii dodasz swoje pola, a przy każdym wybierzesz <strong>typ</strong>:
+          <ul style="margin:6px 0 0">
+            <li><strong>Liczba</strong> (+ jednostka — mm, cm, g/m²…) — na przykład „Szerokość zębów" w mm albo „Średnica" w calach.</li>
+            <li><strong>Wybór jednej opcji</strong> — na przykład „Typ zamka": kostkowy / spiralny / metalowy.</li>
+            <li><strong>Wybór wielu opcji</strong> — na przykład „Specjalne": wodoodporny, autolock…</li>
+            <li><strong>Tekst</strong> — dowolny wpis.</li>
+          </ul>
+        </li>
+        <li><strong>Własne opcje</strong> — przy typach wyboru sama dodasz, zmienisz nazwy i usuniesz listę opcji.</li>
+      </ul>
+      <p>Każda kategoria ma więc <strong>swój własny zestaw pól</strong> — guzik ewidencjonujesz zupełnie inaczej niż zamek, dokładnie tak, jak ma to sens dla Ciebie.</p>
+
+      <div class="tip"><strong>Zestaw domyślny:</strong> na czystej instalacji jest przygotowany przykład (<strong>zamek, wzmocnienie, guzik</strong>) z praktycznymi właściwościami i opcjami — potraktuj go jako wzór i spokojnie zmień, rozszerz albo usuń.</div>
+
+      <h3>Pozycje</h3>
+      <ul>
+        <li>Każdy egzemplarz to <strong>karta</strong> ze zdjęciem, liczbą, notatkami, <strong>serduszkami</strong>, <strong>koszykiem</strong> (mam kupić) i linkami — plus Twoje własne właściwości nadane przez kategorię.</li>
+        <li>Można je <strong>duplikować, usuwać</strong> i <strong>edytować masowo</strong> (tryb zaznaczania).</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="zaznamy">
+      <h2><span class="ic">🪡</span>Zapisy uszyć</h2>
+      <p class="lead">Dziennik tego, co uszyłaś — powiązany z wykrojem, z datą, rozmiarem, zużyciem i notatkami.</p>
+      <ul>
+        <li>Zapiszesz, komu i w jakim rozmiarze szyłaś, ile tkaniny poszło, a także zdjęcia efektu.</li>
+        <li>Przypiszesz też <strong>użyte tkaniny i dodatki krawieckie</strong> (bezpośrednio z Twoich Tkanin na metry i Dodatków) — przy każdym uszytym egzemplarzu masz więc, <strong>z czego i z czym</strong> powstał.</li>
+        <li>Filtr i sortowanie tak samo jak wszędzie.</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="seznamy">
+      <h2><span class="ic">🔖</span>Listy</h2>
+      <p class="lead">To nie są tylko kolekcje wykrojów — Lista posłuży Ci jako <strong>kompletny plan na szycie</strong>.</p>
+      <p>Do jednej listy zbierzesz razem wszystko, co należy do projektu:</p>
+      <ul>
+        <li><strong>Wykroje</strong> — co chcesz uszyć.</li>
+        <li><strong>Tkaniny i panele</strong> — z czego.</li>
+        <li><strong>Dodatki krawieckie</strong> — zamki, guziki, wzmocnienia…</li>
+        <li><strong>Wizualizacje</strong> — podgląd, jak ma to wyglądać.</li>
+      </ul>
+      <p>Jeden element (wykrój, tkanina, dodatek czy wizualizacja) może być <strong>na wielu listach</strong>. Listy <strong>pokolorujesz i nazwiesz</strong> po swojemu — na przykład „Sukienki dla córki", „Na lato", „W trakcie".</p>
+      <div class="tip"><strong>Co jeszcze kupić:</strong> przy wykrojach, tkaninach i dodatkach masz <strong>koszyk</strong> (mam kupić) i <strong>serduszka</strong> (chcę) — więc wprost w planie widzisz, co jeszcze do niego dokupić.</div>
+    </section>
+
+    <section class="doc" data-sec="sablony">
+      <h2><span class="ic">👗</span>Szablony <span class="badge">🏅 Premium</span></h2>
+      <p class="lead">Sylwetki odzieży, do których potem w Wizualizacji „nalewa się" tkanina.</p>
+      <h3>Rodzaje szablonów</h3>
+      <ul>
+        <li><strong>Szablon SVG</strong> — czysty rysunek wektorowy (np. od autorów płaskich szkiców).</li>
+        <li><strong>Fotoszablon</strong> — przezroczysty PNG (sylwetka odzieży z otworem), pod którą nalewa się tkanina.</li>
+        <li><strong>Ze zdjęcia (wektoryzacja)</strong> — aplikacja tworzy ze zdjęcia/szkicu obrys sylwetki.</li>
+      </ul>
+      <h3>Tworzenie ze zdjęcia</h3>
+      <ul>
+        <li>Wybierz obraz → przytnij do jednej sztuki odzieży → aplikacja znajdzie <strong>części</strong> i ponumeruje je w podglądzie.</li>
+        <li><strong>Zaznacz wszystkie części</strong>, które należą do odzieży (na przykład lewą i prawą część płaszcza). Sąsiedni wykrój zostaw niezaznaczony.</li>
+        <li>Wpisz nazwę i przybliżoną wysokość, i zapisz.</li>
+      </ul>
+      <div class="tip"><strong>Dobre źródło:</strong> <strong>rysunek techniczny</strong> — czysta <strong>czarna linia wykroju</strong> (flat sketch). Idealna jest na przykład <strong>strona przeglądowa wykrojów w czasopiśmie</strong>, gdzie obok siebie narysowane są rysunki techniczne poszczególnych modeli.</div>
+      <div class="warn"><strong>Ostrość decyduje:</strong> najlepiej wychodzi <strong>ostry szkic z bliska</strong>. Rozmazane miękkie linie albo drobny wycinek z gęstej strony przeglądowej mogą się nie udać — aplikacja o tym uprzedzi.</div>
+      <p>W sekcji <strong>Szablony</strong> (oraz zakładka <strong>Autorzy</strong>) zarządzasz szablonami — karty, serduszka, filtr, informacja o autorze z linkiem.</p>
+    </section>
+
+    <section class="doc" data-sec="vizualizace">
+      <h2><span class="ic">🎨</span>Wizualizacja <span class="badge">🏅 Premium</span></h2>
+      <p class="lead">Nalej swoją tkaninę do sylwetki wykroju i od razu zobacz, jak by to wyglądało.</p>
+      <h3>Kreator</h3>
+      <ul>
+        <li>Wybierz <strong>szablony</strong> → przełącz na <strong>Tkaniny na metry</strong> → wybierz <strong>tkaniny/panele</strong> (pełny filtr) → <strong>Wizualizacja</strong>.</li>
+        <li>Na górze: <kbd>✕</kbd> zamknij · przełącznik <strong>Zaznacz wszystko / Odznacz wszystko</strong> · liczba zaznaczonych · filtr.</li>
+      </ul>
+      <h3>Kolorowanie</h3>
+      <ul>
+        <li><strong>Stuknięcie w obszar = zabarwia ten jeden obszar</strong> wybraną tkaniną (po prawej jest pasek tkanin jako pędzel).</li>
+        <li><strong>Wypełnij wszystko</strong> (ikona 🪣 w wierszu Kafelki/Całe zdjęcie) zabarwia <strong>wszystkie obszary naraz</strong> jedną tkaniną — przydaje się przy wieloczęściowych szablonach.</li>
+        <li><strong>Wzór dopasowany do każdego obszaru:</strong> stuknij w obszar (stanie się aktywny) i <strong>suwakiem albo palcami</strong> przybliżysz go, przesuniesz i obrócisz — <strong>każdy obszar może mieć wzór w innej wielkości i obrocie</strong>.</li>
+        <li><strong>Szerokość tkaniny (cm)</strong> ustawia rzeczywistą skalę wzoru. Przycisk <strong>Wyśrodkuj (↻)</strong> przywraca aktywny obszar do <strong>domyślnej wielkości według podanej szerokości tkaniny</strong>.</li>
+        <li><strong>Kafelki ↔ Całe zdjęcie</strong> i orientacyjna <strong>siatka 10 cm</strong>.</li>
+      </ul>
+      <div class="tip"><strong>Kafelki vs Całe zdjęcie:</strong>
+        <ul style="margin:8px 0 0">
+          <li><strong>Kafelki</strong> — wzór tkaniny <strong>powtarza się</strong> na całym obszarze, jak prawdziwa <strong>tkanina z beli</strong>. Użyj przy tkaninach z powtarzającym się wzorem; widzisz, jak wzór ciągnie się po całej części we właściwej skali.</li>
+          <li><strong>Całe zdjęcie</strong> — zdjęcie wstawia się do obszaru <strong>tylko raz</strong> (jak naklejka), nic się nie powtarza. Przydaje się do <strong>panelu</strong> albo konkretnego <strong>umieszczonego motywu</strong> (nadruk, obraz), którego nie chcesz kafelkować.</li>
+        </ul>
+      </div>
+      <h3>Zapisane wizualizacje</h3>
+      <ul>
+        <li>Gotową wizualizację <strong>zapiszesz</strong> (💾) — utworzy podgląd i zapamięta przepis; w każdej chwili znów ją otworzysz i zmienisz.</li>
+        <li>Ponownie otwartą wizualizację możesz dalej edytować — przez <strong>„+"</strong> dodasz <strong>kolejne istniejące szablony i tkaniny</strong> (nie tylko te, z którymi powstała).</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="premium">
+      <h2><span class="ic">🏅</span>Premium</h2>
+      <p class="lead">Większość aplikacji jest za darmo. Za Premium są <strong>Szablony</strong> i <strong>Wizualizacja</strong>.</p>
+      <ul>
+        <li>Pozycje Szablony i Wizualizacja pozostają widoczne w menu (ze złotą odznaką 🏅); bez Premium po stuknięciu poprowadzą Cię do zakupu.</li>
+        <li><strong>Kup / Przywróć Premium</strong> znajdziesz w <strong>Ustawieniach</strong>. „Przywróć" użyj, gdy już kupiłaś (nowy telefon itp.).</li>
+        <li>Wersja darmowa ma limit 100 wykrojów; Premium go znosi.</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="zaloha">
+      <h2><span class="ic">💾</span>Kopia &amp; przywracanie</h2>
+      <p class="lead">Twoje dane są tylko w telefonie — dlatego rób kopie zapasowe.</p>
+      <ul>
+        <li>W Ustawieniach zrobisz <strong>kopię do ZIP</strong> (baza danych + zdjęcia). Zapisz ją na przykład na dysku albo w e-mailu.</li>
+        <li><strong>Przywrócenie</strong> z ZIP przywróci Cię do stanu poprzedniego (również na nowym urządzeniu).</li>
+      </ul>
+      <div class="tip"><strong>Przywracaj z pliku lokalnego:</strong> przywracanie wykonuj najlepiej z <strong>lokalnie pobranej kopii, którą masz fizycznie w telefonie</strong> — nie bezpośrednio z chmury (Dysk Google itp.). Pliki w chmurze bywają tylko „do pobrania na żądanie" i mogą nie wczytać się do aplikacji poprawnie. Pewniejsze jest <strong>najpierw pobrać ZIP do telefonu</strong>, a dopiero potem przywrócić.</div>
+      <div class="warn"><strong>Ważne:</strong> automatyczna kopia w chmurze Androida jest celowo <strong>wyłączona</strong> (aby nie nadpisała Twoich danych starą wersją). Polegaj na <strong>własnej kopii ZIP</strong>.</div>
+    </section>
+
+    <section class="doc" data-sec="nastaveni">
+      <h2><span class="ic">⚙️</span>Ustawienia</h2>
+      <ul>
+        <li><strong>Język</strong> aplikacji.</li>
+        <li><strong>Jakość zdjęć</strong> (osobno dla wykrojów / czasopism / zapisów) — niższa oszczędza miejsce, wyższa zachowuje szczegóły.</li>
+        <li><strong>Klucze AI</strong> do importu (opcjonalne) i stan licencji <strong>Premium</strong> (kup/przywróć).</li>
+      </ul>
+
+      <h3>Tłumaczenie</h3>
+      <p>Wykroje z <strong>obcojęzycznych czasopism</strong> (na przykład niemiecka Burda) możesz sobie <strong>przetłumaczyć</strong>. Przy wykroju w obcym języku pojawi się przycisk <strong>„Przetłumacz"</strong> — teksty zostaną przetłumaczone na Twój język; <strong>„Przywróć oryginały"</strong> przywróci je z powrotem. W karcie <strong>Tłumaczenie</strong> (zakładka w Ustawieniach) ustawisz:</p>
+      <ul>
+        <li><strong>Język docelowy tłumaczenia</strong> — na jaki język się tłumaczy (domyślnie = język aplikacji).</li>
+        <li><strong>Bibliotekę tłumaczenia</strong> — jaką usługą tłumaczone są teksty (patrz niżej).</li>
+      </ul>
+      <div class="tip"><strong>AI vs offline — na czym polega różnica:</strong>
+        <ul style="margin:8px 0 0">
+          <li><strong>AI (Gemini / Groq)</strong> — <strong>online</strong>. Lepsze przy <strong>terminach fachowych (krawieckich)</strong>, ale wymaga połączenia i <strong>zużywa limit API</strong>.</li>
+          <li><strong>Google ML Kit (offline)</strong> — działa <strong>offline</strong> (po jednorazowym pobraniu modelu językowego), jest <strong>szybki</strong>, ale przy terminach technicznych <strong>słabszy</strong>.</li>
+        </ul>
+        <div style="margin-top:8px">W uproszczeniu: <strong>AI</strong> = dokładniejsze tłumaczenie kosztem limitu i połączenia; <strong>ML Kit</strong> = szybki i darmowy nawet bez internetu, ale bardziej zgrubny.</div>
+      </div>
+
+      <h3>Konserwacja</h3>
+      <p>Praktyczne jednorazowe akcje:</p>
+      <ul>
+        <li><strong>Dodaj dane przykładowe</strong> — dla początkujących: wypełni aplikację przykładowymi wykrojami i tkaninami, żebyś od razu zobaczyła, jak działa.</li>
+        <li><strong>Uzupełnij hashtagi we wszystkich wykrojach</strong> — wstecznie przypisze hashtagi z tekstu wykrojów (patrz <a href="#" data-go="strihy">Hashtagi</a>).</li>
+        <li><strong>Uzupełnij Źródło-Sieć z linków</strong> — przy wykrojach, które mają dołączony link, ale nie mają wypełnionego <strong>Źródła</strong>, uzupełni Źródło = Sieć i nazwę witryny. Istniejących (Czasopismo/Sklep/Sieć) nie nadpisze.</li>
+        <li><strong>Odkryj ukryte szablony</strong> — wbudowanych szablonów nie da się usunąć, można je tylko <strong>ukryć</strong>; tym działaniem wszystkie ukryte znów się wyświetlą.</li>
+      </ul>
+
+      <h3>Własne klucze AI (opcjonalne)</h3>
+      <p>Import AI działa też <strong>bez własnego klucza</strong> (domyślne Gemini). Własny klucz ustaw tylko wtedy, gdy chcesz <strong>własne limity</strong> albo użyć <strong>Groq</strong>. Klucz wklej w Ustawieniach w pole na klucz AI. Klucz jest <strong>osobisty — nikomu go nie dawaj</strong>.</p>
+
+      <h3>Gemini (Google AI Studio)</h3>
+      <ul>
+        <li>Otwórz <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">aistudio.google.com/app/apikey</a> i zaloguj się <strong>kontem Google</strong>.</li>
+        <li>Kliknij <strong>„Get API key" / „Create API key"</strong> (Uzyskaj / Utwórz klucz).</li>
+        <li>Wybierz (lub pozwól utworzyć) projekt, a klucz zostanie wygenerowany.</li>
+        <li><strong>Skopiuj</strong> go i wklej do Ustawień aplikacji.</li>
+      </ul>
+      <p class="lead" style="font-size:15px">Gemini ma hojny bezpłatny limit; do klucza wystarczy konto Google.</p>
+
+      <h3>Groq</h3>
+      <ul>
+        <li>Otwórz <a href="https://console.groq.com/keys" target="_blank" rel="noopener">console.groq.com/keys</a> i <strong>zarejestruj się / zaloguj</strong>.</li>
+        <li>Kliknij <strong>„Create API Key"</strong>, nadaj mu nazwę i potwierdź.</li>
+        <li>Klucz pokaże się <strong>tylko raz</strong> — od razu go <strong>skopiuj</strong> i wklej do Ustawień aplikacji.</li>
+      </ul>
+      <div class="warn"><strong>Uwaga:</strong> klucza Groq po zamknięciu okna już nie zobaczysz ponownie. Gdybyś nie mogła się do niego dostać, po prostu utwórz nowy.</div>
+    </section>
+
+    <section class="doc" data-sec="tipy">
+      <h2><span class="ic">💡</span>Wskazówki do zdjęć</h2>
+      <h3>Przegląd czasopisma (do importu AI)</h3>
+      <ul>
+        <li>Fotografuj stronę prosto, przy dobrym świetle, żeby wykroje były czytelne.</li>
+      </ul>
+      <h3>Zdjęcia do szablonu</h3>
+      <ul>
+        <li>Jeśli chcesz z jakiegoś wykroju uzyskać <strong>czysty szablon</strong>, sfotografuj <strong>tylko ten jeden wykrój z bliska</strong> (żeby wypełnił kadr) — nie drobny wycinek z gęstej strony przeglądowej.</li>
+        <li>Im ostrzejszy i większy jest rysunek na zdjęciu, tym lepsza wektoryzacja.</li>
+      </ul>
+      <h3>Fotografowanie tkanin (do Wizualizacji)</h3>
+      <p>Celem nie jest ładne zdjęcie, ale <strong>płaska powierzchnia o znanym wymiarze i w wiernym kolorze</strong> — żeby dobrze się „kafelkowała" i pasował odcień.</p>
+      <ul>
+        <li><strong>Wyprasuj i naciągnij</strong> tkaninę — pofalowanie tworzy fałszywy wzór i błędną skalę.</li>
+        <li><strong>Wyznacz kwadrat</strong> (na przykład taśmą 100 × 100 cm) — wtedy dokładnie wiesz, jaką szerokość podać w aplikacji.</li>
+        <li><strong>Telefon prostopadle z góry</strong> (widok z lotu ptaka), włącz <strong>siatkę</strong>, krawędzie tkaniny równolegle do kadru. Ujęcie pod kątem zniekształci skalę.</li>
+        <li><strong>Światło rozproszone</strong> (przy oknie zasłonięte albo dwa światła z boków), <strong>bez lampy błyskowej</strong>, uważaj na własny cień. Nie mieszaj okna + żarówki.</li>
+      </ul>
+      <div class="tip"><strong>Wierny kolor (dlaczego niebieski „szarzeje"):</strong> automatyka przy dużej ciemnej/niebieskiej powierzchni dodaje żółtego i prześwietla → z granatu robi się szary. W <strong>trybie PRO</strong> (u Samsunga aplikacja <em>Expert RAW</em>) ustaw <strong>ręcznie balans bieli</strong> (~5300 K, światło dzienne) i lekko <strong>niedoświetl</strong> (−0,5 EV); najlepiej fotografuj w <strong>RAW</strong>.</div>
+      <div class="tip"><strong>Biała kartka = zabezpieczenie koloru (nawet bez ustawiania aparatu):</strong> nie umiesz ustawić w aparacie balansu bieli? Nic nie szkodzi — po prostu <strong>połóż obok tkaniny kawałek czystej białej kartki</strong> i zrób zdjęcie. Potem w <strong>dowolnym edytorze zdjęć</strong> (Zdjęcia Google, Snapseed, Lightroom…) stuknij funkcję <strong>balans bieli / kroplomierz</strong> i kliknij na tę białą kartkę — kolor tkaniny sam się wyrówna. Kartkę potem pominiesz przy przycinaniu.</div>
+      <div class="tip"><strong>Skala:</strong> po wgraniu tkaniny <strong>stuknij dwukrotnie w liczbę</strong> przy suwaku skali i podaj <strong>szerokość tkaniny w cm</strong> (przy kwadracie 100). Tkanina nalewa się wtedy na szablon we właściwej wielkości.</div>
+      <p style="font-weight:700; color:var(--accent-ink); margin-top:20px">W zależności od rodzaju tkaniny:</p>
+      <ul>
+        <li><strong>Błyszczące</strong> (satyna, jedwab) — pilnuj odblasków; światło rozproszone, ewentualnie klips polaryzacyjny na obiektyw.</li>
+        <li><strong>Ciemne</strong> (czarna, granat, denim) — balans bieli ręcznie + niedoświetlić (−0,5 do −1 EV); światło z boku wydobędzie strukturę.</li>
+        <li><strong>Jasne</strong> (biała, pastele) — łatwo się prześwietlają; niedoświetl (−0,7 do −1 EV) i nie fotografuj na białym podłożu (podłóż pod nią szare).</li>
+        <li><strong>Prześwitujące</strong> (szyfon, tiul, siateczka) — połóż na neutralnej białej/szarej kartce; spokojnie na tyle warstw, na ile realnie się nosi.</li>
+        <li><strong>Wzorzyste</strong> (nadruki, kwiaty) — uchwyć cały <strong>raport wzoru</strong>, ostro i prosto; z nasyceniem w obróbce nie przesadzaj.</li>
+        <li><strong>Kratki, paski, geometria</strong> — przede wszystkim dokładnie <strong>prostopadle</strong>; linie wzoru wyrównaj według siatki.</li>
+        <li><strong>Dzianiny, prążki</strong> — <strong>nie naciągaj</strong>, fotografuj w stanie rozluźnionym (naciągnięcie zniekształci oczka i skalę).</li>
+        <li><strong>Włosowe</strong> (aksamit, sztruks, plusz) — włos zmienia odcień w zależności od kierunku; fotografuj z jednego kierunku i światło z boku na strukturę.</li>
+        <li><strong>Metaliczne</strong> (lurex, cekiny, brokat) — punktowe odblaski → tylko światło rozproszone, polaryzator, żadnej lampy błyskowej; licz się z większą liczbą prób.</li>
+      </ul>
+    </section>
+
+    <footer>
+      Lostria Sewing · Pomoc. Stworzone z miłością dla krawcowych. 🌸<br>
+      <a href="https://dvorskagabriela-creator.github.io/lostria-sewing-privacy/">Polityka prywatności</a>
+    </footer>
+  </div>
+
+  <!-- ===================== ITALIANO ===================== -->
+  <div class="lang" data-lang="it" hidden>
+    <div class="hero">
+      <div class="eyebrow">App offline per chi cuce</div>
+      <h1>Benvenuta in Lostria Sewing</h1>
+      <p class="lead">Tieni sotto controllo cartamodelli, riviste, tessuti e mercerie — tutto nel tuo telefono, senza account e senza internet. Questa guida ti accompagna in tutto ciò che l'app sa fare.</p>
+    </div>
+
+    <nav class="toc" aria-label="Indice">
+      <h2>Indice</h2>
+      <div class="toc-grid">
+        <a href="#" data-go="zaklad"><span class="ic">🧭</span>Basi &amp; menu</a>
+        <a href="#" data-go="strihy"><span class="ic">✂️</span>Cartamodelli</a>
+        <a href="#" data-go="casopisy"><span class="ic">📖</span>Riviste &amp; import AI</a>
+        <a href="#" data-go="metraz"><span class="ic">🧵</span>Tessuti al metro</a>
+        <a href="#" data-go="galanterie"><span class="ic">🔘</span>Mercerie</a>
+        <a href="#" data-go="zaznamy"><span class="ic">🪡</span>Registro delle cuciture</a>
+        <a href="#" data-go="seznamy"><span class="ic">🔖</span>Liste</a>
+        <a href="#" data-go="sablony"><span class="ic">👗</span>Modelli</a>
+        <a href="#" data-go="vizualizace"><span class="ic">🎨</span>Visualizzazione</a>
+        <a href="#" data-go="premium"><span class="ic">🏅</span>Premium</a>
+        <a href="#" data-go="zaloha"><span class="ic">💾</span>Backup &amp; ripristino</a>
+        <a href="#" data-go="nastaveni"><span class="ic">⚙️</span>Impostazioni</a>
+        <a href="#" data-go="tipy"><span class="ic">💡</span>Consigli per le foto</a>
+      </div>
+    </nav>
+
+    <section class="doc" data-sec="zaklad">
+      <h2><span class="ic">🧭</span>Basi &amp; menu</h2>
+      <p class="lead">Tutto è salvato solo sul tuo dispositivo. Non ti serve un account né una connessione — l'app funziona offline.</p>
+      <div class="tip"><strong>Foto &amp; spazio:</strong> le immagini vengono <strong>ridimensionate e compresse</strong> per le anteprime, così occupano il meno spazio possibile sul telefono. Nelle <a href="#" data-go="nastaveni">Impostazioni</a> puoi scegliere una <strong>risoluzione più alta delle foto</strong> — ma tieni presente che i dati dell'app cresceranno più in fretta.</div>
+      <p>Tra le varie sezioni ti sposti tramite il <strong>menu principale</strong>: in alto a sinistra l'icona <kbd>☰</kbd> o il <strong>fiorellino</strong> 🌸. Qui trovi Cartamodelli, Tessuti al metro, Mercerie, Registro delle cuciture, Liste, Modelli, Visualizzazione e Impostazioni.</p>
+      <p>In ogni sezione, in alto a destra, c'è una coppia di comandi sempre nello stesso ordine: prima il <strong>filtro</strong>, poi l'<strong>ordinamento</strong>.</p>
+    </section>
+
+    <section class="doc" data-sec="strihy">
+      <h2><span class="ic">✂️</span>Cartamodelli</h2>
+      <p class="lead">Il cuore dell'app — l'archivio dei tuoi cartamodelli con immagini, categorie e tutto il resto.</p>
+      <h3>Aggiungere un cartamodello</h3>
+      <ul>
+        <li><strong>Manualmente</strong> — nome, categoria, gruppo target, formato, taglie, note.</li>
+        <li><strong>Dal web / da un link</strong> — l'app estrae dallo shop online nome e foto, il resto lo completi tu.</li>
+        <li><strong>Da una rivista tramite AI</strong> — fotografi la pagina riepilogativa e l'app ne ricava i cartamodelli (vedi Riviste).</li>
+      </ul>
+      <h3>Dettaglio &amp; organizzazione</h3>
+      <p>A un cartamodello puoi assegnare:</p>
+      <ul>
+        <li><strong>Categorie</strong> — abiti, gonne, pantaloni, camicetta, cappotto… (anche più d'una insieme).</li>
+        <li><strong>Gruppi target</strong> — donna, uomo, bambino, unisex…</li>
+        <li><strong>Formati</strong> — carta, PDF a livelli / piatto, proiettore…</li>
+        <li><strong>Posizione</strong> — dove tieni fisicamente il cartamodello (cassetto, raccoglitore, nel computer…).</li>
+        <li><strong>Hashtag</strong> — etichette libere a modo tuo (#jersey, #cerniera, #perlestate…).</li>
+        <li><strong>Cuori</strong> = quanto vuoi cucirlo (lista dei desideri), <strong>carrello</strong> = da comprare.</li>
+        <li><strong>Immagini</strong> — le aggiungi dalla fotocamera, dalla galleria o da una rivista; ognuna si può <strong>ritagliare</strong> e ruotare.</li>
+      </ul>
+      <div class="tip"><strong>Tutto personalizzabile:</strong> categorie, gruppi target, formati, posizioni e hashtag sono <strong>le tue liste</strong> — puoi <strong>aggiungerli, rinominarli e cancellarli</strong> esattamente come vuoi tu, secondo le tue esigenze.</div>
+      <p><strong>Filtri e ordinamento</strong> funzionano poi per categoria, gruppo target, cuori, hashtag e altro ancora.</p>
+      <div class="tip"><strong>Consiglio:</strong> in basso a destra di ogni immagine c'è la risoluzione in px — utile per sapere quanto dettaglio ha la foto.</div>
+
+      <h3>Hashtag — etichette intelligenti</h3>
+      <p>Gli hashtag sono etichette libere per cercare e filtrare in fretta (#jersey, #cerniera, #perlestate…). In più sanno fare due cose comode:</p>
+      <ul>
+        <li><strong>Aggancio automatico dal testo del cartamodello:</strong> l'app scandaglia il <strong>testo del cartamodello</strong> (nome, descrizione, note) e <strong>aggancia da sola al cartamodello</strong> gli hashtag la cui parola compare nel testo. Il confronto parte <strong>dall'inizio della parola (radice) e ignora le desinenze</strong> — così un hashtag inserito come <strong>radice</strong> intercetta anche le sue varie forme.</li>
+        <li><strong>Alias (parole alternative e straniere):</strong> a ogni hashtag aggiungi altre parole (anch'esse trattate come <strong>radici</strong>) che rimandano ad esso.<br>
+        <strong>Esempio:</strong> l'hashtag <strong>«denim»</strong> con gli alias <strong>«jean»</strong>, <strong>«jeans»</strong>, <strong>«denim»</strong>. Se poi nel testo del cartamodello compare «jeans», «in denim» o «jean», l'app aggancia l'hashtag <strong>«denim»</strong>. Un singolo alias può agganciare anche <strong>più hashtag</strong> insieme.</li>
+        <li><strong>Il pulsante magico — compilazione retroattiva:</strong> in <strong>Impostazioni → Manutenzione</strong> trovi il pulsante <strong>«Completa gli hashtag su tutti i cartamodelli»</strong>. Fa sì che l'app <strong>scandagli i testi di tutti i cartamodelli in una volta</strong> e assegni retroattivamente gli hashtag che il rilevamento automatico individua. <strong>Mantiene i tag esistenti</strong> (non cancella nulla). Ideale <strong>dopo aver aggiunto un nuovo hashtag o alias</strong> — si propaga subito anche ai cartamodelli più vecchi.</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="casopisy">
+      <h2><span class="ic">📖</span>Riviste &amp; import AI</h2>
+      <p class="lead">Cataloga le riviste di cartamodelli e lascia che dalle foto delle pagine vengano creati o completati direttamente i cartamodelli.</p>
+      <p>A ogni rivista aggiungi la <strong>copertina</strong> e le pagine. Prima dell'analisi AI <strong>dici cosa c'è nella foto</strong> (interruttore <strong>Riepilogo / Dettaglio</strong>), così l'AI non deve indovinare.</p>
+
+      <h3>1) Riepilogo — crea i cartamodelli</h3>
+      <ul>
+        <li>Fotografi la <strong>pagina riepilogativa</strong> (la scacchiera dei cartamodelli) e l'AI ne estrae i <strong>singoli cartamodelli e li crea</strong> — collegati alla rivista (numero del modello, categoria, taglie…).</li>
+        <li>La foto riepilogativa viene <strong>salvata nella rivista</strong> e fa da anteprima per i cartamodelli nati da essa.</li>
+      </ul>
+
+      <h3>2) Dettaglio — completa i dati del cartamodello</h3>
+      <ul>
+        <li>Fotografi la <strong>pagina di dettaglio di un singolo cartamodello</strong> (con i dati tecnici — taglie, difficoltà, consumo di tessuto, materiale, descrizione) e l'AI <strong>completa questi dati</strong>.</li>
+        <li>L'opzione <strong>«Completa i cartamodelli esistenti»</strong> abbina il cartamodello in base al <strong>numero del modello</strong> e aggiunge solo le <strong>informazioni mancanti</strong> — così lo stesso cartamodello <strong>non viene duplicato</strong>, viene solo arricchito.</li>
+      </ul>
+      <p>Dopo l'analisi vedrai l'elenco dei cartamodelli proposti (nuovi vs completati) e confermi.</p>
+      <div class="tip"><strong>Come funziona l'abbinamento:</strong> l'AI legge il <strong>numero del modello</strong> e cerca un cartamodello con lo stesso numero <strong>nella stessa rivista</strong>. Confronta in modo «intelligente» — non contano punti, spazi né maiuscole/minuscole (es. «n. 123» = «123»). Se trova una corrispondenza, <strong>completa i dati mancanti</strong> di quel cartamodello; se no, <strong>ne crea uno nuovo</strong>. Il completamento di un cartamodello esistente inoltre <strong>non conta</strong> nel limite di 100 cartamodelli gratuiti.<br><br><strong>Procedura consigliata:</strong> importa prima il <strong>riepilogo</strong> (nascono i cartamodelli con i numeri dei modelli), poi fotografa le <strong>pagine di dettaglio</strong> con «Completa gli esistenti» attivo — i dati vengono assegnati ai cartamodelli giusti.</div>
+
+      <div class="tip"><strong>Qualità:</strong> sui riepiloghi è più affidabile <strong>Gemini</strong> (vede anche i piccoli disegni tecnici); Groq lavora sul riepilogo solo dal testo (in modo indicativo). Fotografare il riepilogo ha i suoi consigli — vedi la sezione <a href="#" data-go="tipy">Consigli per le foto</a>.</div>
+    </section>
+
+    <section class="doc" data-sec="metraz">
+      <h2><span class="ic">🧵</span>Tessuti al metro (tessuti &amp; pannelli)</h2>
+      <p class="lead">Il magazzino dei tuoi tessuti e pannelli — composizione, colori, dove comprati, quanto ne resta.</p>
+      <ul>
+        <li><strong>Scheda del tessuto:</strong> nome, tipo, composizione, colore, paese d'origine, negozio, posizione, prezzo, cuori e altre proprietà.</li>
+        <li>I <strong>pannelli</strong> li gestisci separatamente dai tessuti al metro.</li>
+        <li><strong>Filtro completo</strong> — stato, tipo, composizione, paese, negozio, posizione, cuori e proprietà.</li>
+        <li>La foto del tessuto torna utile anche nella Visualizzazione (vedi sotto).</li>
+      </ul>
+      <div class="tip"><strong>Tutto personalizzabile:</strong> tipi, composizioni, paesi, negozi, posizioni e proprietà sono <strong>le tue liste</strong> — le aggiungi, le rinomini e le cancelli esattamente come ti serve.</div>
+    </section>
+
+    <section class="doc" data-sec="galanterie">
+      <h2><span class="ic">🔘</span>Mercerie</h2>
+      <p class="lead">Cerniere, bottoni, rinforzi, nastri… — e soprattutto <strong>totalmente personalizzabili</strong>. Non sei vincolata a campi fissi; definisci tu stessa cosa registrare per ogni tipo di merceria.</p>
+
+      <h3>Come la imposti</h3>
+      <ul>
+        <li><strong>Categorie personali</strong> — ne crei quante ne vuoi (Cerniera, Bottone, Rinforzo, Nastro, Cordoncino…).</li>
+        <li><strong>Proprietà personali (attributi)</strong> — a ogni categoria aggiungi i tuoi campi e per ciascuno scegli il <strong>tipo</strong>:
+          <ul style="margin:6px 0 0">
+            <li><strong>Numero</strong> (+ unità — mm, cm, g/m²…) — ad esempio «Larghezza dei denti» in mm o «Diametro» in pollici.</li>
+            <li><strong>Scelta singola</strong> — ad esempio «Tipo di cerniera»: a spirale / a maglie / in metallo.</li>
+            <li><strong>Scelta multipla</strong> — ad esempio «Speciale»: impermeabile, autobloccante…</li>
+            <li><strong>Testo</strong> — scrittura libera.</li>
+          </ul>
+        </li>
+        <li><strong>Opzioni personali</strong> — per i tipi a scelta aggiungi, rinomini e cancelli tu stessa l'elenco delle opzioni.</li>
+      </ul>
+      <p>Ogni categoria ha così <strong>il suo set di campi</strong> — un bottone lo registri in modo del tutto diverso da una cerniera, esattamente come ha senso per te.</p>
+
+      <div class="tip"><strong>Set predefinito:</strong> su un'installazione pulita è pronto un esempio (<strong>cerniera, rinforzo, bottone</strong>) con proprietà e opzioni pratiche — prendilo come modello e modificalo, ampliarlo o cancellarlo pure liberamente.</div>
+
+      <h3>Articoli</h3>
+      <ul>
+        <li>Ogni pezzo è una <strong>scheda</strong> con foto, quantità, note, <strong>cuori</strong>, <strong>carrello</strong> (da comprare) e link — più le tue proprietà personali definite dalla categoria.</li>
+        <li>Si possono <strong>duplicare, cancellare</strong> e <strong>modificare in blocco</strong> (modalità selezione).</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="zaznamy">
+      <h2><span class="ic">🪡</span>Registro delle cuciture</h2>
+      <p class="lead">Il diario di ciò che hai cucito — collegato al cartamodello, con data, taglia, consumo e note.</p>
+      <ul>
+        <li>Annoti per chi e in quale taglia hai cucito, quanto tessuto è servito, e anche le foto del risultato.</li>
+        <li>Assegni anche i <strong>tessuti e le mercerie usati</strong> (direttamente dai tuoi Tessuti al metro e dalle Mercerie) — così per ogni capo cucito sai <strong>da cosa e con cosa</strong> è nato.</li>
+        <li>Filtro e ordinamento come altrove.</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="seznamy">
+      <h2><span class="ic">🔖</span>Liste</h2>
+      <p class="lead">Non sono solo raccolte di cartamodelli — una Lista ti serve come <strong>piano di cucito completo</strong>.</p>
+      <p>In un'unica lista metti insieme tutto ciò che riguarda un progetto:</p>
+      <ul>
+        <li><strong>Cartamodelli</strong> — cosa vuoi cucire.</li>
+        <li><strong>Tessuti e pannelli</strong> — con cosa.</li>
+        <li><strong>Mercerie</strong> — cerniere, bottoni, rinforzi…</li>
+        <li><strong>Visualizzazioni</strong> — l'anteprima di come dovrebbe venire.</li>
+      </ul>
+      <p>Uno stesso pezzo (cartamodello, tessuto, merceria o visualizzazione) può stare <strong>in più liste</strong>. Le liste le <strong>colori e le nomini</strong> a modo tuo — ad esempio «Abiti per la figlia», «Per l'estate», «In corso».</p>
+      <div class="tip"><strong>Cosa resta da comprare:</strong> per cartamodelli, tessuti e mercerie hai il <strong>carrello</strong> (da comprare) e i <strong>cuori</strong> (li voglio) — così direttamente nel piano vedi cosa ti manca ancora da acquistare.</div>
+    </section>
+
+    <section class="doc" data-sec="sablony">
+      <h2><span class="ic">👗</span>Modelli <span class="badge">🏅 Premium</span></h2>
+      <p class="lead">Sagome di capi in cui poi, nella Visualizzazione, si «versa» il tessuto.</p>
+      <h3>Tipi di modello</h3>
+      <ul>
+        <li><strong>Modello SVG</strong> — un disegno vettoriale pulito (es. di autori di flat sketch).</li>
+        <li><strong>Foto-modello</strong> — un PNG trasparente (la sagoma del capo con un foro), sotto cui si versa il tessuto.</li>
+        <li><strong>Da una foto (vettorizzazione)</strong> — l'app crea il contorno della sagoma da una foto/uno schizzo.</li>
+      </ul>
+      <h3>Creazione da una foto</h3>
+      <ul>
+        <li>Scegli un'immagine → ritaglia su un solo capo → l'app individua le <strong>parti</strong> e le numera nell'anteprima.</li>
+        <li><strong>Spunta tutte le parti</strong> che appartengono al capo (ad esempio la parte destra e sinistra di un cappotto). Lascia deselezionato il cartamodello vicino.</li>
+        <li>Inserisci il nome e l'altezza approssimativa e salva.</li>
+      </ul>
+      <div class="tip"><strong>Buona fonte:</strong> un <strong>disegno tecnico</strong> — una <strong>linea nera pulita del cartamodello</strong> (flat sketch). Ideale è ad esempio il <strong>foglio riepilogativo dei cartamodelli in rivista</strong>, dove i disegni tecnici dei singoli modelli sono uno accanto all'altro.</div>
+      <div class="warn"><strong>La nitidezza è decisiva:</strong> il risultato migliore viene da uno <strong>schizzo nitido ripreso da vicino</strong>. Linee morbide sfocate o un piccolo ritaglio da una fitta pagina riepilogativa potrebbero non riuscire — l'app te lo segnalerà.</div>
+      <p>Nella sezione <strong>Modelli</strong> (e nella scheda <strong>Autori</strong>) gestisci i modelli — schede, cuori, filtro, credito dell'autore con link.</p>
+    </section>
+
+    <section class="doc" data-sec="vizualizace">
+      <h2><span class="ic">🎨</span>Visualizzazione <span class="badge">🏅 Premium</span></h2>
+      <p class="lead">Versa il tuo tessuto nella sagoma del cartamodello e vedi subito come verrebbe.</p>
+      <h3>Procedura guidata</h3>
+      <ul>
+        <li>Scegli i <strong>modelli</strong> → passa ai <strong>Tessuti al metro</strong> → scegli i <strong>tessuti/pannelli</strong> (filtro completo) → <strong>Visualizzazione</strong>.</li>
+        <li>In alto: <kbd>✕</kbd> chiudi · interruttore <strong>Seleziona tutto / Deseleziona tutto</strong> · numero dei selezionati · filtro.</li>
+      </ul>
+      <h3>Colorazione</h3>
+      <ul>
+        <li><strong>Tocco su un'area = colora quella singola area</strong> con il tessuto scelto (a destra c'è la striscia dei tessuti a mo' di pennello).</li>
+        <li><strong>Riempi tutto</strong> (icona 🪣 nella riga Mattonella/Foto intera) colora <strong>tutte le aree in una volta</strong> con un solo tessuto — utile per i modelli a più parti.</li>
+        <li><strong>Motivo su misura per ogni area:</strong> tocca un'area (diventa attiva) e con il <strong>cursore o con le dita</strong> la ingrandisci, la sposti e la ruoti — <strong>ogni area può avere il motivo in una dimensione e con una rotazione diverse</strong>.</li>
+        <li><strong>Larghezza del tessuto (cm)</strong> imposta la scala reale del motivo. Il pulsante <strong>Centra (↻)</strong> riporta l'area attiva alla <strong>dimensione predefinita in base alla larghezza del tessuto indicata</strong>.</li>
+        <li><strong>Mattonella ↔ Foto intera</strong> e una <strong>griglia orientativa da 10 cm</strong>.</li>
+      </ul>
+      <div class="tip"><strong>Mattonella vs Foto intera:</strong>
+        <ul style="margin:8px 0 0">
+          <li><strong>Mattonella</strong> — il motivo del tessuto si <strong>ripete</strong> su tutta l'area, come una vera <strong>pezza dal rotolo</strong>. Usala con i tessuti a motivo ripetuto; vedi come il motivo si estende su tutta la parte nella scala giusta.</li>
+          <li><strong>Foto intera</strong> — la foto viene inserita nell'area <strong>una sola volta</strong> (come un adesivo), nulla si ripete. Adatta a un <strong>pannello</strong> o a uno specifico <strong>motivo posizionato</strong> (stampa, immagine) che non vuoi affiancare a mattonella.</li>
+        </ul>
+      </div>
+      <h3>Visualizzazioni salvate</h3>
+      <ul>
+        <li>La visualizzazione finita la <strong>salvi</strong> (💾) — crea un'anteprima e memorizza la ricetta; puoi riaprirla e modificarla in qualsiasi momento.</li>
+        <li>Una visualizzazione riaperta puoi continuare a modificarla — con il <strong>«+»</strong> aggiungi <strong>altri modelli e tessuti esistenti</strong> (non solo quelli con cui è nata).</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="premium">
+      <h2><span class="ic">🏅</span>Premium</h2>
+      <p class="lead">La maggior parte dell'app è gratuita. Con il Premium ci sono <strong>Modelli</strong> e <strong>Visualizzazione</strong>.</p>
+      <ul>
+        <li>Le voci Modelli e Visualizzazione restano visibili nel menu (con il distintivo dorato 🏅); senza Premium, al tocco ti guidano all'acquisto.</li>
+        <li><strong>Acquista / Ripristina Premium</strong> lo trovi nelle <strong>Impostazioni</strong>. Usa «Ripristina» quando hai già acquistato (nuovo telefono ecc.).</li>
+        <li>La versione gratuita ha un tetto di 100 cartamodelli; il Premium lo rimuove.</li>
+      </ul>
+    </section>
+
+    <section class="doc" data-sec="zaloha">
+      <h2><span class="ic">💾</span>Backup &amp; ripristino</h2>
+      <p class="lead">I tuoi dati sono solo nel telefono — perciò fai il backup.</p>
+      <ul>
+        <li>Nelle Impostazioni crei un <strong>backup in ZIP</strong> (database + foto). Salvalo ad esempio su un disco o via e-mail.</li>
+        <li>Il <strong>ripristino</strong> dallo ZIP ti riporta tutto indietro (anche su un nuovo dispositivo).</li>
+      </ul>
+      <div class="tip"><strong>Ripristina da un file locale:</strong> esegui il ripristino idealmente da un <strong>backup scaricato in locale, che hai fisicamente nel telefono</strong> — non direttamente dal cloud (Google Drive ecc.). I file nel cloud sono spesso solo «da scaricare su richiesta» e potrebbero non caricarsi correttamente nell'app. È più sicuro <strong>scaricare prima lo ZIP nel telefono</strong> e solo dopo ripristinare.</div>
+      <div class="warn"><strong>Importante:</strong> il backup automatico su cloud di Android è volutamente <strong>disattivato</strong> (per non sovrascrivere i tuoi dati con una versione vecchia). Affidati al <strong>tuo backup ZIP</strong>.</div>
+    </section>
+
+    <section class="doc" data-sec="nastaveni">
+      <h2><span class="ic">⚙️</span>Impostazioni</h2>
+      <ul>
+        <li><strong>Lingua</strong> dell'app.</li>
+        <li><strong>Qualità delle foto</strong> (separata per cartamodelli / riviste / registro) — più bassa risparmia spazio, più alta mantiene il dettaglio.</li>
+        <li><strong>Chiavi AI</strong> per l'import (facoltative) e stato della licenza <strong>Premium</strong> (acquista/ripristina).</li>
+      </ul>
+
+      <h3>Traduzione</h3>
+      <p>I cartamodelli da <strong>riviste in lingua straniera</strong> (ad esempio la Burda tedesca) li puoi far <strong>tradurre</strong>. Su un cartamodello in lingua straniera compare il pulsante <strong>«Traduci»</strong> — i testi vengono tradotti nella tua lingua; <strong>«Ripristina gli originali»</strong> li riporta indietro. Nella scheda <strong>Traduzione</strong> (scheda nelle Impostazioni) imposti:</p>
+      <ul>
+        <li><strong>Lingua di destinazione della traduzione</strong> — in quale lingua si traduce (predefinita = lingua dell'app).</li>
+        <li><strong>Libreria di traduzione</strong> — con quale servizio si traducono i testi (vedi sotto).</li>
+      </ul>
+      <div class="tip"><strong>AI vs offline — qual è la differenza:</strong>
+        <ul style="margin:8px 0 0">
+          <li><strong>AI (Gemini / Groq)</strong> — <strong>online</strong>. Migliore con i <strong>termini tecnici (di cucito)</strong>, ma serve la connessione e <strong>consuma la quota API</strong>.</li>
+          <li><strong>Google ML Kit (offline)</strong> — funziona <strong>offline</strong> (dopo un download una tantum del modello linguistico), è <strong>veloce</strong>, ma con i termini tecnici è <strong>più debole</strong>.</li>
+        </ul>
+        <div style="margin-top:8px">In breve: <strong>AI</strong> = traduzione più precisa al prezzo di quota e connessione; <strong>ML Kit</strong> = veloce e gratuita anche senza internet, ma più grossolana.</div>
+      </div>
+
+      <h3>Manutenzione</h3>
+      <p>Azioni pratiche una tantum:</p>
+      <ul>
+        <li><strong>Aggiungi dati di esempio</strong> — per chi comincia: riempie l'app con cartamodelli e tessuti d'esempio, così vedi subito come funziona.</li>
+        <li><strong>Completa gli hashtag su tutti i cartamodelli</strong> — assegna retroattivamente gli hashtag dal testo dei cartamodelli (vedi <a href="#" data-go="strihy">Hashtag</a>).</li>
+        <li><strong>Completa Fonte-Web dai link</strong> — per i cartamodelli che hanno un link collegato ma non hanno la <strong>Fonte</strong> compilata, imposta Fonte = Web e il nome del sito. Non sovrascrive quelle esistenti (Rivista/Negozio/Web).</li>
+        <li><strong>Mostra i modelli nascosti</strong> — i modelli integrati non si possono cancellare, solo <strong>nascondere</strong>; con questo tutti quelli nascosti tornano visibili.</li>
+      </ul>
+
+      <h3>Chiavi AI personali (facoltative)</h3>
+      <p>L'import AI funziona anche <strong>senza una chiave personale</strong> (Gemini predefinito). Imposta una chiave personale solo se vuoi <strong>limiti tuoi</strong> o usare <strong>Groq</strong>. Inserisci la chiave nelle Impostazioni nel campo per la chiave AI. La chiave è <strong>personale — non darla a nessuno</strong>.</p>
+
+      <h3>Gemini (Google AI Studio)</h3>
+      <ul>
+        <li>Apri <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">aistudio.google.com/app/apikey</a> e accedi con un <strong>account Google</strong>.</li>
+        <li>Clicca su <strong>«Get API key» / «Create API key»</strong> (Ottieni / Crea chiave).</li>
+        <li>Scegli (o lascia creare) un progetto e la chiave viene generata.</li>
+        <li><strong>Copiala</strong> e incollala nelle Impostazioni dell'app.</li>
+      </ul>
+      <p class="lead" style="font-size:15px">Gemini ha un generoso limite gratuito; per la chiave basta un account Google.</p>
+
+      <h3>Groq</h3>
+      <ul>
+        <li>Apri <a href="https://console.groq.com/keys" target="_blank" rel="noopener">console.groq.com/keys</a> e <strong>registrati / accedi</strong>.</li>
+        <li>Clicca su <strong>«Create API Key»</strong>, dalle un nome e conferma.</li>
+        <li>La chiave viene mostrata <strong>una sola volta</strong> — <strong>copiala</strong> subito e incollala nelle Impostazioni dell'app.</li>
+      </ul>
+      <div class="warn"><strong>Attenzione:</strong> dopo aver chiuso la finestra la chiave Groq non la vedrai più. Se non riesci più a recuperarla, crea semplicemente una nuova chiave.</div>
+    </section>
+
+    <section class="doc" data-sec="tipy">
+      <h2><span class="ic">💡</span>Consigli per le foto</h2>
+      <h3>Riepilogo della rivista (per l'import AI)</h3>
+      <ul>
+        <li>Fotografa la pagina dritta, con buona luce, così i cartamodelli sono leggibili.</li>
+      </ul>
+      <h3>Foto per un modello</h3>
+      <ul>
+        <li>Se vuoi ricavare da un cartamodello un <strong>modello pulito</strong>, fotografa <strong>solo quel singolo cartamodello da vicino</strong> (che riempia l'inquadratura) — non un piccolo ritaglio da una fitta pagina riepilogativa.</li>
+        <li>Più il disegno nella foto è nitido e grande, migliore è la vettorizzazione.</li>
+      </ul>
+      <h3>Foto dei tessuti (per la Visualizzazione)</h3>
+      <p>L'obiettivo non è una bella foto, ma una <strong>piatta, di dimensione nota e dal colore fedele</strong> — così si «affianca a mattonella» bene e la tonalità è corretta.</p>
+      <ul>
+        <li><strong>Stira e tendi</strong> il tessuto — le pieghe creano un motivo falsato e una scala sbagliata.</li>
+        <li><strong>Delimita un quadrato</strong> (ad esempio con nastro 100 × 100 cm) — così sai con precisione quale larghezza inserire nell'app.</li>
+        <li><strong>Telefono perpendicolare dall'alto</strong> (vista dall'alto), attiva la <strong>griglia</strong>, i bordi del tessuto paralleli all'inquadratura. Una ripresa obliqua distorce la scala.</li>
+        <li><strong>Luce diffusa</strong> (finestra con tende chiare, oppure due luci di lato), <strong>senza flash</strong>, attenta alla tua ombra. Non mescolare finestra + lampadina.</li>
+      </ul>
+      <div class="tip"><strong>Colore fedele (perché il blu «ingrigisce»):</strong> l'automatismo, davanti a una grande superficie scura/blu, aggiunge giallo e sovraespone → dal navy esce un grigio. In <strong>modalità PRO</strong> (su Samsung l'app <em>Expert RAW</em>) imposta <strong>manualmente il bilanciamento del bianco</strong> (~5300 K, luce diurna) e <strong>sottoesponi</strong> leggermente (−0,5 EV); idealmente scatta in <strong>RAW</strong>.</div>
+      <div class="tip"><strong>Il foglio bianco = garanzia sul colore (anche senza impostare la fotocamera):</strong> non sai impostare il bilanciamento del bianco nella fotocamera? Non importa — basta che <strong>metti accanto al tessuto un pezzetto di carta bianca pulita</strong> e scatti. Poi in un <strong>qualsiasi editor di foto</strong> (Google Foto, Snapseed, Lightroom…) tocca la funzione <strong>bilanciamento del bianco / contagocce</strong> e clicca su quella carta bianca — il colore del tessuto si sistema da solo. La carta poi la escludi dal ritaglio.</div>
+      <div class="tip"><strong>Scala:</strong> dopo aver caricato il tessuto <strong>tocca il numero</strong> accanto al cursore della scala e inserisci la <strong>larghezza del tessuto in cm</strong> (per il quadrato 100). Il tessuto viene poi versato sul modello nella dimensione giusta.</div>
+      <p style="font-weight:700; color:var(--accent-ink); margin-top:20px">In base al tipo di tessuto:</p>
+      <ul>
+        <li><strong>Lucidi</strong> (raso, seta) — attenta ai riflessi; luce diffusa, eventualmente una clip polarizzatrice sull'obiettivo.</li>
+        <li><strong>Scuri</strong> (nero, navy, denim) — bilanciamento del bianco manuale + sottoesporre (−0,5 fino a −1 EV); la luce laterale tira fuori la struttura.</li>
+        <li><strong>Chiari</strong> (bianco, pastelli) — si bruciano facilmente; sottoesponi (−0,7 fino a −1 EV) e non fotografare su fondo bianco (mettici sotto del grigio).</li>
+        <li><strong>Trasparenti</strong> (chiffon, tulle, rete) — appoggia su carta bianca/grigia neutra; anche su quanti strati si portano realmente.</li>
+        <li><strong>Fantasia</strong> (stampe, fiori) — cattura l'intero <strong>rapporto del motivo</strong>, nitido e dritto; non esagerare con la saturazione in fase di ritocco.</li>
+        <li><strong>Quadri, righe, geometrie</strong> — soprattutto ben <strong>perpendicolare</strong>; allinea le linee del motivo alla griglia.</li>
+        <li><strong>Maglia, costine</strong> — <strong>non tendere</strong>, fotografa allo stato rilassato (tirando distorci sia le maglie sia la scala).</li>
+        <li><strong>A pelo</strong> (velluto, velluto a coste, peluche) — il pelo cambia tonalità in base alla direzione; fotografa da una sola direzione e con luce laterale sulla struttura.</li>
+        <li><strong>Metallici</strong> (lurex, paillettes, broccato) — riflessi puntiformi → solo luce diffusa, polarizzatore, niente flash; mettiti in conto più tentativi.</li>
+      </ul>
+    </section>
+
+    <footer>
+      Lostria Sewing · Guida. Creato con amore per chi cuce. 🌸<br>
+      <a href="https://dvorskagabriela-creator.github.io/lostria-sewing-privacy/">Informativa sulla privacy</a>
+    </footer>
+  </div>
+
+</main>
+
+<a href="#" class="back" id="back" aria-label="Nahoru">↑</a>
+
+<script>
+  const langs=document.getElementById('langs');
+  const panes=[...document.querySelectorAll('.lang')];
+  langs.addEventListener('click',e=>{
+    const b=e.target.closest('button'); if(!b)return;
+    const l=b.dataset.lang;
+    [...langs.children].forEach(x=>x.setAttribute('aria-current', x===b?'true':'false'));
+    panes.forEach(p=>p.hidden = p.dataset.lang!==l);
+    document.documentElement.lang=l;
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+  // Obsah/odkazy napříč jazyky: [data-go="X"] skočí na [data-sec="X"] v aktivním
+  // jazyce (čeština používá klasické #id, ostatní jazyky data-sec/data-go).
+  document.addEventListener('click',e=>{
+    const g=e.target.closest('[data-go]'); if(!g)return;
+    e.preventDefault();
+    const t=document.querySelector('.lang:not([hidden]) [data-sec="'+g.dataset.go+'"]');
+    if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+  const back=document.getElementById('back');
+  addEventListener('scroll',()=>back.classList.toggle('show',scrollY>500),{passive:true});
+</script>
+</body>
+</html>
