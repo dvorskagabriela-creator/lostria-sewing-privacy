@@ -2082,6 +2082,12 @@
   });
   const back=document.getElementById('back');
   addEventListener('scroll',()=>back.classList.toggle('show',scrollY>500),{passive:true});
+  // Jazyk z URL (?lang=xx nebo #xx) — appka prolinkuje návod rovnou ve svém jazyce.
+  (function(){
+    const want=((new URLSearchParams(location.search).get('lang'))||location.hash.replace('#','')||'').toLowerCase();
+    const btn=[...langs.children].find(x=>x.dataset.lang===want);
+    if(btn && want!=='cs') btn.click();
+  })();
 </script>
 </body>
 </html>
