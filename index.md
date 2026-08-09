@@ -1,6 +1,8 @@
-# Privacy Policy — Lostria Sewing
+# Privacy Policy — Lostria Sewing {#english}
 
 > 📖 **User guide / Uživatelský návod:** [Lostria Sewing — Help / Nápověda](guide/) (available in English, Čeština, Slovenčina, Deutsch, Polski, Italiano)
+
+**Language / Jazyk:** English · [🇨🇿 Česká verze ↓](#cesky)
 
 **Effective date:** 2026-08-09
 **Last updated:** 2026-08-09
@@ -83,7 +85,9 @@ Gabriela Žáčková Dvorská — **lostria.apps@gmail.com**
 
 ---
 
-# Zásady ochrany osobních údajů — Lostria Sewing
+# Zásady ochrany osobních údajů — Lostria Sewing {#cesky}
+
+**Jazyk / Language:** [🇬🇧 English version ↑](#english) · Čeština
 
 **Datum účinnosti:** 9. 8. 2026
 **Aktualizováno:** 9. 8. 2026
