@@ -9,6 +9,8 @@
 
 These terms govern your use of the **Lostria Sewing** Android app ("the app"), operated by **Gabriela Žáčková Dvorská** ("we"), contact: **lostria.apps@gmail.com**. By installing or using the app you agree to these terms. How data is handled is described in our [Privacy Policy](../).
 
+These terms are available in several languages. In case of any discrepancy between language versions, the **Czech version prevails**, without prejudice to your mandatory rights as a consumer.
+
 ## 2. What the app is
 
 Lostria Sewing is a tool for keeping a **personal catalog** of sewing patterns, magazines, fabrics, notions and sewing records. The app is **offline-first**: all your content is stored **only on your device**. We run no server, there are no accounts, and nothing you enter is shared with other users.
@@ -81,6 +83,8 @@ Gabriela Žáčková Dvorská — **lostria.apps@gmail.com**
 ## 1. O těchto podmínkách
 
 Tyto podmínky upravují používání aplikace **Lostria Sewing** pro Android („aplikace"), kterou provozuje **Gabriela Žáčková Dvorská** (dále „my"), kontakt: **lostria.apps@gmail.com**. Instalací nebo používáním aplikace s podmínkami souhlasíte. Jak se nakládá s daty, popisují [Zásady ochrany osobních údajů](../#cesky).
+
+Podmínky jsou k dispozici ve více jazycích. V případě rozporu mezi jazykovými verzemi má přednost **česká verze**; tím nejsou dotčena Vaše zákonná práva spotřebitele.
 
 ## 2. Co aplikace je
 
