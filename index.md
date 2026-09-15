@@ -30,7 +30,7 @@ Data leaves your device **only on your action**, and only in these cases:
 
 The sent content may include third-party content you chose to import.
 
-**AI data handling:** Text or photo data sent to the Google Gemini or Groq API is processed solely to extract pattern details for your local database. Data processed via our standard API integration is not used to train third-party AI models. If you use your own API key (BYOK), data processing is governed by the terms of your chosen API provider.
+**AI data handling:** Text or photo data sent to the Google Gemini or Groq API is processed solely to extract pattern details for your local database. This applies in particular to the **default AI** (Google Gemini via Firebase AI Logic) that the app provides to users without their own API key: it runs on the operator's **paid** API plan with a daily limit, and data processed through it is **not used to train** third-party AI models. If you use **your own API key** (BYOK — Gemini or Groq), data processing is governed by the terms of your chosen API provider.
 
 **b) Abuse protection (App Check)** — the default AI feature is paid for by the operator and has a daily limit. To stop someone else from misusing it (e.g. via a fake copy of the app), on each AI request the app verifies that it is the **genuine, unmodified Lostria Sewing app from Google Play on a normal device**. For this it uses a Google service (Firebase App Check / Play Integrity), to which it sends only **a short attestation that the app and device are genuine**. This attestation **contains none of your data or content** — no patterns, photos, or personal data.
 
@@ -121,7 +121,7 @@ Data opustí zařízení **jen na základě Vaší akce** a jen v těchto příp
 
 Odeslaný obsah může obsahovat i obsah třetích stran (např. stránka e-shopu), který jste se rozhodli importovat.
 
-**Nakládání s daty v AI:** Text nebo fotka odeslaná do API Google Gemini nebo Groq se zpracovává výhradně za účelem vytažení údajů o střihu do Vaší lokální databáze. Data zpracovaná prostřednictvím naší standardní integrace API se nepoužívají k trénování AI modelů třetích stran. Pokud používáte vlastní API klíč (BYOK), řídí se zpracování dat podmínkami Vámi zvoleného poskytovatele API.
+**Nakládání s daty v AI:** Text nebo fotka odeslaná do API Google Gemini nebo Groq se zpracovává výhradně za účelem vytažení údajů o střihu do Vaší lokální databáze. Týká se to zejména **výchozí AI** (Google Gemini přes Firebase AI Logic), kterou aplikace poskytuje uživatelkám bez vlastního API klíče: běží na **placeném** tarifu API hrazeném provozovatelkou s denním limitem a data zpracovaná jejím prostřednictvím se **nepoužívají k trénování** AI modelů třetích stran. Pokud používáte **vlastní API klíč** (BYOK — Gemini nebo Groq), řídí se zpracování dat podmínkami Vámi zvoleného poskytovatele API.
 
 **b) Ochrana proti zneužití (App Check)** — výchozí AI funkce je hrazená provozovatelkou a má denní limit. Aby ji nemohl zneužít někdo cizí (například napodobeninou aplikace), ověřuje aplikace při každém požadavku na AI, že jde o **pravou, needitovanou aplikaci Lostria Sewing z Google Play na běžném zařízení**. K tomuto ověření využívá službu Google (Firebase App Check / Play Integrity), které pošle jen **krátké potvrzení pravosti aplikace a zařízení**. Toto potvrzení **neobsahuje žádná Vaše data ani obsah** — žádné střihy, fotky ani osobní údaje.
 
