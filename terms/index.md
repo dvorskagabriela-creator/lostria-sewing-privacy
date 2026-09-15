@@ -22,7 +22,7 @@ Lostria Sewing is a tool for keeping a **personal catalog** of sewing patterns, 
 
 ## 4. Web import & third-party content
 
-When using the Web Import function (e.g. via Share Intent from your browser), the app fetches web pages and images **solely upon your explicit request** for your personal catalog and private use. You are responsible for ensuring that the links and content you import comply with third-party terms. The app does **not publish, re-distribute, or aggregate** imported text or images into any public database. By default only the link and text details are saved; saving images from the web is optional and can be enabled in Settings.
+When using the Web Import function (e.g. via Share Intent from your browser), the app fetches web pages and images (e.g. pattern previews or fabric photos) **solely upon your explicit request** for your personal catalog and private use. You are responsible for ensuring that the links and content you import comply with third-party terms and rights. The app does **not publish, re-distribute, or aggregate** imported text or images into any public database. By default only the link and text details are saved; saving images from the web is optional and can be enabled in Settings.
 
 ## 5. AI features
 
@@ -52,7 +52,7 @@ You must not:
 
 ## 9. Backups and data loss
 
-Because your data exists **only on your device**, we **cannot recover it**. Please create backups regularly (**ZIP export** in the app) and keep them somewhere safe. Uninstalling the app or clearing its data deletes your content permanently.
+Your data exists **only on your device** and we have no technical access to it — **we cannot recover, modify or delete it**. Managing your data, including permanently deleting imported texts and photos, is entirely in your hands. Please create backups regularly (**ZIP export** in the app) and keep them somewhere safe. Uninstalling the app or clearing its data deletes your content permanently.
 
 ## 10. Disclaimer and limitation of liability
 
@@ -96,7 +96,7 @@ Lostria Sewing je nástroj pro vedení **osobní evidence** střihů, časopisů
 
 ## 4. Import z webu a obsah třetích stran
 
-Při použití funkce Import z webu (např. sdílením odkazu z prohlížeče) aplikace stahuje webové stránky a obrázky **výhradně na Váš výslovný pokyn**, pro Vaši osobní evidenci a soukromé užití. Za to, že importované odkazy a obsah jsou v souladu s podmínkami třetích stran, odpovídáte Vy. Aplikace importované texty ani obrázky **nezveřejňuje, dále nešíří ani neshromažďuje** v žádné veřejné databázi. Ve výchozím nastavení se ukládá jen odkaz a textové údaje; ukládání obrázků z webu si můžete volitelně zapnout v Nastavení.
+Při použití funkce Import z webu (např. sdílením odkazu z prohlížeče) aplikace stahuje webové stránky a obrázky (např. náhledy střihů nebo fotky látek) **výhradně na Váš výslovný pokyn**, pro Vaši osobní evidenci a soukromé užití. Za to, že importované odkazy a obsah jsou v souladu s podmínkami a právy třetích stran, odpovídáte Vy. Aplikace importované texty ani obrázky **nezveřejňuje, dále nešíří ani neshromažďuje** v žádné veřejné databázi. Ve výchozím nastavení se ukládá jen odkaz a textové údaje; ukládání obrázků z webu si můžete volitelně zapnout v Nastavení.
 
 ## 5. Funkce AI
 
@@ -126,7 +126,7 @@ Není dovoleno:
 
 ## 9. Zálohy a ztráta dat
 
-Protože Vaše data existují **jen ve Vašem zařízení**, **neumíme je obnovit**. Pravidelně si prosím vytvářejte zálohy (**export do ZIP** v aplikaci) a uchovávejte je na bezpečném místě. Odinstalováním aplikace nebo vymazáním jejích dat se Váš obsah trvale smaže.
+Vaše data existují **jen ve Vašem zařízení** a my k nim nemáme žádný technický přístup — **nemůžeme je obnovit, upravit ani smazat**. Jejich správa, včetně trvalého smazání importovaných textů a fotek, je plně ve Vašich rukou. Pravidelně si prosím vytvářejte zálohy (**export do ZIP** v aplikaci) a uchovávejte je na bezpečném místě. Odinstalováním aplikace nebo vymazáním jejích dat se Váš obsah trvale smaže.
 
 ## 10. Vyloučení záruk a omezení odpovědnosti
 
@@ -170,7 +170,7 @@ Lostria Sewing ist ein Werkzeug zur Führung eines **persönlichen Katalogs** vo
 
 ## 4. Web-Import und Inhalte Dritter
 
-Wenn Sie die Funktion Web-Import nutzen (z. B. durch Teilen eines Links aus Ihrem Browser), ruft die App Webseiten und Bilder **ausschließlich auf Ihre ausdrückliche Anforderung** für Ihren persönlichen Katalog und Ihre private Nutzung ab. Sie sind dafür verantwortlich, dass die von Ihnen importierten Links und Inhalte den Bedingungen Dritter entsprechen. Die App **veröffentlicht, verbreitet oder sammelt** importierte Texte oder Bilder **nicht** in einer öffentlichen Datenbank. Standardmäßig werden nur der Link und die Textangaben gespeichert; das Speichern von Bildern aus dem Web ist optional und kann in den Einstellungen aktiviert werden.
+Wenn Sie die Funktion Web-Import nutzen (z. B. durch Teilen eines Links aus Ihrem Browser), ruft die App Webseiten und Bilder (z. B. Schnittmuster-Vorschauen oder Stofffotos) **ausschließlich auf Ihre ausdrückliche Anforderung** für Ihren persönlichen Katalog und Ihre private Nutzung ab. Sie sind dafür verantwortlich, dass die von Ihnen importierten Links und Inhalte den Bedingungen und Rechten Dritter entsprechen. Die App **veröffentlicht, verbreitet oder sammelt** importierte Texte oder Bilder **nicht** in einer öffentlichen Datenbank. Standardmäßig werden nur der Link und die Textangaben gespeichert; das Speichern von Bildern aus dem Web ist optional und kann in den Einstellungen aktiviert werden.
 
 ## 5. KI-Funktionen
 
@@ -200,7 +200,7 @@ Es ist nicht gestattet:
 
 ## 9. Sicherungen und Datenverlust
 
-Da Ihre Daten **nur auf Ihrem Gerät** existieren, **können wir sie nicht wiederherstellen**. Bitte erstellen Sie regelmäßig Sicherungen (**ZIP-Export** in der App) und bewahren Sie diese an einem sicheren Ort auf. Durch Deinstallation der App oder Löschen ihrer Daten werden Ihre Inhalte dauerhaft gelöscht.
+Ihre Daten existieren **nur auf Ihrem Gerät**, und wir haben keinen technischen Zugriff darauf — **wir können sie weder wiederherstellen noch ändern oder löschen**. Die Verwaltung Ihrer Daten, einschließlich des dauerhaften Löschens importierter Texte und Fotos, liegt vollständig bei Ihnen. Bitte erstellen Sie regelmäßig Sicherungen (**ZIP-Export** in der App) und bewahren Sie diese an einem sicheren Ort auf. Durch Deinstallation der App oder Löschen ihrer Daten werden Ihre Inhalte dauerhaft gelöscht.
 
 ## 10. Gewährleistungsausschluss und Haftungsbeschränkung
 
@@ -244,7 +244,7 @@ Lostria Sewing è uno strumento per tenere un **catalogo personale** di cartamod
 
 ## 4. Import dal web e contenuti di terzi
 
-Quando utilizza la funzione Import dal web (ad es. condividendo un link dal browser), l'app scarica pagine web e immagini **esclusivamente su Sua esplicita richiesta**, per il Suo catalogo personale e per uso privato. Lei è responsabile di garantire che i link e i contenuti importati rispettino le condizioni di terzi. L'app **non pubblica, non ridistribuisce e non raccoglie** testi o immagini importati in alcun database pubblico. Per impostazione predefinita vengono salvati solo il link e i dati testuali; il salvataggio delle immagini dal web è facoltativo e può essere attivato nelle Impostazioni.
+Quando utilizza la funzione Import dal web (ad es. condividendo un link dal browser), l'app scarica pagine web e immagini (ad es. anteprime di cartamodelli o foto di tessuti) **esclusivamente su Sua esplicita richiesta**, per il Suo catalogo personale e per uso privato. Lei è responsabile di garantire che i link e i contenuti importati rispettino le condizioni e i diritti di terzi. L'app **non pubblica, non ridistribuisce e non raccoglie** testi o immagini importati in alcun database pubblico. Per impostazione predefinita vengono salvati solo il link e i dati testuali; il salvataggio delle immagini dal web è facoltativo e può essere attivato nelle Impostazioni.
 
 ## 5. Funzioni di IA
 
@@ -274,7 +274,7 @@ Non è consentito:
 
 ## 9. Backup e perdita di dati
 
-Poiché i Suoi dati esistono **solo sul Suo dispositivo**, **non siamo in grado di recuperarli**. La preghiamo di creare regolarmente dei backup (**esportazione ZIP** nell'app) e di conservarli in un luogo sicuro. Disinstallando l'app o cancellandone i dati, i Suoi contenuti vengono eliminati definitivamente.
+I Suoi dati esistono **solo sul Suo dispositivo** e non abbiamo alcun accesso tecnico ad essi: **non possiamo recuperarli, modificarli né eliminarli**. La gestione dei Suoi dati, compresa l'eliminazione definitiva di testi e foto importati, è interamente nelle Sue mani. La preghiamo di creare regolarmente dei backup (**esportazione ZIP** nell'app) e di conservarli in un luogo sicuro. Disinstallando l'app o cancellandone i dati, i Suoi contenuti vengono eliminati definitivamente.
 
 ## 10. Esclusione di garanzia e limitazione di responsabilità
 
@@ -318,7 +318,7 @@ Lostria Sewing to narzędzie do prowadzenia **osobistego katalogu** wykrojów, c
 
 ## 4. Import z internetu i treści osób trzecich
 
-Podczas korzystania z funkcji Import z internetu (np. poprzez udostępnienie linku z przeglądarki) aplikacja pobiera strony internetowe i obrazy **wyłącznie na wyraźne polecenie użytkownika**, na potrzeby jego osobistego katalogu i prywatnego użytku. Użytkownik odpowiada za to, aby importowane linki i treści były zgodne z warunkami osób trzecich. Aplikacja **nie publikuje, nie rozpowszechnia ani nie gromadzi** importowanych tekstów ani obrazów w żadnej publicznej bazie danych. Domyślnie zapisywany jest tylko link i dane tekstowe; zapisywanie obrazów z internetu jest opcjonalne i można je włączyć w Ustawieniach.
+Podczas korzystania z funkcji Import z internetu (np. poprzez udostępnienie linku z przeglądarki) aplikacja pobiera strony internetowe i obrazy (np. podglądy wykrojów lub zdjęcia tkanin) **wyłącznie na wyraźne polecenie użytkownika**, na potrzeby jego osobistego katalogu i prywatnego użytku. Użytkownik odpowiada za to, aby importowane linki i treści były zgodne z warunkami i prawami osób trzecich. Aplikacja **nie publikuje, nie rozpowszechnia ani nie gromadzi** importowanych tekstów ani obrazów w żadnej publicznej bazie danych. Domyślnie zapisywany jest tylko link i dane tekstowe; zapisywanie obrazów z internetu jest opcjonalne i można je włączyć w Ustawieniach.
 
 ## 5. Funkcje AI
 
@@ -348,7 +348,7 @@ Niedozwolone jest:
 
 ## 9. Kopie zapasowe i utrata danych
 
-Ponieważ dane istnieją **wyłącznie na urządzeniu użytkownika**, **nie jesteśmy w stanie ich odzyskać**. Prosimy regularnie tworzyć kopie zapasowe (**eksport ZIP** w aplikacji) i przechowywać je w bezpiecznym miejscu. Odinstalowanie aplikacji lub wyczyszczenie jej danych trwale usuwa wszystkie treści.
+Dane istnieją **wyłącznie na urządzeniu użytkownika** i nie mamy do nich żadnego technicznego dostępu — **nie możemy ich odzyskać, zmienić ani usunąć**. Zarządzanie danymi, w tym trwałe usuwanie zaimportowanych tekstów i zdjęć, należy w całości do użytkownika. Prosimy regularnie tworzyć kopie zapasowe (**eksport ZIP** w aplikacji) i przechowywać je w bezpiecznym miejscu. Odinstalowanie aplikacji lub wyczyszczenie jej danych trwale usuwa wszystkie treści.
 
 ## 10. Wyłączenie gwarancji i ograniczenie odpowiedzialności
 
@@ -392,7 +392,7 @@ Lostria Sewing je nástroj na vedenie **osobnej evidencie** strihov, časopisov,
 
 ## 4. Import z webu a obsah tretích strán
 
-Pri použití funkcie Import z webu (napr. zdieľaním odkazu z prehliadača) aplikácia sťahuje webové stránky a obrázky **výhradne na Váš výslovný pokyn**, pre Vašu osobnú evidenciu a súkromné použitie. Za to, že importované odkazy a obsah sú v súlade s podmienkami tretích strán, zodpovedáte Vy. Aplikácia importované texty ani obrázky **nezverejňuje, ďalej nešíri ani nezhromažďuje** v žiadnej verejnej databáze. V predvolenom nastavení sa ukladá len odkaz a textové údaje; ukladanie obrázkov z webu si môžete voliteľne zapnúť v Nastaveniach.
+Pri použití funkcie Import z webu (napr. zdieľaním odkazu z prehliadača) aplikácia sťahuje webové stránky a obrázky (napr. náhľady strihov alebo fotky látok) **výhradne na Váš výslovný pokyn**, pre Vašu osobnú evidenciu a súkromné použitie. Za to, že importované odkazy a obsah sú v súlade s podmienkami a právami tretích strán, zodpovedáte Vy. Aplikácia importované texty ani obrázky **nezverejňuje, ďalej nešíri ani nezhromažďuje** v žiadnej verejnej databáze. V predvolenom nastavení sa ukladá len odkaz a textové údaje; ukladanie obrázkov z webu si môžete voliteľne zapnúť v Nastaveniach.
 
 ## 5. Funkcie AI
 
@@ -422,7 +422,7 @@ Nie je dovolené:
 
 ## 9. Zálohy a strata údajov
 
-Keďže Vaše údaje existujú **len vo Vašom zariadení**, **nevieme ich obnoviť**. Pravidelne si, prosím, vytvárajte zálohy (**export do ZIP** v aplikácii) a uchovávajte ich na bezpečnom mieste. Odinštalovaním aplikácie alebo vymazaním jej údajov sa Váš obsah natrvalo vymaže.
+Vaše údaje existujú **len vo Vašom zariadení** a nemáme k nim žiadny technický prístup — **nemôžeme ich obnoviť, upraviť ani vymazať**. Ich správa vrátane trvalého vymazania importovaných textov a fotiek je plne vo Vašich rukách. Pravidelne si, prosím, vytvárajte zálohy (**export do ZIP** v aplikácii) a uchovávajte ich na bezpečnom mieste. Odinštalovaním aplikácie alebo vymazaním jej údajov sa Váš obsah natrvalo vymaže.
 
 ## 10. Vylúčenie záruk a obmedzenie zodpovednosti
 
