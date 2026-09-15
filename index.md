@@ -5,7 +5,7 @@
 **Language / Jazyk:** English · [🇨🇿 Česká verze ↓](#cesky)
 
 **Effective date:** 2026-08-09
-**Last updated:** 2026-08-09
+**Last updated:** 2026-09-15
 
 ## 1. Who we are and what we do (not) process
 
@@ -30,6 +30,8 @@ Data leaves your device **only on your action**, and only in these cases:
 
 The sent content may include third-party content you chose to import.
 
+**AI data handling:** Text or photo data sent to the Google Gemini or Groq API is processed solely to extract pattern details for your local database. Data processed via our standard API integration is not used to train third-party AI models. If you use your own API key (BYOK), data processing is governed by the terms of your chosen API provider.
+
 **b) Abuse protection (App Check)** — the default AI feature is paid for by the operator and has a daily limit. To stop someone else from misusing it (e.g. via a fake copy of the app), on each AI request the app verifies that it is the **genuine, unmodified Lostria Sewing app from Google Play on a normal device**. For this it uses a Google service (Firebase App Check / Play Integrity), to which it sends only **a short attestation that the app and device are genuine**. This attestation **contains none of your data or content** — no patterns, photos, or personal data.
 
 **c) Crash reporting (optional, with consent)** — collection is **off**. After a crash we **ask** whether we may send a **technical report** (Firebase Crashlytics, Google) containing only technical data (error type, app version, device model) — **not your data or photos**. Nothing is sent without consent.
@@ -51,7 +53,9 @@ Some recipients (Google, Groq) process data in the **USA**. Transfers are encryp
 
 ## 6. Web import — what is stored
 
-Web import stores the **link (URL)** and **text fields about the pattern** (name, description, model number, material, sizes) that **you see and can edit or delete before saving**. A **copy of the image** from the other site is **not stored by default** — saving web images is optional and can be enabled in Settings (after acknowledging a notice). Import is for your personal records; please respect copyright and each site's terms.
+Web import stores the **link (URL)** and **text fields about the pattern** (name, description, model number, material, sizes) that **you see and can edit or delete before saving**. A **copy of the image** from the other site is **not stored by default** — saving web images is optional and can be enabled in Settings (after acknowledging a notice).
+
+**Web import & third-party content:** When using the Web Import function (e.g. via Share Intent from your browser), the app fetches web pages and images solely upon your explicit request for your personal catalog and private use. You are responsible for ensuring that the links and content you import comply with third-party terms. The app does not publish, re-distribute, or aggregate imported text or images into any public database.
 
 ## 7. Retention
 
@@ -90,7 +94,7 @@ Gabriela Žáčková Dvorská — **lostria.apps@gmail.com**
 **Jazyk / Language:** [🇬🇧 English version ↑](#english) · Čeština
 
 **Datum účinnosti:** 9. 8. 2026
-**Aktualizováno:** 9. 8. 2026
+**Aktualizováno:** 15. 9. 2026
 
 ## 1. Kdo jsme a co (ne)zpracováváme
 
@@ -117,6 +121,8 @@ Data opustí zařízení **jen na základě Vaší akce** a jen v těchto příp
 
 Odeslaný obsah může obsahovat i obsah třetích stran (např. stránka e-shopu), který jste se rozhodli importovat.
 
+**Nakládání s daty v AI:** Text nebo fotka odeslaná do API Google Gemini nebo Groq se zpracovává výhradně za účelem vytažení údajů o střihu do Vaší lokální databáze. Data zpracovaná prostřednictvím naší standardní integrace API se nepoužívají k trénování AI modelů třetích stran. Pokud používáte vlastní API klíč (BYOK), řídí se zpracování dat podmínkami Vámi zvoleného poskytovatele API.
+
 **b) Ochrana proti zneužití (App Check)** — výchozí AI funkce je hrazená provozovatelkou a má denní limit. Aby ji nemohl zneužít někdo cizí (například napodobeninou aplikace), ověřuje aplikace při každém požadavku na AI, že jde o **pravou, needitovanou aplikaci Lostria Sewing z Google Play na běžném zařízení**. K tomuto ověření využívá službu Google (Firebase App Check / Play Integrity), které pošle jen **krátké potvrzení pravosti aplikace a zařízení**. Toto potvrzení **neobsahuje žádná Vaše data ani obsah** — žádné střihy, fotky ani osobní údaje.
 
 **c) Hlášení pádů (volitelné, se souhlasem)** — sběr je **vypnutý**. Když aplikace spadne, při dalším startu se **zeptáme**, jestli smíme odeslat **technickou zprávu** (Firebase Crashlytics, Google). Report obsahuje jen technická data (typ chyby, verze aplikace, model zařízení) — **ne Vaše data ani fotky**. Bez Vašeho souhlasu se nic neodešle.
@@ -138,7 +144,9 @@ Někteří příjemci (Google, Groq) zpracovávají data i **v USA**. Přenos pr
 
 ## 6. Import z webu — co se ukládá
 
-Při importu z webu se ukládá **odkaz (URL)** a **textové údaje o střihu** (název, popis, číslo modelu, materiál, velikosti), které **před uložením vidíte a můžete je upravit nebo smazat**. **Kopie obrázku** z cizí stránky se ve výchozím nastavení **neukládá** — ukládání obrázků z webu si můžete volitelně zapnout v Nastavení (po odsouhlasení upozornění). Import slouží k Vaší osobní evidenci; respektujte prosím autorská práva a podmínky daných webů.
+Při importu z webu se ukládá **odkaz (URL)** a **textové údaje o střihu** (název, popis, číslo modelu, materiál, velikosti), které **před uložením vidíte a můžete je upravit nebo smazat**. **Kopie obrázku** z cizí stránky se ve výchozím nastavení **neukládá** — ukládání obrázků z webu si můžete volitelně zapnout v Nastavení (po odsouhlasení upozornění).
+
+**Import z webu a obsah třetích stran:** Při použití funkce Import z webu (např. sdílením odkazu z prohlížeče) aplikace stahuje webové stránky a obrázky výhradně na Váš výslovný pokyn, pro Vaši osobní evidenci a soukromé užití. Za to, že importované odkazy a obsah jsou v souladu s podmínkami třetích stran, odpovídáte Vy. Aplikace importované texty ani obrázky nezveřejňuje, dále nešíří ani neshromažďuje v žádné veřejné databázi.
 
 ## 7. Jak dlouho data uchováváme
 
