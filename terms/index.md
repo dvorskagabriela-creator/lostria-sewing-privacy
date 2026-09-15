@@ -61,7 +61,7 @@ The app is provided **"as is"**. To the extent permitted by law, we give no warr
 
 ## 11. Changes to these terms
 
-We may update these terms, for example when features change. The new version will be posted here with a new date. If you keep using the app after a change, the updated terms apply.
+We may update these terms, for example when features change. The new version will be posted in the app and here with a new date, and the app will ask for your consent again.
 
 ## 12. Governing law and disputes
 
@@ -136,7 +136,7 @@ Aplikace se poskytuje **„tak, jak je"**. V rozsahu, který připouštějí pr�
 
 ## 11. Změny podmínek
 
-Podmínky můžeme aktualizovat, například při změně funkcí. Novou verzi zveřejníme zde s novým datem. Pokud budete aplikaci po změně dál používat, platí aktualizované podmínky.
+Podmínky můžeme aktualizovat, například při změně funkcí. Novou verzi zveřejníme v aplikaci i zde s novým datem a aplikace Vás znovu požádá o souhlas.
 
 ## 12. Rozhodné právo a spory
 
