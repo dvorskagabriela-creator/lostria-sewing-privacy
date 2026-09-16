@@ -38,11 +38,15 @@ The sent content may include third-party content you chose to import.
 
 **d) Purchases (if used)** — handled by **Google Play Billing**.
 
+**e) Bug reports (only if you send them)** — when you report a problem, you e-mail us and may attach a **diagnostics file** from the app (technical data only: app and database version, record counts, database check — no texts, links or photos) or, exceptionally and only if you agree, a backup. We use them only to find and fix the problem and delete them once it is resolved.
+
 ## 4. Legal basis (GDPR Art. 6)
 
 - **AI import processing** — your **consent** by triggering the feature (Art. 6(1)(a)), or performance of a feature you requested (b). The feature is optional.
 - **Crash reporting** — your **consent** (per crash).
 - **App Check** — **legitimate interest** in protecting the service from abuse (Art. 6(1)(f)).
+
+- **Bug reports** — handling your request (Art. 6(1)(b)); you decide what you send.
 
 ## 5. Transfers outside the EU/EEA (USA)
 
@@ -129,11 +133,15 @@ Odeslaný obsah může obsahovat i obsah třetích stran (např. stránka e-shop
 
 **d) Nákupy (pokud je využijete)** — případné nákupy v aplikaci zpracovává **Google Play Billing**.
 
+**e) Hlášení chyb (jen pokud nám něco pošlete)** — když nahlásíte problém, píšete nám e-mail a můžete přiložit **diagnostický soubor** z aplikace (jen technické údaje: verze aplikace a databáze, počty záznamů, kontrola databáze — žádné texty, odkazy ani fotky), případně výjimečně a jen s Vaším souhlasem zálohu. Použijeme je jen k nalezení a opravě chyby a po vyřešení je smažeme.
+
 ## 4. Právní základ zpracování (GDPR čl. 6)
 
 - **AI zpracování importu** — Váš **souhlas** vyjádřený spuštěním funkce (čl. 6 odst. 1 písm. a), resp. plnění Vámi vyžádané funkce (písm. b). Funkci nemusíte používat.
 - **Hlášení pádů** — Váš **souhlas** (per pád).
 - **App Check** — **oprávněný zájem** na ochraně služby před zneužitím (čl. 6 odst. 1 písm. f).
+
+- **Hlášení chyb** — vyřízení Vaší žádosti (čl. 6 odst. 1 písm. b); co pošlete, rozhodujete Vy.
 
 ## 5. Přenos mimo EU/EHP (USA)
 
