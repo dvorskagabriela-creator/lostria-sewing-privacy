@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Lostria Sewing — demo pages</title>
+<meta name="description" content="Fictional shops and magazine for app demos">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Ccircle%20cx%3D'16'%20cy%3D'16'%20r%3D'14'%20fill%3D'%236b4f7a'%2F%3E%3C%2Fsvg%3E">
+<style>
+:root{--accent:#6b4f7a;--soft:#efe8f3;--ink:#2b2622;--muted:#766e67;--line:#e8e1da;--bg:#fffdfb}
+*{box-sizing:border-box}html,body{margin:0}body{background:var(--bg);color:var(--ink);font:16px/1.55 'DM Sans',system-ui,sans-serif}
+a{color:inherit}
+.top{position:sticky;top:0;z-index:2;background:var(--bg);border-bottom:1px solid var(--line)}
+.top .in{max-width:1080px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;gap:12px}
+.logo{font-family:'Fraunces',serif;font-size:24px;line-height:1.1;text-decoration:none;color:var(--accent)}
+.demo{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);background:var(--soft);border-radius:99px;padding:3px 8px;white-space:nowrap}
+.spacer{flex:1}.icon{width:24px;height:24px;color:var(--ink)}
+.crumbs{max-width:1080px;margin:0 auto;padding:12px 16px 0;font-size:13px;color:var(--muted)}
+.crumbs a{text-decoration:none}
+main{max-width:1080px;margin:0 auto;padding:12px 16px 40px}
+.product{display:grid;gap:24px}
+@media(min-width:820px){.product{grid-template-columns:1.05fr 1fr;gap:48px;align-items:start}}
+.photo{margin:0;border-radius:18px;overflow:hidden;background:var(--soft)}
+.photo img{display:block;width:100%;height:auto}
+h1{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(28px,6vw,40px);line-height:1.15;margin:4px 0 8px}
+.sku{font-size:13px;color:var(--muted)}
+.price{font-size:26px;font-weight:700;margin:10px 0 2px}.price small{font-size:14px;font-weight:400;color:var(--muted)}
+.lead{font-size:17px;margin:12px 0 18px}
+.opt-label{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:0 0 8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.chip{border:1.5px solid var(--line);border-radius:99px;padding:7px 14px;font-size:15px;background:#fff}
+.chip.on{border-color:var(--accent);background:var(--soft);font-weight:700}
+.buy{display:block;width:100%;border:0;border-radius:14px;padding:15px;font:700 17px 'DM Sans',sans-serif;color:#fff;background:var(--accent);cursor:pointer}
+.stock{font-size:14px;color:#3f7a4f;margin:10px 0 0}
+.info{margin-top:28px}
+h2{font-family:'Fraunces',serif;font-weight:400;font-size:24px;margin:0 0 10px}
+dl{display:grid;grid-template-columns:minmax(120px,38%) 1fr;margin:0;border-top:1px solid var(--line)}
+dt,dd{margin:0;padding:10px 0;border-bottom:1px solid var(--line)}dt{color:var(--muted);padding-right:12px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.card{text-decoration:none;display:block}.card img{width:100%;border-radius:14px;display:block;background:var(--soft)}
+.card b{display:block;margin-top:8px;font-weight:500}.card span{color:var(--muted)}
+.hero{padding:26px 0 18px}.hero p{color:var(--muted);margin:0}
+.foot{border-top:1px solid var(--line);color:var(--muted);font-size:13px;text-align:center;padding:18px 16px 28px}
+.toast{position:fixed;left:16px;right:16px;bottom:16px;max-width:520px;margin:0 auto;background:var(--ink);color:#fff;border-radius:12px;padding:12px 16px;display:none}
+</style>
+</head>
+<body>
+<header class="top"><div class="in">
+<a class="logo" href="./">Lostria Sewing demo pages</a><span class="demo">demo shop</span>
+<span class="spacer"></span>
+</div></header>
+
+<main>
+<div class="hero"><h1>Demo pages</h1><p>Everything below is fictional and exists only so the Lostria Sewing app can be shown in screenshots and videos without using real shops or magazines. Nothing is for sale.</p></div>
+<div class="grid">
+<a class="card" href="pretend-pattern-studio/"><b>Pretend Pattern Studio</b><span>Sewing patterns</span></a>
+<a class="card" href="imaginary-fabric-co/"><b>Imaginary Fabric Co.</b><span>Fabrics by the metre</span></a>
+<a class="card" href="make-believe-notions/"><b>Make-Believe Notions</b><span>Notions &amp; haberdashery</span></a>
+<a class="card" href="sew-fictional/"><b>Sew Fictional 09 · 2026</b><span>Magazine pattern overview (web page + printable PNG)</span></a>
+</div></main>
+<footer class="foot">Fictional demo shop created for screenshots of the Lostria Sewing app. Nothing here is for sale — brands, products and prices are invented.<br><a href="../">Lostria Sewing privacy policy</a></footer>
+</body>
+</html>
