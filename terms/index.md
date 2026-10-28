@@ -2,11 +2,11 @@
 
 **Language / Jazyk:** **English** · [Čeština](#cesky) · [Deutsch](#deutsch) · [Italiano](#italiano) · [Polski](#polski) · [Slovenčina](#slovensky) · [Privacy Policy](../)
 
-**Effective date:** 2026-09-15
+**Effective date:** 2026-10-28
 
 ## 1. About these terms
 
-These terms govern your use of the **Lostria Sewing** Android app ("the app"), operated by **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Czech Republic ("we"), contact: **lostria.apps@gmail.com**. By installing or using the app you agree to these terms. How data is handled is described in our Privacy Policy.
+These terms govern your use of the **Lostria Sewing** app for Android and Windows ("the app"), operated by **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Czech Republic ("we"), contact: **lostria.apps@gmail.com**. By installing or using the app you agree to these terms. How data is handled is described in our Privacy Policy.
 
 These terms are available in several languages. In case of any discrepancy between language versions, the **Czech version prevails**, without prejudice to your mandatory rights as a consumer.
 
@@ -28,15 +28,16 @@ When using the Web Import function (e.g. via Share Intent from your browser), th
 
 - AI extracts details from photos or web pages you choose to import. **AI output may be incomplete or wrong** — please review it before saving; you can edit or delete anything.
 - The **default AI** is provided free of charge to users without their own API key, is paid for by the operator and has a **daily limit**. We may change the limit or discontinue the default AI, for example if it is misused or becomes too costly.
+- On Windows the default AI is not available; AI features there work only with **your own API key** for Gemini.
 - If you use **your own API key** (BYOK — Gemini or Groq), you are responsible for that key and its costs, and processing is governed by the terms of your chosen provider.
 - Details on how AI data is handled (including that data processed via the default AI is not used to train third-party AI models) are in the Privacy Policy.
 
 ## 6. Premium and purchases
 
 - **Premium** is a one-time in-app purchase that unlocks extra features (currently unlimited patterns above the free limit, Templates and Visualization). It is not a subscription; paid Premium stays available on the Google account used to buy it.
-- Purchases go through **Google Play**, which processes the payment and sends a purchase confirmation. You can restore a previous purchase in **Settings → Restore purchase** on a device signed in with the same Google account. If Google Play confirms that the purchase is no longer valid (for example after a refund), the app locks Premium again; without a connection or when Google Play reports an error, nothing changes.
-- **Withdrawal and refunds.** Prices, payment, withdrawal from the contract and refunds follow Google Play's rules for digital content made available immediately after payment. This does not affect your statutory consumer rights, in particular your rights in case of defects.
-- **Defects in Premium.** We are responsible for Premium working as described in the app and in these terms, to the extent and for the period set by the law on the supply of digital content to consumers. If Premium does not work as it should, write to us at **lostria.apps@gmail.com**, ideally with a description of the problem and the order number from the Google Play confirmation. We will fix the defect free of charge within a reasonable time, usually through an app update. If that is not possible, if we do not fix it within a reasonable time, or if the defect is serious, you are entitled to an appropriate price reduction and, unless the defect is minor, also to withdraw from the contract and have the price refunded.
+- Purchases go through the store you use the app from — **Google Play** (Android) or the **Microsoft Store** (Windows); the store processes the payment and sends a purchase confirmation. **Purchases do not carry over between stores:** Premium bought on Google Play applies to the Android app, Premium bought in the Microsoft Store to the Windows app. You can restore a previous purchase in **Settings → Restore purchase** on a device signed in with the same Google or Microsoft account. If Google Play confirms that the purchase is no longer valid (for example after a refund), the Android app locks Premium again; without a connection or when the store reports an error, nothing changes.
+- **Withdrawal and refunds.** Prices, payment, withdrawal from the contract and refunds follow the rules of the store you bought from (Google Play or the Microsoft Store) for digital content made available immediately after payment. This does not affect your statutory consumer rights, in particular your rights in case of defects.
+- **Defects in Premium.** We are responsible for Premium working as described in the app and in these terms, to the extent and for the period set by the law on the supply of digital content to consumers. If Premium does not work as it should, write to us at **lostria.apps@gmail.com**, ideally with a description of the problem and the order number from the store confirmation (Google Play or the Microsoft Store). We will fix the defect free of charge within a reasonable time, usually through an app update. If that is not possible, if we do not fix it within a reasonable time, or if the defect is serious, you are entitled to an appropriate price reduction and, unless the defect is minor, also to withdraw from the contract and have the price refunded.
 - **Updates and changes.** We provide the updates needed for Premium to keep working (including security updates) for the period you can reasonably expect. We may change and improve features for valid reasons (technical, security, legal or further development) at no extra cost to you. If a change would significantly impair your access to or use of Premium, we will inform you in advance; you may then withdraw from the contract within 30 days of the notice or of the change, whichever is later, and we will refund the price to the extent required by law.
 
 ## 7. Built-in templates
@@ -60,8 +61,8 @@ Your data exists **only on your device** and we have no technical access to it �
 ## 10. Liability
 
 - **What we are always liable for.** Some liability cannot be limited by law, and we do not try to — this applies in particular to damage caused intentionally or through gross negligence. Nothing in these terms takes away your statutory consumer rights, in particular your rights if Premium is defective (section 6).
-- **Third-party services.** Some features depend on services we do not control (Google Play, Google Gemini, Groq, e-shop websites). We are not liable for their outages, changes or errors.
-- **Your cooperation.** Using the app carries two main risks: losing your catalog (e.g. after losing or breaking your phone, or after an app error) and buying unsuitable fabric based on incorrectly imported data (e.g. fabric consumption or composition suggested by AI). You best prevent both by backing up your data regularly (section 9) and checking data suggested by AI before saving and before buying (section 5). If not doing so contributes to the damage, this will be taken into account in accordance with the law.
+- **Third-party services.** Some features depend on services we do not control (Google Play, Microsoft Store, Google Gemini, Groq, e-shop websites). We are not liable for their outages, changes or errors.
+- **Your cooperation.** Using the app carries two main risks: losing your catalog (e.g. after losing or breaking your device, or after an app error) and buying unsuitable fabric based on incorrectly imported data (e.g. fabric consumption or composition suggested by AI). You best prevent both by backing up your data regularly (section 9) and checking data suggested by AI before saving and before buying (section 5). If not doing so contributes to the damage, this will be taken into account in accordance with the law.
 - **Free features.** Features that are not part of Premium (including the default AI) are provided free of charge, and we do not guarantee that they will be error-free or always available. To the extent permitted by law, we are not liable for lost profits or indirect damage.
 - **Businesses.** If you use the app for business purposes rather than as a consumer, our liability — except in the cases in the first point — is limited to the price paid for Premium and excluded for free features.
 
@@ -83,11 +84,11 @@ Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Czech Republic — *
 
 **Language / Jazyk:** [English](#english) · **Čeština** · [Deutsch](#deutsch) · [Italiano](#italiano) · [Polski](#polski) · [Slovenčina](#slovensky) · [Zásady ochrany osobních údajů](../#cesky)
 
-**Datum účinnosti:** 15. 9. 2026
+**Datum účinnosti:** 28. 10. 2026
 
 ## 1. O těchto podmínkách
 
-Tyto podmínky upravují používání aplikace **Lostria Sewing** pro Android („aplikace"), kterou provozuje **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Česká republika (dále „my"), kontakt: **lostria.apps@gmail.com**. Instalací nebo používáním aplikace s podmínkami souhlasíte. Jak se nakládá s daty, popisují Zásady ochrany osobních údajů.
+Tyto podmínky upravují používání aplikace **Lostria Sewing** pro Android a Windows („aplikace"), kterou provozuje **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Česká republika (dále „my"), kontakt: **lostria.apps@gmail.com**. Instalací nebo používáním aplikace s podmínkami souhlasíte. Jak se nakládá s daty, popisují Zásady ochrany osobních údajů.
 
 Podmínky jsou k dispozici ve více jazycích. V případě rozporu mezi jazykovými verzemi má přednost **česká verze**; tím nejsou dotčena Vaše zákonná práva spotřebitele.
 
@@ -109,15 +110,16 @@ Při použití funkce Import z webu (např. sdílením odkazu z prohlížeče) a
 
 - AI vytahuje údaje z fotek nebo webových stránek, které se rozhodnete importovat. **Výstup AI může být neúplný nebo chybný** — před uložením ho prosím zkontrolujte; cokoli můžete upravit nebo smazat.
 - **Výchozí AI** je uživatelkám bez vlastního API klíče poskytovaná zdarma, hradí ji provozovatelka a má **denní limit**. Limit můžeme změnit nebo výchozí AI ukončit, například při zneužívání nebo příliš vysokých nákladech.
+- Ve Windows výchozí AI k dispozici není; AI funkce tam fungují jen s **vlastním API klíčem** Gemini.
 - Pokud používáte **vlastní API klíč** (BYOK — Gemini nebo Groq), odpovídáte za tento klíč i jeho náklady a zpracování se řídí podmínkami Vámi zvoleného poskytovatele.
 - Podrobnosti o nakládání s daty v AI (včetně toho, že data zpracovaná výchozí AI se nepoužívají k trénování AI modelů třetích stran) najdete v Zásadách ochrany osobních údajů.
 
 ## 6. Premium a nákupy
 
 - **Premium** je jednorázový nákup v aplikaci, který odemyká další funkce (aktuálně neomezený počet střihů nad bezplatný limit, Šablony a Vizualizaci). Nejde o předplatné; zaplacené Premium zůstává zpřístupněné na účtu Google, kterým bylo zakoupeno.
-- Nákup probíhá přes **Google Play**, která zpracuje platbu a pošle potvrzení o nákupu. Předchozí nákup obnovíte v **Nastavení → Obnovit nákup** na zařízení přihlášeném stejným účtem Google. Pokud Google Play potvrdí, že nákup už neplatí (například po vrácení peněz), aplikace Premium znovu zamkne; bez připojení nebo při chybě Google Play se nic nemění.
-- **Odstoupení a vrácení peněz.** Ceny, platba, odstoupení od smlouvy i vrácení peněz se řídí pravidly Google Play pro digitální obsah zpřístupněný ihned po zaplacení. Tím nejsou dotčena Vaše zákonná práva spotřebitele, zejména práva z vadného plnění.
-- **Vady Premium.** Za to, že Premium funguje tak, jak je popsáno v aplikaci a v těchto podmínkách, odpovídáme v rozsahu a po dobu, kterou stanoví právní předpisy pro poskytování digitálního obsahu spotřebitelům. Pokud Premium nefunguje, jak má, napište nám na **lostria.apps@gmail.com**, ideálně s popisem problému a číslem objednávky z potvrzení Google Play. Vadu bezplatně odstraníme v přiměřené lhůtě, zpravidla aktualizací aplikace. Pokud to nejde, pokud ji v přiměřené lhůtě neodstraníme, nebo pokud je vada závažná, máte právo na přiměřenou slevu; není-li vada nepodstatná, také na odstoupení od smlouvy a vrácení zaplacené ceny.
+- Nákup probíhá přes obchod, ze kterého aplikaci používáte — **Google Play** (Android) nebo **Microsoft Store** (Windows); obchod zpracuje platbu a pošle potvrzení o nákupu. **Nákup se mezi obchody nepřenáší:** Premium zakoupené na Google Play platí v aplikaci pro Android, zakoupené v Microsoft Store v aplikaci pro Windows. Předchozí nákup obnovíte v **Nastavení → Obnovit nákup** na zařízení přihlášeném stejným účtem Google, resp. Microsoft. Pokud Google Play potvrdí, že nákup už neplatí (například po vrácení peněz), aplikace pro Android Premium znovu zamkne; bez připojení nebo při chybě obchodu se nic nemění.
+- **Odstoupení a vrácení peněz.** Ceny, platba, odstoupení od smlouvy i vrácení peněz se řídí pravidly obchodu, ve kterém jste nakoupila (Google Play nebo Microsoft Store), pro digitální obsah zpřístupněný ihned po zaplacení. Tím nejsou dotčena Vaše zákonná práva spotřebitele, zejména práva z vadného plnění.
+- **Vady Premium.** Za to, že Premium funguje tak, jak je popsáno v aplikaci a v těchto podmínkách, odpovídáme v rozsahu a po dobu, kterou stanoví právní předpisy pro poskytování digitálního obsahu spotřebitelům. Pokud Premium nefunguje, jak má, napište nám na **lostria.apps@gmail.com**, ideálně s popisem problému a číslem objednávky z potvrzení obchodu (Google Play nebo Microsoft Store). Vadu bezplatně odstraníme v přiměřené lhůtě, zpravidla aktualizací aplikace. Pokud to nejde, pokud ji v přiměřené lhůtě neodstraníme, nebo pokud je vada závažná, máte právo na přiměřenou slevu; není-li vada nepodstatná, také na odstoupení od smlouvy a vrácení zaplacené ceny.
 - **Aktualizace a změny.** Poskytujeme aktualizace potřebné k tomu, aby Premium dál fungovalo (včetně bezpečnostních), po dobu, kterou můžete rozumně očekávat. Funkce můžeme z vážných důvodů (technických, bezpečnostních, právních nebo kvůli dalšímu rozvoji) měnit a vylepšovat, a to bez dodatečných nákladů pro Vás. Pokud by změna podstatně zhoršila Váš přístup k Premium nebo jeho užívání, dáme Vám o ní vědět předem. Od smlouvy pak můžete odstoupit do 30 dnů od oznámení nebo od provedení změny, podle toho, co nastane později, a zaplacenou cenu Vám vrátíme v rozsahu, který stanoví právní předpisy.
 
 ## 7. Vestavěné šablony
@@ -141,8 +143,8 @@ Vaše data existují **jen ve Vašem zařízení** a my k nim nemáme žádný t
 ## 10. Odpovědnost
 
 - **Za co odpovídáme vždy.** Některou odpovědnost zákon omezit nedovolí a my se o to ani nepokoušíme — platí to zejména pro škodu způsobenou úmyslně nebo z hrubé nedbalosti. Vaše zákonná práva spotřebitele Vám nic v těchto podmínkách nebere, zejména práva z vadného Premium (oddíl 6).
-- **Služby třetích stran.** Některé funkce závisí na službách, které neovládáme (Google Play, Google Gemini, Groq, webové stránky e-shopů). Za jejich výpadky, změny nebo chyby neodpovídáme.
-- **Vaše součinnost.** Při používání aplikace hrozí hlavně dvě škody: ztráta evidence (např. po ztrátě či poruše telefonu nebo po chybě aplikace) a nákup nevhodné látky podle chybně načtených údajů (např. spotřeby nebo složení navržených AI). Oběma nejlépe předejdete, když si pravidelně zálohujete data (oddíl 9) a údaje navržené AI zkontrolujete před uložením i před nákupem (oddíl 5). Pokud ke škodě přispěje, že jste tak neučinila, přihlédne se k tomu podle zákona.
+- **Služby třetích stran.** Některé funkce závisí na službách, které neovládáme (Google Play, Microsoft Store, Google Gemini, Groq, webové stránky e-shopů). Za jejich výpadky, změny nebo chyby neodpovídáme.
+- **Vaše součinnost.** Při používání aplikace hrozí hlavně dvě škody: ztráta evidence (např. po ztrátě či poruše zařízení nebo po chybě aplikace) a nákup nevhodné látky podle chybně načtených údajů (např. spotřeby nebo složení navržených AI). Oběma nejlépe předejdete, když si pravidelně zálohujete data (oddíl 9) a údaje navržené AI zkontrolujete před uložením i před nákupem (oddíl 5). Pokud ke škodě přispěje, že jste tak neučinila, přihlédne se k tomu podle zákona.
 - **Bezplatné funkce.** Funkce, které nejsou součástí Premium (včetně výchozí AI), poskytujeme zdarma a nezaručujeme, že budou bez chyb nebo vždy dostupné. V rozsahu, který připouštějí právní předpisy, neodpovídáme za ušlý zisk ani nepřímé škody.
 - **Podnikatelé.** Používáte-li aplikaci v rámci podnikání, a ne jako spotřebitel, je naše odpovědnost — kromě případů z prvního bodu — omezena na cenu zaplacenou za Premium a u bezplatných funkcí vyloučena.
 
@@ -164,11 +166,11 @@ Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Česká republika �
 
 **Language / Jazyk:** [English](#english) · [Čeština](#cesky) · **Deutsch** · [Italiano](#italiano) · [Polski](#polski) · [Slovenčina](#slovensky) · [Datenschutzerklärung (auf Englisch)](../)
 
-**Gültig ab:** 15.09.2026
+**Gültig ab:** 28.10.2026
 
 ## 1. Über diese Bedingungen
 
-Diese Bedingungen regeln die Nutzung der Android-App **Lostria Sewing** („die App"), betrieben von **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Tschechische Republik („wir"), Kontakt: **lostria.apps@gmail.com**. Mit der Installation oder Nutzung der App stimmen Sie diesen Bedingungen zu. Wie mit Daten umgegangen wird, beschreibt unsere Datenschutzerklärung.
+Diese Bedingungen regeln die Nutzung der App **Lostria Sewing** für Android und Windows („die App"), betrieben von **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Tschechische Republik („wir"), Kontakt: **lostria.apps@gmail.com**. Mit der Installation oder Nutzung der App stimmen Sie diesen Bedingungen zu. Wie mit Daten umgegangen wird, beschreibt unsere Datenschutzerklärung.
 
 Diese Bedingungen sind in mehreren Sprachen verfügbar. Bei Abweichungen zwischen den Sprachfassungen ist die **tschechische Fassung maßgeblich**; Ihre zwingenden Verbraucherrechte bleiben unberührt.
 
@@ -190,15 +192,16 @@ Wenn Sie die Funktion Web-Import nutzen (z. B. durch Teilen eines Links aus Ihre
 
 - Die KI entnimmt Angaben aus Fotos oder Webseiten, die Sie importieren möchten. **Die Ausgabe der KI kann unvollständig oder fehlerhaft sein** — bitte prüfen Sie sie vor dem Speichern; Sie können alles bearbeiten oder löschen.
 - Die **Standard-KI** wird Nutzerinnen und Nutzern ohne eigenen API-Schlüssel kostenlos bereitgestellt, von der Betreiberin bezahlt und hat ein **Tageslimit**. Wir können das Limit ändern oder die Standard-KI einstellen, zum Beispiel bei Missbrauch oder zu hohen Kosten.
+- Unter Windows ist die Standard-KI nicht verfügbar; KI-Funktionen funktionieren dort nur mit **Ihrem eigenen API-Schlüssel** für Gemini.
 - Wenn Sie **Ihren eigenen API-Schlüssel** verwenden (BYOK — Gemini oder Groq), sind Sie für diesen Schlüssel und seine Kosten verantwortlich, und die Verarbeitung richtet sich nach den Bedingungen des von Ihnen gewählten Anbieters.
 - Einzelheiten zum Umgang mit Daten in der KI (einschließlich dessen, dass über die Standard-KI verarbeitete Daten nicht zum Training von KI-Modellen Dritter verwendet werden) finden Sie in der Datenschutzerklärung.
 
 ## 6. Premium und Käufe
 
 - **Premium** ist ein einmaliger In-App-Kauf, der zusätzliche Funktionen freischaltet (derzeit unbegrenzt viele Schnittmuster über das kostenlose Limit hinaus, Vorlagen und Visualisierung). Es ist kein Abonnement; bezahltes Premium bleibt auf dem Google-Konto verfügbar, mit dem es gekauft wurde.
-- Der Kauf erfolgt über **Google Play**, das die Zahlung abwickelt und eine Kaufbestätigung sendet. Einen früheren Kauf stellen Sie unter **Einstellungen → Kauf wiederherstellen** auf einem Gerät wieder her, das mit demselben Google-Konto angemeldet ist. Bestätigt Google Play, dass der Kauf nicht mehr gültig ist (z. B. nach einer Erstattung), sperrt die App Premium wieder; ohne Verbindung oder bei einem Fehler von Google Play ändert sich nichts.
-- **Widerruf und Erstattungen.** Preise, Zahlung, Widerruf und Erstattungen richten sich nach den Regeln von Google Play für digitale Inhalte, die sofort nach der Zahlung bereitgestellt werden. Ihre gesetzlichen Verbraucherrechte, insbesondere Ihre Rechte bei Mängeln, bleiben unberührt.
-- **Mängel von Premium.** Wir haften dafür, dass Premium so funktioniert, wie es in der App und in diesen Bedingungen beschrieben ist, im Umfang und für die Dauer, die die gesetzlichen Vorschriften über die Bereitstellung digitaler Inhalte an Verbraucher vorsehen. Funktioniert Premium nicht wie vorgesehen, schreiben Sie uns an **lostria.apps@gmail.com**, idealerweise mit einer Beschreibung des Problems und der Bestellnummer aus der Bestätigung von Google Play. Wir beheben den Mangel innerhalb einer angemessenen Frist kostenlos, in der Regel durch ein App-Update. Ist das nicht möglich, beheben wir ihn nicht innerhalb einer angemessenen Frist oder ist der Mangel schwerwiegend, haben Sie Anspruch auf eine angemessene Preisminderung und, sofern der Mangel nicht unerheblich ist, auch auf Vertragsbeendigung und Erstattung des Preises.
+- Der Kauf erfolgt über den Store, aus dem Sie die App nutzen — **Google Play** (Android) oder den **Microsoft Store** (Windows); der Store wickelt die Zahlung ab und sendet eine Kaufbestätigung. **Käufe werden nicht zwischen den Stores übertragen:** Bei Google Play gekauftes Premium gilt in der Android-App, im Microsoft Store gekauftes in der Windows-App. Einen früheren Kauf stellen Sie unter **Einstellungen → Kauf wiederherstellen** auf einem Gerät wieder her, das mit demselben Google- bzw. Microsoft-Konto angemeldet ist. Bestätigt Google Play, dass der Kauf nicht mehr gültig ist (z. B. nach einer Erstattung), sperrt die Android-App Premium wieder; ohne Verbindung oder bei einem Fehler des Stores ändert sich nichts.
+- **Widerruf und Erstattungen.** Preise, Zahlung, Widerruf und Erstattungen richten sich nach den Regeln des Stores, in dem Sie gekauft haben (Google Play oder Microsoft Store), für digitale Inhalte, die sofort nach der Zahlung bereitgestellt werden. Ihre gesetzlichen Verbraucherrechte, insbesondere Ihre Rechte bei Mängeln, bleiben unberührt.
+- **Mängel von Premium.** Wir haften dafür, dass Premium so funktioniert, wie es in der App und in diesen Bedingungen beschrieben ist, im Umfang und für die Dauer, die die gesetzlichen Vorschriften über die Bereitstellung digitaler Inhalte an Verbraucher vorsehen. Funktioniert Premium nicht wie vorgesehen, schreiben Sie uns an **lostria.apps@gmail.com**, idealerweise mit einer Beschreibung des Problems und der Bestellnummer aus der Bestätigung des Stores (Google Play oder Microsoft Store). Wir beheben den Mangel innerhalb einer angemessenen Frist kostenlos, in der Regel durch ein App-Update. Ist das nicht möglich, beheben wir ihn nicht innerhalb einer angemessenen Frist oder ist der Mangel schwerwiegend, haben Sie Anspruch auf eine angemessene Preisminderung und, sofern der Mangel nicht unerheblich ist, auch auf Vertragsbeendigung und Erstattung des Preises.
 - **Aktualisierungen und Änderungen.** Wir stellen die Aktualisierungen bereit, die nötig sind, damit Premium weiter funktioniert (einschließlich Sicherheitsupdates), für den Zeitraum, den Sie vernünftigerweise erwarten können. Wir können Funktionen aus triftigen Gründen (technisch, sicherheitsbezogen, rechtlich oder zur Weiterentwicklung) ohne zusätzliche Kosten für Sie ändern und verbessern. Würde eine Änderung Ihren Zugang zu Premium oder dessen Nutzung erheblich beeinträchtigen, informieren wir Sie vorab; Sie können den Vertrag dann innerhalb von 30 Tagen nach der Mitteilung oder der Änderung, je nachdem, was später eintritt, beenden, und wir erstatten den Preis im gesetzlich vorgesehenen Umfang.
 
 ## 7. Integrierte Vorlagen
@@ -222,8 +225,8 @@ Ihre Daten existieren **nur auf Ihrem Gerät**, und wir haben keinen technischen
 ## 10. Haftung
 
 - **Wofür wir immer haften.** Manche Haftung lässt sich gesetzlich nicht beschränken, und wir versuchen es auch nicht – das gilt insbesondere für vorsätzlich oder grob fahrlässig verursachte Schäden. Ihre gesetzlichen Verbraucherrechte nimmt Ihnen nichts in diesen Bedingungen, insbesondere nicht Ihre Rechte bei Mängeln von Premium (Abschnitt 6).
-- **Dienste Dritter.** Einige Funktionen hängen von Diensten ab, die wir nicht kontrollieren (Google Play, Google Gemini, Groq, Websites von Online-Shops). Für deren Ausfälle, Änderungen oder Fehler haften wir nicht.
-- **Ihre Mitwirkung.** Bei der Nutzung der App drohen vor allem zwei Schäden: der Verlust Ihres Katalogs (z. B. nach Verlust oder Defekt des Telefons oder nach einem App-Fehler) und der Kauf eines ungeeigneten Stoffes aufgrund falsch importierter Angaben (z. B. einer von der KI vorgeschlagenen Stoffmenge oder Zusammensetzung). Beidem beugen Sie am besten vor, indem Sie Ihre Daten regelmäßig sichern (Abschnitt 9) und von der KI vorgeschlagene Angaben vor dem Speichern und vor dem Kauf prüfen (Abschnitt 5). Trägt es zum Schaden bei, dass Sie dies nicht getan haben, wird dies nach dem Gesetz berücksichtigt.
+- **Dienste Dritter.** Einige Funktionen hängen von Diensten ab, die wir nicht kontrollieren (Google Play, Microsoft Store, Google Gemini, Groq, Websites von Online-Shops). Für deren Ausfälle, Änderungen oder Fehler haften wir nicht.
+- **Ihre Mitwirkung.** Bei der Nutzung der App drohen vor allem zwei Schäden: der Verlust Ihres Katalogs (z. B. nach Verlust oder Defekt des Geräts oder nach einem App-Fehler) und der Kauf eines ungeeigneten Stoffes aufgrund falsch importierter Angaben (z. B. einer von der KI vorgeschlagenen Stoffmenge oder Zusammensetzung). Beidem beugen Sie am besten vor, indem Sie Ihre Daten regelmäßig sichern (Abschnitt 9) und von der KI vorgeschlagene Angaben vor dem Speichern und vor dem Kauf prüfen (Abschnitt 5). Trägt es zum Schaden bei, dass Sie dies nicht getan haben, wird dies nach dem Gesetz berücksichtigt.
 - **Kostenlose Funktionen.** Funktionen, die nicht zu Premium gehören (einschließlich der Standard-KI), stellen wir kostenlos bereit und garantieren nicht, dass sie fehlerfrei oder stets verfügbar sind. Soweit gesetzlich zulässig, haften wir nicht für entgangenen Gewinn oder mittelbare Schäden.
 - **Unternehmer.** Nutzen Sie die App im Rahmen einer unternehmerischen Tätigkeit und nicht als Verbraucherin oder Verbraucher, ist unsere Haftung — außer in den Fällen des ersten Punktes — auf den für Premium gezahlten Preis beschränkt und für kostenlose Funktionen ausgeschlossen.
 
@@ -245,11 +248,11 @@ Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Tschechische Republi
 
 **Language / Jazyk:** [English](#english) · [Čeština](#cesky) · [Deutsch](#deutsch) · **Italiano** · [Polski](#polski) · [Slovenčina](#slovensky) · [Informativa sulla privacy (in inglese)](../)
 
-**Data di efficacia:** 15/09/2026
+**Data di efficacia:** 28/10/2026
 
 ## 1. Informazioni su questi termini
 
-I presenti termini regolano l'uso dell'app Android **Lostria Sewing** («l'app»), gestita da **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Repubblica Ceca («noi»), contatto: **lostria.apps@gmail.com**. Installando o utilizzando l'app, Lei accetta i presenti termini. Il trattamento dei dati è descritto nella nostra Informativa sulla privacy.
+I presenti termini regolano l'uso dell'app **Lostria Sewing** per Android e Windows («l'app»), gestita da **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Repubblica Ceca («noi»), contatto: **lostria.apps@gmail.com**. Installando o utilizzando l'app, Lei accetta i presenti termini. Il trattamento dei dati è descritto nella nostra Informativa sulla privacy.
 
 I presenti termini sono disponibili in più lingue. In caso di discordanza tra le versioni linguistiche **prevale la versione ceca**, fermi restando i Suoi diritti inderogabili di consumatore.
 
@@ -271,15 +274,16 @@ Quando utilizza la funzione Import dal web (ad es. condividendo un link dal brow
 
 - L'IA estrae dati da foto o pagine web che Lei sceglie di importare. **Il risultato dell'IA può essere incompleto o errato**: La preghiamo di verificarlo prima di salvare; può modificare o eliminare qualsiasi dato.
 - L'**IA predefinita** è fornita gratuitamente agli utenti senza una propria chiave API, è pagata dalla gestrice e ha un **limite giornaliero**. Possiamo modificare il limite o interrompere l'IA predefinita, ad esempio in caso di abuso o di costi eccessivi.
+- Su Windows l'IA predefinita non è disponibile; le funzioni IA vi funzionano solo con **una propria chiave API** Gemini.
 - Se utilizza **una propria chiave API** (BYOK — Gemini o Groq), è responsabile di tale chiave e dei relativi costi, e il trattamento è disciplinato dalle condizioni del fornitore da Lei scelto.
 - I dettagli sul trattamento dei dati nell'IA (compreso il fatto che i dati elaborati tramite l'IA predefinita non vengono utilizzati per addestrare modelli di IA di terzi) sono riportati nell'Informativa sulla privacy.
 
 ## 6. Premium e acquisti
 
 - **Premium** è un acquisto in-app una tantum che sblocca funzioni aggiuntive (attualmente un numero illimitato di cartamodelli oltre il limite gratuito, Modelli e Visualizzazione). Non è un abbonamento; Premium pagato resta disponibile sull'account Google con cui è stato acquistato.
-- L'acquisto avviene tramite **Google Play**, che gestisce il pagamento e invia una conferma d'acquisto. Può ripristinare un acquisto precedente in **Impostazioni → Ripristina acquisto** su un dispositivo collegato allo stesso account Google. Se Google Play conferma che l'acquisto non è più valido (ad esempio dopo un rimborso), l'app blocca di nuovo Premium; senza connessione o in caso di errore di Google Play non cambia nulla.
-- **Recesso e rimborsi.** Prezzi, pagamento, recesso dal contratto e rimborsi seguono le regole di Google Play per i contenuti digitali resi disponibili subito dopo il pagamento. Restano salvi i Suoi diritti di consumatore previsti dalla legge, in particolare i diritti in caso di difetti.
-- **Difetti di Premium.** Rispondiamo del fatto che Premium funzioni come descritto nell'app e nei presenti termini, nella misura e per il periodo stabiliti dalla legge sulla fornitura di contenuti digitali ai consumatori. Se Premium non funziona come dovrebbe, ci scriva a **lostria.apps@gmail.com**, idealmente con una descrizione del problema e il numero d'ordine indicato nella conferma di Google Play. Elimineremo il difetto gratuitamente entro un termine ragionevole, di norma con un aggiornamento dell'app. Se ciò non è possibile, se non lo eliminiamo entro un termine ragionevole o se il difetto è grave, ha diritto a un'adeguata riduzione del prezzo e, se il difetto non è di lieve entità, anche a recedere dal contratto e ottenere il rimborso del prezzo.
+- L'acquisto avviene tramite lo store da cui usa l'app — **Google Play** (Android) o **Microsoft Store** (Windows); lo store gestisce il pagamento e invia una conferma d'acquisto. **Gli acquisti non si trasferiscono tra gli store:** il Premium acquistato su Google Play vale nell'app per Android, quello acquistato su Microsoft Store nell'app per Windows. Può ripristinare un acquisto precedente in **Impostazioni → Ripristina acquisto** su un dispositivo collegato allo stesso account Google o Microsoft. Se Google Play conferma che l'acquisto non è più valido (ad esempio dopo un rimborso), l'app per Android blocca di nuovo Premium; senza connessione o in caso di errore dello store non cambia nulla.
+- **Recesso e rimborsi.** Prezzi, pagamento, recesso dal contratto e rimborsi seguono le regole dello store in cui ha acquistato (Google Play o Microsoft Store) per i contenuti digitali resi disponibili subito dopo il pagamento. Restano salvi i Suoi diritti di consumatore previsti dalla legge, in particolare i diritti in caso di difetti.
+- **Difetti di Premium.** Rispondiamo del fatto che Premium funzioni come descritto nell'app e nei presenti termini, nella misura e per il periodo stabiliti dalla legge sulla fornitura di contenuti digitali ai consumatori. Se Premium non funziona come dovrebbe, ci scriva a **lostria.apps@gmail.com**, idealmente con una descrizione del problema e il numero d'ordine indicato nella conferma dello store (Google Play o Microsoft Store). Elimineremo il difetto gratuitamente entro un termine ragionevole, di norma con un aggiornamento dell'app. Se ciò non è possibile, se non lo eliminiamo entro un termine ragionevole o se il difetto è grave, ha diritto a un'adeguata riduzione del prezzo e, se il difetto non è di lieve entità, anche a recedere dal contratto e ottenere il rimborso del prezzo.
 - **Aggiornamenti e modifiche.** Forniamo gli aggiornamenti necessari affinché Premium continui a funzionare (compresi quelli di sicurezza) per il periodo che può ragionevolmente aspettarsi. Possiamo modificare e migliorare le funzioni per validi motivi (tecnici, di sicurezza, legali o di ulteriore sviluppo) senza costi aggiuntivi per Lei. Se una modifica peggiorasse in modo significativo il Suo accesso a Premium o il suo utilizzo, La informeremo in anticipo; potrà quindi recedere dal contratto entro 30 giorni dalla comunicazione o dalla modifica, se successiva, e Le rimborseremo il prezzo nella misura prevista dalla legge.
 
 ## 7. Modelli integrati
@@ -303,8 +307,8 @@ I Suoi dati esistono **solo sul Suo dispositivo** e non abbiamo alcun accesso te
 ## 10. Responsabilità
 
 - **Di cosa rispondiamo sempre.** Alcune responsabilità non possono essere limitate per legge e non ci proviamo nemmeno: vale in particolare per i danni causati con dolo o colpa grave. Nulla nei presenti termini Le toglie i diritti di consumatore previsti dalla legge, in particolare i diritti in caso di difetti di Premium (sezione 6).
-- **Servizi di terzi.** Alcune funzioni dipendono da servizi che non controlliamo (Google Play, Google Gemini, Groq, siti web dei negozi online). Non rispondiamo delle loro interruzioni, modifiche o errori.
-- **La Sua collaborazione.** Usando l'app i rischi principali sono due: la perdita del Suo catalogo (ad es. dopo lo smarrimento o il guasto del telefono o dopo un errore dell'app) e l'acquisto di un tessuto non adatto sulla base di dati importati in modo errato (ad es. consumo di tessuto o composizione suggeriti dall'IA). Li previene al meglio eseguendo regolarmente il backup dei dati (sezione 9) e verificando i dati suggeriti dall'IA prima di salvarli e prima dell'acquisto (sezione 5). Se il mancato rispetto di queste indicazioni contribuisce al danno, se ne terrà conto secondo la legge.
+- **Servizi di terzi.** Alcune funzioni dipendono da servizi che non controlliamo (Google Play, Microsoft Store, Google Gemini, Groq, siti web dei negozi online). Non rispondiamo delle loro interruzioni, modifiche o errori.
+- **La Sua collaborazione.** Usando l'app i rischi principali sono due: la perdita del Suo catalogo (ad es. dopo lo smarrimento o il guasto del dispositivo o dopo un errore dell'app) e l'acquisto di un tessuto non adatto sulla base di dati importati in modo errato (ad es. consumo di tessuto o composizione suggeriti dall'IA). Li previene al meglio eseguendo regolarmente il backup dei dati (sezione 9) e verificando i dati suggeriti dall'IA prima di salvarli e prima dell'acquisto (sezione 5). Se il mancato rispetto di queste indicazioni contribuisce al danno, se ne terrà conto secondo la legge.
 - **Funzioni gratuite.** Le funzioni che non fanno parte di Premium (compresa l'IA predefinita) sono fornite gratuitamente e non garantiamo che siano prive di errori o sempre disponibili. Nei limiti consentiti dalla legge, non rispondiamo del mancato guadagno né dei danni indiretti.
 - **Professionisti.** Se utilizza l'app nell'ambito di un'attività professionale e non come consumatore, la nostra responsabilità — salvo i casi del primo punto — è limitata al prezzo pagato per Premium ed esclusa per le funzioni gratuite.
 
@@ -326,11 +330,11 @@ Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Repubblica Ceca — 
 
 **Language / Jazyk:** [English](#english) · [Čeština](#cesky) · [Deutsch](#deutsch) · [Italiano](#italiano) · **Polski** · [Slovenčina](#slovensky) · [Polityka prywatności (po angielsku)](../)
 
-**Data wejścia w życie:** 15.09.2026
+**Data wejścia w życie:** 28.10.2026
 
 ## 1. O niniejszych warunkach
 
-Niniejsze warunki regulują korzystanie z aplikacji na Androida **Lostria Sewing** („aplikacja"), której operatorem jest **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Republika Czeska („my"), kontakt: **lostria.apps@gmail.com**. Instalując aplikację lub z niej korzystając, użytkownik akceptuje niniejsze warunki. Sposób postępowania z danymi opisuje nasza Polityka prywatności.
+Niniejsze warunki regulują korzystanie z aplikacji **Lostria Sewing** na Androida i Windows („aplikacja"), której operatorem jest **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Republika Czeska („my"), kontakt: **lostria.apps@gmail.com**. Instalując aplikację lub z niej korzystając, użytkownik akceptuje niniejsze warunki. Sposób postępowania z danymi opisuje nasza Polityka prywatności.
 
 Niniejsze warunki są dostępne w kilku językach. W razie rozbieżności między wersjami językowymi **rozstrzygająca jest wersja czeska**, bez uszczerbku dla bezwzględnie obowiązujących praw konsumenta.
 
@@ -352,15 +356,16 @@ Podczas korzystania z funkcji Import z internetu (np. poprzez udostępnienie lin
 
 - AI wyodrębnia dane ze zdjęć lub stron internetowych wybranych do importu. **Wynik działania AI może być niepełny lub błędny** — prosimy sprawdzić go przed zapisaniem; wszystko można edytować lub usunąć.
 - **Domyślna AI** jest udostępniana bezpłatnie użytkownikom bez własnego klucza API, jest opłacana przez operatorkę i ma **dzienny limit**. Możemy zmienić limit lub wycofać domyślną AI, np. w przypadku nadużyć lub zbyt wysokich kosztów.
+- W systemie Windows domyślna AI nie jest dostępna; funkcje AI działają tam tylko z **własnym kluczem API** Gemini.
 - W przypadku korzystania z **własnego klucza API** (BYOK — Gemini lub Groq) użytkownik odpowiada za ten klucz i jego koszty, a przetwarzanie podlega warunkom wybranego dostawcy.
 - Szczegóły dotyczące postępowania z danymi w AI (w tym to, że dane przetwarzane przez domyślną AI nie są wykorzystywane do trenowania modeli AI osób trzecich) zawiera Polityka prywatności.
 
 ## 6. Premium i zakupy
 
 - **Premium** to jednorazowy zakup w aplikacji, który odblokowuje dodatkowe funkcje (obecnie nieograniczoną liczbę wykrojów ponad bezpłatny limit, Szablony i Wizualizację). Nie jest to subskrypcja; opłacone Premium pozostaje dostępne na koncie Google, na którym zostało kupione.
-- Zakup odbywa się przez **Google Play**, które obsługuje płatność i wysyła potwierdzenie zakupu. Wcześniejszy zakup można przywrócić w **Ustawienia → Przywróć zakup** na urządzeniu zalogowanym na to samo konto Google. Jeśli Google Play potwierdzi, że zakup nie jest już ważny (np. po zwrocie pieniędzy), aplikacja ponownie zablokuje Premium; bez połączenia lub w przypadku błędu Google Play nic się nie zmienia.
-- **Odstąpienie od umowy i zwroty.** Ceny, płatności, odstąpienie od umowy i zwroty podlegają zasadom Google Play dotyczącym treści cyfrowych udostępnianych natychmiast po zapłacie. Nie narusza to ustawowych praw konsumenta, w szczególności praw z tytułu wad.
-- **Wady Premium.** Odpowiadamy za to, że Premium działa zgodnie z opisem w aplikacji i w niniejszych warunkach, w zakresie i przez okres określony przepisami o dostarczaniu treści cyfrowych konsumentom. Jeśli Premium nie działa tak, jak powinno, prosimy o wiadomość na **lostria.apps@gmail.com**, najlepiej z opisem problemu i numerem zamówienia z potwierdzenia Google Play. Wadę usuniemy bezpłatnie w rozsądnym terminie, zwykle poprzez aktualizację aplikacji. Jeśli nie jest to możliwe, jeśli nie usuniemy jej w rozsądnym terminie lub jeśli wada jest poważna, przysługuje prawo do odpowiedniego obniżenia ceny, a jeśli wada nie jest nieistotna, także do odstąpienia od umowy i zwrotu zapłaconej ceny.
+- Zakup odbywa się przez sklep, z którego pochodzi używana aplikacja — **Google Play** (Android) lub **Microsoft Store** (Windows); sklep obsługuje płatność i wysyła potwierdzenie zakupu. **Zakupy nie przenoszą się między sklepami:** Premium kupione w Google Play obowiązuje w aplikacji na Androida, kupione w Microsoft Store — w aplikacji na Windows. Wcześniejszy zakup można przywrócić w **Ustawienia → Przywróć zakup** na urządzeniu zalogowanym na to samo konto Google lub Microsoft. Jeśli Google Play potwierdzi, że zakup nie jest już ważny (np. po zwrocie pieniędzy), aplikacja na Androida ponownie zablokuje Premium; bez połączenia lub w przypadku błędu sklepu nic się nie zmienia.
+- **Odstąpienie od umowy i zwroty.** Ceny, płatności, odstąpienie od umowy i zwroty podlegają zasadom sklepu, w którym dokonano zakupu (Google Play lub Microsoft Store), dotyczącym treści cyfrowych udostępnianych natychmiast po zapłacie. Nie narusza to ustawowych praw konsumenta, w szczególności praw z tytułu wad.
+- **Wady Premium.** Odpowiadamy za to, że Premium działa zgodnie z opisem w aplikacji i w niniejszych warunkach, w zakresie i przez okres określony przepisami o dostarczaniu treści cyfrowych konsumentom. Jeśli Premium nie działa tak, jak powinno, prosimy o wiadomość na **lostria.apps@gmail.com**, najlepiej z opisem problemu i numerem zamówienia z potwierdzenia sklepu (Google Play lub Microsoft Store). Wadę usuniemy bezpłatnie w rozsądnym terminie, zwykle poprzez aktualizację aplikacji. Jeśli nie jest to możliwe, jeśli nie usuniemy jej w rozsądnym terminie lub jeśli wada jest poważna, przysługuje prawo do odpowiedniego obniżenia ceny, a jeśli wada nie jest nieistotna, także do odstąpienia od umowy i zwrotu zapłaconej ceny.
 - **Aktualizacje i zmiany.** Dostarczamy aktualizacje niezbędne do tego, aby Premium nadal działało (w tym aktualizacje zabezpieczeń), przez okres, którego można rozsądnie oczekiwać. Możemy zmieniać i ulepszać funkcje z uzasadnionych powodów (technicznych, związanych z bezpieczeństwem, prawnych lub dalszego rozwoju) bez dodatkowych kosztów. Jeśli zmiana istotnie pogorszyłaby dostęp do Premium lub korzystanie z niego, poinformujemy o niej z wyprzedzeniem; od umowy można wtedy odstąpić w terminie 30 dni od powiadomienia lub od wprowadzenia zmiany, w zależności od tego, co nastąpi później, a zapłaconą cenę zwrócimy w zakresie przewidzianym przepisami.
 
 ## 7. Wbudowane szablony
@@ -384,8 +389,8 @@ Dane istnieją **wyłącznie na urządzeniu użytkownika** i nie mamy do nich ż
 ## 10. Odpowiedzialność
 
 - **Za co odpowiadamy zawsze.** Części odpowiedzialności prawo ograniczyć nie pozwala i nie próbujemy tego robić — dotyczy to w szczególności szkody wyrządzonej umyślnie lub wskutek rażącego niedbalstwa. Żadne postanowienie niniejszych warunków nie odbiera ustawowych praw konsumenta, w szczególności praw z tytułu wad Premium (sekcja 6).
-- **Usługi osób trzecich.** Niektóre funkcje zależą od usług, których nie kontrolujemy (Google Play, Google Gemini, Groq, strony internetowe sklepów). Nie odpowiadamy za ich awarie, zmiany ani błędy.
-- **Współdziałanie użytkownika.** Podczas korzystania z aplikacji grożą przede wszystkim dwie szkody: utrata katalogu (np. po zgubieniu lub awarii telefonu albo po błędzie aplikacji) oraz zakup nieodpowiedniej tkaniny na podstawie błędnie zaimportowanych danych (np. zużycia tkaniny lub składu zaproponowanych przez AI). Najlepiej zapobiega się im, regularnie tworząc kopie zapasowe (sekcja 9) i sprawdzając dane zaproponowane przez AI przed zapisaniem i przed zakupem (sekcja 5). Jeśli do szkody przyczyni się niezastosowanie się do tego, zostanie to uwzględnione zgodnie z przepisami.
+- **Usługi osób trzecich.** Niektóre funkcje zależą od usług, których nie kontrolujemy (Google Play, Microsoft Store, Google Gemini, Groq, strony internetowe sklepów). Nie odpowiadamy za ich awarie, zmiany ani błędy.
+- **Współdziałanie użytkownika.** Podczas korzystania z aplikacji grożą przede wszystkim dwie szkody: utrata katalogu (np. po zgubieniu lub awarii urządzenia albo po błędzie aplikacji) oraz zakup nieodpowiedniej tkaniny na podstawie błędnie zaimportowanych danych (np. zużycia tkaniny lub składu zaproponowanych przez AI). Najlepiej zapobiega się im, regularnie tworząc kopie zapasowe (sekcja 9) i sprawdzając dane zaproponowane przez AI przed zapisaniem i przed zakupem (sekcja 5). Jeśli do szkody przyczyni się niezastosowanie się do tego, zostanie to uwzględnione zgodnie z przepisami.
 - **Funkcje bezpłatne.** Funkcje, które nie są częścią Premium (w tym domyślna AI), udostępniamy bezpłatnie i nie gwarantujemy, że będą wolne od błędów lub zawsze dostępne. W zakresie dozwolonym przez prawo nie odpowiadamy za utracone korzyści ani szkody pośrednie.
 - **Przedsiębiorcy.** W przypadku korzystania z aplikacji w ramach działalności gospodarczej, a nie jako konsument, nasza odpowiedzialność — poza przypadkami z pierwszego punktu — jest ograniczona do ceny zapłaconej za Premium i wyłączona w odniesieniu do funkcji bezpłatnych.
 
@@ -407,11 +412,11 @@ Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Republika Czeska —
 
 **Language / Jazyk:** [English](#english) · [Čeština](#cesky) · [Deutsch](#deutsch) · [Italiano](#italiano) · [Polski](#polski) · **Slovenčina** · [Zásady ochrany osobných údajov (v češtine)](../#cesky)
 
-**Dátum účinnosti:** 15. 9. 2026
+**Dátum účinnosti:** 28. 10. 2026
 
 ## 1. O týchto podmienkach
 
-Tieto podmienky upravujú používanie aplikácie **Lostria Sewing** pre Android („aplikácia"), ktorú prevádzkuje **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Česká republika (ďalej „my"), kontakt: **lostria.apps@gmail.com**. Inštaláciou alebo používaním aplikácie s podmienkami súhlasíte. Ako sa zaobchádza s údajmi, opisujú Zásady ochrany osobných údajov.
+Tieto podmienky upravujú používanie aplikácie **Lostria Sewing** pre Android a Windows („aplikácia"), ktorú prevádzkuje **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Česká republika (ďalej „my"), kontakt: **lostria.apps@gmail.com**. Inštaláciou alebo používaním aplikácie s podmienkami súhlasíte. Ako sa zaobchádza s údajmi, opisujú Zásady ochrany osobných údajov.
 
 Podmienky sú k dispozícii vo viacerých jazykoch. V prípade rozporu medzi jazykovými verziami má prednosť **česká verzia**; tým nie sú dotknuté Vaše zákonné práva spotrebiteľa.
 
@@ -433,15 +438,16 @@ Pri použití funkcie Import z webu (napr. zdieľaním odkazu z prehliadača) ap
 
 - AI vyťahuje údaje z fotiek alebo webových stránok, ktoré sa rozhodnete importovať. **Výstup AI môže byť neúplný alebo chybný** — pred uložením ho, prosím, skontrolujte; čokoľvek môžete upraviť alebo vymazať.
 - **Predvolená AI** sa používateľom bez vlastného API kľúča poskytuje zadarmo, hradí ju prevádzkovateľka a má **denný limit**. Limit môžeme zmeniť alebo predvolenú AI ukončiť, napríklad pri zneužívaní alebo príliš vysokých nákladoch.
+- Vo Windows predvolená AI nie je k dispozícii; AI funkcie tam fungujú len s **vlastným API kľúčom** Gemini.
 - Ak používate **vlastný API kľúč** (BYOK — Gemini alebo Groq), zodpovedáte za tento kľúč aj jeho náklady a spracovanie sa riadi podmienkami Vami zvoleného poskytovateľa.
 - Podrobnosti o zaobchádzaní s údajmi v AI (vrátane toho, že údaje spracované predvolenou AI sa nepoužívajú na trénovanie AI modelov tretích strán) nájdete v Zásadách ochrany osobných údajov.
 
 ## 6. Premium a nákupy
 
 - **Premium** je jednorazový nákup v aplikácii, ktorý odomyká ďalšie funkcie (aktuálne neobmedzený počet strihov nad bezplatný limit, Šablóny a Vizualizáciu). Nejde o predplatné; zaplatené Premium zostáva sprístupnené na účte Google, ktorým bolo kúpené.
-- Nákup prebieha cez **Google Play**, ktorý spracuje platbu a pošle potvrdenie o nákupe. Predchádzajúci nákup obnovíte v **Nastavenia → Obnoviť nákup** na zariadení prihlásenom rovnakým účtom Google. Ak Google Play potvrdí, že nákup už neplatí (napríklad po vrátení peňazí), aplikácia Premium znova zamkne; bez pripojenia alebo pri chybe Google Play sa nič nemení.
-- **Odstúpenie a vrátenie peňazí.** Ceny, platba, odstúpenie od zmluvy aj vrátenie peňazí sa riadia pravidlami Google Play pre digitálny obsah sprístupnený ihneď po zaplatení. Tým nie sú dotknuté Vaše zákonné práva spotrebiteľa, najmä práva zo zodpovednosti za vady.
-- **Vady Premium.** Za to, že Premium funguje tak, ako je opísané v aplikácii a v týchto podmienkach, zodpovedáme v rozsahu a počas doby, ktorú stanovujú právne predpisy o poskytovaní digitálneho obsahu spotrebiteľom. Ak Premium nefunguje, ako má, napíšte nám na **lostria.apps@gmail.com**, ideálne s opisom problému a číslom objednávky z potvrdenia Google Play. Vadu bezplatne odstránime v primeranej lehote, spravidla aktualizáciou aplikácie. Ak to nie je možné, ak ju v primeranej lehote neodstránime alebo ak je vada závažná, máte právo na primeranú zľavu, a ak vada nie je nepodstatná, aj na odstúpenie od zmluvy a vrátenie zaplatenej ceny.
+- Nákup prebieha cez obchod, z ktorého aplikáciu používate — **Google Play** (Android) alebo **Microsoft Store** (Windows); obchod spracuje platbu a pošle potvrdenie o nákupe. **Nákup sa medzi obchodmi neprenáša:** Premium kúpené na Google Play platí v aplikácii pre Android, kúpené v Microsoft Store v aplikácii pre Windows. Predchádzajúci nákup obnovíte v **Nastavenia → Obnoviť nákup** na zariadení prihlásenom rovnakým účtom Google, resp. Microsoft. Ak Google Play potvrdí, že nákup už neplatí (napríklad po vrátení peňazí), aplikácia pre Android Premium znova zamkne; bez pripojenia alebo pri chybe obchodu sa nič nemení.
+- **Odstúpenie a vrátenie peňazí.** Ceny, platba, odstúpenie od zmluvy aj vrátenie peňazí sa riadia pravidlami obchodu, v ktorom ste nakúpili (Google Play alebo Microsoft Store), pre digitálny obsah sprístupnený ihneď po zaplatení. Tým nie sú dotknuté Vaše zákonné práva spotrebiteľa, najmä práva zo zodpovednosti za vady.
+- **Vady Premium.** Za to, že Premium funguje tak, ako je opísané v aplikácii a v týchto podmienkach, zodpovedáme v rozsahu a počas doby, ktorú stanovujú právne predpisy o poskytovaní digitálneho obsahu spotrebiteľom. Ak Premium nefunguje, ako má, napíšte nám na **lostria.apps@gmail.com**, ideálne s opisom problému a číslom objednávky z potvrdenia obchodu (Google Play alebo Microsoft Store). Vadu bezplatne odstránime v primeranej lehote, spravidla aktualizáciou aplikácie. Ak to nie je možné, ak ju v primeranej lehote neodstránime alebo ak je vada závažná, máte právo na primeranú zľavu, a ak vada nie je nepodstatná, aj na odstúpenie od zmluvy a vrátenie zaplatenej ceny.
 - **Aktualizácie a zmeny.** Poskytujeme aktualizácie potrebné na to, aby Premium naďalej fungovalo (vrátane bezpečnostných), počas doby, ktorú môžete rozumne očakávať. Funkcie môžeme z vážnych dôvodov (technických, bezpečnostných, právnych alebo kvôli ďalšiemu rozvoju) meniť a vylepšovať bez dodatočných nákladov pre Vás. Ak by zmena podstatne zhoršila Váš prístup k Premium alebo jeho používanie, oznámime Vám ju vopred; od zmluvy potom môžete odstúpiť do 30 dní od oznámenia alebo od vykonania zmeny, podľa toho, čo nastane neskôr, a zaplatenú cenu Vám vrátime v rozsahu, ktorý stanovujú právne predpisy.
 
 ## 7. Vstavané šablóny
@@ -465,8 +471,8 @@ Vaše údaje existujú **len vo Vašom zariadení** a nemáme k nim žiadny tech
 ## 10. Zodpovednosť
 
 - **Za čo zodpovedáme vždy.** Niektorú zodpovednosť zákon obmedziť nedovolí a ani sa o to nepokúšame — platí to najmä pre škodu spôsobenú úmyselne alebo z hrubej nedbanlivosti. Vaše zákonné práva spotrebiteľa Vám nič v týchto podmienkach neberie, najmä práva zo zodpovednosti za vady Premium (oddiel 6).
-- **Služby tretích strán.** Niektoré funkcie závisia od služieb, ktoré nekontrolujeme (Google Play, Google Gemini, Groq, webové stránky e-shopov). Za ich výpadky, zmeny alebo chyby nezodpovedáme.
-- **Vaša súčinnosť.** Pri používaní aplikácie hrozia hlavne dve škody: strata evidencie (napr. po strate či poruche telefónu alebo po chybe aplikácie) a nákup nevhodnej látky podľa chybne načítaných údajov (napr. spotreby alebo zloženia navrhnutých AI). Obom najlepšie predídete, keď si pravidelne zálohujete údaje (oddiel 9) a údaje navrhnuté AI skontrolujete pred uložením aj pred nákupom (oddiel 5). Ak k škode prispeje, že ste tak neurobili, prihliadne sa na to podľa zákona.
+- **Služby tretích strán.** Niektoré funkcie závisia od služieb, ktoré nekontrolujeme (Google Play, Microsoft Store, Google Gemini, Groq, webové stránky e-shopov). Za ich výpadky, zmeny alebo chyby nezodpovedáme.
+- **Vaša súčinnosť.** Pri používaní aplikácie hrozia hlavne dve škody: strata evidencie (napr. po strate či poruche zariadenia alebo po chybe aplikácie) a nákup nevhodnej látky podľa chybne načítaných údajov (napr. spotreby alebo zloženia navrhnutých AI). Obom najlepšie predídete, keď si pravidelne zálohujete údaje (oddiel 9) a údaje navrhnuté AI skontrolujete pred uložením aj pred nákupom (oddiel 5). Ak k škode prispeje, že ste tak neurobili, prihliadne sa na to podľa zákona.
 - **Bezplatné funkcie.** Funkcie, ktoré nie sú súčasťou Premium (vrátane predvolenej AI), poskytujeme zadarmo a nezaručujeme, že budú bez chýb alebo vždy dostupné. V rozsahu, ktorý pripúšťajú právne predpisy, nezodpovedáme za ušlý zisk ani nepriame škody.
 - **Podnikatelia.** Ak používate aplikáciu v rámci podnikania, a nie ako spotrebiteľ, je naša zodpovednosť — okrem prípadov z prvého bodu — obmedzená na cenu zaplatenú za Premium a pri bezplatných funkciách vylúčená.
 

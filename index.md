@@ -5,19 +5,19 @@
 **Language / Jazyk:** English · [🇨🇿 Česká verze ↓](#cesky) · [Terms of Use](terms/)
 
 **Effective date:** 2026-08-09
-**Last updated:** 2026-09-15
+**Last updated:** 2026-10-28
 
 ## 1. Who we are and what we do (not) process
 
 **Lostria Sewing** is operated by **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Czech Republic ("we"), contact: **lostria.apps@gmail.com**.
 
-**We keep no personal data about you.** We run no server, have no accounts or shared database, and have no access to the data on your phone. Your data stays on your device only.
+**We keep no personal data about you.** We run no server, have no accounts or shared database, and have no access to the data on your device. Your data stays on your device only.
 
 This policy therefore describes **only the limited cases where the app — on your action — sends something to a third party** (AI processing of imports, abuse protection, crash reporting, purchases). **Only to the extent of those transfers** do we act as a controller; otherwise we process no data about you.
 
 ## 2. Core principle — everything stays on your device
 
-The app is **offline-first**. All your data (patterns, magazines, fabrics, notions, sewing logs, photos, categories, hashtags, notes) is stored **only locally on your device**. **We run no server** or shared database, we collect nothing centrally, and nothing is shared between users. There are no accounts. You create and manage your own backups (ZIP export). Android auto-backup is off.
+The app is **offline-first**. All your data (patterns, magazines, fabrics, notions, sewing logs, photos, categories, hashtags, notes) is stored **only locally on your device**. **We run no server** or shared database, we collect nothing centrally, and nothing is shared between users. There are no accounts. You create and manage your own backups (ZIP export). On Android, automatic backup is off. On Windows, the app keeps its data in its own folder in your user profile; if you have Windows backup to OneDrive turned on, Windows may include it in that backup.
 
 ## 3. When and where data is sent (recipients, third parties)
 
@@ -25,18 +25,18 @@ Data leaves your device **only on your action**, and only in these cases:
 
 **a) AI processing of imports (optional)** — when you import from a photo or a web page, the **content you import** (page photo / shared text or HTML) is sent to an AI service that extracts text fields about the pattern/fabric:
 
-- **Default:** Google **Gemini** models via **Firebase AI Logic** (Google, incl. USA).
+- **Default (Android app only):** Google **Gemini** models via **Firebase AI Logic** (Google, incl. USA). On Windows, AI features work only with your own API key.
 - **Alternative (only if you set your own key):** **Groq** (USA), Meta Llama.
 
 The sent content may include third-party content you chose to import.
 
 **AI data handling:** Text or photo data sent to the Google Gemini or Groq API is processed solely to extract pattern details for your local database. This applies in particular to the **default AI** (Google Gemini via Firebase AI Logic) that the app provides to users without their own API key: it runs on the operator's **paid** API plan with a daily limit, and data processed through it is **not used to train** third-party AI models. If you use **your own API key** (BYOK — Gemini or Groq), data processing is governed by the terms of your chosen API provider.
 
-**b) Abuse protection (App Check)** — the default AI feature is paid for by the operator and has a daily limit. To stop someone else from misusing it (e.g. via a fake copy of the app), on each AI request the app verifies that it is the **genuine, unmodified Lostria Sewing app from Google Play on a normal device**. For this it uses a Google service (Firebase App Check / Play Integrity), to which it sends only **a short attestation that the app and device are genuine**. This attestation **contains none of your data or content** — no patterns, photos, or personal data.
+**b) Abuse protection (App Check, Android app only)** — the default AI feature is paid for by the operator and has a daily limit. To stop someone else from misusing it (e.g. via a fake copy of the app), on each AI request the app verifies that it is the **genuine, unmodified Lostria Sewing app from Google Play on a normal device**. For this it uses a Google service (Firebase App Check / Play Integrity), to which it sends only **a short attestation that the app and device are genuine**. This attestation **contains none of your data or content** — no patterns, photos, or personal data.
 
-**c) Crash reporting (optional, with consent)** — collection is **off**. After a crash we **ask** whether we may send a **technical report** (Firebase Crashlytics, Google) containing only technical data (error type, app version, device model) — **not your data or photos**. Nothing is sent without consent.
+**c) Crash reporting (optional, with consent, Android app only)** — the Windows app sends no crash reports. On Android, collection is **off**. After a crash we **ask** whether we may send a **technical report** (Firebase Crashlytics, Google) containing only technical data (error type, app version, device model) — **not your data or photos**. Nothing is sent without consent.
 
-**d) Purchases (if used)** — handled by **Google Play Billing**.
+**d) Purchases (if used)** — handled by **Google Play Billing** (Android) or the **Microsoft Store** (Windows). The store processes the payment; we receive no payment card details.
 
 **e) Bug reports (only if you send them)** — when you report a problem, you e-mail us and may attach a **diagnostics file** from the app (technical data only: app and database version, record counts, database check — no texts, links or photos) or, exceptionally and only if you agree, a backup. We use them only to find and fix the problem and delete them once it is resolved.
 
@@ -53,6 +53,7 @@ The sent content may include third-party content you chose to import.
 Some recipients (Google, Groq) process data in the **USA**. Transfers are encrypted (HTTPS). Google/Firebase rely on **Standard Contractual Clauses** / the EU–US Data Privacy Framework; Groq is used under your own key and its terms.
 
 - Google: https://policies.google.com/privacy , https://firebase.google.com/support/privacy
+- Microsoft (Microsoft Store): https://privacy.microsoft.com/privacystatement
 - Groq: https://groq.com/privacy-policy/
 
 ## 6. Web import — what is stored
@@ -67,15 +68,15 @@ We **retain none of your data** (we don't have it). Data stays on your device un
 
 ## 8. Your rights
 
-As we hold no record on our side, you exercise most rights directly in the app/device: **access & portability** (ZIP export), **rectification & erasure** (edit/delete items, "Clear app data" in Android settings, or uninstall), **withdraw consent** (stop using AI/crash reporting). You have the right to lodge a **complaint with a supervisory authority** — in the Czech Republic the **Office for Personal Data Protection** (www.uoou.cz). For processing by third parties (Google, Groq), exercise rights with them per their policies.
+As we hold no record on our side, you exercise most rights directly in the app/device: **access & portability** (ZIP export), **rectification & erasure** (edit/delete items, "Clear app data" in Android settings or "Reset" in Windows settings, or uninstall), **withdraw consent** (stop using AI/crash reporting). You have the right to lodge a **complaint with a supervisory authority** — in the Czech Republic the **Office for Personal Data Protection** (www.uoou.cz). For processing by third parties (Google, Groq), exercise rights with them per their policies.
 
 ## Data deletion {#data-deletion}
 
 Because Lostria Sewing stores all your data locally on your device and never on our servers, **you control deletion yourself at any time** — no request to us is needed.
 
 1. **Delete individual items in the app** — open a pattern / magazine / fabric / notion / sewing log and use the delete (trash) action; delete photos from the photo view; delete hashtags / categories / target groups from the "Ostatní" tab.
-2. **Delete all data at once** — Android **Settings → Apps → Lostria Sewing → Storage → Clear data**. All content and settings are deleted permanently; the app stays installed.
-3. **Uninstall the app** — long-press the app icon → **Uninstall**. Android removes the app and all its data.
+2. **Delete all data at once** — Android **Settings → Apps → Lostria Sewing → Storage → Clear data**; Windows **Settings → Apps → Installed apps → Lostria Sewing → Advanced options → Reset**. All content and settings are deleted permanently; the app stays installed.
+3. **Uninstall the app** — Android: long-press the app icon → **Uninstall**; Windows: **Settings → Apps → Installed apps → Lostria Sewing → Uninstall**. The system removes the app and all its data.
 
 There is no per-user account on our side to delete. If you need help beyond the above, email **lostria.apps@gmail.com**.
 
@@ -98,21 +99,21 @@ Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Czech Republic — *
 **Jazyk / Language:** [🇬🇧 English version ↑](#english) · Čeština · [Podmínky užití](terms/#cesky)
 
 **Datum účinnosti:** 9. 8. 2026
-**Aktualizováno:** 15. 9. 2026
+**Aktualizováno:** 28. 10. 2026
 
 ## 1. Kdo jsme a co (ne)zpracováváme
 
 Aplikaci **Lostria Sewing** provozuje **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Česká republika (dále „my"), kontakt: **lostria.apps@gmail.com**.
 
-**Sami o Vás nevedeme žádné osobní údaje.** Neprovozujeme žádný server, nemáme účty ani sdílenou databázi a nemáme přístup k datům ve Vašem telefonu. Vaše data zůstávají jen ve Vašem zařízení.
+**Sami o Vás nevedeme žádné osobní údaje.** Neprovozujeme žádný server, nemáme účty ani sdílenou databázi a nemáme přístup k datům ve Vašem zařízení. Vaše data zůstávají jen ve Vašem zařízení.
 
 Tyto zásady proto popisují **jen ty omezené případy, kdy aplikace — na Vaši akci — odešle něco třetí straně** (AI zpracování importu, ochrana proti zneužití, hlášení pádů, případné nákupy). **Pouze v rozsahu těchto přenosů** vystupujeme jako správce; jinak o Vás žádné údaje nezpracováváme.
 
-## 2. Základní princip — vše zůstává ve Vašem telefonu
+## 2. Základní princip — vše zůstává ve Vašem zařízení
 
 Aplikace je **offline-first**. Všechna Vaše data (střihy, časopisy, látky, galanterie, záznamy ušití, fotky, kategorie, hashtagy, poznámky) jsou uložená **pouze lokálně ve Vašem zařízení**. **Neprovozujeme žádný server** ani sdílenou databázi, nic nesbíráme centrálně a nic se nesdílí mezi uživateli. Nemáme účty.
 
-Zálohu si vytváříte a spravujete sami (export do ZIP souboru, který si uložíte, kam chcete). Automatické zálohy Androidu jsou vypnuté.
+Zálohu si vytváříte a spravujete sami (export do ZIP souboru, který si uložíte, kam chcete). Automatické zálohy Androidu jsou vypnuté. Ve Windows má aplikace data ve vlastní složce ve Vašem uživatelském profilu; pokud máte zapnuté zálohování Windows do OneDrive, může je Windows do této zálohy zahrnout.
 
 ## 3. Kdy a kam se něco odesílá (příjemci, třetí strany)
 
@@ -120,18 +121,18 @@ Data opustí zařízení **jen na základě Vaší akce** a jen v těchto příp
 
 **a) AI zpracování importu (volitelná funkce)** — když použijete import z fotky nebo z webu, odešle se **obsah, který importujete** (fotka stránky / text nebo HTML sdílené stránky) ke zpracování AI, která z něj vytáhne textové údaje o střihu/látce:
 
-- **Výchozí:** modely Google **Gemini** prostřednictvím služby **Firebase AI Logic** (Google Ireland Ltd. / Google LLC, USA).
+- **Výchozí (jen v aplikaci pro Android):** modely Google **Gemini** prostřednictvím služby **Firebase AI Logic** (Google Ireland Ltd. / Google LLC, USA). Ve Windows fungují AI funkce jen s Vaším vlastním API klíčem.
 - **Alternativa (jen když si nastavíte vlastní klíč):** **Groq** (USA), modely Meta Llama.
 
 Odeslaný obsah může obsahovat i obsah třetích stran (např. stránka e-shopu), který jste se rozhodli importovat.
 
 **Nakládání s daty v AI:** Text nebo fotka odeslaná do API Google Gemini nebo Groq se zpracovává výhradně za účelem vytažení údajů o střihu do Vaší lokální databáze. Týká se to zejména **výchozí AI** (Google Gemini přes Firebase AI Logic), kterou aplikace poskytuje uživatelkám bez vlastního API klíče: běží na **placeném** tarifu API hrazeném provozovatelkou s denním limitem a data zpracovaná jejím prostřednictvím se **nepoužívají k trénování** AI modelů třetích stran. Pokud používáte **vlastní API klíč** (BYOK — Gemini nebo Groq), řídí se zpracování dat podmínkami Vámi zvoleného poskytovatele API.
 
-**b) Ochrana proti zneužití (App Check)** — výchozí AI funkce je hrazená provozovatelkou a má denní limit. Aby ji nemohl zneužít někdo cizí (například napodobeninou aplikace), ověřuje aplikace při každém požadavku na AI, že jde o **pravou, needitovanou aplikaci Lostria Sewing z Google Play na běžném zařízení**. K tomuto ověření využívá službu Google (Firebase App Check / Play Integrity), které pošle jen **krátké potvrzení pravosti aplikace a zařízení**. Toto potvrzení **neobsahuje žádná Vaše data ani obsah** — žádné střihy, fotky ani osobní údaje.
+**b) Ochrana proti zneužití (App Check, jen v aplikaci pro Android)** — výchozí AI funkce je hrazená provozovatelkou a má denní limit. Aby ji nemohl zneužít někdo cizí (například napodobeninou aplikace), ověřuje aplikace při každém požadavku na AI, že jde o **pravou, needitovanou aplikaci Lostria Sewing z Google Play na běžném zařízení**. K tomuto ověření využívá službu Google (Firebase App Check / Play Integrity), které pošle jen **krátké potvrzení pravosti aplikace a zařízení**. Toto potvrzení **neobsahuje žádná Vaše data ani obsah** — žádné střihy, fotky ani osobní údaje.
 
-**c) Hlášení pádů (volitelné, se souhlasem)** — sběr je **vypnutý**. Když aplikace spadne, při dalším startu se **zeptáme**, jestli smíme odeslat **technickou zprávu** (Firebase Crashlytics, Google). Report obsahuje jen technická data (typ chyby, verze aplikace, model zařízení) — **ne Vaše data ani fotky**. Bez Vašeho souhlasu se nic neodešle.
+**c) Hlášení pádů (volitelné, se souhlasem, jen v aplikaci pro Android)** — aplikace pro Windows hlášení pádů neodesílá. V aplikaci pro Android je sběr **vypnutý**. Když aplikace spadne, při dalším startu se **zeptáme**, jestli smíme odeslat **technickou zprávu** (Firebase Crashlytics, Google). Report obsahuje jen technická data (typ chyby, verze aplikace, model zařízení) — **ne Vaše data ani fotky**. Bez Vašeho souhlasu se nic neodešle.
 
-**d) Nákupy (pokud je využijete)** — případné nákupy v aplikaci zpracovává **Google Play Billing**.
+**d) Nákupy (pokud je využijete)** — případné nákupy v aplikaci zpracovává **Google Play Billing** (Android), resp. **Microsoft Store** (Windows). Platbu vyřizuje obchod; údaje o Vaší platební kartě nedostáváme.
 
 **e) Hlášení chyb (jen pokud nám něco pošlete)** — když nahlásíte problém, píšete nám e-mail a můžete přiložit **diagnostický soubor** z aplikace (jen technické údaje: verze aplikace a databáze, počty záznamů, kontrola databáze — žádné texty, odkazy ani fotky), případně výjimečně a jen s Vaším souhlasem zálohu. Použijeme je jen k nalezení a opravě chyby a po vyřešení je smažeme.
 
@@ -148,6 +149,7 @@ Odeslaný obsah může obsahovat i obsah třetích stran (např. stránka e-shop
 Někteří příjemci (Google, Groq) zpracovávají data i **v USA**. Přenos probíhá šifrovaně (HTTPS). Google/Firebase se opírají o **standardní smluvní doložky** (SCC), resp. rámec EU–US Data Privacy Framework; Groq využíváte na základě vlastního klíče a jeho podmínek. Detaily:
 
 - Google: https://policies.google.com/privacy , https://firebase.google.com/support/privacy
+- Microsoft (Microsoft Store): https://privacy.microsoft.com/cs-cz/privacystatement
 - Groq: https://groq.com/privacy-policy/
 
 ## 6. Import z webu — co se ukládá
@@ -165,7 +167,7 @@ U nás **žádná Vaše data neuchováváme** (nemáme je). Data zůstávají ve
 Protože nemáme na své straně žádný Váš záznam, většinu práv uplatníte přímo v aplikaci/zařízení:
 
 - **Přístup a přenositelnost** — export do ZIP.
-- **Oprava a výmaz** — úprava/smazání položek, případně „Vymazat data aplikace" v nastavení Androidu, nebo odinstalace.
+- **Oprava a výmaz** — úprava/smazání položek, případně „Vymazat data aplikace" v nastavení Androidu nebo „Obnovit" v nastavení Windows, nebo odinstalace.
 - **Odvolání souhlasu** — funkce AI/hlášení pádů kdykoli přestat používat.
 - Máte právo podat **stížnost u dozorového úřadu** — v ČR **Úřad pro ochranu osobních údajů** (www.uoou.cz).
 
@@ -176,8 +178,8 @@ V otázkách zpracování u třetích stran (Google, Groq) uplatňujte práva u 
 Protože Lostria Sewing ukládá všechna data jen lokálně ve Vašem zařízení a nikdy ne na našich serverech, **smazání máte plně pod kontrolou** — není potřeba nás o nic žádat:
 
 1. **Smazat jednotlivé položky** přímo v aplikaci (střih / časopis / látka / galanterie / záznam ušití → koš; fotky z náhledu; hashtagy/kategorie/skupiny v záložce „Ostatní").
-2. **Smazat všechno naráz** — Android **Nastavení → Aplikace → Lostria Sewing → Úložiště → Vymazat data**.
-3. **Odinstalovat aplikaci** — Android odstraní aplikaci i všechna její data.
+2. **Smazat všechno naráz** — Android **Nastavení → Aplikace → Lostria Sewing → Úložiště → Vymazat data**; Windows **Nastavení → Aplikace → Nainstalované aplikace → Lostria Sewing → Upřesnit možnosti → Obnovit**.
+3. **Odinstalovat aplikaci** — Android i Windows odstraní aplikaci i všechna její data (Windows: **Nastavení → Aplikace → Nainstalované aplikace → Lostria Sewing → Odinstalovat**).
 
 ## 9. Děti
 
