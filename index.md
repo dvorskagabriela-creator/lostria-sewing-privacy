@@ -9,7 +9,7 @@
 
 ## 1. Who we are and what we do (not) process
 
-**Lostria Sewing** is operated by **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Czech Republic ("we"), contact: **lostria.apps@gmail.com**.
+**Lostria Sewing** is operated by **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Czech Republic, ID No. (IČ): 30210666 ("we"), contact: **lostria.apps@gmail.com**.
 
 **We keep no personal data about you.** We run no server, have no accounts or shared database, and have no access to the data on your device. Your data stays on your device only.
 
@@ -90,7 +90,7 @@ We may update this policy; a new version will be posted here with a new date.
 
 ## 11. Contact
 
-Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Czech Republic — **lostria.apps@gmail.com**
+Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Czech Republic, ID No. (IČ): 30210666 — **lostria.apps@gmail.com**
 
 ---
 
@@ -103,7 +103,7 @@ Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Czech Republic — *
 
 ## 1. Kdo jsme a co (ne)zpracováváme
 
-Aplikaci **Lostria Sewing** provozuje **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Česká republika (dále „my"), kontakt: **lostria.apps@gmail.com**.
+Aplikaci **Lostria Sewing** provozuje **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Česká republika, IČ: 30210666 (dále „my"), kontakt: **lostria.apps@gmail.com**.
 
 **Sami o Vás nevedeme žádné osobní údaje.** Neprovozujeme žádný server, nemáme účty ani sdílenou databázi a nemáme přístup k datům ve Vašem zařízení. Vaše data zůstávají jen ve Vašem zařízení.
 
@@ -191,4 +191,4 @@ Tyto zásady můžeme aktualizovat; novou verzi zveřejníme zde s novým datem.
 
 ## 11. Kontakt
 
-Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Česká republika — **lostria.apps@gmail.com**
+Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Česká republika, IČ: 30210666 — **lostria.apps@gmail.com**

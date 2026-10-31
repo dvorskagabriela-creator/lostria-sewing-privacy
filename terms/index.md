@@ -6,7 +6,7 @@
 
 ## 1. About these terms
 
-These terms govern your use of the **Lostria Sewing** app for Android and Windows ("the app"), operated by **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Czech Republic ("we"), contact: **lostria.apps@gmail.com**. By installing or using the app you agree to these terms. How data is handled is described in our Privacy Policy.
+These terms govern your use of the **Lostria Sewing** app for Android and Windows ("the app"), operated by **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Czech Republic, ID No. (IČ): 30210666 ("we"), contact: **lostria.apps@gmail.com**. By installing or using the app you agree to these terms. How data is handled is described in our Privacy Policy.
 
 These terms are available in several languages. In case of any discrepancy between language versions, the **Czech version prevails**, without prejudice to your mandatory rights as a consumer.
 
@@ -76,7 +76,7 @@ These terms are governed by the **laws of the Czech Republic**. If you are a con
 
 ## 13. Contact
 
-Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Czech Republic — **lostria.apps@gmail.com**
+Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Czech Republic, ID No. (IČ): 30210666 — **lostria.apps@gmail.com**
 
 ---
 
@@ -88,7 +88,7 @@ Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Czech Republic — *
 
 ## 1. O těchto podmínkách
 
-Tyto podmínky upravují používání aplikace **Lostria Sewing** pro Android a Windows („aplikace"), kterou provozuje **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Česká republika (dále „my"), kontakt: **lostria.apps@gmail.com**. Instalací nebo používáním aplikace s podmínkami souhlasíte. Jak se nakládá s daty, popisují Zásady ochrany osobních údajů.
+Tyto podmínky upravují používání aplikace **Lostria Sewing** pro Android a Windows („aplikace"), kterou provozuje **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Česká republika, IČ: 30210666 (dále „my"), kontakt: **lostria.apps@gmail.com**. Instalací nebo používáním aplikace s podmínkami souhlasíte. Jak se nakládá s daty, popisují Zásady ochrany osobních údajů.
 
 Podmínky jsou k dispozici ve více jazycích. V případě rozporu mezi jazykovými verzemi má přednost **česká verze**; tím nejsou dotčena Vaše zákonná práva spotřebitele.
 
@@ -158,7 +158,7 @@ Tyto podmínky se řídí **právem České republiky**. Jste-li spotřebitel, z
 
 ## 13. Kontakt
 
-Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Česká republika — **lostria.apps@gmail.com**
+Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Česká republika, IČ: 30210666 — **lostria.apps@gmail.com**
 
 ---
 
@@ -170,7 +170,7 @@ Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Česká republika �
 
 ## 1. Über diese Bedingungen
 
-Diese Bedingungen regeln die Nutzung der App **Lostria Sewing** für Android und Windows („die App"), betrieben von **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Tschechische Republik („wir"), Kontakt: **lostria.apps@gmail.com**. Mit der Installation oder Nutzung der App stimmen Sie diesen Bedingungen zu. Wie mit Daten umgegangen wird, beschreibt unsere Datenschutzerklärung.
+Diese Bedingungen regeln die Nutzung der App **Lostria Sewing** für Android und Windows („die App"), betrieben von **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Tschechische Republik, IdNr. (IČ): 30210666 („wir"), Kontakt: **lostria.apps@gmail.com**. Mit der Installation oder Nutzung der App stimmen Sie diesen Bedingungen zu. Wie mit Daten umgegangen wird, beschreibt unsere Datenschutzerklärung.
 
 Diese Bedingungen sind in mehreren Sprachen verfügbar. Bei Abweichungen zwischen den Sprachfassungen ist die **tschechische Fassung maßgeblich**; Ihre zwingenden Verbraucherrechte bleiben unberührt.
 
@@ -240,7 +240,7 @@ Diese Bedingungen unterliegen dem **Recht der Tschechischen Republik**. Wenn Sie
 
 ## 13. Kontakt
 
-Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Tschechische Republik — **lostria.apps@gmail.com**
+Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Tschechische Republik, IdNr. (IČ): 30210666 — **lostria.apps@gmail.com**
 
 ---
 
@@ -252,7 +252,7 @@ Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Tschechische Republi
 
 ## 1. Informazioni su questi termini
 
-I presenti termini regolano l'uso dell'app **Lostria Sewing** per Android e Windows («l'app»), gestita da **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Repubblica Ceca («noi»), contatto: **lostria.apps@gmail.com**. Installando o utilizzando l'app, Lei accetta i presenti termini. Il trattamento dei dati è descritto nella nostra Informativa sulla privacy.
+I presenti termini regolano l'uso dell'app **Lostria Sewing** per Android e Windows («l'app»), gestita da **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Repubblica Ceca, n. id. (IČ): 30210666 («noi»), contatto: **lostria.apps@gmail.com**. Installando o utilizzando l'app, Lei accetta i presenti termini. Il trattamento dei dati è descritto nella nostra Informativa sulla privacy.
 
 I presenti termini sono disponibili in più lingue. In caso di discordanza tra le versioni linguistiche **prevale la versione ceca**, fermi restando i Suoi diritti inderogabili di consumatore.
 
@@ -322,7 +322,7 @@ I presenti termini sono disciplinati dalla **legge della Repubblica Ceca**. Se �
 
 ## 13. Contatto
 
-Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Repubblica Ceca — **lostria.apps@gmail.com**
+Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Repubblica Ceca, n. id. (IČ): 30210666 — **lostria.apps@gmail.com**
 
 ---
 
@@ -334,7 +334,7 @@ Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Repubblica Ceca — 
 
 ## 1. O niniejszych warunkach
 
-Niniejsze warunki regulują korzystanie z aplikacji **Lostria Sewing** na Androida i Windows („aplikacja"), której operatorem jest **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Republika Czeska („my"), kontakt: **lostria.apps@gmail.com**. Instalując aplikację lub z niej korzystając, użytkownik akceptuje niniejsze warunki. Sposób postępowania z danymi opisuje nasza Polityka prywatności.
+Niniejsze warunki regulują korzystanie z aplikacji **Lostria Sewing** na Androida i Windows („aplikacja"), której operatorem jest **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Republika Czeska, nr id. (IČ): 30210666 („my"), kontakt: **lostria.apps@gmail.com**. Instalując aplikację lub z niej korzystając, użytkownik akceptuje niniejsze warunki. Sposób postępowania z danymi opisuje nasza Polityka prywatności.
 
 Niniejsze warunki są dostępne w kilku językach. W razie rozbieżności między wersjami językowymi **rozstrzygająca jest wersja czeska**, bez uszczerbku dla bezwzględnie obowiązujących praw konsumenta.
 
@@ -404,7 +404,7 @@ Niniejsze warunki podlegają **prawu Republiki Czeskiej**. Konsument zachowuje r
 
 ## 13. Kontakt
 
-Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Republika Czeska — **lostria.apps@gmail.com**
+Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Republika Czeska, nr id. (IČ): 30210666 — **lostria.apps@gmail.com**
 
 ---
 
@@ -416,7 +416,7 @@ Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Republika Czeska —
 
 ## 1. O týchto podmienkach
 
-Tieto podmienky upravujú používanie aplikácie **Lostria Sewing** pre Android a Windows („aplikácia"), ktorú prevádzkuje **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Česká republika (ďalej „my"), kontakt: **lostria.apps@gmail.com**. Inštaláciou alebo používaním aplikácie s podmienkami súhlasíte. Ako sa zaobchádza s údajmi, opisujú Zásady ochrany osobných údajov.
+Tieto podmienky upravujú používanie aplikácie **Lostria Sewing** pre Android a Windows („aplikácia"), ktorú prevádzkuje **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Česká republika, IČO: 30210666 (ďalej „my"), kontakt: **lostria.apps@gmail.com**. Inštaláciou alebo používaním aplikácie s podmienkami súhlasíte. Ako sa zaobchádza s údajmi, opisujú Zásady ochrany osobných údajov.
 
 Podmienky sú k dispozícii vo viacerých jazykoch. V prípade rozporu medzi jazykovými verziami má prednosť **česká verzia**; tým nie sú dotknuté Vaše zákonné práva spotrebiteľa.
 
@@ -486,4 +486,4 @@ Tieto podmienky sa riadia **právom Českej republiky**. Ak ste spotrebiteľ, zo
 
 ## 13. Kontakt
 
-Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Česká republika — **lostria.apps@gmail.com**
+Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Česká republika, IČO: 30210666 — **lostria.apps@gmail.com**
