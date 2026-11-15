@@ -164,6 +164,7 @@
         <a href="#vizualizace"><span class="ic">🎨</span>Vizualizace</a>
         <a href="#premium"><span class="ic">🏅</span>Premium</a>
         <a href="#zaloha"><span class="ic">💾</span>Záloha &amp; obnova</a>
+        <a href="#synchronizace"><span class="ic">🔄</span>Synchronizace</a>
         <a href="#nastaveni"><span class="ic">⚙️</span>Nastavení</a>
         <a href="#pocitac"><span class="ic">💻</span>Na počítači (Windows)</a>
         <a href="#tipy"><span class="ic">💡</span>Tipy na focení</a>
@@ -354,18 +355,48 @@
         <li>Položky Šablony a Vizualizace zůstávají v menu vidět (se zlatým odznakem 🏅); bez Premium tě po ťuknutí navedou na koupi.</li>
         <li><strong>Koupit / Obnovit Premium</strong> najdeš v <strong>Nastavení</strong>. „Obnovit" použij, když už jsi koupila (nový telefon apod.).</li>
         <li>Verze zdarma má strop 100 střihů; Premium ho ruší.</li>
+        <li><strong>Synchronizace</strong> mezi zařízeními je taky součástí Premium, viz <a href="#synchronizace">Synchronizace</a>.</li>
       </ul>
     </section>
 
     <section class="doc" id="zaloha">
       <h2><span class="ic">💾</span>Záloha &amp; obnova</h2>
-      <p class="lead">Tvá data jsou jen v zařízení — proto zálohuj.</p>
+      <p class="lead">Bez synchronizace jsou tvá data jen v zařízení — proto zálohuj (i se synchronizací, ta zálohu nenahrazuje).</p>
       <ul>
         <li>V Nastavení uděláš <strong>zálohu do ZIP</strong> (databáze + fotky). Ten si ulož třeba na disk nebo do e-mailu.</li>
         <li><strong>Obnova</strong> ze ZIPu tě vrátí zpět (i na novém zařízení).</li>
       </ul>
       <div class="tip"><strong>Obnovuj z lokálního souboru:</strong> obnovu prováděj ideálně z <strong>lokálně stažené zálohy, kterou máš fyzicky v telefonu</strong> — ne přímo z cloudu (Google Disk apod.). Cloudové soubory bývají jen „ke stažení na vyžádání" a nemusí se do aplikace načíst správně. Jistější je ZIP <strong>nejdřív stáhnout do telefonu</strong> a teprve pak obnovit.</div>
       <div class="warn"><strong>Důležité:</strong> automatická cloudová záloha Androidu je záměrně <strong>vypnutá</strong> (aby nepřepsala tvá data starou verzí). Spoléhej na <strong>vlastní ZIP zálohu</strong>.</div>
+    </section>
+
+    <section class="doc" id="synchronizace">
+      <h2><span class="ic">🔄</span>Synchronizace <span class="badge">🏅 Premium</span></h2>
+      <p class="lead">Stejná knihovna v telefonu, tabletu i v počítači: střihy, časopisy, látky, galanterie, záznamy i fotky. Data putují přes skrytou složku ve tvém vlastním Google Drive, u nás nic neleží.</p>
+      <h3>Zapnutí</h3>
+      <ul>
+        <li><strong>Nastavení → Záloha a synchronizace → Přihlásit se ke Googlu.</strong> Na počítači se přihlášení otevře ve webovém prohlížeči.</li>
+        <li>Na všech zařízeních použij <strong>stejný účet Google</strong>.</li>
+        <li>Když zařízení už má vlastní data a v cloudu jsou jiná, appka se zeptá: <strong>Převzít data z cloudu</strong>, <strong>Sloučit s daty v tomto zařízení</strong>, nebo <strong>Nahradit cloud tímto zařízením</strong>.</li>
+      </ul>
+      <h3>Jak to běží</h3>
+      <ul>
+        <li>Se zapnutým <strong>Synchronizovat automaticky</strong> se změny nahrají samy, když appku opustíš, a při spuštění appka načte, co je nového. Kdykoli můžeš dát <strong>Synchronizovat teď</strong>.</li>
+        <li>V telefonu můžeš fotky přenášet <strong>jen přes Wi-Fi</strong>; data jdou vždycky.</li>
+        <li>Velký přenos fotek přerušíš tlačítkem <strong>Zastavit</strong>; zbytek se dohraje po „Synchronizovat teď“ nebo při příštím spuštění.</li>
+        <li>Když upravuješ na dvou zařízeních zároveň, appka se zeptá, kterou verzi ponechat, nebo jestli obě sloučit.</li>
+        <li>Co smažeš, zmizí i na ostatních zařízeních a fotky i z Google Drive.</li>
+      </ul>
+      <h3>Premium a počítač</h3>
+      <ul>
+        <li>Synchronizace je součástí Premium.</li>
+        <li>Počítač propojený s telefonem s Premium <strong>má Premium taky</strong>, dokud se telefon alespoň jednou za 60 dní synchronizuje. Odhlášením od synchronizace na počítači skončí.</li>
+      </ul>
+      <h3>Odhlášení</h3>
+      <ul>
+        <li><strong>Odhlásit</strong>: data v zařízení zůstanou. Můžeš zvolit i <strong>Odhlásit a smazat data z Google Drive</strong>; na ostatních zařízeních se ale nejdřív odhlas, jinak je tam znovu nahrají.</li>
+      </ul>
+      <div class="warn"><strong>Synchronizace není záloha:</strong> co smažeš na jednom zařízení, zmizí i na ostatních. ZIP zálohu si dělej dál.</div>
     </section>
 
     <section class="doc" id="nastaveni">
@@ -444,9 +475,9 @@
 
       <h3>Data a Premium</h3>
       <ul>
-        <li>Data mezi mobilem a počítačem přeneseš <strong>zálohou (ZIP)</strong>. Samy se nesynchronizují, každé zařízení má vlastní.</li>
+        <li>Data mezi mobilem a počítačem udržíš stejná <a href="#synchronizace">synchronizací</a> přes Google Drive, nebo je jednorázově přeneseš <strong>zálohou (ZIP)</strong>.</li>
         <li>Bez Premium obnovíš větší zálohu (nad 100 střihů) tak, že <strong>nahradí všechna data</strong> v aplikaci. Appka se na to předem zeptá. Další střihy nad 100 pak přidat nejde.</li>
-        <li><strong>Premium</strong> z Google Play se na počítač nepřenáší. Nákup na počítači připravujeme.</li>
+        <li><strong>Premium</strong> z telefonu máš i na počítači, když je s telefonem propojený <a href="#synchronizace">synchronizací</a>. Nákup přímo na počítači připravujeme.</li>
         <li>Odinstalace aplikace smaže i její data, předtím si udělej zálohu.</li>
       </ul>
     </section>
@@ -516,6 +547,7 @@
         <a href="#" data-go="vizualizace"><span class="ic">🎨</span>Visualization</a>
         <a href="#" data-go="premium"><span class="ic">🏅</span>Premium</a>
         <a href="#" data-go="zaloha"><span class="ic">💾</span>Backup &amp; restore</a>
+        <a href="#" data-go="synchronizace"><span class="ic">🔄</span>Sync</a>
         <a href="#" data-go="nastaveni"><span class="ic">⚙️</span>Settings</a>
         <a href="#" data-go="pocitac"><span class="ic">💻</span>On a computer (Windows)</a>
         <a href="#" data-go="tipy"><span class="ic">💡</span>Photo tips</a>
@@ -706,18 +738,48 @@
         <li>The Templates and Visualization items stay visible in the menu (with a gold badge 🏅); without Premium, tapping them takes you to the purchase screen.</li>
         <li>You'll find <strong>Buy / Restore Premium</strong> in <strong>Settings</strong>. Use "Restore" when you've already bought it (new phone, etc.).</li>
         <li>The free version has a cap of 100 patterns; Premium removes it.</li>
+        <li><strong>Sync</strong> between devices is part of Premium too, see <a href="#" data-go="synchronizace">Sync</a>.</li>
       </ul>
     </section>
 
     <section class="doc" data-sec="zaloha">
       <h2><span class="ic">💾</span>Backup &amp; restore</h2>
-      <p class="lead">Your data is only on your device — so back it up.</p>
+      <p class="lead">Without sync, your data is only on your device — so back it up (with sync too, it is not a backup).</p>
       <ul>
         <li>In Settings you make a <strong>backup to a ZIP</strong> (database + photos). Save it somewhere like a drive or your email.</li>
         <li>A <strong>restore</strong> from the ZIP brings you back (even on a new device).</li>
       </ul>
       <div class="tip"><strong>Restore from a local file:</strong> ideally restore from a <strong>locally downloaded backup that you physically have on your phone</strong> — not directly from the cloud (Google Drive, etc.). Cloud files are often only "available to download on demand" and may not load into the app correctly. It's safer to <strong>download the ZIP to your phone first</strong> and only then restore.</div>
       <div class="warn"><strong>Important:</strong> Android's automatic cloud backup is deliberately <strong>turned off</strong> (so it doesn't overwrite your data with an old version). Rely on <strong>your own ZIP backup</strong>.</div>
+    </section>
+
+    <section class="doc" data-sec="synchronizace">
+      <h2><span class="ic">🔄</span>Sync <span class="badge">🏅 Premium</span></h2>
+      <p class="lead">The same library on your phone, tablet and computer: patterns, magazines, fabrics, notions, records and photos. The data travels through a hidden folder in your own Google Drive; nothing is stored with us.</p>
+      <h3>Turning it on</h3>
+      <ul>
+        <li><strong>Settings → Backup &amp; sync → Sign in with Google.</strong> On a computer, sign-in opens in your web browser.</li>
+        <li>Use the <strong>same Google account</strong> on all devices.</li>
+        <li>If a device already has its own data and the cloud holds different data, the app asks: <strong>Use the data from the cloud</strong>, <strong>Merge with the data on this device</strong>, or <strong>Replace the cloud with this device</strong>.</li>
+      </ul>
+      <h3>How it runs</h3>
+      <ul>
+        <li>With <strong>Sync automatically</strong> on, changes upload by themselves when you leave the app, and the app loads what's new when it starts. You can tap <strong>Sync now</strong> at any time.</li>
+        <li>On a phone you can transfer photos <strong>over Wi-Fi only</strong>; data always goes through.</li>
+        <li>A big photo transfer can be paused with <strong>Stop</strong>; the rest follows after “Sync now” or the next time the app starts.</li>
+        <li>If you edit on two devices at once, the app asks which version to keep, or whether to merge both.</li>
+        <li>What you delete disappears on your other devices too, and its photos are removed from Google Drive.</li>
+      </ul>
+      <h3>Premium and the computer</h3>
+      <ul>
+        <li>Sync is part of Premium.</li>
+        <li>A computer connected to a phone with Premium <strong>has Premium too</strong>, as long as the phone syncs at least once every 60 days. Signing out of sync on the computer ends it.</li>
+      </ul>
+      <h3>Signing out</h3>
+      <ul>
+        <li><strong>Sign out</strong> keeps the data on the device. You can also choose <strong>Sign out and delete data from Google Drive</strong>; sign out on your other devices first, otherwise they upload it again.</li>
+      </ul>
+      <div class="warn"><strong>Sync is not a backup:</strong> what you delete on one device disappears on the others as well. Keep making ZIP backups.</div>
     </section>
 
     <section class="doc" data-sec="nastaveni">
@@ -796,9 +858,9 @@
 
       <h3>Data and Premium</h3>
       <ul>
-        <li>Move your data between phone and computer with a <strong>backup (ZIP)</strong>. It does not sync on its own; each device keeps its own data.</li>
+        <li>Keep your data the same on phone and computer with <a href="#" data-go="synchronizace">sync</a> via Google Drive, or move it once with a <strong>backup (ZIP)</strong>.</li>
         <li>Without Premium, a larger backup (over 100 patterns) can be restored only by <strong>replacing all data</strong> in the app. The app asks first. You then cannot add more patterns above 100.</li>
-        <li><strong>Premium</strong> bought on Google Play does not carry over to a computer. Buying it on a computer is coming soon.</li>
+        <li><strong>Premium</strong> from your phone works on your computer too when it's connected to the phone through <a href="#" data-go="synchronizace">sync</a>. Buying it directly on a computer is coming soon.</li>
         <li>Uninstalling the app also deletes its data, so make a backup first.</li>
       </ul>
     </section>
@@ -867,6 +929,7 @@
         <a href="#" data-go="vizualizace"><span class="ic">🎨</span>Vizualizácia</a>
         <a href="#" data-go="premium"><span class="ic">🏅</span>Premium</a>
         <a href="#" data-go="zaloha"><span class="ic">💾</span>Záloha &amp; obnova</a>
+        <a href="#" data-go="synchronizace"><span class="ic">🔄</span>Synchronizácia</a>
         <a href="#" data-go="nastaveni"><span class="ic">⚙️</span>Nastavenia</a>
         <a href="#" data-go="pocitac"><span class="ic">💻</span>Na počítači (Windows)</a>
         <a href="#" data-go="tipy"><span class="ic">💡</span>Tipy na fotenie</a>
@@ -1057,18 +1120,48 @@
         <li>Položky Šablóny a Vizualizácia zostávajú v menu viditeľné (so zlatým odznakom 🏅); bez Premium ťa po ťuknutí navedú na kúpu.</li>
         <li><strong>Kúpiť / Obnoviť Premium</strong> nájdeš v <strong>Nastaveniach</strong>. „Obnoviť" použi, keď si už kúpila (nový telefón a pod.).</li>
         <li>Verzia zadarmo má strop 100 strihov; Premium ho ruší.</li>
+        <li><strong>Synchronizácia</strong> medzi zariadeniami je tiež súčasťou Premium, pozri <a href="#" data-go="synchronizace">Synchronizácia</a>.</li>
       </ul>
     </section>
 
     <section class="doc" data-sec="zaloha">
       <h2><span class="ic">💾</span>Záloha &amp; obnova</h2>
-      <p class="lead">Tvoje dáta sú len v zariadení — preto zálohuj.</p>
+      <p class="lead">Bez synchronizácie sú tvoje dáta len v zariadení — preto zálohuj (aj so synchronizáciou, tá zálohu nenahrádza).</p>
       <ul>
         <li>V Nastaveniach urobíš <strong>zálohu do ZIP</strong> (databáza + fotky). Ten si ulož napríklad na disk alebo do e-mailu.</li>
         <li><strong>Obnova</strong> zo ZIPu ťa vráti späť (aj na novom zariadení).</li>
       </ul>
       <div class="tip"><strong>Obnovuj z lokálneho súboru:</strong> obnovu rob ideálne z <strong>lokálne stiahnutej zálohy, ktorú máš fyzicky v telefóne</strong> — nie priamo z cloudu (Google Disk a pod.). Cloudové súbory bývajú len „na stiahnutie na vyžiadanie" a nemusia sa do aplikácie načítať správne. Istejšie je ZIP <strong>najprv stiahnuť do telefónu</strong> a až potom obnoviť.</div>
       <div class="warn"><strong>Dôležité:</strong> automatická cloudová záloha Androidu je zámerne <strong>vypnutá</strong> (aby neprepísala tvoje dáta starou verziou). Spoľahni sa na <strong>vlastnú ZIP zálohu</strong>.</div>
+    </section>
+
+    <section class="doc" data-sec="synchronizace">
+      <h2><span class="ic">🔄</span>Synchronizácia <span class="badge">🏅 Premium</span></h2>
+      <p class="lead">Rovnaká knižnica v telefóne, tablete aj v počítači: strihy, časopisy, látky, galantéria, záznamy aj fotky. Dáta putujú cez skrytý priečinok v tvojom vlastnom Google Drive, u nás nič neleží.</p>
+      <h3>Zapnutie</h3>
+      <ul>
+        <li><strong>Nastavenia → Záloha a synchronizácia → Prihlásiť sa do Googlu.</strong> Na počítači sa prihlásenie otvorí vo webovom prehliadači.</li>
+        <li>Na všetkých zariadeniach použi <strong>rovnaký účet Google</strong>.</li>
+        <li>Keď zariadenie už má vlastné dáta a v cloude sú iné, aplikácia sa opýta: <strong>Prevziať dáta z cloudu</strong>, <strong>Zlúčiť s dátami v tomto zariadení</strong>, alebo <strong>Nahradiť cloud týmto zariadením</strong>.</li>
+      </ul>
+      <h3>Ako to beží</h3>
+      <ul>
+        <li>So zapnutým <strong>Synchronizovať automaticky</strong> sa zmeny nahrajú samy, keď aplikáciu opustíš, a pri spustení aplikácia načíta, čo je nové. Kedykoľvek môžeš dať <strong>Synchronizovať teraz</strong>.</li>
+        <li>V telefóne môžeš fotky prenášať <strong>len cez Wi-Fi</strong>; dáta idú vždy.</li>
+        <li>Veľký prenos fotiek prerušíš tlačidlom <strong>Zastaviť</strong>; zvyšok sa dohrá po „Synchronizovať teraz“ alebo pri ďalšom spustení.</li>
+        <li>Keď upravuješ na dvoch zariadeniach naraz, aplikácia sa opýta, ktorú verziu ponechať, alebo či obe zlúčiť.</li>
+        <li>Čo zmažeš, zmizne aj na ostatných zariadeniach a fotky aj z Google Drive.</li>
+      </ul>
+      <h3>Premium a počítač</h3>
+      <ul>
+        <li>Synchronizácia je súčasťou Premium.</li>
+        <li>Počítač prepojený s telefónom s Premium <strong>má Premium tiež</strong>, kým sa telefón aspoň raz za 60 dní synchronizuje. Odhlásením zo synchronizácie na počítači skončí.</li>
+      </ul>
+      <h3>Odhlásenie</h3>
+      <ul>
+        <li><strong>Odhlásiť</strong>: dáta v zariadení zostanú. Môžeš zvoliť aj <strong>Odhlásiť a zmazať dáta z Google Drive</strong>; na ostatných zariadeniach sa ale najprv odhlás, inak ich tam znova nahrajú.</li>
+      </ul>
+      <div class="warn"><strong>Synchronizácia nie je záloha:</strong> čo zmažeš na jednom zariadení, zmizne aj na ostatných. ZIP zálohu si rob aj naďalej.</div>
     </section>
 
     <section class="doc" data-sec="nastaveni">
@@ -1147,9 +1240,9 @@
 
       <h3>Dáta a Premium</h3>
       <ul>
-        <li>Dáta medzi mobilom a počítačom prenesieš <strong>zálohou (ZIP)</strong>. Samy sa nesynchronizujú, každé zariadenie má vlastné.</li>
+        <li>Dáta medzi mobilom a počítačom udržíš rovnaké <a href="#" data-go="synchronizace">synchronizáciou</a> cez Google Drive, alebo ich jednorazovo prenesieš <strong>zálohou (ZIP)</strong>.</li>
         <li>Bez Premium obnovíš väčšiu zálohu (nad 100 strihov) tak, že <strong>nahradí všetky dáta</strong> v aplikácii. Aplikácia sa na to vopred opýta. Ďalšie strihy nad 100 potom pridať nejde.</li>
-        <li><strong>Premium</strong> z Google Play sa na počítač neprenáša. Nákup na počítači pripravujeme.</li>
+        <li><strong>Premium</strong> z telefónu máš aj na počítači, keď je s telefónom prepojený <a href="#" data-go="synchronizace">synchronizáciou</a>. Nákup priamo na počítači pripravujeme.</li>
         <li>Odinštalovanie aplikácie zmaže aj jej dáta, predtým si urob zálohu.</li>
       </ul>
     </section>
@@ -1218,6 +1311,7 @@
         <a href="#" data-go="vizualizace"><span class="ic">🎨</span>Visualisierung</a>
         <a href="#" data-go="premium"><span class="ic">🏅</span>Premium</a>
         <a href="#" data-go="zaloha"><span class="ic">💾</span>Sicherung &amp; Wiederherstellung</a>
+        <a href="#" data-go="synchronizace"><span class="ic">🔄</span>Synchronisierung</a>
         <a href="#" data-go="nastaveni"><span class="ic">⚙️</span>Einstellungen</a>
         <a href="#" data-go="pocitac"><span class="ic">💻</span>Am Computer (Windows)</a>
         <a href="#" data-go="tipy"><span class="ic">💡</span>Foto-Tipps</a>
@@ -1408,18 +1502,48 @@
         <li>Die Menüpunkte Vorlagen und Visualisierung bleiben im Menü sichtbar (mit goldenem Abzeichen 🏅); ohne Premium leiten sie dich nach dem Antippen zum Kauf.</li>
         <li><strong>Premium kaufen / wiederherstellen</strong> findest du in den <strong>Einstellungen</strong>. „Wiederherstellen" nutzt du, wenn du bereits gekauft hast (neues Handy o. Ä.).</li>
         <li>Die kostenlose Version hat eine Obergrenze von 100 Schnittmustern; Premium hebt sie auf.</li>
+        <li>Die <strong>Synchronisierung</strong> zwischen Geräten gehört ebenfalls zu Premium, siehe <a href="#" data-go="synchronizace">Synchronisierung</a>.</li>
       </ul>
     </section>
 
     <section class="doc" data-sec="zaloha">
       <h2><span class="ic">💾</span>Sicherung &amp; Wiederherstellung</h2>
-      <p class="lead">Deine Daten sind nur auf deinem Gerät — deshalb sichere sie.</p>
+      <p class="lead">Ohne Synchronisierung sind deine Daten nur auf deinem Gerät — deshalb sichere sie (auch mit Synchronisierung, sie ersetzt keine Sicherung).</p>
       <ul>
         <li>In den Einstellungen erstellst du eine <strong>Sicherung als ZIP</strong> (Datenbank + Fotos). Speichere sie etwa auf einer Festplatte oder per E-Mail.</li>
         <li>Die <strong>Wiederherstellung</strong> aus dem ZIP bringt dich zurück (auch auf einem neuen Gerät).</li>
       </ul>
       <div class="tip"><strong>Aus einer lokalen Datei wiederherstellen:</strong> Führe die Wiederherstellung idealerweise aus einer <strong>lokal heruntergeladenen Sicherung durch, die du physisch auf dem Handy hast</strong> — nicht direkt aus der Cloud (Google Drive o. Ä.). Cloud-Dateien sind oft nur „auf Anfrage herunterladbar" und werden von der App möglicherweise nicht korrekt geladen. Sicherer ist, das ZIP <strong>zuerst auf das Handy herunterzuladen</strong> und erst dann wiederherzustellen.</div>
       <div class="warn"><strong>Wichtig:</strong> Die automatische Cloud-Sicherung von Android ist absichtlich <strong>deaktiviert</strong> (damit sie deine Daten nicht mit einer alten Version überschreibt). Verlass dich auf deine <strong>eigene ZIP-Sicherung</strong>.</div>
+    </section>
+
+    <section class="doc" data-sec="synchronizace">
+      <h2><span class="ic">🔄</span>Synchronisierung <span class="badge">🏅 Premium</span></h2>
+      <p class="lead">Dieselbe Bibliothek auf Handy, Tablet und Computer: Schnittmuster, Zeitschriften, Stoffe, Kurzwaren, Einträge und Fotos. Die Daten laufen über einen versteckten Ordner in deinem eigenen Google Drive, bei uns liegt nichts.</p>
+      <h3>Einschalten</h3>
+      <ul>
+        <li><strong>Einstellungen → Sicherung &amp; Sync → Mit Google anmelden.</strong> Am Computer öffnet sich die Anmeldung im Webbrowser.</li>
+        <li>Verwende auf allen Geräten <strong>dasselbe Google-Konto</strong>.</li>
+        <li>Hat ein Gerät schon eigene Daten und liegen in der Cloud andere, fragt die App: <strong>Daten aus der Cloud übernehmen</strong>, <strong>Mit den Daten auf diesem Gerät zusammenführen</strong> oder <strong>Cloud durch dieses Gerät ersetzen</strong>.</li>
+      </ul>
+      <h3>So läuft es</h3>
+      <ul>
+        <li>Mit <strong>Automatisch synchronisieren</strong> werden Änderungen von selbst hochgeladen, wenn du die App verlässt, und beim Start lädt die App, was neu ist. Jederzeit geht auch <strong>Jetzt synchronisieren</strong>.</li>
+        <li>Am Handy kannst du Fotos <strong>nur über WLAN</strong> übertragen; Daten gehen immer.</li>
+        <li>Eine große Fotoübertragung unterbrichst du mit <strong>Anhalten</strong>; der Rest folgt nach „Jetzt synchronisieren“ oder beim nächsten Start.</li>
+        <li>Bearbeitest du auf zwei Geräten gleichzeitig, fragt die App, welche Version bleiben soll oder ob beide zusammengeführt werden.</li>
+        <li>Was du löschst, verschwindet auch auf den anderen Geräten, die Fotos auch aus Google Drive.</li>
+      </ul>
+      <h3>Premium und Computer</h3>
+      <ul>
+        <li>Die Synchronisierung gehört zu Premium.</li>
+        <li>Ein Computer, der mit einem Handy mit Premium verbunden ist, <strong>hat ebenfalls Premium</strong>, solange sich das Handy mindestens einmal alle 60 Tage synchronisiert. Mit der Abmeldung von der Synchronisierung am Computer endet es.</li>
+      </ul>
+      <h3>Abmelden</h3>
+      <ul>
+        <li><strong>Abmelden</strong>: Die Daten auf dem Gerät bleiben. Du kannst auch <strong>Abmelden und Daten aus Google Drive löschen</strong> wählen; melde dich aber zuerst auf den anderen Geräten ab, sonst laden sie die Daten wieder hoch.</li>
+      </ul>
+      <div class="warn"><strong>Synchronisierung ist keine Sicherung:</strong> Was du auf einem Gerät löschst, verschwindet auch auf den anderen. Erstelle weiterhin ZIP-Sicherungen.</div>
     </section>
 
     <section class="doc" data-sec="nastaveni">
@@ -1498,9 +1622,9 @@
 
       <h3>Daten und Premium</h3>
       <ul>
-        <li>Daten überträgst du zwischen Handy und Computer per <strong>Sicherung (ZIP)</strong>. Sie synchronisieren sich nicht von selbst, jedes Gerät hat eigene Daten.</li>
+        <li>Daten hältst du zwischen Handy und Computer per <a href="#" data-go="synchronizace">Synchronisierung</a> über Google Drive gleich, oder du überträgst sie einmalig per <strong>Sicherung (ZIP)</strong>.</li>
         <li>Ohne Premium lässt sich eine größere Sicherung (über 100 Schnittmuster) nur so wiederherstellen, dass sie <strong>alle Daten ersetzt</strong>. Die App fragt vorher nach. Weitere Schnittmuster über 100 kannst du dann nicht hinzufügen.</li>
-        <li><strong>Premium</strong> aus Google Play lässt sich nicht auf den Computer übertragen. Der Kauf am Computer ist in Vorbereitung.</li>
+        <li><strong>Premium</strong> vom Handy hast du auch am Computer, wenn er per <a href="#" data-go="synchronizace">Synchronisierung</a> mit dem Handy verbunden ist. Der Kauf direkt am Computer ist in Vorbereitung.</li>
         <li>Beim Deinstallieren werden auch die Daten der App gelöscht, erstelle vorher eine Sicherung.</li>
       </ul>
     </section>
@@ -1569,6 +1693,7 @@
         <a href="#" data-go="vizualizace"><span class="ic">🎨</span>Wizualizacja</a>
         <a href="#" data-go="premium"><span class="ic">🏅</span>Premium</a>
         <a href="#" data-go="zaloha"><span class="ic">💾</span>Kopia &amp; przywracanie</a>
+        <a href="#" data-go="synchronizace"><span class="ic">🔄</span>Synchronizacja</a>
         <a href="#" data-go="nastaveni"><span class="ic">⚙️</span>Ustawienia</a>
         <a href="#" data-go="pocitac"><span class="ic">💻</span>Na komputerze (Windows)</a>
         <a href="#" data-go="tipy"><span class="ic">💡</span>Wskazówki do zdjęć</a>
@@ -1759,18 +1884,48 @@
         <li>Pozycje Szablony i Wizualizacja pozostają widoczne w menu (ze złotą odznaką 🏅); bez Premium po stuknięciu poprowadzą Cię do zakupu.</li>
         <li><strong>Kup / Przywróć Premium</strong> znajdziesz w <strong>Ustawieniach</strong>. „Przywróć" użyj, gdy już kupiłaś (nowy telefon itp.).</li>
         <li>Wersja darmowa ma limit 100 wykrojów; Premium go znosi.</li>
+        <li><strong>Synchronizacja</strong> między urządzeniami też jest częścią Premium, zobacz <a href="#" data-go="synchronizace">Synchronizacja</a>.</li>
       </ul>
     </section>
 
     <section class="doc" data-sec="zaloha">
       <h2><span class="ic">💾</span>Kopia &amp; przywracanie</h2>
-      <p class="lead">Twoje dane są tylko na urządzeniu — dlatego rób kopie zapasowe.</p>
+      <p class="lead">Bez synchronizacji twoje dane są tylko na urządzeniu — dlatego rób kopie zapasowe (także z synchronizacją, bo ona kopii nie zastępuje).</p>
       <ul>
         <li>W Ustawieniach zrobisz <strong>kopię do ZIP</strong> (baza danych + zdjęcia). Zapisz ją na przykład na dysku albo w e-mailu.</li>
         <li><strong>Przywrócenie</strong> z ZIP przywróci Cię do stanu poprzedniego (również na nowym urządzeniu).</li>
       </ul>
       <div class="tip"><strong>Przywracaj z pliku lokalnego:</strong> przywracanie wykonuj najlepiej z <strong>lokalnie pobranej kopii, którą masz fizycznie w telefonie</strong> — nie bezpośrednio z chmury (Dysk Google itp.). Pliki w chmurze bywają tylko „do pobrania na żądanie" i mogą nie wczytać się do aplikacji poprawnie. Pewniejsze jest <strong>najpierw pobrać ZIP do telefonu</strong>, a dopiero potem przywrócić.</div>
       <div class="warn"><strong>Ważne:</strong> automatyczna kopia w chmurze Androida jest celowo <strong>wyłączona</strong> (aby nie nadpisała Twoich danych starą wersją). Polegaj na <strong>własnej kopii ZIP</strong>.</div>
+    </section>
+
+    <section class="doc" data-sec="synchronizace">
+      <h2><span class="ic">🔄</span>Synchronizacja <span class="badge">🏅 Premium</span></h2>
+      <p class="lead">Ta sama biblioteka w telefonie, na tablecie i na komputerze: wykroje, czasopisma, tkaniny, pasmanteria, zapisy i zdjęcia. Dane przechodzą przez ukryty folder na twoim własnym Dysku Google, u nas nic nie leży.</p>
+      <h3>Włączanie</h3>
+      <ul>
+        <li><strong>Ustawienia → Kopia i synchronizacja → Zaloguj się przez Google.</strong> Na komputerze logowanie otworzy się w przeglądarce.</li>
+        <li>Na wszystkich urządzeniach użyj <strong>tego samego konta Google</strong>.</li>
+        <li>Jeśli urządzenie ma już własne dane, a w chmurze są inne, aplikacja zapyta: <strong>Użyj danych z chmury</strong>, <strong>Połącz z danymi na tym urządzeniu</strong> albo <strong>Zastąp chmurę tym urządzeniem</strong>.</li>
+      </ul>
+      <h3>Jak to działa</h3>
+      <ul>
+        <li>Przy włączonym <strong>Synchronizuj automatycznie</strong> zmiany wysyłają się same, gdy wyjdziesz z aplikacji, a przy starcie aplikacja wczyta nowości. W każdej chwili możesz też wybrać <strong>Synchronizuj teraz</strong>.</li>
+        <li>W telefonie możesz przesyłać zdjęcia <strong>tylko przez Wi-Fi</strong>; dane idą zawsze.</li>
+        <li>Duże przesyłanie zdjęć przerwiesz przyciskiem <strong>Zatrzymaj</strong>; resztę dokończy „Synchronizuj teraz” albo następne uruchomienie.</li>
+        <li>Jeśli edytujesz na dwóch urządzeniach naraz, aplikacja zapyta, którą wersję zachować albo czy połączyć obie.</li>
+        <li>To, co usuniesz, zniknie też na pozostałych urządzeniach, a zdjęcia także z Dysku Google.</li>
+      </ul>
+      <h3>Premium i komputer</h3>
+      <ul>
+        <li>Synchronizacja jest częścią Premium.</li>
+        <li>Komputer połączony z telefonem z Premium <strong>też ma Premium</strong>, dopóki telefon synchronizuje się co najmniej raz na 60 dni. Wylogowanie z synchronizacji na komputerze je kończy.</li>
+      </ul>
+      <h3>Wylogowanie</h3>
+      <ul>
+        <li><strong>Wyloguj</strong>: dane na urządzeniu zostaną. Możesz też wybrać <strong>Wyloguj i usuń dane z Dysku Google</strong>; najpierw jednak wyloguj się na pozostałych urządzeniach, inaczej wyślą dane ponownie.</li>
+      </ul>
+      <div class="warn"><strong>Synchronizacja to nie kopia zapasowa:</strong> to, co usuniesz na jednym urządzeniu, zniknie też na pozostałych. Nadal rób kopie ZIP.</div>
     </section>
 
     <section class="doc" data-sec="nastaveni">
@@ -1849,9 +2004,9 @@
 
       <h3>Dane i Premium</h3>
       <ul>
-        <li>Dane między telefonem a komputerem przeniesiesz <strong>kopią zapasową (ZIP)</strong>. Nie synchronizują się same, każde urządzenie ma własne.</li>
+        <li>Dane między telefonem a komputerem utrzymasz takie same dzięki <a href="#" data-go="synchronizace">synchronizacji</a> przez Dysk Google albo przeniesiesz je jednorazowo <strong>kopią zapasową (ZIP)</strong>.</li>
         <li>Bez Premium większą kopię (ponad 100 wykrojów) można przywrócić tylko tak, że <strong>zastąpi wszystkie dane</strong> w aplikacji. Aplikacja zapyta o to wcześniej. Kolejnych wykrojów ponad 100 nie da się już dodać.</li>
-        <li><strong>Premium</strong> z Google Play nie przenosi się na komputer. Zakup na komputerze przygotowujemy.</li>
+        <li><strong>Premium</strong> z telefonu masz też na komputerze, gdy jest połączony z telefonem <a href="#" data-go="synchronizace">synchronizacją</a>. Zakup bezpośrednio na komputerze przygotowujemy.</li>
         <li>Odinstalowanie aplikacji usuwa też jej dane, wcześniej zrób kopię zapasową.</li>
       </ul>
     </section>
@@ -1920,6 +2075,7 @@
         <a href="#" data-go="vizualizace"><span class="ic">🎨</span>Visualizzazione</a>
         <a href="#" data-go="premium"><span class="ic">🏅</span>Premium</a>
         <a href="#" data-go="zaloha"><span class="ic">💾</span>Backup &amp; ripristino</a>
+        <a href="#" data-go="synchronizace"><span class="ic">🔄</span>Sincronizzazione</a>
         <a href="#" data-go="nastaveni"><span class="ic">⚙️</span>Impostazioni</a>
         <a href="#" data-go="pocitac"><span class="ic">💻</span>Sul computer (Windows)</a>
         <a href="#" data-go="tipy"><span class="ic">💡</span>Consigli per le foto</a>
@@ -2110,18 +2266,48 @@
         <li>Le voci Modelli e Visualizzazione restano visibili nel menu (con il distintivo dorato 🏅); senza Premium, al tocco ti guidano all'acquisto.</li>
         <li><strong>Acquista / Ripristina Premium</strong> lo trovi nelle <strong>Impostazioni</strong>. Usa «Ripristina» quando hai già acquistato (nuovo telefono ecc.).</li>
         <li>La versione gratuita ha un tetto di 100 cartamodelli; il Premium lo rimuove.</li>
+        <li>Anche la <strong>sincronizzazione</strong> tra dispositivi fa parte del Premium, vedi <a href="#" data-go="synchronizace">Sincronizzazione</a>.</li>
       </ul>
     </section>
 
     <section class="doc" data-sec="zaloha">
       <h2><span class="ic">💾</span>Backup &amp; ripristino</h2>
-      <p class="lead">I tuoi dati sono solo sul dispositivo — perciò fai il backup.</p>
+      <p class="lead">Senza sincronizzazione i tuoi dati sono solo sul dispositivo — perciò fai il backup (anche con la sincronizzazione, che non lo sostituisce).</p>
       <ul>
         <li>Nelle Impostazioni crei un <strong>backup in ZIP</strong> (database + foto). Salvalo ad esempio su un disco o via e-mail.</li>
         <li>Il <strong>ripristino</strong> dallo ZIP ti riporta tutto indietro (anche su un nuovo dispositivo).</li>
       </ul>
       <div class="tip"><strong>Ripristina da un file locale:</strong> esegui il ripristino idealmente da un <strong>backup scaricato in locale, che hai fisicamente nel telefono</strong> — non direttamente dal cloud (Google Drive ecc.). I file nel cloud sono spesso solo «da scaricare su richiesta» e potrebbero non caricarsi correttamente nell'app. È più sicuro <strong>scaricare prima lo ZIP nel telefono</strong> e solo dopo ripristinare.</div>
       <div class="warn"><strong>Importante:</strong> il backup automatico su cloud di Android è volutamente <strong>disattivato</strong> (per non sovrascrivere i tuoi dati con una versione vecchia). Affidati al <strong>tuo backup ZIP</strong>.</div>
+    </section>
+
+    <section class="doc" data-sec="synchronizace">
+      <h2><span class="ic">🔄</span>Sincronizzazione <span class="badge">🏅 Premium</span></h2>
+      <p class="lead">La stessa raccolta su telefono, tablet e computer: cartamodelli, riviste, tessuti, merceria, registrazioni e foto. I dati passano per una cartella nascosta nel tuo Google Drive; da noi non resta nulla.</p>
+      <h3>Attivazione</h3>
+      <ul>
+        <li><strong>Impostazioni → Backup e sincronizzazione → Accedi con Google.</strong> Sul computer l'accesso si apre nel browser.</li>
+        <li>Usa lo <strong>stesso account Google</strong> su tutti i dispositivi.</li>
+        <li>Se un dispositivo ha già dati propri e nel cloud ce ne sono altri, l'app chiede: <strong>Usa i dati del cloud</strong>, <strong>Unisci con i dati di questo dispositivo</strong> oppure <strong>Sostituisci il cloud con questo dispositivo</strong>.</li>
+      </ul>
+      <h3>Come funziona</h3>
+      <ul>
+        <li>Con <strong>Sincronizza automaticamente</strong> attivo, le modifiche si caricano da sole quando esci dall'app e all'avvio l'app carica le novità. In qualsiasi momento puoi anche toccare <strong>Sincronizza ora</strong>.</li>
+        <li>Sul telefono puoi trasferire le foto <strong>solo con Wi-Fi</strong>; i dati passano sempre.</li>
+        <li>Un grande trasferimento di foto si interrompe con <strong>Interrompi</strong>; il resto segue dopo «Sincronizza ora» o al prossimo avvio.</li>
+        <li>Se modifichi su due dispositivi contemporaneamente, l'app chiede quale versione tenere o se unirle.</li>
+        <li>Ciò che elimini scompare anche sugli altri dispositivi e le foto anche da Google Drive.</li>
+      </ul>
+      <h3>Premium e computer</h3>
+      <ul>
+        <li>La sincronizzazione fa parte di Premium.</li>
+        <li>Un computer collegato a un telefono con Premium <strong>ha anch'esso Premium</strong>, finché il telefono si sincronizza almeno una volta ogni 60 giorni. Uscendo dalla sincronizzazione sul computer, termina.</li>
+      </ul>
+      <h3>Uscita</h3>
+      <ul>
+        <li><strong>Esci</strong>: i dati sul dispositivo restano. Puoi anche scegliere <strong>Disconnetti ed elimina i dati da Google Drive</strong>; prima però esci sugli altri dispositivi, altrimenti li ricaricheranno.</li>
+      </ul>
+      <div class="warn"><strong>La sincronizzazione non è un backup:</strong> ciò che elimini su un dispositivo scompare anche sugli altri. Continua a fare backup ZIP.</div>
     </section>
 
     <section class="doc" data-sec="nastaveni">
@@ -2200,9 +2386,9 @@
 
       <h3>Dati e Premium</h3>
       <ul>
-        <li>I dati si trasferiscono tra telefono e computer con un <strong>backup (ZIP)</strong>. Non si sincronizzano da soli: ogni dispositivo ha i propri.</li>
+        <li>I dati tra telefono e computer restano uguali con la <a href="#" data-go="synchronizace">sincronizzazione</a> tramite Google Drive, oppure si trasferiscono una tantum con un <strong>backup (ZIP)</strong>.</li>
         <li>Senza Premium un backup più grande (oltre 100 cartamodelli) si ripristina solo <strong>sostituendo tutti i dati</strong> dell'app. L'app lo chiede prima. Non si possono poi aggiungere altri cartamodelli oltre i 100.</li>
-        <li>Il <strong>Premium</strong> di Google Play non si trasferisce sul computer. L'acquisto sul computer è in preparazione.</li>
+        <li>Il <strong>Premium</strong> del telefono vale anche sul computer, se è collegato al telefono con la <a href="#" data-go="synchronizace">sincronizzazione</a>. L'acquisto direttamente sul computer è in preparazione.</li>
         <li>Disinstallando l'app si eliminano anche i suoi dati: fai prima un backup.</li>
       </ul>
     </section>

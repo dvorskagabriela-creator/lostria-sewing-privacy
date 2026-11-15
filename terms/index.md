@@ -2,7 +2,7 @@
 
 **Language / Jazyk:** **English** · [Čeština](#cesky) · [Deutsch](#deutsch) · [Italiano](#italiano) · [Polski](#polski) · [Slovenčina](#slovensky) · [Privacy Policy](../)
 
-**Effective date:** 2026-10-28
+**Effective date:** 2026-11-15
 
 ## 1. About these terms
 
@@ -12,11 +12,11 @@ These terms are available in several languages. In case of any discrepancy betwe
 
 ## 2. What the app is
 
-Lostria Sewing is a tool for keeping a **personal catalog** of sewing patterns, magazines, fabrics, notions and sewing records. The app is **offline-first**: all your content is stored **only on your device**. We run no server, there are no accounts, and nothing you enter is shared with other users.
+Lostria Sewing is a tool for keeping a **personal catalog** of sewing patterns, magazines, fabrics, notions and sewing records. The app is **offline-first**: all your content is stored **on your device** — and, if you turn on sync, also in **your own Google Drive**. We run no server, we have no accounts of our own, and nothing you enter is shared with other users.
 
 ## 3. Your content and your responsibility
 
-- **Your content stays yours.** Everything you enter or import remains on your device; we receive no copy and acquire no rights to it.
+- **Your content stays yours.** Everything you enter or import remains on your device (and, with sync turned on, in your Google Drive); we receive no copy and acquire no rights to it.
 - You are responsible for the content you create or import and for using it lawfully, including **respecting copyright** of patterns, magazine pages, photos and texts.
 - The app is intended for **personal, private use**.
 
@@ -35,7 +35,8 @@ When using the Web Import function (e.g. via Share Intent from your browser), th
 ## 6. Premium and purchases
 
 - **Premium** is a one-time in-app purchase that unlocks extra features (currently unlimited patterns above the free limit, Templates and Visualization). It is not a subscription; paid Premium stays available on the Google account used to buy it.
-- Purchases go through the store you use the app from — **Google Play** (Android) or the **Microsoft Store** (Windows); the store processes the payment and sends a purchase confirmation. **Purchases do not carry over between stores:** Premium bought on Google Play applies to the Android app, Premium bought in the Microsoft Store to the Windows app. You can restore a previous purchase in **Settings → Restore purchase** on a device signed in with the same Google or Microsoft account. If Google Play confirms that the purchase is no longer valid (for example after a refund), the Android app locks Premium again; without a connection or when the store reports an error, nothing changes.
+- Purchases go through the store you use the app from — **Google Play** (Android) or the **Microsoft Store** (Windows); the store processes the payment and sends a purchase confirmation. Premium bought on Google Play applies to the Android app, Premium bought in the Microsoft Store to the Windows app. You can restore a previous purchase in **Settings → Restore purchase** on a device signed in with the same Google or Microsoft account. If Google Play or the Microsoft Store confirms that the purchase is no longer valid (for example after a refund), the app locks Premium again; without a connection or when the store reports an error, nothing changes.
+- **Premium from your phone on your computer, too.** The Windows app connected through sync (section 9) to an Android device with Premium has Premium as well — as long as the device with Premium syncs at least once every 60 days. Signing out of sync ends Premium from the phone on the computer immediately; if Premium ends on the phone (for example after a refund), it ends on the computer after 60 days at the latest. Premium bought in the Microsoft Store does not carry over to the phone.
 - **Withdrawal and refunds.** Prices, payment, withdrawal from the contract and refunds follow the rules of the store you bought from (Google Play or the Microsoft Store) for digital content made available immediately after payment. This does not affect your statutory consumer rights, in particular your rights in case of defects.
 - **Defects in Premium.** We are responsible for Premium working as described in the app and in these terms, to the extent and for the period set by the law on the supply of digital content to consumers. If Premium does not work as it should, write to us at **lostria.apps@gmail.com**, ideally with a description of the problem and the order number from the store confirmation (Google Play or the Microsoft Store). We will fix the defect free of charge within a reasonable time, usually through an app update. If that is not possible, if we do not fix it within a reasonable time, or if the defect is serious, you are entitled to an appropriate price reduction and, unless the defect is minor, also to withdraw from the contract and have the price refunded.
 - **Updates and changes.** We provide the updates needed for Premium to keep working (including security updates) for the period you can reasonably expect. We may change and improve features for valid reasons (technical, security, legal or further development) at no extra cost to you. If a change would significantly impair your access to or use of Premium, we will inform you in advance; you may then withdraw from the contract within 30 days of the notice or of the change, whichever is later, and we will refund the price to the extent required by law.
@@ -52,16 +53,18 @@ You must not:
 - modify, redistribute or publish modified copies of the app;
 - use the app for unlawful purposes or to infringe the rights of others.
 
-## 9. Backups and data loss
+## 9. Backups, sync and data loss
 
-Your data exists **only on your device** and we have no technical access to it — **we cannot recover, modify or delete it**. Managing your data, including permanently deleting imported texts and photos, is entirely in your hands. Please create backups regularly (**ZIP export** in the app) and keep them somewhere safe. Uninstalling the app or clearing its data deletes your content permanently.
+Your data exists **only on your device** (and, with sync turned on, in your Google Drive) and we have no technical access to it — **we cannot recover, modify or delete it**. Managing your data, including permanently deleting imported texts and photos, is entirely in your hands. Please create backups regularly (**ZIP export** in the app) and keep them somewhere safe. Uninstalling the app or clearing its data deletes your content permanently.
+
+**Sync via Google Drive** (Premium, optional). After you sign in with your Google account, the app stores a copy of your library (data and photos) in a hidden app folder in **your own** Google Drive and transfers it to your other devices from there. Only the app on your devices can access this folder — we cannot. Storage is governed by Google's terms and uses space in your Google storage. Sync also transfers deletions — what you delete on one device disappears on the others too. **It is therefore not a substitute for backups**; please keep making ZIP backups. When signing out, you can delete the data from Google Drive.
 
 **Bug reports and cooperation.** If your data is lost or damaged after an update or another app error, write to us at **lostria.apps@gmail.com**. To assess and fix the error, we may ask for your cooperation to the extent reasonably possible and necessary — most often a description of the steps and a diagnostics file (**Settings → Export diagnostics**), which contains only technical data without your texts, links or photos. We will ask for a full backup only exceptionally, when the error cannot be found otherwise. If you do not cooperate, it may not be possible to assess the error, and for a Premium complaint this may affect its assessment under the law. We use files you send only to find and fix the error and delete them once it is resolved.
 
 ## 10. Liability
 
 - **What we are always liable for.** Some liability cannot be limited by law, and we do not try to — this applies in particular to damage caused intentionally or through gross negligence. Nothing in these terms takes away your statutory consumer rights, in particular your rights if Premium is defective (section 6).
-- **Third-party services.** Some features depend on services we do not control (Google Play, Microsoft Store, Google Gemini, Groq, e-shop websites). We are not liable for their outages, changes or errors.
+- **Third-party services.** Some features depend on services we do not control (Google Play, Microsoft Store, Google Drive, Google Gemini, Groq, e-shop websites). We are not liable for their outages, changes or errors.
 - **Your cooperation.** Using the app carries two main risks: losing your catalog (e.g. after losing or breaking your device, or after an app error) and buying unsuitable fabric based on incorrectly imported data (e.g. fabric consumption or composition suggested by AI). You best prevent both by backing up your data regularly (section 9) and checking data suggested by AI before saving and before buying (section 5). If not doing so contributes to the damage, this will be taken into account in accordance with the law.
 - **Free features.** Features that are not part of Premium (including the default AI) are provided free of charge, and we do not guarantee that they will be error-free or always available. To the extent permitted by law, we are not liable for lost profits or indirect damage.
 - **Businesses.** If you use the app for business purposes rather than as a consumer, our liability — except in the cases in the first point — is limited to the price paid for Premium and excluded for free features.
@@ -84,7 +87,7 @@ Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Czech Republic, ID N
 
 **Language / Jazyk:** [English](#english) · **Čeština** · [Deutsch](#deutsch) · [Italiano](#italiano) · [Polski](#polski) · [Slovenčina](#slovensky) · [Zásady ochrany osobních údajů](../#cesky)
 
-**Datum účinnosti:** 28. 10. 2026
+**Datum účinnosti:** 15. 11. 2026
 
 ## 1. O těchto podmínkách
 
@@ -94,11 +97,11 @@ Podmínky jsou k dispozici ve více jazycích. V případě rozporu mezi jazykov
 
 ## 2. Co aplikace je
 
-Lostria Sewing je nástroj pro vedení **osobní evidence** střihů, časopisů, látek, galanterie a záznamů ušití. Aplikace je **offline-first**: veškerý Váš obsah je uložený **jen ve Vašem zařízení**. Neprovozujeme žádný server, nemáme účty a nic, co zadáte, se nesdílí s jinými uživateli.
+Lostria Sewing je nástroj pro vedení **osobní evidence** střihů, časopisů, látek, galanterie a záznamů ušití. Aplikace je **offline-first**: veškerý Váš obsah je uložený **ve Vašem zařízení** — a pokud si zapnete synchronizaci, také ve **Vašem vlastním Google Drive**. Neprovozujeme žádný server, nemáme vlastní účty a nic, co zadáte, se nesdílí s jinými uživateli.
 
 ## 3. Váš obsah a Vaše odpovědnost
 
-- **Váš obsah zůstává Váš.** Vše, co zadáte nebo naimportujete, zůstává ve Vašem zařízení; žádnou kopii nedostáváme a nenabýváme k němu žádná práva.
+- **Váš obsah zůstává Váš.** Vše, co zadáte nebo naimportujete, zůstává ve Vašem zařízení (a při zapnuté synchronizaci ve Vašem Google Drive); žádnou kopii nedostáváme a nenabýváme k němu žádná práva.
 - Za obsah, který vytvoříte nebo naimportujete, a za jeho zákonné užití odpovídáte Vy — včetně **respektování autorských práv** ke střihům, stránkám časopisů, fotkám a textům.
 - Aplikace je určená pro **osobní, soukromé užití**.
 
@@ -117,7 +120,8 @@ Při použití funkce Import z webu (např. sdílením odkazu z prohlížeče) a
 ## 6. Premium a nákupy
 
 - **Premium** je jednorázový nákup v aplikaci, který odemyká další funkce (aktuálně neomezený počet střihů nad bezplatný limit, Šablony a Vizualizaci). Nejde o předplatné; zaplacené Premium zůstává zpřístupněné na účtu Google, kterým bylo zakoupeno.
-- Nákup probíhá přes obchod, ze kterého aplikaci používáte — **Google Play** (Android) nebo **Microsoft Store** (Windows); obchod zpracuje platbu a pošle potvrzení o nákupu. **Nákup se mezi obchody nepřenáší:** Premium zakoupené na Google Play platí v aplikaci pro Android, zakoupené v Microsoft Store v aplikaci pro Windows. Předchozí nákup obnovíte v **Nastavení → Obnovit nákup** na zařízení přihlášeném stejným účtem Google, resp. Microsoft. Pokud Google Play potvrdí, že nákup už neplatí (například po vrácení peněz), aplikace pro Android Premium znovu zamkne; bez připojení nebo při chybě obchodu se nic nemění.
+- Nákup probíhá přes obchod, ze kterého aplikaci používáte — **Google Play** (Android) nebo **Microsoft Store** (Windows); obchod zpracuje platbu a pošle potvrzení o nákupu. Premium zakoupené na Google Play platí v aplikaci pro Android, zakoupené v Microsoft Store v aplikaci pro Windows. Předchozí nákup obnovíte v **Nastavení → Obnovit nákup** na zařízení přihlášeném stejným účtem Google, resp. Microsoft. Pokud Google Play nebo Microsoft Store potvrdí, že nákup už neplatí (například po vrácení peněz), aplikace Premium znovu zamkne; bez připojení nebo při chybě obchodu se nic nemění.
+- **Premium z telefonu i na počítači.** Aplikace pro Windows propojená synchronizací (oddíl 9) se zařízením s Androidem, které má Premium, má Premium také — dokud se zařízení s Premium synchronizuje alespoň jednou za 60 dní. Odhlášením od synchronizace Premium z telefonu na počítači hned skončí; skončí-li Premium v telefonu (například po vrácení peněz), skončí na počítači nejpozději po 60 dnech. Premium zakoupené v Microsoft Store se do telefonu nepřenáší.
 - **Odstoupení a vrácení peněz.** Ceny, platba, odstoupení od smlouvy i vrácení peněz se řídí pravidly obchodu, ve kterém jste nakoupila (Google Play nebo Microsoft Store), pro digitální obsah zpřístupněný ihned po zaplacení. Tím nejsou dotčena Vaše zákonná práva spotřebitele, zejména práva z vadného plnění.
 - **Vady Premium.** Za to, že Premium funguje tak, jak je popsáno v aplikaci a v těchto podmínkách, odpovídáme v rozsahu a po dobu, kterou stanoví právní předpisy pro poskytování digitálního obsahu spotřebitelům. Pokud Premium nefunguje, jak má, napište nám na **lostria.apps@gmail.com**, ideálně s popisem problému a číslem objednávky z potvrzení obchodu (Google Play nebo Microsoft Store). Vadu bezplatně odstraníme v přiměřené lhůtě, zpravidla aktualizací aplikace. Pokud to nejde, pokud ji v přiměřené lhůtě neodstraníme, nebo pokud je vada závažná, máte právo na přiměřenou slevu; není-li vada nepodstatná, také na odstoupení od smlouvy a vrácení zaplacené ceny.
 - **Aktualizace a změny.** Poskytujeme aktualizace potřebné k tomu, aby Premium dál fungovalo (včetně bezpečnostních), po dobu, kterou můžete rozumně očekávat. Funkce můžeme z vážných důvodů (technických, bezpečnostních, právních nebo kvůli dalšímu rozvoji) měnit a vylepšovat, a to bez dodatečných nákladů pro Vás. Pokud by změna podstatně zhoršila Váš přístup k Premium nebo jeho užívání, dáme Vám o ní vědět předem. Od smlouvy pak můžete odstoupit do 30 dnů od oznámení nebo od provedení změny, podle toho, co nastane později, a zaplacenou cenu Vám vrátíme v rozsahu, který stanoví právní předpisy.
@@ -134,16 +138,18 @@ Není dovoleno:
 - upravovat aplikaci, šířit ji nebo zveřejňovat její upravené kopie;
 - používat aplikaci k nezákonným účelům nebo k porušování práv jiných.
 
-## 9. Zálohy a ztráta dat
+## 9. Zálohy, synchronizace a ztráta dat
 
-Vaše data existují **jen ve Vašem zařízení** a my k nim nemáme žádný technický přístup — **nemůžeme je obnovit, upravit ani smazat**. Jejich správa, včetně trvalého smazání importovaných textů a fotek, je plně ve Vašich rukou. Pravidelně si prosím vytvářejte zálohy (**export do ZIP** v aplikaci) a uchovávejte je na bezpečném místě. Odinstalováním aplikace nebo vymazáním jejích dat se Váš obsah trvale smaže.
+Vaše data existují **jen ve Vašem zařízení** (a při zapnuté synchronizaci ve Vašem Google Drive) a my k nim nemáme žádný technický přístup — **nemůžeme je obnovit, upravit ani smazat**. Jejich správa, včetně trvalého smazání importovaných textů a fotek, je plně ve Vašich rukou. Pravidelně si prosím vytvářejte zálohy (**export do ZIP** v aplikaci) a uchovávejte je na bezpečném místě. Odinstalováním aplikace nebo vymazáním jejích dat se Váš obsah trvale smaže.
+
+**Synchronizace přes Google Drive** (Premium, volitelná). Po přihlášení účtem Google aplikace ukládá kopii Vaší knihovny (data i fotky) do skryté složky aplikace ve **Vašem vlastním** Google Drive a odtud ji přenáší do Vašich dalších zařízení. K této složce má přístup jen aplikace ve Vašich zařízeních, my ne. Uložení se řídí podmínkami Googlu a zabírá místo ve Vašem úložišti Google. Synchronizace přenáší i smazání — co smažete v jednom zařízení, zmizí i v ostatních. **Proto nenahrazuje zálohy**; zálohy do ZIP si dělejte dál. Při odhlášení můžete data z Google Drive smazat.
 
 **Hlášení chyb a součinnost.** Pokud se po aktualizaci nebo jiné chybě aplikace ztratí či poškodí Vaše data, napište nám na **lostria.apps@gmail.com**. Abychom mohli chybu posoudit a opravit, můžeme Vás požádat o součinnost v rozsahu, který je rozumně možný a nezbytný — nejčastěji o popis postupu a o diagnostický soubor (**Nastavení → Exportovat diagnostiku**), který obsahuje jen technické údaje bez Vašich textů, odkazů a fotek. Celou zálohu budeme chtít jen výjimečně, když chybu jinak zjistit nejde. Pokud součinnost neposkytnete, nemusí být možné chybu posoudit, a u reklamace Premium to může mít vliv na její posouzení podle zákona. Zaslané soubory použijeme jen k nalezení a opravě chyby a po vyřešení je smažeme.
 
 ## 10. Odpovědnost
 
 - **Za co odpovídáme vždy.** Některou odpovědnost zákon omezit nedovolí a my se o to ani nepokoušíme — platí to zejména pro škodu způsobenou úmyslně nebo z hrubé nedbalosti. Vaše zákonná práva spotřebitele Vám nic v těchto podmínkách nebere, zejména práva z vadného Premium (oddíl 6).
-- **Služby třetích stran.** Některé funkce závisí na službách, které neovládáme (Google Play, Microsoft Store, Google Gemini, Groq, webové stránky e-shopů). Za jejich výpadky, změny nebo chyby neodpovídáme.
+- **Služby třetích stran.** Některé funkce závisí na službách, které neovládáme (Google Play, Microsoft Store, Google Drive, Google Gemini, Groq, webové stránky e-shopů). Za jejich výpadky, změny nebo chyby neodpovídáme.
 - **Vaše součinnost.** Při používání aplikace hrozí hlavně dvě škody: ztráta evidence (např. po ztrátě či poruše zařízení nebo po chybě aplikace) a nákup nevhodné látky podle chybně načtených údajů (např. spotřeby nebo složení navržených AI). Oběma nejlépe předejdete, když si pravidelně zálohujete data (oddíl 9) a údaje navržené AI zkontrolujete před uložením i před nákupem (oddíl 5). Pokud ke škodě přispěje, že jste tak neučinila, přihlédne se k tomu podle zákona.
 - **Bezplatné funkce.** Funkce, které nejsou součástí Premium (včetně výchozí AI), poskytujeme zdarma a nezaručujeme, že budou bez chyb nebo vždy dostupné. V rozsahu, který připouštějí právní předpisy, neodpovídáme za ušlý zisk ani nepřímé škody.
 - **Podnikatelé.** Používáte-li aplikaci v rámci podnikání, a ne jako spotřebitel, je naše odpovědnost — kromě případů z prvního bodu — omezena na cenu zaplacenou za Premium a u bezplatných funkcí vyloučena.
@@ -166,7 +172,7 @@ Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Česká republika, I
 
 **Language / Jazyk:** [English](#english) · [Čeština](#cesky) · **Deutsch** · [Italiano](#italiano) · [Polski](#polski) · [Slovenčina](#slovensky) · [Datenschutzerklärung (auf Englisch)](../)
 
-**Gültig ab:** 28.10.2026
+**Gültig ab:** 15.11.2026
 
 ## 1. Über diese Bedingungen
 
@@ -176,11 +182,11 @@ Diese Bedingungen sind in mehreren Sprachen verfügbar. Bei Abweichungen zwische
 
 ## 2. Was die App ist
 
-Lostria Sewing ist ein Werkzeug zur Führung eines **persönlichen Katalogs** von Schnittmustern, Zeitschriften, Stoffen, Kurzwaren und Einträgen über genähte Stücke. Die App funktioniert **offline-first**: Alle Ihre Inhalte werden **nur auf Ihrem Gerät** gespeichert. Wir betreiben keinen Server, es gibt keine Benutzerkonten, und nichts, was Sie eingeben, wird mit anderen Nutzerinnen und Nutzern geteilt.
+Lostria Sewing ist ein Werkzeug zur Führung eines **persönlichen Katalogs** von Schnittmustern, Zeitschriften, Stoffen, Kurzwaren und Einträgen über genähte Stücke. Die App funktioniert **offline-first**: Alle Ihre Inhalte werden **auf Ihrem Gerät** gespeichert — und wenn Sie die Synchronisierung einschalten, auch in **Ihrem eigenen Google Drive**. Wir betreiben keinen Server, es gibt keine eigenen Benutzerkonten, und nichts, was Sie eingeben, wird mit anderen Nutzerinnen und Nutzern geteilt.
 
 ## 3. Ihre Inhalte und Ihre Verantwortung
 
-- **Ihre Inhalte bleiben Ihre.** Alles, was Sie eingeben oder importieren, bleibt auf Ihrem Gerät; wir erhalten keine Kopie und erwerben keine Rechte daran.
+- **Ihre Inhalte bleiben Ihre.** Alles, was Sie eingeben oder importieren, bleibt auf Ihrem Gerät (und bei eingeschalteter Synchronisierung in Ihrem Google Drive); wir erhalten keine Kopie und erwerben keine Rechte daran.
 - Sie sind für die Inhalte verantwortlich, die Sie erstellen oder importieren, und für deren rechtmäßige Nutzung — einschließlich der **Beachtung des Urheberrechts** an Schnittmustern, Zeitschriftenseiten, Fotos und Texten.
 - Die App ist für die **persönliche, private Nutzung** bestimmt.
 
@@ -199,7 +205,8 @@ Wenn Sie die Funktion Web-Import nutzen (z. B. durch Teilen eines Links aus Ihre
 ## 6. Premium und Käufe
 
 - **Premium** ist ein einmaliger In-App-Kauf, der zusätzliche Funktionen freischaltet (derzeit unbegrenzt viele Schnittmuster über das kostenlose Limit hinaus, Vorlagen und Visualisierung). Es ist kein Abonnement; bezahltes Premium bleibt auf dem Google-Konto verfügbar, mit dem es gekauft wurde.
-- Der Kauf erfolgt über den Store, aus dem Sie die App nutzen — **Google Play** (Android) oder den **Microsoft Store** (Windows); der Store wickelt die Zahlung ab und sendet eine Kaufbestätigung. **Käufe werden nicht zwischen den Stores übertragen:** Bei Google Play gekauftes Premium gilt in der Android-App, im Microsoft Store gekauftes in der Windows-App. Einen früheren Kauf stellen Sie unter **Einstellungen → Kauf wiederherstellen** auf einem Gerät wieder her, das mit demselben Google- bzw. Microsoft-Konto angemeldet ist. Bestätigt Google Play, dass der Kauf nicht mehr gültig ist (z. B. nach einer Erstattung), sperrt die Android-App Premium wieder; ohne Verbindung oder bei einem Fehler des Stores ändert sich nichts.
+- Der Kauf erfolgt über den Store, aus dem Sie die App nutzen — **Google Play** (Android) oder den **Microsoft Store** (Windows); der Store wickelt die Zahlung ab und sendet eine Kaufbestätigung. Bei Google Play gekauftes Premium gilt in der Android-App, im Microsoft Store gekauftes in der Windows-App. Einen früheren Kauf stellen Sie unter **Einstellungen → Kauf wiederherstellen** auf einem Gerät wieder her, das mit demselben Google- bzw. Microsoft-Konto angemeldet ist. Bestätigt Google Play oder der Microsoft Store, dass der Kauf nicht mehr gültig ist (z. B. nach einer Erstattung), sperrt die App Premium wieder; ohne Verbindung oder bei einem Fehler des Stores ändert sich nichts.
+- **Premium vom Smartphone auch am Computer.** Die Windows-App, die über die Synchronisierung (Abschnitt 9) mit einem Android-Gerät mit Premium verbunden ist, hat ebenfalls Premium — solange sich das Gerät mit Premium mindestens einmal alle 60 Tage synchronisiert. Mit der Abmeldung von der Synchronisierung endet das Premium vom Smartphone am Computer sofort; endet Premium auf dem Smartphone (z. B. nach einer Erstattung), endet es am Computer spätestens nach 60 Tagen. Im Microsoft Store gekauftes Premium wird nicht auf das Smartphone übertragen.
 - **Widerruf und Erstattungen.** Preise, Zahlung, Widerruf und Erstattungen richten sich nach den Regeln des Stores, in dem Sie gekauft haben (Google Play oder Microsoft Store), für digitale Inhalte, die sofort nach der Zahlung bereitgestellt werden. Ihre gesetzlichen Verbraucherrechte, insbesondere Ihre Rechte bei Mängeln, bleiben unberührt.
 - **Mängel von Premium.** Wir haften dafür, dass Premium so funktioniert, wie es in der App und in diesen Bedingungen beschrieben ist, im Umfang und für die Dauer, die die gesetzlichen Vorschriften über die Bereitstellung digitaler Inhalte an Verbraucher vorsehen. Funktioniert Premium nicht wie vorgesehen, schreiben Sie uns an **lostria.apps@gmail.com**, idealerweise mit einer Beschreibung des Problems und der Bestellnummer aus der Bestätigung des Stores (Google Play oder Microsoft Store). Wir beheben den Mangel innerhalb einer angemessenen Frist kostenlos, in der Regel durch ein App-Update. Ist das nicht möglich, beheben wir ihn nicht innerhalb einer angemessenen Frist oder ist der Mangel schwerwiegend, haben Sie Anspruch auf eine angemessene Preisminderung und, sofern der Mangel nicht unerheblich ist, auch auf Vertragsbeendigung und Erstattung des Preises.
 - **Aktualisierungen und Änderungen.** Wir stellen die Aktualisierungen bereit, die nötig sind, damit Premium weiter funktioniert (einschließlich Sicherheitsupdates), für den Zeitraum, den Sie vernünftigerweise erwarten können. Wir können Funktionen aus triftigen Gründen (technisch, sicherheitsbezogen, rechtlich oder zur Weiterentwicklung) ohne zusätzliche Kosten für Sie ändern und verbessern. Würde eine Änderung Ihren Zugang zu Premium oder dessen Nutzung erheblich beeinträchtigen, informieren wir Sie vorab; Sie können den Vertrag dann innerhalb von 30 Tagen nach der Mitteilung oder der Änderung, je nachdem, was später eintritt, beenden, und wir erstatten den Preis im gesetzlich vorgesehenen Umfang.
@@ -216,16 +223,18 @@ Es ist nicht gestattet:
 - die App zu verändern, zu verbreiten oder veränderte Kopien der App zu veröffentlichen;
 - die App für rechtswidrige Zwecke oder zur Verletzung von Rechten anderer zu nutzen.
 
-## 9. Sicherungen und Datenverlust
+## 9. Sicherungen, Synchronisierung und Datenverlust
 
-Ihre Daten existieren **nur auf Ihrem Gerät**, und wir haben keinen technischen Zugriff darauf — **wir können sie weder wiederherstellen noch ändern oder löschen**. Die Verwaltung Ihrer Daten, einschließlich des dauerhaften Löschens importierter Texte und Fotos, liegt vollständig bei Ihnen. Bitte erstellen Sie regelmäßig Sicherungen (**ZIP-Export** in der App) und bewahren Sie diese an einem sicheren Ort auf. Durch Deinstallation der App oder Löschen ihrer Daten werden Ihre Inhalte dauerhaft gelöscht.
+Ihre Daten existieren **nur auf Ihrem Gerät** (und bei eingeschalteter Synchronisierung in Ihrem Google Drive), und wir haben keinen technischen Zugriff darauf — **wir können sie weder wiederherstellen noch ändern oder löschen**. Die Verwaltung Ihrer Daten, einschließlich des dauerhaften Löschens importierter Texte und Fotos, liegt vollständig bei Ihnen. Bitte erstellen Sie regelmäßig Sicherungen (**ZIP-Export** in der App) und bewahren Sie diese an einem sicheren Ort auf. Durch Deinstallation der App oder Löschen ihrer Daten werden Ihre Inhalte dauerhaft gelöscht.
+
+**Synchronisierung über Google Drive** (Premium, optional). Nach der Anmeldung mit Ihrem Google-Konto speichert die App eine Kopie Ihrer Bibliothek (Daten und Fotos) in einem versteckten App-Ordner in **Ihrem eigenen** Google Drive und überträgt sie von dort auf Ihre anderen Geräte. Auf diesen Ordner hat nur die App auf Ihren Geräten Zugriff, wir nicht. Die Speicherung richtet sich nach den Bedingungen von Google und belegt Platz in Ihrem Google-Speicher. Die Synchronisierung überträgt auch Löschungen — was Sie auf einem Gerät löschen, verschwindet auch auf den anderen. **Sie ersetzt daher keine Sicherung**; erstellen Sie bitte weiterhin ZIP-Sicherungen. Bei der Abmeldung können Sie die Daten aus Google Drive löschen.
 
 **Fehlermeldungen und Mitwirkung.** Gehen Ihre Daten nach einem Update oder einem anderen App-Fehler verloren oder werden beschädigt, schreiben Sie uns an **lostria.apps@gmail.com**. Um den Fehler beurteilen und beheben zu können, können wir Sie um Mitwirkung bitten, soweit dies vernünftigerweise möglich und erforderlich ist — meist um eine Beschreibung der Schritte und eine Diagnosedatei (**Einstellungen → Diagnose exportieren**), die nur technische Angaben ohne Ihre Texte, Links oder Fotos enthält. Eine vollständige Sicherung erbitten wir nur ausnahmsweise, wenn sich der Fehler anders nicht finden lässt. Wirken Sie nicht mit, kann der Fehler möglicherweise nicht beurteilt werden, und bei einer Reklamation von Premium kann dies deren Beurteilung nach dem Gesetz beeinflussen. Zugesandte Dateien verwenden wir nur zur Fehlersuche und -behebung und löschen sie, sobald der Fehler behoben ist.
 
 ## 10. Haftung
 
 - **Wofür wir immer haften.** Manche Haftung lässt sich gesetzlich nicht beschränken, und wir versuchen es auch nicht – das gilt insbesondere für vorsätzlich oder grob fahrlässig verursachte Schäden. Ihre gesetzlichen Verbraucherrechte nimmt Ihnen nichts in diesen Bedingungen, insbesondere nicht Ihre Rechte bei Mängeln von Premium (Abschnitt 6).
-- **Dienste Dritter.** Einige Funktionen hängen von Diensten ab, die wir nicht kontrollieren (Google Play, Microsoft Store, Google Gemini, Groq, Websites von Online-Shops). Für deren Ausfälle, Änderungen oder Fehler haften wir nicht.
+- **Dienste Dritter.** Einige Funktionen hängen von Diensten ab, die wir nicht kontrollieren (Google Play, Microsoft Store, Google Drive, Google Gemini, Groq, Websites von Online-Shops). Für deren Ausfälle, Änderungen oder Fehler haften wir nicht.
 - **Ihre Mitwirkung.** Bei der Nutzung der App drohen vor allem zwei Schäden: der Verlust Ihres Katalogs (z. B. nach Verlust oder Defekt des Geräts oder nach einem App-Fehler) und der Kauf eines ungeeigneten Stoffes aufgrund falsch importierter Angaben (z. B. einer von der KI vorgeschlagenen Stoffmenge oder Zusammensetzung). Beidem beugen Sie am besten vor, indem Sie Ihre Daten regelmäßig sichern (Abschnitt 9) und von der KI vorgeschlagene Angaben vor dem Speichern und vor dem Kauf prüfen (Abschnitt 5). Trägt es zum Schaden bei, dass Sie dies nicht getan haben, wird dies nach dem Gesetz berücksichtigt.
 - **Kostenlose Funktionen.** Funktionen, die nicht zu Premium gehören (einschließlich der Standard-KI), stellen wir kostenlos bereit und garantieren nicht, dass sie fehlerfrei oder stets verfügbar sind. Soweit gesetzlich zulässig, haften wir nicht für entgangenen Gewinn oder mittelbare Schäden.
 - **Unternehmer.** Nutzen Sie die App im Rahmen einer unternehmerischen Tätigkeit und nicht als Verbraucherin oder Verbraucher, ist unsere Haftung — außer in den Fällen des ersten Punktes — auf den für Premium gezahlten Preis beschränkt und für kostenlose Funktionen ausgeschlossen.
@@ -248,7 +257,7 @@ Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Tschechische Republi
 
 **Language / Jazyk:** [English](#english) · [Čeština](#cesky) · [Deutsch](#deutsch) · **Italiano** · [Polski](#polski) · [Slovenčina](#slovensky) · [Informativa sulla privacy (in inglese)](../)
 
-**Data di efficacia:** 28/10/2026
+**Data di efficacia:** 15/11/2026
 
 ## 1. Informazioni su questi termini
 
@@ -258,11 +267,11 @@ I presenti termini sono disponibili in più lingue. In caso di discordanza tra l
 
 ## 2. Che cos'è l'app
 
-Lostria Sewing è uno strumento per tenere un **catalogo personale** di cartamodelli, riviste, tessuti, merceria e registrazioni dei capi cuciti. L'app è **offline-first**: tutti i Suoi contenuti sono salvati **solo sul Suo dispositivo**. Non gestiamo alcun server, non esistono account e nulla di ciò che inserisce viene condiviso con altri utenti.
+Lostria Sewing è uno strumento per tenere un **catalogo personale** di cartamodelli, riviste, tessuti, merceria e registrazioni dei capi cuciti. L'app è **offline-first**: tutti i Suoi contenuti sono salvati **sul Suo dispositivo** e, se attiva la sincronizzazione, anche nel **Suo Google Drive**. Non gestiamo alcun server, non abbiamo account nostri e nulla di ciò che inserisce viene condiviso con altri utenti.
 
 ## 3. I Suoi contenuti e la Sua responsabilità
 
-- **I Suoi contenuti restano Suoi.** Tutto ciò che inserisce o importa resta sul Suo dispositivo; non ne riceviamo alcuna copia e non acquisiamo alcun diritto su di essi.
+- **I Suoi contenuti restano Suoi.** Tutto ciò che inserisce o importa resta sul Suo dispositivo (e, con la sincronizzazione attiva, nel Suo Google Drive); non ne riceviamo alcuna copia e non acquisiamo alcun diritto su di essi.
 - Lei è responsabile dei contenuti che crea o importa e del loro uso lecito, compreso il **rispetto del diritto d'autore** su cartamodelli, pagine di riviste, foto e testi.
 - L'app è destinata a un **uso personale e privato**.
 
@@ -281,7 +290,8 @@ Quando utilizza la funzione Import dal web (ad es. condividendo un link dal brow
 ## 6. Premium e acquisti
 
 - **Premium** è un acquisto in-app una tantum che sblocca funzioni aggiuntive (attualmente un numero illimitato di cartamodelli oltre il limite gratuito, Modelli e Visualizzazione). Non è un abbonamento; Premium pagato resta disponibile sull'account Google con cui è stato acquistato.
-- L'acquisto avviene tramite lo store da cui usa l'app — **Google Play** (Android) o **Microsoft Store** (Windows); lo store gestisce il pagamento e invia una conferma d'acquisto. **Gli acquisti non si trasferiscono tra gli store:** il Premium acquistato su Google Play vale nell'app per Android, quello acquistato su Microsoft Store nell'app per Windows. Può ripristinare un acquisto precedente in **Impostazioni → Ripristina acquisto** su un dispositivo collegato allo stesso account Google o Microsoft. Se Google Play conferma che l'acquisto non è più valido (ad esempio dopo un rimborso), l'app per Android blocca di nuovo Premium; senza connessione o in caso di errore dello store non cambia nulla.
+- L'acquisto avviene tramite lo store da cui usa l'app — **Google Play** (Android) o **Microsoft Store** (Windows); lo store gestisce il pagamento e invia una conferma d'acquisto. Il Premium acquistato su Google Play vale nell'app per Android, quello acquistato su Microsoft Store nell'app per Windows. Può ripristinare un acquisto precedente in **Impostazioni → Ripristina acquisto** su un dispositivo collegato allo stesso account Google o Microsoft. Se Google Play o Microsoft Store confermano che l'acquisto non è più valido (ad esempio dopo un rimborso), l'app blocca di nuovo Premium; senza connessione o in caso di errore dello store non cambia nulla.
+- **Premium del telefono anche sul computer.** L'app per Windows collegata tramite sincronizzazione (sezione 9) a un dispositivo Android con Premium ha anch'essa Premium, finché il dispositivo con Premium si sincronizza almeno una volta ogni 60 giorni. Disconnettendosi dalla sincronizzazione, il Premium del telefono sul computer termina subito; se il Premium sul telefono termina (ad esempio dopo un rimborso), sul computer termina al più tardi dopo 60 giorni. Il Premium acquistato su Microsoft Store non si trasferisce al telefono.
 - **Recesso e rimborsi.** Prezzi, pagamento, recesso dal contratto e rimborsi seguono le regole dello store in cui ha acquistato (Google Play o Microsoft Store) per i contenuti digitali resi disponibili subito dopo il pagamento. Restano salvi i Suoi diritti di consumatore previsti dalla legge, in particolare i diritti in caso di difetti.
 - **Difetti di Premium.** Rispondiamo del fatto che Premium funzioni come descritto nell'app e nei presenti termini, nella misura e per il periodo stabiliti dalla legge sulla fornitura di contenuti digitali ai consumatori. Se Premium non funziona come dovrebbe, ci scriva a **lostria.apps@gmail.com**, idealmente con una descrizione del problema e il numero d'ordine indicato nella conferma dello store (Google Play o Microsoft Store). Elimineremo il difetto gratuitamente entro un termine ragionevole, di norma con un aggiornamento dell'app. Se ciò non è possibile, se non lo eliminiamo entro un termine ragionevole o se il difetto è grave, ha diritto a un'adeguata riduzione del prezzo e, se il difetto non è di lieve entità, anche a recedere dal contratto e ottenere il rimborso del prezzo.
 - **Aggiornamenti e modifiche.** Forniamo gli aggiornamenti necessari affinché Premium continui a funzionare (compresi quelli di sicurezza) per il periodo che può ragionevolmente aspettarsi. Possiamo modificare e migliorare le funzioni per validi motivi (tecnici, di sicurezza, legali o di ulteriore sviluppo) senza costi aggiuntivi per Lei. Se una modifica peggiorasse in modo significativo il Suo accesso a Premium o il suo utilizzo, La informeremo in anticipo; potrà quindi recedere dal contratto entro 30 giorni dalla comunicazione o dalla modifica, se successiva, e Le rimborseremo il prezzo nella misura prevista dalla legge.
@@ -298,16 +308,18 @@ Non è consentito:
 - modificare l'app, distribuirla o pubblicarne copie modificate;
 - utilizzare l'app per scopi illeciti o per violare i diritti altrui.
 
-## 9. Backup e perdita di dati
+## 9. Backup, sincronizzazione e perdita di dati
 
-I Suoi dati esistono **solo sul Suo dispositivo** e non abbiamo alcun accesso tecnico ad essi: **non possiamo recuperarli, modificarli né eliminarli**. La gestione dei Suoi dati, compresa l'eliminazione definitiva di testi e foto importati, è interamente nelle Sue mani. La preghiamo di creare regolarmente dei backup (**esportazione ZIP** nell'app) e di conservarli in un luogo sicuro. Disinstallando l'app o cancellandone i dati, i Suoi contenuti vengono eliminati definitivamente.
+I Suoi dati esistono **solo sul Suo dispositivo** (e, con la sincronizzazione attiva, nel Suo Google Drive) e non abbiamo alcun accesso tecnico ad essi: **non possiamo recuperarli, modificarli né eliminarli**. La gestione dei Suoi dati, compresa l'eliminazione definitiva di testi e foto importati, è interamente nelle Sue mani. La preghiamo di creare regolarmente dei backup (**esportazione ZIP** nell'app) e di conservarli in un luogo sicuro. Disinstallando l'app o cancellandone i dati, i Suoi contenuti vengono eliminati definitivamente.
+
+**Sincronizzazione tramite Google Drive** (Premium, facoltativa). Dopo l'accesso con il Suo account Google, l'app salva una copia della Sua raccolta (dati e foto) in una cartella nascosta dell'app nel **Suo** Google Drive e da lì la trasferisce agli altri Suoi dispositivi. A questa cartella ha accesso solo l'app sui Suoi dispositivi, noi no. Il salvataggio è regolato dalle condizioni di Google e occupa spazio nel Suo spazio di archiviazione Google. La sincronizzazione trasferisce anche le eliminazioni: ciò che elimina su un dispositivo scompare anche sugli altri. **Per questo non sostituisce i backup**; continui a creare backup ZIP. Al momento della disconnessione può eliminare i dati da Google Drive.
 
 **Segnalazione di errori e collaborazione.** Se dopo un aggiornamento o un altro errore dell'app i Suoi dati vanno persi o si danneggiano, ci scriva a **lostria.apps@gmail.com**. Per valutare e correggere l'errore possiamo chiederLe di collaborare nella misura ragionevolmente possibile e necessaria — di solito con una descrizione dei passaggi e un file di diagnostica (**Impostazioni → Esporta diagnostica**), che contiene solo dati tecnici senza i Suoi testi, link o foto. Chiederemo un backup completo solo in casi eccezionali, quando l'errore non può essere individuato altrimenti. Se non collabora, potrebbe non essere possibile valutare l'errore e, per un reclamo relativo a Premium, ciò può incidere sulla sua valutazione ai sensi di legge. Utilizziamo i file ricevuti solo per individuare e correggere l'errore e li eliminiamo una volta risolto.
 
 ## 10. Responsabilità
 
 - **Di cosa rispondiamo sempre.** Alcune responsabilità non possono essere limitate per legge e non ci proviamo nemmeno: vale in particolare per i danni causati con dolo o colpa grave. Nulla nei presenti termini Le toglie i diritti di consumatore previsti dalla legge, in particolare i diritti in caso di difetti di Premium (sezione 6).
-- **Servizi di terzi.** Alcune funzioni dipendono da servizi che non controlliamo (Google Play, Microsoft Store, Google Gemini, Groq, siti web dei negozi online). Non rispondiamo delle loro interruzioni, modifiche o errori.
+- **Servizi di terzi.** Alcune funzioni dipendono da servizi che non controlliamo (Google Play, Microsoft Store, Google Drive, Google Gemini, Groq, siti web dei negozi online). Non rispondiamo delle loro interruzioni, modifiche o errori.
 - **La Sua collaborazione.** Usando l'app i rischi principali sono due: la perdita del Suo catalogo (ad es. dopo lo smarrimento o il guasto del dispositivo o dopo un errore dell'app) e l'acquisto di un tessuto non adatto sulla base di dati importati in modo errato (ad es. consumo di tessuto o composizione suggeriti dall'IA). Li previene al meglio eseguendo regolarmente il backup dei dati (sezione 9) e verificando i dati suggeriti dall'IA prima di salvarli e prima dell'acquisto (sezione 5). Se il mancato rispetto di queste indicazioni contribuisce al danno, se ne terrà conto secondo la legge.
 - **Funzioni gratuite.** Le funzioni che non fanno parte di Premium (compresa l'IA predefinita) sono fornite gratuitamente e non garantiamo che siano prive di errori o sempre disponibili. Nei limiti consentiti dalla legge, non rispondiamo del mancato guadagno né dei danni indiretti.
 - **Professionisti.** Se utilizza l'app nell'ambito di un'attività professionale e non come consumatore, la nostra responsabilità — salvo i casi del primo punto — è limitata al prezzo pagato per Premium ed esclusa per le funzioni gratuite.
@@ -330,7 +342,7 @@ Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Repubblica Ceca, n. 
 
 **Language / Jazyk:** [English](#english) · [Čeština](#cesky) · [Deutsch](#deutsch) · [Italiano](#italiano) · **Polski** · [Slovenčina](#slovensky) · [Polityka prywatności (po angielsku)](../)
 
-**Data wejścia w życie:** 28.10.2026
+**Data wejścia w życie:** 15.11.2026
 
 ## 1. O niniejszych warunkach
 
@@ -340,11 +352,11 @@ Niniejsze warunki są dostępne w kilku językach. W razie rozbieżności międz
 
 ## 2. Czym jest aplikacja
 
-Lostria Sewing to narzędzie do prowadzenia **osobistego katalogu** wykrojów, czasopism, tkanin, pasmanterii i zapisów uszytych rzeczy. Aplikacja działa w trybie **offline-first**: wszystkie treści są przechowywane **wyłącznie na urządzeniu użytkownika**. Nie prowadzimy żadnego serwera, nie ma kont, a nic, co zostanie wprowadzone, nie jest udostępniane innym użytkownikom.
+Lostria Sewing to narzędzie do prowadzenia **osobistego katalogu** wykrojów, czasopism, tkanin, pasmanterii i zapisów uszytych rzeczy. Aplikacja działa w trybie **offline-first**: wszystkie treści są przechowywane **na urządzeniu użytkownika**, a po włączeniu synchronizacji także na **własnym Dysku Google użytkownika**. Nie prowadzimy żadnego serwera, nie mamy własnych kont, a nic, co zostanie wprowadzone, nie jest udostępniane innym użytkownikom.
 
 ## 3. Treści użytkownika i odpowiedzialność
 
-- **Treści pozostają własnością użytkownika.** Wszystko, co zostanie wprowadzone lub zaimportowane, pozostaje na urządzeniu; nie otrzymujemy żadnej kopii i nie nabywamy do tych treści żadnych praw.
+- **Treści pozostają własnością użytkownika.** Wszystko, co zostanie wprowadzone lub zaimportowane, pozostaje na urządzeniu (a przy włączonej synchronizacji na Dysku Google użytkownika); nie otrzymujemy żadnej kopii i nie nabywamy do tych treści żadnych praw.
 - Użytkownik odpowiada za treści, które tworzy lub importuje, oraz za ich zgodne z prawem wykorzystanie — w tym za **poszanowanie praw autorskich** do wykrojów, stron czasopism, zdjęć i tekstów.
 - Aplikacja jest przeznaczona do **osobistego, prywatnego użytku**.
 
@@ -363,7 +375,8 @@ Podczas korzystania z funkcji Import z internetu (np. poprzez udostępnienie lin
 ## 6. Premium i zakupy
 
 - **Premium** to jednorazowy zakup w aplikacji, który odblokowuje dodatkowe funkcje (obecnie nieograniczoną liczbę wykrojów ponad bezpłatny limit, Szablony i Wizualizację). Nie jest to subskrypcja; opłacone Premium pozostaje dostępne na koncie Google, na którym zostało kupione.
-- Zakup odbywa się przez sklep, z którego pochodzi używana aplikacja — **Google Play** (Android) lub **Microsoft Store** (Windows); sklep obsługuje płatność i wysyła potwierdzenie zakupu. **Zakupy nie przenoszą się między sklepami:** Premium kupione w Google Play obowiązuje w aplikacji na Androida, kupione w Microsoft Store — w aplikacji na Windows. Wcześniejszy zakup można przywrócić w **Ustawienia → Przywróć zakup** na urządzeniu zalogowanym na to samo konto Google lub Microsoft. Jeśli Google Play potwierdzi, że zakup nie jest już ważny (np. po zwrocie pieniędzy), aplikacja na Androida ponownie zablokuje Premium; bez połączenia lub w przypadku błędu sklepu nic się nie zmienia.
+- Zakup odbywa się przez sklep, z którego pochodzi używana aplikacja — **Google Play** (Android) lub **Microsoft Store** (Windows); sklep obsługuje płatność i wysyła potwierdzenie zakupu. Premium kupione w Google Play obowiązuje w aplikacji na Androida, kupione w Microsoft Store — w aplikacji na Windows. Wcześniejszy zakup można przywrócić w **Ustawienia → Przywróć zakup** na urządzeniu zalogowanym na to samo konto Google lub Microsoft. Jeśli Google Play lub Microsoft Store potwierdzi, że zakup nie jest już ważny (np. po zwrocie pieniędzy), aplikacja ponownie zablokuje Premium; bez połączenia lub w przypadku błędu sklepu nic się nie zmienia.
+- **Premium z telefonu także na komputerze.** Aplikacja na Windows połączona synchronizacją (sekcja 9) z urządzeniem z Androidem, które ma Premium, również ma Premium — dopóki urządzenie z Premium synchronizuje się co najmniej raz na 60 dni. Wylogowanie z synchronizacji natychmiast kończy Premium z telefonu na komputerze; jeśli Premium na telefonie wygaśnie (np. po zwrocie pieniędzy), na komputerze wygaśnie najpóźniej po 60 dniach. Premium kupione w Microsoft Store nie przenosi się na telefon.
 - **Odstąpienie od umowy i zwroty.** Ceny, płatności, odstąpienie od umowy i zwroty podlegają zasadom sklepu, w którym dokonano zakupu (Google Play lub Microsoft Store), dotyczącym treści cyfrowych udostępnianych natychmiast po zapłacie. Nie narusza to ustawowych praw konsumenta, w szczególności praw z tytułu wad.
 - **Wady Premium.** Odpowiadamy za to, że Premium działa zgodnie z opisem w aplikacji i w niniejszych warunkach, w zakresie i przez okres określony przepisami o dostarczaniu treści cyfrowych konsumentom. Jeśli Premium nie działa tak, jak powinno, prosimy o wiadomość na **lostria.apps@gmail.com**, najlepiej z opisem problemu i numerem zamówienia z potwierdzenia sklepu (Google Play lub Microsoft Store). Wadę usuniemy bezpłatnie w rozsądnym terminie, zwykle poprzez aktualizację aplikacji. Jeśli nie jest to możliwe, jeśli nie usuniemy jej w rozsądnym terminie lub jeśli wada jest poważna, przysługuje prawo do odpowiedniego obniżenia ceny, a jeśli wada nie jest nieistotna, także do odstąpienia od umowy i zwrotu zapłaconej ceny.
 - **Aktualizacje i zmiany.** Dostarczamy aktualizacje niezbędne do tego, aby Premium nadal działało (w tym aktualizacje zabezpieczeń), przez okres, którego można rozsądnie oczekiwać. Możemy zmieniać i ulepszać funkcje z uzasadnionych powodów (technicznych, związanych z bezpieczeństwem, prawnych lub dalszego rozwoju) bez dodatkowych kosztów. Jeśli zmiana istotnie pogorszyłaby dostęp do Premium lub korzystanie z niego, poinformujemy o niej z wyprzedzeniem; od umowy można wtedy odstąpić w terminie 30 dni od powiadomienia lub od wprowadzenia zmiany, w zależności od tego, co nastąpi później, a zapłaconą cenę zwrócimy w zakresie przewidzianym przepisami.
@@ -380,16 +393,18 @@ Niedozwolone jest:
 - modyfikowanie aplikacji, jej rozpowszechnianie lub publikowanie jej zmodyfikowanych kopii;
 - korzystanie z aplikacji w celach niezgodnych z prawem lub z naruszeniem praw innych osób.
 
-## 9. Kopie zapasowe i utrata danych
+## 9. Kopie zapasowe, synchronizacja i utrata danych
 
-Dane istnieją **wyłącznie na urządzeniu użytkownika** i nie mamy do nich żadnego technicznego dostępu — **nie możemy ich odzyskać, zmienić ani usunąć**. Zarządzanie danymi, w tym trwałe usuwanie zaimportowanych tekstów i zdjęć, należy w całości do użytkownika. Prosimy regularnie tworzyć kopie zapasowe (**eksport ZIP** w aplikacji) i przechowywać je w bezpiecznym miejscu. Odinstalowanie aplikacji lub wyczyszczenie jej danych trwale usuwa wszystkie treści.
+Dane istnieją **wyłącznie na urządzeniu użytkownika** (a przy włączonej synchronizacji na jego Dysku Google) i nie mamy do nich żadnego technicznego dostępu — **nie możemy ich odzyskać, zmienić ani usunąć**. Zarządzanie danymi, w tym trwałe usuwanie zaimportowanych tekstów i zdjęć, należy w całości do użytkownika. Prosimy regularnie tworzyć kopie zapasowe (**eksport ZIP** w aplikacji) i przechowywać je w bezpiecznym miejscu. Odinstalowanie aplikacji lub wyczyszczenie jej danych trwale usuwa wszystkie treści.
+
+**Synchronizacja przez Dysk Google** (Premium, opcjonalna). Po zalogowaniu kontem Google aplikacja zapisuje kopię biblioteki (dane i zdjęcia) w ukrytym folderze aplikacji na **własnym** Dysku Google użytkownika i stamtąd przenosi ją na pozostałe urządzenia. Dostęp do tego folderu ma tylko aplikacja na urządzeniach użytkownika, my nie. Przechowywanie podlega warunkom Google i zajmuje miejsce w przestrzeni dyskowej Google. Synchronizacja przenosi także usunięcia — to, co zostanie usunięte na jednym urządzeniu, znika również na pozostałych. **Dlatego nie zastępuje kopii zapasowych**; prosimy nadal tworzyć kopie ZIP. Przy wylogowaniu można usunąć dane z Dysku Google.
 
 **Zgłaszanie błędów i współdziałanie.** Jeśli po aktualizacji lub innym błędzie aplikacji dane zostaną utracone lub uszkodzone, prosimy o wiadomość na **lostria.apps@gmail.com**. Aby ocenić i naprawić błąd, możemy poprosić o współdziałanie w zakresie rozsądnie możliwym i niezbędnym — najczęściej o opis kroków i plik diagnostyczny (**Ustawienia → Eksportuj diagnostykę**), który zawiera wyłącznie dane techniczne bez tekstów, linków i zdjęć. O pełną kopię zapasową poprosimy tylko wyjątkowo, gdy błędu nie da się ustalić inaczej. Brak współdziałania może uniemożliwić ocenę błędu, a w przypadku reklamacji Premium może wpłynąć na jej ocenę zgodnie z przepisami. Przesłane pliki wykorzystujemy wyłącznie do znalezienia i naprawienia błędu i usuwamy je po jego rozwiązaniu.
 
 ## 10. Odpowiedzialność
 
 - **Za co odpowiadamy zawsze.** Części odpowiedzialności prawo ograniczyć nie pozwala i nie próbujemy tego robić — dotyczy to w szczególności szkody wyrządzonej umyślnie lub wskutek rażącego niedbalstwa. Żadne postanowienie niniejszych warunków nie odbiera ustawowych praw konsumenta, w szczególności praw z tytułu wad Premium (sekcja 6).
-- **Usługi osób trzecich.** Niektóre funkcje zależą od usług, których nie kontrolujemy (Google Play, Microsoft Store, Google Gemini, Groq, strony internetowe sklepów). Nie odpowiadamy za ich awarie, zmiany ani błędy.
+- **Usługi osób trzecich.** Niektóre funkcje zależą od usług, których nie kontrolujemy (Google Play, Microsoft Store, Dysk Google, Google Gemini, Groq, strony internetowe sklepów). Nie odpowiadamy za ich awarie, zmiany ani błędy.
 - **Współdziałanie użytkownika.** Podczas korzystania z aplikacji grożą przede wszystkim dwie szkody: utrata katalogu (np. po zgubieniu lub awarii urządzenia albo po błędzie aplikacji) oraz zakup nieodpowiedniej tkaniny na podstawie błędnie zaimportowanych danych (np. zużycia tkaniny lub składu zaproponowanych przez AI). Najlepiej zapobiega się im, regularnie tworząc kopie zapasowe (sekcja 9) i sprawdzając dane zaproponowane przez AI przed zapisaniem i przed zakupem (sekcja 5). Jeśli do szkody przyczyni się niezastosowanie się do tego, zostanie to uwzględnione zgodnie z przepisami.
 - **Funkcje bezpłatne.** Funkcje, które nie są częścią Premium (w tym domyślna AI), udostępniamy bezpłatnie i nie gwarantujemy, że będą wolne od błędów lub zawsze dostępne. W zakresie dozwolonym przez prawo nie odpowiadamy za utracone korzyści ani szkody pośrednie.
 - **Przedsiębiorcy.** W przypadku korzystania z aplikacji w ramach działalności gospodarczej, a nie jako konsument, nasza odpowiedzialność — poza przypadkami z pierwszego punktu — jest ograniczona do ceny zapłaconej za Premium i wyłączona w odniesieniu do funkcji bezpłatnych.
@@ -412,7 +427,7 @@ Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Republika Czeska, nr
 
 **Language / Jazyk:** [English](#english) · [Čeština](#cesky) · [Deutsch](#deutsch) · [Italiano](#italiano) · [Polski](#polski) · **Slovenčina** · [Zásady ochrany osobných údajov (v češtine)](../#cesky)
 
-**Dátum účinnosti:** 28. 10. 2026
+**Dátum účinnosti:** 15. 11. 2026
 
 ## 1. O týchto podmienkach
 
@@ -422,11 +437,11 @@ Podmienky sú k dispozícii vo viacerých jazykoch. V prípade rozporu medzi jaz
 
 ## 2. Čo je aplikácia
 
-Lostria Sewing je nástroj na vedenie **osobnej evidencie** strihov, časopisov, látok, galantérie a záznamov o ušitých kúskoch. Aplikácia je **offline-first**: všetok Váš obsah je uložený **len vo Vašom zariadení**. Neprevádzkujeme žiadny server, nemáme účty a nič, čo zadáte, sa nezdieľa s inými používateľmi.
+Lostria Sewing je nástroj na vedenie **osobnej evidencie** strihov, časopisov, látok, galantérie a záznamov o ušitých kúskoch. Aplikácia je **offline-first**: všetok Váš obsah je uložený **vo Vašom zariadení** — a ak si zapnete synchronizáciu, aj vo **Vašom vlastnom Google Drive**. Neprevádzkujeme žiadny server, nemáme vlastné účty a nič, čo zadáte, sa nezdieľa s inými používateľmi.
 
 ## 3. Váš obsah a Vaša zodpovednosť
 
-- **Váš obsah zostáva Váš.** Všetko, čo zadáte alebo naimportujete, zostáva vo Vašom zariadení; nedostávame žiadnu kópiu a nenadobúdame k nemu žiadne práva.
+- **Váš obsah zostáva Váš.** Všetko, čo zadáte alebo naimportujete, zostáva vo Vašom zariadení (a pri zapnutej synchronizácii vo Vašom Google Drive); nedostávame žiadnu kópiu a nenadobúdame k nemu žiadne práva.
 - Za obsah, ktorý vytvoríte alebo naimportujete, a za jeho zákonné použitie zodpovedáte Vy — vrátane **rešpektovania autorských práv** k strihom, stranám časopisov, fotkám a textom.
 - Aplikácia je určená na **osobné, súkromné použitie**.
 
@@ -445,7 +460,8 @@ Pri použití funkcie Import z webu (napr. zdieľaním odkazu z prehliadača) ap
 ## 6. Premium a nákupy
 
 - **Premium** je jednorazový nákup v aplikácii, ktorý odomyká ďalšie funkcie (aktuálne neobmedzený počet strihov nad bezplatný limit, Šablóny a Vizualizáciu). Nejde o predplatné; zaplatené Premium zostáva sprístupnené na účte Google, ktorým bolo kúpené.
-- Nákup prebieha cez obchod, z ktorého aplikáciu používate — **Google Play** (Android) alebo **Microsoft Store** (Windows); obchod spracuje platbu a pošle potvrdenie o nákupe. **Nákup sa medzi obchodmi neprenáša:** Premium kúpené na Google Play platí v aplikácii pre Android, kúpené v Microsoft Store v aplikácii pre Windows. Predchádzajúci nákup obnovíte v **Nastavenia → Obnoviť nákup** na zariadení prihlásenom rovnakým účtom Google, resp. Microsoft. Ak Google Play potvrdí, že nákup už neplatí (napríklad po vrátení peňazí), aplikácia pre Android Premium znova zamkne; bez pripojenia alebo pri chybe obchodu sa nič nemení.
+- Nákup prebieha cez obchod, z ktorého aplikáciu používate — **Google Play** (Android) alebo **Microsoft Store** (Windows); obchod spracuje platbu a pošle potvrdenie o nákupe. Premium kúpené na Google Play platí v aplikácii pre Android, kúpené v Microsoft Store v aplikácii pre Windows. Predchádzajúci nákup obnovíte v **Nastavenia → Obnoviť nákup** na zariadení prihlásenom rovnakým účtom Google, resp. Microsoft. Ak Google Play alebo Microsoft Store potvrdí, že nákup už neplatí (napríklad po vrátení peňazí), aplikácia Premium znova zamkne; bez pripojenia alebo pri chybe obchodu sa nič nemení.
+- **Premium z telefónu aj na počítači.** Aplikácia pre Windows prepojená synchronizáciou (oddiel 9) so zariadením s Androidom, ktoré má Premium, má Premium tiež — kým sa zariadenie s Premium synchronizuje aspoň raz za 60 dní. Odhlásením zo synchronizácie Premium z telefónu na počítači hneď skončí; ak Premium v telefóne skončí (napríklad po vrátení peňazí), na počítači skončí najneskôr po 60 dňoch. Premium kúpené v Microsoft Store sa do telefónu neprenáša.
 - **Odstúpenie a vrátenie peňazí.** Ceny, platba, odstúpenie od zmluvy aj vrátenie peňazí sa riadia pravidlami obchodu, v ktorom ste nakúpili (Google Play alebo Microsoft Store), pre digitálny obsah sprístupnený ihneď po zaplatení. Tým nie sú dotknuté Vaše zákonné práva spotrebiteľa, najmä práva zo zodpovednosti za vady.
 - **Vady Premium.** Za to, že Premium funguje tak, ako je opísané v aplikácii a v týchto podmienkach, zodpovedáme v rozsahu a počas doby, ktorú stanovujú právne predpisy o poskytovaní digitálneho obsahu spotrebiteľom. Ak Premium nefunguje, ako má, napíšte nám na **lostria.apps@gmail.com**, ideálne s opisom problému a číslom objednávky z potvrdenia obchodu (Google Play alebo Microsoft Store). Vadu bezplatne odstránime v primeranej lehote, spravidla aktualizáciou aplikácie. Ak to nie je možné, ak ju v primeranej lehote neodstránime alebo ak je vada závažná, máte právo na primeranú zľavu, a ak vada nie je nepodstatná, aj na odstúpenie od zmluvy a vrátenie zaplatenej ceny.
 - **Aktualizácie a zmeny.** Poskytujeme aktualizácie potrebné na to, aby Premium naďalej fungovalo (vrátane bezpečnostných), počas doby, ktorú môžete rozumne očakávať. Funkcie môžeme z vážnych dôvodov (technických, bezpečnostných, právnych alebo kvôli ďalšiemu rozvoju) meniť a vylepšovať bez dodatočných nákladov pre Vás. Ak by zmena podstatne zhoršila Váš prístup k Premium alebo jeho používanie, oznámime Vám ju vopred; od zmluvy potom môžete odstúpiť do 30 dní od oznámenia alebo od vykonania zmeny, podľa toho, čo nastane neskôr, a zaplatenú cenu Vám vrátime v rozsahu, ktorý stanovujú právne predpisy.
@@ -462,16 +478,18 @@ Nie je dovolené:
 - upravovať aplikáciu, šíriť ju alebo zverejňovať jej upravené kópie;
 - používať aplikáciu na nezákonné účely alebo na porušovanie práv iných.
 
-## 9. Zálohy a strata údajov
+## 9. Zálohy, synchronizácia a strata údajov
 
-Vaše údaje existujú **len vo Vašom zariadení** a nemáme k nim žiadny technický prístup — **nemôžeme ich obnoviť, upraviť ani vymazať**. Ich správa vrátane trvalého vymazania importovaných textov a fotiek je plne vo Vašich rukách. Pravidelne si, prosím, vytvárajte zálohy (**export do ZIP** v aplikácii) a uchovávajte ich na bezpečnom mieste. Odinštalovaním aplikácie alebo vymazaním jej údajov sa Váš obsah natrvalo vymaže.
+Vaše údaje existujú **len vo Vašom zariadení** (a pri zapnutej synchronizácii vo Vašom Google Drive) a nemáme k nim žiadny technický prístup — **nemôžeme ich obnoviť, upraviť ani vymazať**. Ich správa vrátane trvalého vymazania importovaných textov a fotiek je plne vo Vašich rukách. Pravidelne si, prosím, vytvárajte zálohy (**export do ZIP** v aplikácii) a uchovávajte ich na bezpečnom mieste. Odinštalovaním aplikácie alebo vymazaním jej údajov sa Váš obsah natrvalo vymaže.
+
+**Synchronizácia cez Google Drive** (Premium, voliteľná). Po prihlásení účtom Google aplikácia ukladá kópiu Vašej knižnice (údaje aj fotky) do skrytého priečinka aplikácie vo **Vašom vlastnom** Google Drive a odtiaľ ju prenáša do Vašich ďalších zariadení. K tomuto priečinku má prístup len aplikácia vo Vašich zariadeniach, my nie. Uloženie sa riadi podmienkami Googlu a zaberá miesto vo Vašom úložisku Google. Synchronizácia prenáša aj vymazanie — čo vymažete v jednom zariadení, zmizne aj v ostatných. **Preto nenahrádza zálohy**; zálohy do ZIP si robte aj naďalej. Pri odhlásení môžete údaje z Google Drive vymazať.
 
 **Hlásenie chýb a súčinnosť.** Ak sa po aktualizácii alebo inej chybe aplikácie stratia či poškodia Vaše údaje, napíšte nám na **lostria.apps@gmail.com**. Aby sme mohli chybu posúdiť a opraviť, môžeme Vás požiadať o súčinnosť v rozsahu, ktorý je rozumne možný a nevyhnutný — najčastejšie o opis postupu a o diagnostický súbor (**Nastavenia → Exportovať diagnostiku**), ktorý obsahuje len technické údaje bez Vašich textov, odkazov a fotiek. Celú zálohu budeme chcieť len výnimočne, keď chybu inak zistiť nejde. Ak súčinnosť neposkytnete, nemusí byť možné chybu posúdiť, a pri reklamácii Premium to môže mať vplyv na jej posúdenie podľa zákona. Zaslané súbory použijeme len na nájdenie a opravu chyby a po jej vyriešení ich vymažeme.
 
 ## 10. Zodpovednosť
 
 - **Za čo zodpovedáme vždy.** Niektorú zodpovednosť zákon obmedziť nedovolí a ani sa o to nepokúšame — platí to najmä pre škodu spôsobenú úmyselne alebo z hrubej nedbanlivosti. Vaše zákonné práva spotrebiteľa Vám nič v týchto podmienkach neberie, najmä práva zo zodpovednosti za vady Premium (oddiel 6).
-- **Služby tretích strán.** Niektoré funkcie závisia od služieb, ktoré nekontrolujeme (Google Play, Microsoft Store, Google Gemini, Groq, webové stránky e-shopov). Za ich výpadky, zmeny alebo chyby nezodpovedáme.
+- **Služby tretích strán.** Niektoré funkcie závisia od služieb, ktoré nekontrolujeme (Google Play, Microsoft Store, Google Drive, Google Gemini, Groq, webové stránky e-shopov). Za ich výpadky, zmeny alebo chyby nezodpovedáme.
 - **Vaša súčinnosť.** Pri používaní aplikácie hrozia hlavne dve škody: strata evidencie (napr. po strate či poruche zariadenia alebo po chybe aplikácie) a nákup nevhodnej látky podľa chybne načítaných údajov (napr. spotreby alebo zloženia navrhnutých AI). Obom najlepšie predídete, keď si pravidelne zálohujete údaje (oddiel 9) a údaje navrhnuté AI skontrolujete pred uložením aj pred nákupom (oddiel 5). Ak k škode prispeje, že ste tak neurobili, prihliadne sa na to podľa zákona.
 - **Bezplatné funkcie.** Funkcie, ktoré nie sú súčasťou Premium (vrátane predvolenej AI), poskytujeme zadarmo a nezaručujeme, že budú bez chýb alebo vždy dostupné. V rozsahu, ktorý pripúšťajú právne predpisy, nezodpovedáme za ušlý zisk ani nepriame škody.
 - **Podnikatelia.** Ak používate aplikáciu v rámci podnikania, a nie ako spotrebiteľ, je naša zodpovednosť — okrem prípadov z prvého bodu — obmedzená na cenu zaplatenú za Premium a pri bezplatných funkciách vylúčená.

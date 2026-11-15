@@ -5,19 +5,19 @@
 **Language / Jazyk:** English · [🇨🇿 Česká verze ↓](#cesky) · [Terms of Use](terms/)
 
 **Effective date:** 2026-08-09
-**Last updated:** 2026-10-28
+**Last updated:** 2026-11-15
 
 ## 1. Who we are and what we do (not) process
 
 **Lostria Sewing** is operated by **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Czech Republic, ID No. (IČ): 30210666 ("we"), contact: **lostria.apps@gmail.com**.
 
-**We keep no personal data about you.** We run no server, have no accounts or shared database, and have no access to the data on your device. Your data stays on your device only.
+**We keep no personal data about you.** We run no server, have no accounts or shared database, and have no access to the data on your device. Your data stays on your device — and, if you turn on sync, also in your own Google Drive, which we cannot access either.
 
-This policy therefore describes **only the limited cases where the app — on your action — sends something to a third party** (AI processing of imports, abuse protection, crash reporting, purchases). **Only to the extent of those transfers** do we act as a controller; otherwise we process no data about you.
+This policy therefore describes **only the limited cases where the app — on your action — sends something to a third party** (AI processing of imports, abuse protection, crash reporting, purchases, sync with your own Google Drive). **Only to the extent of those transfers** do we act as a controller; otherwise we process no data about you.
 
 ## 2. Core principle — everything stays on your device
 
-The app is **offline-first**. All your data (patterns, magazines, fabrics, notions, sewing logs, photos, categories, hashtags, notes) is stored **only locally on your device**. **We run no server** or shared database, we collect nothing centrally, and nothing is shared between users. There are no accounts. You create and manage your own backups (ZIP export). On Android, automatic backup is off. On Windows, the app keeps its data in its own folder in your user profile; if you have Windows backup to OneDrive turned on, Windows may include it in that backup.
+The app is **offline-first**. All your data (patterns, magazines, fabrics, notions, sewing logs, photos, categories, hashtags, notes) is stored **only locally on your device**. **We run no server** or shared database, we collect nothing centrally, and nothing is shared between users. We have no accounts. If you turn on **sync** (section 3f), a copy of your data is also stored in your own Google Drive. You create and manage your own backups (ZIP export). On Android, automatic backup is off. On Windows, the app keeps its data in its own folder in your user profile; if you have Windows backup to OneDrive turned on, Windows may include it in that backup.
 
 ## 3. When and where data is sent (recipients, third parties)
 
@@ -40,11 +40,14 @@ The sent content may include third-party content you chose to import.
 
 **e) Bug reports (only if you send them)** — when you report a problem, you e-mail us and may attach a **diagnostics file** from the app (technical data only: app and database version, record counts, database check — no texts, links or photos) or, exceptionally and only if you agree, a backup. We use them only to find and fix the problem and delete them once it is resolved.
 
+**f) Sync via Google Drive (optional, Premium)** — if you turn on sync and sign in with your Google account, the app uploads **a copy of your library** (the data listed in section 2, including photos) to a **hidden app folder in your own Google Drive** and downloads it from there to your other devices signed in to the same account. The app asks only for access to **its own hidden folder** (Google permission "drive.appdata"), not to your other files in Google Drive; to show which account is connected, it also gets your **e-mail address** from the Google sign-in. Together with the data it stores a few technical details: the data version, the name of the device that saved it (e.g. phone model or computer name), the numbers of patterns, fabrics and notions, and the date when a device with Premium last synced (this unlocks Premium on a connected computer). **We have no access to this folder** — the data travels only between your devices and Google, never to us. Storage is provided by **Google** under its terms and privacy policy and counts towards your Google storage. On Android, sign-in is handled by Google Play services; on Windows, it opens in your web browser and the app keeps the sign-in token encrypted (Windows DPAPI) on your computer. You can sign out at any time and, when signing out, also delete the app's data from your Google Drive.
+
 ## 4. Legal basis (GDPR Art. 6)
 
 - **AI import processing** — your **consent** by triggering the feature (Art. 6(1)(a)), or performance of a feature you requested (b). The feature is optional.
 - **Crash reporting** — your **consent** (per crash).
 - **App Check** — **legitimate interest** in protecting the service from abuse (Art. 6(1)(f)).
+- **Sync** — performance of a feature you turned on (Art. 6(1)(b)); you can turn it off at any time.
 
 - **Bug reports** — handling your request (Art. 6(1)(b)); you decide what you send.
 
@@ -64,11 +67,11 @@ Web import stores the **link (URL)** and **text fields about the pattern** (name
 
 ## 7. Retention
 
-We **retain none of your data** (we don't have it). Data stays on your device until you delete it or uninstall the app. Retention by AI providers is governed by their policies (links above).
+We **retain none of your data** (we don't have it). Data stays on your device until you delete it or uninstall the app. If you use sync, the copy in your Google Drive stays there until you delete it (when signing out of sync in the app, or in Google Drive settings) — uninstalling the app does not delete it. Retention by AI providers is governed by their policies (links above).
 
 ## 8. Your rights
 
-As we hold no record on our side, you exercise most rights directly in the app/device: **access & portability** (ZIP export), **rectification & erasure** (edit/delete items, "Clear app data" in Android settings or "Reset" in Windows settings, or uninstall), **withdraw consent** (stop using AI/crash reporting). You have the right to lodge a **complaint with a supervisory authority** — in the Czech Republic the **Office for Personal Data Protection** (www.uoou.cz). For processing by third parties (Google, Groq), exercise rights with them per their policies.
+As we hold no record on our side, you exercise most rights directly in the app/device: **access & portability** (ZIP export), **rectification & erasure** (edit/delete items, "Clear app data" in Android settings or "Reset" in Windows settings, or uninstall; the sync copy in Google Drive by signing out with deletion), **withdraw consent** (stop using AI/crash reporting). You have the right to lodge a **complaint with a supervisory authority** — in the Czech Republic the **Office for Personal Data Protection** (www.uoou.cz). For processing by third parties (Google, Groq), exercise rights with them per their policies.
 
 ## Data deletion {#data-deletion}
 
@@ -77,6 +80,7 @@ Because Lostria Sewing stores all your data locally on your device and never on 
 1. **Delete individual items in the app** — open a pattern / magazine / fabric / notion / sewing log and use the delete (trash) action; delete photos from the photo view; delete hashtags / categories / target groups from the "Ostatní" tab.
 2. **Delete all data at once** — Android **Settings → Apps → Lostria Sewing → Storage → Clear data**; Windows **Settings → Apps → Installed apps → Lostria Sewing → Advanced options → Reset**. All content and settings are deleted permanently; the app stays installed.
 3. **Uninstall the app** — Android: long-press the app icon → **Uninstall**; Windows: **Settings → Apps → Installed apps → Lostria Sewing → Uninstall**. The system removes the app and all its data.
+4. **Delete the sync copy in Google Drive** (only if you used sync) — in the app: **Settings → Backup & sync → Sign out → Sign out and delete data from Google Drive**; or on the web: **Google Drive → Settings → Manage apps → Lostria Sewing → Options → Delete hidden app data**. Uninstalling the app or clearing its data does not delete this copy.
 
 There is no per-user account on our side to delete. If you need help beyond the above, email **lostria.apps@gmail.com**.
 
@@ -99,19 +103,19 @@ Gabriela Žáčková Dvorská, K Rovinám 384, 252 29 Lety, Czech Republic, ID N
 **Jazyk / Language:** [🇬🇧 English version ↑](#english) · Čeština · [Podmínky užití](terms/#cesky)
 
 **Datum účinnosti:** 9. 8. 2026
-**Aktualizováno:** 28. 10. 2026
+**Aktualizováno:** 15. 11. 2026
 
 ## 1. Kdo jsme a co (ne)zpracováváme
 
 Aplikaci **Lostria Sewing** provozuje **Gabriela Žáčková Dvorská**, K Rovinám 384, 252 29 Lety, Česká republika, IČ: 30210666 (dále „my"), kontakt: **lostria.apps@gmail.com**.
 
-**Sami o Vás nevedeme žádné osobní údaje.** Neprovozujeme žádný server, nemáme účty ani sdílenou databázi a nemáme přístup k datům ve Vašem zařízení. Vaše data zůstávají jen ve Vašem zařízení.
+**Sami o Vás nevedeme žádné osobní údaje.** Neprovozujeme žádný server, nemáme účty ani sdílenou databázi a nemáme přístup k datům ve Vašem zařízení. Vaše data zůstávají ve Vašem zařízení — a pokud si zapnete synchronizaci, také ve Vašem vlastním Google Drive, ke kterému přístup také nemáme.
 
-Tyto zásady proto popisují **jen ty omezené případy, kdy aplikace — na Vaši akci — odešle něco třetí straně** (AI zpracování importu, ochrana proti zneužití, hlášení pádů, případné nákupy). **Pouze v rozsahu těchto přenosů** vystupujeme jako správce; jinak o Vás žádné údaje nezpracováváme.
+Tyto zásady proto popisují **jen ty omezené případy, kdy aplikace — na Vaši akci — odešle něco třetí straně** (AI zpracování importu, ochrana proti zneužití, hlášení pádů, případné nákupy, synchronizace s Vaším vlastním Google Drive). **Pouze v rozsahu těchto přenosů** vystupujeme jako správce; jinak o Vás žádné údaje nezpracováváme.
 
 ## 2. Základní princip — vše zůstává ve Vašem zařízení
 
-Aplikace je **offline-first**. Všechna Vaše data (střihy, časopisy, látky, galanterie, záznamy ušití, fotky, kategorie, hashtagy, poznámky) jsou uložená **pouze lokálně ve Vašem zařízení**. **Neprovozujeme žádný server** ani sdílenou databázi, nic nesbíráme centrálně a nic se nesdílí mezi uživateli. Nemáme účty.
+Aplikace je **offline-first**. Všechna Vaše data (střihy, časopisy, látky, galanterie, záznamy ušití, fotky, kategorie, hashtagy, poznámky) jsou uložená **pouze lokálně ve Vašem zařízení**. **Neprovozujeme žádný server** ani sdílenou databázi, nic nesbíráme centrálně a nic se nesdílí mezi uživateli. Nemáme účty. Pokud si zapnete **synchronizaci** (bod 3f), ukládá se kopie Vašich dat také ve Vašem vlastním Google Drive.
 
 Zálohu si vytváříte a spravujete sami (export do ZIP souboru, který si uložíte, kam chcete). Automatické zálohy Androidu jsou vypnuté. Ve Windows má aplikace data ve vlastní složce ve Vašem uživatelském profilu; pokud máte zapnuté zálohování Windows do OneDrive, může je Windows do této zálohy zahrnout.
 
@@ -136,11 +140,14 @@ Odeslaný obsah může obsahovat i obsah třetích stran (např. stránka e-shop
 
 **e) Hlášení chyb (jen pokud nám něco pošlete)** — když nahlásíte problém, píšete nám e-mail a můžete přiložit **diagnostický soubor** z aplikace (jen technické údaje: verze aplikace a databáze, počty záznamů, kontrola databáze — žádné texty, odkazy ani fotky), případně výjimečně a jen s Vaším souhlasem zálohu. Použijeme je jen k nalezení a opravě chyby a po vyřešení je smažeme.
 
+**f) Synchronizace přes Google Drive (volitelná, Premium)** — když si zapnete synchronizaci a přihlásíte se účtem Google, aplikace nahraje **kopii Vaší knihovny** (data uvedená v bodě 2 včetně fotek) do **skryté složky aplikace ve Vašem vlastním Google Drive** a odtud ji stahuje do Vašich dalších zařízení přihlášených stejným účtem. Aplikace žádá jen o přístup ke **své skryté složce** (oprávnění Google „drive.appdata"), ne k Vašim ostatním souborům v Google Drive; aby mohla ukázat, který účet je připojený, dostane z přihlášení také Vaši **e-mailovou adresu**. Spolu s daty ukládá pár technických údajů: verzi dat, název zařízení, které je uložilo (např. model telefonu nebo název počítače), počty střihů, látek a galanterie a datum, kdy se naposledy synchronizovalo zařízení s Premium (podle něj se odemyká Premium na propojeném počítači). **K této složce nemáme přístup** — data putují jen mezi Vašimi zařízeními a Googlem, k nám nikdy. Úložiště poskytuje **Google** podle svých podmínek a zásad ochrany soukromí a započítává se do Vašeho úložiště Google. V Androidu přihlášení zajišťují služby Google Play; ve Windows se otevře ve webovém prohlížeči a aplikace si přihlašovací token uloží v počítači zašifrovaný (Windows DPAPI). Odhlásit se můžete kdykoli a při odhlášení můžete data aplikace z Google Drive také smazat.
+
 ## 4. Právní základ zpracování (GDPR čl. 6)
 
 - **AI zpracování importu** — Váš **souhlas** vyjádřený spuštěním funkce (čl. 6 odst. 1 písm. a), resp. plnění Vámi vyžádané funkce (písm. b). Funkci nemusíte používat.
 - **Hlášení pádů** — Váš **souhlas** (per pád).
 - **App Check** — **oprávněný zájem** na ochraně služby před zneužitím (čl. 6 odst. 1 písm. f).
+- **Synchronizace** — plnění funkce, kterou jste si zapnuli (čl. 6 odst. 1 písm. b); kdykoli ji můžete vypnout.
 
 - **Hlášení chyb** — vyřízení Vaší žádosti (čl. 6 odst. 1 písm. b); co pošlete, rozhodujete Vy.
 
@@ -160,14 +167,14 @@ Při importu z webu se ukládá **odkaz (URL)** a **textové údaje o střihu** 
 
 ## 7. Jak dlouho data uchováváme
 
-U nás **žádná Vaše data neuchováváme** (nemáme je). Data zůstávají ve Vašem zařízení, dokud je nesmažete nebo neodinstalujete aplikaci. Uchování dat odeslaných AI poskytovatelům se řídí jejich zásadami (viz odkazy výše).
+U nás **žádná Vaše data neuchováváme** (nemáme je). Data zůstávají ve Vašem zařízení, dokud je nesmažete nebo neodinstalujete aplikaci. Pokud používáte synchronizaci, kopie ve Vašem Google Drive tam zůstává, dokud ji nesmažete (při odhlášení od synchronizace v aplikaci nebo v nastavení Google Drive) — odinstalace aplikace ji nesmaže. Uchování dat odeslaných AI poskytovatelům se řídí jejich zásadami (viz odkazy výše).
 
 ## 8. Vaše práva
 
 Protože nemáme na své straně žádný Váš záznam, většinu práv uplatníte přímo v aplikaci/zařízení:
 
 - **Přístup a přenositelnost** — export do ZIP.
-- **Oprava a výmaz** — úprava/smazání položek, případně „Vymazat data aplikace" v nastavení Androidu nebo „Obnovit" v nastavení Windows, nebo odinstalace.
+- **Oprava a výmaz** — úprava/smazání položek, případně „Vymazat data aplikace" v nastavení Androidu nebo „Obnovit" v nastavení Windows, nebo odinstalace; kopie pro synchronizaci v Google Drive odhlášením se smazáním.
 - **Odvolání souhlasu** — funkce AI/hlášení pádů kdykoli přestat používat.
 - Máte právo podat **stížnost u dozorového úřadu** — v ČR **Úřad pro ochranu osobních údajů** (www.uoou.cz).
 
@@ -180,6 +187,7 @@ Protože Lostria Sewing ukládá všechna data jen lokálně ve Vašem zařízen
 1. **Smazat jednotlivé položky** přímo v aplikaci (střih / časopis / látka / galanterie / záznam ušití → koš; fotky z náhledu; hashtagy/kategorie/skupiny v záložce „Ostatní").
 2. **Smazat všechno naráz** — Android **Nastavení → Aplikace → Lostria Sewing → Úložiště → Vymazat data**; Windows **Nastavení → Aplikace → Nainstalované aplikace → Lostria Sewing → Upřesnit možnosti → Obnovit**.
 3. **Odinstalovat aplikaci** — Android i Windows odstraní aplikaci i všechna její data (Windows: **Nastavení → Aplikace → Nainstalované aplikace → Lostria Sewing → Odinstalovat**).
+4. **Smazat kopii pro synchronizaci v Google Drive** (jen pokud jste synchronizaci používali) — v aplikaci: **Nastavení → Záloha a synchronizace → Odhlásit → Odhlásit a smazat data z Google Drive**; nebo na webu: **Google Drive → Nastavení → Spravovat aplikace → Lostria Sewing → Možnosti → Smazat skrytá data aplikace**. Odinstalace aplikace ani vymazání jejích dat tuto kopii nesmaže.
 
 ## 9. Děti
 
